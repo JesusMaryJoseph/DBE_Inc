@@ -57,21 +57,25 @@ let HTML_Manager = {
                 if( window.getComputedStyle( this.eduPacketsDropdown ).display === "none" ){
                     this.eduPacketsDropdown.style.display = "flex";
                 }
+                this.showingDropdown = "Packets";
                 break;
             case "Resources":
                 if( window.getComputedStyle( this.eduResourcesDropdown ).display === "none" ){
                     this.eduResourcesDropdown.style.display = "flex";
                 }
+                this.showingDropdown = "Resources";
                 break;
             case "Training":
                 if( window.getComputedStyle( this.eduTrainingDropdown ).display === "none" ){
                     this.eduTrainingDropdown.style.display = "flex";
                 }
+                this.showingDropdown = "Training";
                 break;
             case "Testing":
                 if( window.getComputedStyle( this.eduTestingDropdown ).display === "none" ){
                     this.eduTestingDropdown.style.display = "flex";
                 }
+                this.showingDropdown = "Testing";
                 break;
             default: alert("no such edu-contents");
         }
