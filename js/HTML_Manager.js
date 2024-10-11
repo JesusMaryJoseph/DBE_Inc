@@ -1,7 +1,7 @@
 let HTML_Manager = {
     //Properties
   //  loaded: false,
-   // showing: false,
+    showingDropdown: "Packets",
     eduContentsSelected: "none",
     htmlTargetEle: {},
     eduPacketsDropdown: {},
@@ -35,13 +35,47 @@ let HTML_Manager = {
     },
 
     display: function(contentsSelected){
-        switch(contentsSelected){
+        switch(this.showingDropdown){
             case "Packets":
                 //alert("Contents Selected: " + contentsSelected);
-            this.eduPacketsDropdown.style.display = "block";
-            break;
-            default: alert("no such edu-contents")
+                this.eduPacketsDropdown.style.display = "none";
+                break;
+            case "Resources":
+                this.eduResourcesDropdown.style.display = "none";
+                break;
+            case "Training":
+                this.eduTrainingDropdown.style.display = "none";
+                break;
+            case "Testing":
+                //alert("Contents Selected: " + contentsSelected);
+                this.eduTestingDropdown.style.display = "none";
+                break;
+            default: alert("no such edu-contents");
         }
+        switch(contentsSelected){
+            case "Packets":
+                if( window.getComputedStyle( this.eduPacketsDropdown ).display === "none" ){
+                    this.eduPacketsDropdown.style.display = "flex";
+                }
+                break;
+            case "Resources":
+                if( window.getComputedStyle( this.eduResourcesDropdown ).display === "none" ){
+                    this.eduResourcesDropdown.style.display = "flex";
+                }
+                break;
+            case "Training":
+                if( window.getComputedStyle( this.eduTrainingDropdown ).display === "none" ){
+                    this.eduTrainingDropdown.style.display = "flex";
+                }
+                break;
+            case "Testing":
+                if( window.getComputedStyle( this.eduTestingDropdown ).display === "none" ){
+                    this.eduTestingDropdown.style.display = "flex";
+                }
+                break;
+            default: alert("no such edu-contents");
+        }
+        this.showingDropdown = contentsSelected;
     }, 
 
     close: function(){
