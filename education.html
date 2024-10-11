@@ -49,7 +49,7 @@
 			}
 				.edu-contents-selections{
 					display: flex;
-					justify-content: center;
+					justify-content: space-around;
 					align-content: center;
 					flex-wrap: wrap;
 					width: 82vw;
@@ -57,15 +57,52 @@
 				/*	margin: 3px;  */
 					border: 2px solid green;
 				}
+
+			/*	.edu-block{
+					display: block;
+				}
+
+				.edu-flex{
+					display: flex;
+				}*/
 					.edu-dropdown{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+						align-items: center; 
+						flex-wrap: wrap;
 						color: yellow;
 						font-size: 1.5em;
-						font-weight: bold;
+						font-weight: bold; 
+						padding-right: 5em;
 					}
+						.edu-dropdown ul{
+							list-style: none;
+							list-style-type: disc;
+							margin-top: 0;
+							margin-left: -1em;
+							padding-bottom: 1em;
+						}
+						.edu-dropdown li{
+						}
+					
 						.edu-dropdown li:hover{
 							cursor: pointer;
 							color: lightgreen;
 						}
+
+					/*	.edu-dropdown-li{
+							font-size: 1em;
+						}
+
+						.edu-dropdown label{
+							font-size: 1.5em;
+						} 
+
+						.edu-dropdown-ul{
+							font-size: 1em;
+						}*/
+
 					.edu-packets-dropdown{
 						display: none;
 					}
@@ -153,12 +190,34 @@
 					</ul>
 				</div>
 				<div id="edu-training-dropdown-id" class="edu-dropdown edu-training-dropdown">
-					<ul>
-						<li>Training #1</li>
-						<li>Training #2</li>
-						<li>Training #3</li>
-						<li>Training #4</li>
-					</ul>
+					<div><u>Codes:</u>	
+						<ul>
+							<li>General</li>
+							<li>Morris Code</li>
+							<li>ASCI Codes</li>
+							<li>Computer Programming</li>
+						</ul>
+					</div>
+					<div><u>Boolean World:</u>	
+						<ul>
+							<li>Arithmetic and<br>Basic Logic Gates</li>
+							<li>"Digital" software<br>Basic Logic Gates</li>
+							<li>Truth Tables</li>
+						</ul>
+					</div>
+					<div><u>Architecture:</u>	
+						<ul>
+							<li>Introduction</li>
+							<li>For 8-bit Computer</li>
+							<li>Function of Each Module</li>
+						</ul>
+					</div>
+					<div><u>74LS-- ICs:</u>
+						<ul>
+							<li>Introduction</li>
+							<li>74LS-- ICs in "Digital</li>
+						</ul>
+					</div>
 				</div>
 				<div id="edu-testing-dropdown-id" class="edu-dropdown edu-testing-dropdown">
 					<ul>
@@ -175,13 +234,13 @@
 					<label class="edu-label" onclick="HTML_Manager.display('Packets')">Packets</label>
 				</div>
 				<div class="edu-resources">
-					<label class="edu-label">Resources</label>
+					<label class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
 				</div>
 				<div class="edu-training">
-					<label class="edu-label">Training</label>
+					<label class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
 				</div>
 				<div class="edu-testing">
-					<label class="edu-label">Testing</label>
+					<label class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
 				</div>
 			</div>
 		</div>
