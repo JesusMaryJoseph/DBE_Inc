@@ -1,9 +1,9 @@
-.dept-html{
-    width: 60vw;
+.html-target{
+    width: 75vw;
     height: 93vh;
     position: absolute;
     top: 0;
-    left: 18vw;
+    right: 1em;
     color: yellow;
     padding: 1em;
     padding-right: 2em;
