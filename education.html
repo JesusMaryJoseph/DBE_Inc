@@ -30,6 +30,14 @@
 			padding: 0.1em 0.5em;
 			z-index: 5;
 		}
+		.edu-label-active{
+		/*	font-size: 2em;
+			font-weight: bold; */
+			color: orangered;
+		/*	cursor: pointer;
+			padding: 0.1em 0.5em;
+			z-index: 5; */
+		}
 			.edu-label:hover{
 			/*	font-size: 2.1em; */
 				color: lightgreen;
@@ -127,7 +135,7 @@
 					border: 2px solid blue;
 				}
 
-				.dept-html{
+				.html-target{
 					font-size: 1.3em;
 					font-weight: bold;
 				}
@@ -229,22 +237,22 @@
 				</div>
 			</div>
 			<div class="edu-contents-selectors">
-				<label class="edu-label edu-proposal" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
+				<label id="proposal-label-id" class="edu-label edu-proposal" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
 				<div class="edu-packets">
-					<label class="edu-label" onclick="HTML_Manager.display('Packets')">Packets</label>
+					<label id="packets-label-id" class="edu-label" onclick="HTML_Manager.display('Packets')">Packets</label>
 				</div>
 				<div class="edu-resources">
-					<label class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
+					<label id="resources-label-id" class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
 				</div>
 				<div class="edu-training">
-					<label class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
+					<label id="training-label-id" class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
 				</div>
 				<div class="edu-testing">
-					<label class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
+					<label id="testing-label-id" class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
 				</div>
 			</div>
 		</div>
-		<article id="html-target-id" class="dept-html">
+		<article id="html-target-id" class="html-target">
 		</article>
 	</div>
 
