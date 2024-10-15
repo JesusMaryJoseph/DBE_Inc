@@ -40,7 +40,7 @@
 		}
 			.edu-label:hover{
 			/*	font-size: 2.1em; */
-				color: lightgreen;
+				color: orangered;
 			}
 	
 			.edu-contents{
@@ -64,64 +64,43 @@
 					height: 97%;
 				/*	margin: 3px;  */
 					border: 2px solid green;
+					overflow: scroll;
 				}
-
-			/*	.edu-block{
-					display: block;
-				}
-
-				.edu-flex{
-					display: flex;
-				}*/
 					.edu-dropdown{
 						display: flex;
 						flex-direction: row;
-						justify-content: space-around;
+						justify-content: space-evenly;
 						align-items: center; 
 						flex-wrap: wrap;
 						color: yellow;
 						font-size: 1.5em;
 						font-weight: bold; 
-						padding-right: 5em;
+						padding-left: 1em;
+					}
+					.edu-heading{
+						font-size: 1.1em;
 					}
 						.edu-dropdown ul{
 							list-style: none;
 							list-style-type: disc;
 							margin-top: 0;
-							margin-left: -1em;
+							margin-left: -0.4em;
 							padding-bottom: 1em;
 						}
-						.edu-dropdown li{
-						}
+						.edu-dropdown label{
+							font-size: 1.6em;
+						} 
 					
-						.edu-dropdown li:hover{
+						.edu-dropdown li:hover, .edu-dropdown label:hover{
 							cursor: pointer;
 							color: lightgreen;
 						}
 
-					/*	.edu-dropdown-li{
-							font-size: 1em;
-						}
-
-						.edu-dropdown label{
-							font-size: 1.5em;
-						} 
-
-						.edu-dropdown-ul{
-							font-size: 1em;
-						}*/
-
-					.edu-packets-dropdown{
+					.edu-dropdown-none{
 						display: none;
 					}
-					.edu-resources-dropdown{
-						display: none;
-					}
-					.edu-training-dropdown{
-						display: none;
-					}
-					.edu-testing-dropdown{
-						display: none;
+					.edu-dropdown-display{
+						display: flex;
 					}
 
 				.edu-contents-selectors{
@@ -178,18 +157,22 @@
 		<h1 class="welcome-label">Welcome to the<br>Education Department</h1>
 		<div class="edu-contents">
 			<div class="edu-contents-selections">
-				<div id="edu-packets-dropdown-id" class="edu-dropdown edu-packets-dropdown">
-					<ul>
-						<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html')">CEO</li>
-						<li onclick="HTML_Manager.load('html/Engineering/Engineering_Packet.html')">Engineering</li>
-						<li onclick="HTML_Manager.load('html/Drafting/Drafting_Packet.html')">Drafting</li>
-						<li onclick="HTML_Manager.load('html/Technician/Technician_Packet.html')">Technician</li>
-						<li onclick="HTML_Manager.load('html/Computer/Computer_Packet.html')">Computer</li>
-						<li onclick="HTML_Manager.load('html/Education/Education_Packet.html')">Education</li>
-						<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html')">Media Arts</li>
-					</ul> 
+				<div id="edu-managers-dropdown-id" class="edu-dropdown edu-dropdown-display">
+					<label id="proposal-label-id" class="edu-proposal" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
+					<div>
+						<label class="edu-heading"><u>Packets:</u></label>
+						<ul class="edu-ul">
+							<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html')">CEO</li>
+							<li onclick="HTML_Manager.load('html/Engineering/Engineering_Packet.html')">Engineering</li>
+							<li onclick="HTML_Manager.load('html/Drafting/Drafting_Packet.html')">Drafting</li>
+							<li onclick="HTML_Manager.load('html/Technician/Technician_Packet.html')">Technician</li>
+							<li onclick="HTML_Manager.load('html/Computer/Computer_Packet.html')">Computer</li>
+							<li onclick="HTML_Manager.load('html/Education/Education_Packet.html')">Education</li>
+							<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html')">Media Arts</li>
+						</ul>
+					</div>
 				</div>
-				<div id="edu-resources-dropdown-id" class="edu-dropdown edu-resources-dropdown">
+				<div id="edu-resources-dropdown-id" class="edu-dropdown edu-dropdown-none">
 					<ul>
 						<li>Resource #1</li>
 						<li>Resource #2</li>
@@ -197,37 +180,41 @@
 						<li>Resource #4</li>
 					</ul>
 				</div>
-				<div id="edu-training-dropdown-id" class="edu-dropdown edu-training-dropdown">
-					<div><u>Codes:</u>	
-						<ul>
+				<div id="edu-training-dropdown-id" class="edu-dropdown edu-dropdown-none">
+					<div class="edu-dropdown-container">	
+						<label class="edu-heading"><u>Codes:</u></label>	
+						<ul class="edu-ul">
 							<li>General</li>
 							<li>Morris Code</li>
 							<li>ASCI Codes</li>
 							<li>Computer Programming</li>
 						</ul>
 					</div>
-					<div><u>Boolean World:</u>	
-						<ul>
+					<div>
+						<label class="edu-heading"><u>Boolean World:</u></label>	
+						<ul class="edu-ul">
 							<li>Arithmetic and<br>Basic Logic Gates</li>
 							<li>"Digital" software<br>Basic Logic Gates</li>
 							<li>Truth Tables</li>
 						</ul>
 					</div>
-					<div><u>Architecture:</u>	
-						<ul>
+					<div>
+						<label class="edu-heading"><u>Architecture:</u></label>	
+						<ul class="edu-ul">
 							<li>Introduction</li>
 							<li>For 8-bit Computer</li>
 							<li>Function of Each Module</li>
 						</ul>
 					</div>
-					<div><u>74LS-- ICs:</u>
-						<ul>
+					<div>	
+						<label class="edu-heading"><u>74LS-- ICs:</u></label>
+						<ul class="edu-ul">
 							<li>Introduction</li>
 							<li>74LS-- ICs in "Digital</li>
 						</ul>
 					</div>
 				</div>
-				<div id="edu-testing-dropdown-id" class="edu-dropdown edu-testing-dropdown">
+				<div id="edu-testing-dropdown-id" class="edu-dropdown edu-dropdown-none">
 					<ul>
 						<li>Test #1</li>
 						<li>Test #2</li>
@@ -237,9 +224,8 @@
 				</div>
 			</div>
 			<div class="edu-contents-selectors">
-				<label id="proposal-label-id" class="edu-label edu-proposal" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
-				<div class="edu-packets">
-					<label id="packets-label-id" class="edu-label" onclick="HTML_Manager.display('Packets')">Packets</label>
+				<div class="edu-managers">
+					<label id="managers-label-id" class="edu-label edu-label-active" onclick="HTML_Manager.display('Managers')">Managers</label>
 				</div>
 				<div class="edu-resources">
 					<label id="resources-label-id" class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
