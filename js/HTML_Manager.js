@@ -17,24 +17,21 @@ let HTML_Manager = {
 
     //Methods
     load: function (HTMLsourceFile) {
-       // alert("in load");
-        //  alert("HTMLsourceFile: " + HTMLsourceFile);
-       /* if (HTMLsourceFile == "html/Proposal.html") {
-            this.setActiveInactiveLabel(this.eduManagersDropdown);
-        }*/
-       // this.htmlTargetEle.style.zIndex = 10;
-       // this.htmlTargetEle.style.opacity = "1";
+        //alert("in load");
+         // alert("HTMLsourceFile: " + HTMLsourceFile);
+        this.htmlTargetEle.style.zIndex = 10;
+        this.htmlTargetEle.style.opacity = "1";
         //  if(!this.loaded){ 
         fetch(HTMLsourceFile)
             .then(res => {
-                //alert("in res =>");
+               // alert("in res =>");
                 if (res.ok) {
-                    //alert("res.ok");
+                   // alert("res.ok");
                     return res.text();
                 }
             })
             .then(resultHTML => {
-                //alert("loading resultHTML");
+               // alert("loading resultHTML");
                 this.htmlTargetEle.innerHTML = resultHTML;
             })
     }, 
