@@ -1,16 +1,16 @@
 let HTML_Manager = {
     //Properties
     //  loaded: false,
-    eduManagersDropdown: {},
-    eduResourcesDropdown: {},
-    eduTestingDropdown: {},
-    eduTrainingDropdown: {},
+    eduManagersSelector: {},
+    eduResourcesSelector: {},
+    eduTestingSelector: {},
+    eduTrainingSelector: {},
     managersLabel: {},
     resourcesLabel: {},
     trainingLabel: {},
     testingLabel: {},
     proposalLabel: {},
-    activeDropdown:{},
+    activeSelector:{},
     activeSelectorLabel: {},
     eduContentsSelected: "edu-managers-dropdown",
     htmlTargetEle: {},
@@ -38,31 +38,36 @@ let HTML_Manager = {
 
     display: function (contentsSelected) {
        // alert("in display");
-        //alert("contentsSelected: " + contentsSelected);
-        this.activeDropdown.classList.replace("edu-dropdown-display","edu-dropdown-none")
-        this.activeDropdown.style.display = "none";
+       // alert("contentsSelected: " + contentsSelected);
+        this.activeSelector.classList.replace("edu-dropdown-display","edu-dropdown-none");
+        this.activeSelector.style.display = "none";
         this.activeSelectorLabel.classList.remove("edu-label-active");
         switch (contentsSelected) {
             case "Managers":
-                this.activeDropdown = this.eduManagersDropdown;
+                this.activeSelector = this.eduManagersSelector;
                 this.activeSelectorLabel = this.managersLabel;
                 break;
             case "Resources":
-                this.activeDropdown = this.eduResourcesDropdown;
+              //  alert("in case-Resources");
+                this.activeSelector = this.eduResourcesSelector;
                 this.activeSelectorLabel = this.resourcesLabel;
+              //  alert("leaving case: Resources");
                 break;
             case "Training":
-                this.activeDropdown = this.eduTrainingDropdown;
+                this.activeSelector = this.eduTrainingSelector;
                 this.activeSelectorLabel = this.trainingLabel;
                 break;
             case "Testing":
-                this.activeDropdown = this.eduTestingDropdown;
+                this.activeSelector = this.eduTestingSelector;
                 this.activeSelectorLabel = this.testingLabel;
                 break;
             default: alert("no such edu-contents");
         }
-        this.activeDropdown.classList.replace("edu-dropdown-none","edu-dropdown-replace")
-        this.activeDropdown.style.display = "flex";
+      //  alert("before activeSelector.classList.replace");
+        this.activeSelector.classList.replace("edu-dropdown-none","edu-dropdown-display")
+      //  alert("before actDrpdwn.style.display = flex");
+        this.activeSelector.style.display = "flex";
+      //  alert("before activeSelectorLabel classList.add");
         this.activeSelectorLabel.classList.add("edu-label-active"); 
     },
 
@@ -81,19 +86,19 @@ let HTML_Manager = {
     },
 
     init: function() {
-       // alert("in HTML_Manager init()");
+        // alert("in HTML_Manager init()");
         this.htmlTargetEle = document.getElementById("html-target-id");
         this.htmlTargetEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.eduManagersDropdown = document.getElementById("edu-managers-dropdown-id");
-        this.eduResourcesDropdown = document.getElementById("edu-resources-dropdown-id");
-        this.eduTrainingDropdown = document.getElementById("edu-training-dropdown-id");
-        this.eduTestingDropdown = document.getElementById("edu-testing-dropdown-id");
+        this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
+        this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
+        this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
+        this.eduTestingSelector = document.getElementById("edu-testing-selector-id");
         this.managersLabel = document.getElementById("managers-label-id");
         this.resourcesLabel = document.getElementById("resources-label-id");
         this.trainingLabel = document.getElementById("training-label-id");
         this.testingLabel = document.getElementById("testing-label-id");
         this.proposalLabel = document.getElementById("proposal-label-id");
-        this.activeDropdown = this.eduManagersDropdown;
+        this.activeSelector = this.eduManagersSelector;
         this.activeSelectorLabel = this.managersLabel;
         //alert("after HTML_Manager init()");
     }
