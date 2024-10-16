@@ -33,7 +33,7 @@
 				border: 2px solid red;
 		}
 
-/* 		CSS for edu-main-selections */
+/* 		CSS for edu-main-selections-container */
 			.edu-main-selections-container{
 				display: flex;
 				flex-direction: column; 
@@ -64,23 +64,20 @@
 				}
 				.edu-dropdown-display{
 					display: flex;
+					justify-content: space-around;
 				}
-
-					.edu-sub-selectors-container{
-						display: flex;
-						justify-content: space-around;
-						font-size: 1.4em;
-						font-weight: bold;
-						color: yellow;
+					.edu-sub-selections-container{
+						/*display: none;*/
+					/*	width: 100%;*/
+						height: 100%; 
+						margin: 0.3em;
+						border: 2px solid yellow;
 					}
-				.edu-sub-selections-container{
-					display: none;
-				}
 
 
-/* 		End CSS for edu-selections
+/* 		End CSS for edu-selections-container */
 
-/* 		CSS for edu-main selectors */
+/* 		CSS for edu-main selectors-container */
 			.edu-main-selectors-container{
 				width: 13vw;
 				height: 97%;
@@ -111,12 +108,46 @@
 					/*	font-size: 2.1em; */
 						color: orangered;
 					}
+				
+				.edu-selector-none{
+					display: none;
+				}
+				.edu-selector-display{
+					display: flex;
+					justify-content: space-around;
+				}
 
-/* End CSS for edu-main-selectors */
+/* 		End CSS for edu-main-selectors-container */
+
+/* 		CSS for edu-sub-selectors-container */
+			.edu-sub-selectors-container{
+				height: 10em;
+				font-size: 1.4em;
+				font-weight: bold;
+				color: yellow;
+				margin: 0.3em;
+				border: 2px solid orangered;
+			}
+
+			.edu-sub-selector-hide{
+				position: absolute !important;
+				top: -9999px !important;
+				left: -9999px !important;
+			}
+
+			.edu-sub-selector-display{
+				display: flex;
+				justify-content: space-around;
+			}
+			.edu-sub-selector-none{
+				display: none;
+			}
+
+/*   	End CSS for edu-sub-selectors-container */
 
 
 
-
+/*
 	
 					.edu-heading{
 						font-size: 1.4em;
@@ -136,7 +167,7 @@
 							padding-bottom: 1em;
 						}
 						.edu-dropdown label{
-							/*font-size: 0.6em; */
+							font-size: 0.6em; 
 						} 
 					
 						.edu-dropdown li:hover, .edu-dropdown label:hover{
@@ -168,7 +199,7 @@
 
 			.ben-eater-videos-dropdown, .boolean-world-dropdown, .architecture-dropdown, .ics-dropdown {
 				display: none;
-			}
+			} */
 						
 	</style>
 	
@@ -197,13 +228,37 @@
 	<div class="page">
 		<h1 class="welcome-label">Welcome to the<br>Education Department</h1>
 		<div class="edu-contents">
+			<div class="edu-main-selectors-container">
+				<label id="managers-label-id" class="edu-label edu-label-active" onclick="HTML_Manager.display('Managers')">Managers</label>
+				<label id="resources-label-id" class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
+				<label id="training-label-id" class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
+				<label id="testing-label-id" class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
+			</div>
 			<div class="edu-main-selections-container">
 				<div class="edu-sub-selectors-container">
-					<label id="proposal-label-id" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
-					<label>Packets:</label>
+					<div id="edu-managers-selector-id" class="edu-dropdown-display">
+						<label id="proposal-label-id" class="edu-heading" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
+						<label class="edu-heading"><u>Packets:</u></label>
+					</div>
+					<div id="edu-resources-selector-id" class="edu-dropdown-none">							
+						<label class="edu-heading"><u>Ben Eater Videos:</u></label>
+						<label class="edu-heading"><u>Data Sheets:</u></label>
+					</div>
+					<div id="edu-training-selector-id" class="edu-dropdown-none">							
+						<label class="edu-heading"><u>Codes:</u></label>
+						<label class="edu-heading"><u>Boolean World:</u></label>
+						<label class="edu-heading"><u>Architecture:</u></label>
+						<label class="edu-heading"><u>The 74LS-- ICs:</u></label>
+					</div>
+					<div id="edu-testing-selector-id" class="edu-dropdown-none">							
+						<label class="edu-heading"><u>Codes:</u></label>
+						<label class="edu-heading"><u>Boolean World:</u></label>
+						<label class="edu-heading"><u>Architecture:</u></label>
+						<label class="edu-heading"><u>The 74LS-- ICs:</u></label>
+					</div>
 				</div>
 				<div class="edu-sub-selections-container">
-					<div id="edu-managers-dropdown-id" class="edu-dropdown edu-dropdown-display">
+				    <div id="edu-managers-dropdown-id" class="edu-dropdown edu-dropdown-display">
 						<div>
 							<ul class="edu-ul">
 								<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html')">CEO</li>
@@ -217,8 +272,8 @@
 						</div>
 					</div>
 					<div id="edu-resources-dropdown-id" class="edu-dropdown edu-dropdown-none">
-					<!--	<div class="edu-dropdown-container"> -->	
-							<label class="edu-heading"><u>Ben Eater Videos:</u></label>
+						<div class="edu-dropdown-container">	
+							<label class="edu-heading"><u>Ben Eater Videos:</u></label> 
 							<div class="ben-eater-videos-dropdown">
 								<div>
 									<label class="edu-sub-heading">General:</label>
@@ -294,8 +349,8 @@
 									</ul>
 								</div>
 							</div>
-					<!--	</div>  -->
-						<div>
+						</div> 
+						<div>	
 							<label class="edu-heading"><u>Boolean World:</u></label>
 							<div class="boolean-world-dropdown">	
 								<ul class="edu-ul">
@@ -305,8 +360,8 @@
 								</ul>
 							</div>
 						</div>
-						<div>
-							<label class="edu-heading"><u>Architecture:</u></label>	
+						<div>	
+							<label class="edu-heading"><u>Architecture:</u></label>
 							<div class="architecture-dropdown">
 								<ul class="edu-ul">
 									<li>Introduction</li>
@@ -327,7 +382,7 @@
 					</div>
 					<div id="edu-training-dropdown-id" class="edu-dropdown edu-dropdown-none">
 						<div class="edu-dropdown-container">	
-							<label class="edu-heading"><u>Codes:</u></label>	
+							<label class="edu-heading"><u>Codes:</u></label>
 							<ul class="edu-ul">
 								<li>General</li>
 								<li>Morris Code</li>
@@ -336,7 +391,7 @@
 							</ul>
 						</div>
 						<div>
-							<label class="edu-heading"><u>Boolean World:</u></label>	
+							<label class="edu-heading"><u>Boolean World:</u></label>
 							<ul class="edu-ul">
 								<li>Arithmetic and<br>Basic Logic Gates</li>
 								<li>"Digital" software<br>Basic Logic Gates</li>
@@ -393,20 +448,6 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="edu-main-selectors-container">
-				<div class="edu-managers">
-					<label id="managers-label-id" class="edu-label edu-label-active" onclick="HTML_Manager.display('Managers')">Managers</label>
-				</div>
-				<div class="edu-resources">
-					<label id="resources-label-id" class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
-				</div>
-				<div class="edu-training">
-					<label id="training-label-id" class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
-				</div>
-				<div class="edu-testing">
-					<label id="testing-label-id" class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
 				</div>
 			</div>
 		</div>
