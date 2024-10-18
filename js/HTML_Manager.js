@@ -19,6 +19,7 @@ let HTML_Manager = {
     load: function (HTMLsourceFile) {
         //alert("in load");
          // alert("HTMLsourceFile: " + HTMLsourceFile);
+
         this.htmlTargetEle.style.zIndex = 10;
         this.htmlTargetEle.style.opacity = "1";
         //  if(!this.loaded){ 
@@ -34,6 +35,8 @@ let HTML_Manager = {
                // alert("loading resultHTML");
                 this.htmlTargetEle.innerHTML = resultHTML;
             })
+        // TODO: reset dropdown
+        EduNavHandler.showHide();
     }, 
 
     display: function (contentsSelected) {
@@ -87,7 +90,7 @@ let HTML_Manager = {
 
     init: function() {
         // alert("in HTML_Manager init()");
-        this.htmlTargetEle = document.getElementById("html-target-id");
+        this.htmlTargetEle = document.getElementById("edu-contents-id");
         this.htmlTargetEle.addEventListener("transitionend", this.transitionHasEnded);
         this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
         this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<link rel="stylesheet" type="text/css" href="css/proposal.css">
 	<script src="js/Nav_Handler.js"></script>
+	<script src="js/EduNav_Handler.js"></script>
 	<script src="js/HTML_Manager.js"></script>
 
 	<style>
@@ -23,183 +24,135 @@
 		.edu-contents{
 				position: absolute;
 				top: 5.0em;
-				left: 1em;
-				width: 97vw;
-				height: 83vh;
-				display: flex;
-			/*	flex-direction: column;*/
-				justify-content: space-around;
-				align-items: center; 
-				border: 2px solid red;
-		}
-
-/* 		CSS for edu-main-selections-container */
-			.edu-main-selections-container{
-				display: flex;
-				flex-direction: column; 
-			/*	justify-content: space-around;*/
-			/*	align-content: center; */
-			/*	flex-wrap: wrap;*/
-				width: 82vw;
-				height: 97%;
-			/*	margin: 3px;  */
-				border: 2px solid green;
-			/*	overflow: scroll; */
-			}
-				.edu-dropdown{
-					display: flex;
-					flex-direction: row;
-					justify-content: space-evenly;
-				/*	align-items:flex-start; */
-					flex-wrap: wrap;
-					color: yellow;
-					/*font-size: 1em; */
-					font-weight: bold; 
-					padding-left: 2em;
-				/*	margin-top: 5em; */
-				}
-
-				.edu-dropdown-none{
-					display: none;
-				}
-				.edu-dropdown-display{
-					display: flex;
-					justify-content: space-around;
-				}
-					.edu-sub-selections-container{
-						/*display: none;*/
-					/*	width: 100%;*/
-						height: 100%; 
-						margin: 0.3em;
-						border: 2px solid yellow;
-					}
-
-
-/* 		End CSS for edu-selections-container */
-
-/* 		CSS for edu-main selectors-container */
-			.edu-main-selectors-container{
-				width: 13vw;
-				height: 97%;
-			/*	margin: 3px; */
-				display: flex;
+				left: 0;/*1em*/
+				width: 94vw;
+				height: 83vh; 
+			/*	display: flex;
 				flex-direction: column;
 				justify-content: space-around;
-				align-items: center; 
-				border: 2px solid blue;
-			}			
-				.edu-label{
-					font-size: 2em;
-					font-weight: bold;
-					color: yellow;
-					cursor: pointer;
-					padding: 0.1em 0.5em;
-					z-index: 5;
-				}
-				.edu-label-active{
-				/*	font-size: 2em;
-					font-weight: bold; */
-					color: orangered;
-				/*	cursor: pointer;
-					padding: 0.1em 0.5em;
-					z-index: 5; */
-				}
-					.edu-label:hover{
-					/*	font-size: 2.1em; */
-						color: orangered;
-					}
-				
-				.edu-selector-none{
-					display: none;
-				}
-				.edu-selector-display{
-					display: flex;
-					justify-content: space-around;
-				}
-
-/* 		End CSS for edu-main-selectors-container */
-
-/* 		CSS for edu-sub-selectors-container */
-			.edu-sub-selectors-container{
-				height: 10em;
-				font-size: 1.4em;
-				font-weight: bold;
+				align-items: center; */
+				padding: 0 1em;
 				color: yellow;
-				margin: 0.3em;
-				border: 2px solid orangered;
-			}
-
-			.edu-sub-selector-hide{
-				position: absolute !important;
-				top: -9999px !important;
-				left: -9999px !important;
-			}
-
-			.edu-sub-selector-display{
-				display: flex;
-				justify-content: space-around;
-			}
-			.edu-sub-selector-none{
-				display: none;
-			}
-
-/*   	End CSS for edu-sub-selectors-container */
-
-
-
-/*
-	
-					.edu-heading{
-						font-size: 1.4em;
-					}
-					.edu-sub-heading{
-						font-size: 1.3em;
-					}
-					.edu-ul li a{
-						color: yellow;
-						font-size: 1.1em;
-					}
-						.edu-dropdown ul{
-							list-style: none;
-							list-style-type: disc;
-							margin-top: 0;
-							margin-left: -0.4em;
-							padding-bottom: 1em;
-						}
-						.edu-dropdown label{
-							font-size: 0.6em; 
-						} 
-					
-						.edu-dropdown li:hover, .edu-dropdown label:hover{
-							cursor: pointer;
-							color: lightgreen;
-						}
-
-				.html-target{
-					font-size: 1.3em;
-					font-weight: bold;
-				}
-
-				.packet{
-					font-size: 1.3em;
-					font-weight: bold;
-				}
-
-					.packet-label{
-						font-size: 1.5em;
-						font-weight: bold;
-					}
-
-		.edu-dropdown-container{
-			display: flex;
-			justify-content: space-between;
-			align-items: start;
-			border: 2px solid red;
+				border: 2px solid red;
+				overflow-y: scroll;
+				overflow-x: hidden;
 		}
 
-			.ben-eater-videos-dropdown, .boolean-world-dropdown, .architecture-dropdown, .ics-dropdown {
-				display: none;
-			} */
+		a{
+			color: yellow;
+		}
+
+
+/* 	CSS for EDU Nav */
+		.edu-nav-cntnr{
+			position: absolute;
+			top: 0;
+			left: 80vw;
+			width: 11em;
+			height: 12.5em; 
+			padding: 0.5em;
+			color: yellow;
+		/*	margin-top: -1.7em; */
+			border: 3px solid yellow; 
+		/*   background-color: darkblue; */
+			z-index: 20; 
+		}
+
+			.edu-nav-label-container{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			/*	position: relative; */
+			/*	height: 3em; */
+				width: 99%;
+			/*	margin-left: -0.2em;
+				margin-top: -2em; */
+			/*	padding-top: 2em; */
+				margin-top: 0.2em;
+				background-color: rgb(0, 0, 50); 
+				border: 2px solid green; 
+				z-index: 15;
+			}
+
+				.edu-nav-label{
+					font-size: 1.5em;
+					font-weight: bolder;
+					cursor: pointer; 
+				/*	height: 3em; */
+				/*	width: 12em; */
+				/*	padding-top: 0.5em;
+					padding: 0 1em; */
+				/*	background-color: black; */
+				/*	border: 3px solid orange; */
+				}
+
+			.hide-edu-dropdown{
+				margin-top: -15em;
+			}
+
+			.edu-nav-dropdown{
+				position: relative;
+				font-size: 1.3em;
+				font-weight: bold;
+				display: flex;
+				flex-direction: column;
+				transition: margin-top 0.5s;
+				padding: 0 0.5em;
+			/*	margin-top: -2px; */
+				background-image: radial-gradient(blue, black);
+				border: 2px solid yellow;
+				border-radius: 5px; 
+			}
+
+				.edu-nav-dropdown ul{
+					margin-left: -0.5em;
+					padding-right: 0.5em;
+				}
+
+					.edu-nav-dropdown a:hover{
+						text-decoration: none;
+						color: yellow;
+					}
+
+				.edu-nav-dropdown li{
+					/*font-size: 1.3em; */
+					font-weight: bolder;
+					color: yellow;
+					cursor: pointer;
+					margin-bottom: 0.1em;
+				}
+				.edu-nav-dropdown li:hover{
+					color: orangered;
+				}
+
+					.edu-second-dropdown{
+						background-image: radial-gradient(blue, black);
+						border: 2px solid yellow;
+						border-radius: 5px;
+					}
+					.edu-second-dropdown-hidden{
+						display: none;
+					}
+					.edu-packets{
+						position: absolute;
+						left: -6.1em;
+						top: 2.2em;
+					}
+					.edu-training{
+						position: absolute;
+						left: -7.6em;
+						top: 3.5em;
+					}
+					.edu-resources{
+						position: absolute;
+						left: -9em;
+						top: 5.8em;
+					}
+
+
+/* End CSS for EDU Nav */
+
+
 						
 	</style>
 	
@@ -225,242 +178,61 @@
     <!--    <div id="nav-bottom-id"></div>  -->
     </nav> 
 
+    <nav id="edu-nav-cntnr-id" class="edu-nav-cntnr" onmouseleave = "EduNavHandler.mouseLeave('Main')">
+    	<div class="edu-nav-label-container">
+    		<label class="edu-nav-label" onclick="EduNavHandler.showHide()">EDU Nav</label>
+    	</div>
+		<div id="edu-nav-dropdown-id" class="edu-nav-dropdown hide-edu-dropdown">
+			<ul>
+				<li onclick="HTML_Manager.load('html/Proposal.html')">Proposal</li>
+				<li onclick="EduNavHandler.displaySecondDropdown('Packets')">Packets:</li>
+				<li onclick="EduNavHandler.displaySecondDropdown('Training')">Training &<br>Testing:</li>
+				<li onclick="EduNavHandler.displaySecondDropdown('Resources')">Resources:</li>
+			</ul>
+			<div id="edu-packets-dropdown-id" class="edu-second-dropdown edu-packets edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Packets')">
+				<ul>
+					<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html')">CEO</li>
+					<li onclick="HTML_Manager.load('html/Engineering/Engineering_Packet.html')">Engineering</li>
+					<li onclick="HTML_Manager.load('html/Drafting/Drafting_Packet.html')">Drafting</li>
+					<li onclick="HTML_Manager.load('html/Technician/Technician_Packet.html')">Technician</li>
+					<li onclick="HTML_Manager.load('html/Computer/Computer_Packet.html')">Computer</li>
+					<li onclick="HTML_Manager.load('html/Education/Education_Packet.html')">Education</li>
+					<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html')">Media Arts</li>
+				</ul>
+			</div>
+			<div id="edu-training-dropdown-id" class="edu-second-dropdown edu-training edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Training')">
+				<ul>
+					<li>Codes:</li>
+					<li>Boolean World:</li>
+					<li>Architecture:</li>
+					<li>Software:</li>
+					<li>74LS-- ICs</li>
+				</ul>
+			</div>
+			<div id="edu-resources-dropdown-id" class="edu-second-dropdown edu-resources edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Resources')">
+				<ul>
+					<li onclick="HTML_Manager.load('html/Education/Resources/BenEaterVideos.html')">Ben Eater Videos</li>
+					<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html')">74LS-- Data Sheets</li>
+				</ul>
+			</div>
+		</div>
+    <!--    <div id="nav-bottom-id"></div>  -->
+    </nav> 
+
 	<div class="page">
 		<h1 class="welcome-label">Welcome to the<br>Education Department</h1>
-		<div class="edu-contents">
-			<div class="edu-main-selectors-container">
-				<label id="managers-label-id" class="edu-label edu-label-active" onclick="HTML_Manager.display('Managers')">Managers</label>
-				<label id="resources-label-id" class="edu-label" onclick="HTML_Manager.display('Resources')">Resources</label>
-				<label id="training-label-id" class="edu-label" onclick="HTML_Manager.display('Training')">Training</label>
-				<label id="testing-label-id" class="edu-label" onclick="HTML_Manager.display('Testing')">Testing</label>
-			</div>
-			<div class="edu-main-selections-container">
-				<div class="edu-sub-selectors-container">
-					<div id="edu-managers-selector-id" class="edu-dropdown-display">
-						<label id="proposal-label-id" class="edu-heading" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</label>
-						<label class="edu-heading"><u>Packets:</u></label>
-					</div>
-					<div id="edu-resources-selector-id" class="edu-dropdown-none">							
-						<label class="edu-heading"><u>Ben Eater Videos:</u></label>
-						<label class="edu-heading"><u>Data Sheets:</u></label>
-					</div>
-					<div id="edu-training-selector-id" class="edu-dropdown-none">							
-						<label class="edu-heading"><u>Codes:</u></label>
-						<label class="edu-heading"><u>Boolean World:</u></label>
-						<label class="edu-heading"><u>Architecture:</u></label>
-						<label class="edu-heading"><u>The 74LS-- ICs:</u></label>
-					</div>
-					<div id="edu-testing-selector-id" class="edu-dropdown-none">							
-						<label class="edu-heading"><u>Codes:</u></label>
-						<label class="edu-heading"><u>Boolean World:</u></label>
-						<label class="edu-heading"><u>Architecture:</u></label>
-						<label class="edu-heading"><u>The 74LS-- ICs:</u></label>
-					</div>
-				</div>
-				<div class="edu-sub-selections-container">
-				    <div id="edu-managers-dropdown-id" class="edu-dropdown edu-dropdown-display">
-						<div>
-							<ul class="edu-ul">
-								<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html')">CEO</li>
-								<li onclick="HTML_Manager.load('html/Engineering/Engineering_Packet.html')">Engineering</li>
-								<li onclick="HTML_Manager.load('html/Drafting/Drafting_Packet.html')">Drafting</li>
-								<li onclick="HTML_Manager.load('html/Technician/Technician_Packet.html')">Technician</li>
-								<li onclick="HTML_Manager.load('html/Computer/Computer_Packet.html')">Computer</li>
-								<li onclick="HTML_Manager.load('html/Education/Education_Packet.html')">Education</li>
-								<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html')">Media Arts</li>
-							</ul>
-						</div>
-					</div>
-					<div id="edu-resources-dropdown-id" class="edu-dropdown edu-dropdown-none">
-						<div class="edu-dropdown-container">	
-							<label class="edu-heading"><u>Ben Eater Videos:</u></label> 
-							<div class="ben-eater-videos-dropdown">
-								<div>
-									<label class="edu-sub-heading">General:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=HyznrdDSSGM" target="_blank" rel="noopener noreferrer">8-bit computer update</a></li>
-										<li><a href="https://www.youtube.com/watch?v=HtFro0UKqkk" target="_blank" rel="noopener noreferrer">8-bit CPU reset circuit and power supply tips</a></li>
-										<li><a href="https://www.youtube.com/watch?v=a73ZXDJtU48" target="_blank" rel="noopener noreferrer">Programming Fibonacci on a breadboard computer</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Clock Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=kRlSFm519Bo" target="_blank" rel="noopener noreferrer">Astable 555 timer - 8-bit computer clock - part 1</a></li>
-										<li><a href="https://www.youtube.com/watch?v=81BgFhm2vz8" target="_blank" rel="noopener noreferrer">Monostable 555 timer - 8-bit computer clock - part 2</a></li>
-										<li><a href="https://www.youtube.com/watch?v=WCwJNnx36Rk" target="_blank" rel="noopener noreferrer">Bistable 555 - 8-bit computer clock - part 3</a></li>
-										<li><a href="https://www.youtube.com/watch?v=SmQ5K7UQPMM" target="_blank" rel="noopener noreferrer">Clock logic - 8-bit computer part 4</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Memory Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=HyznrdDSSGM" target="_blank" rel="noopener noreferrer">8-bit computer update</a></li>
-										<li><a href="https://www.youtube.com/watch?v=HtFro0UKqkk" target="_blank" rel="noopener noreferrer">8-bit CPU reset circuit and power supply tips</a></li>
-										<li><a href="https://www.youtube.com/watch?v=a73ZXDJtU48" target="_blank" rel="noopener noreferrer">Programming Fibonacci on a breadboard computer</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Arithmetic Logic Unit (ALU) Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=kRlSFm519Bo" target="_blank" rel="noopener noreferrer">Astable 555 timer - 8-bit computer clock - part 1</a></li>
-										<li><a href="https://www.youtube.com/watch?v=81BgFhm2vz8" target="_blank" rel="noopener noreferrer">Monostable 555 timer - 8-bit computer clock - part 2</a></li>
-										<li><a href="https://www.youtube.com/watch?v=WCwJNnx36Rk" target="_blank" rel="noopener noreferrer">Bistable 555 - 8-bit computer clock - part 3</a></li>
-										<li><a href="https://www.youtube.com/watch?v=SmQ5K7UQPMM" target="_blank" rel="noopener noreferrer">Clock logic - 8-bit computer part 4</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Program Counter Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=HyznrdDSSGM" target="_blank" rel="noopener noreferrer">8-bit computer update</a></li>
-										<li><a href="https://www.youtube.com/watch?v=HtFro0UKqkk" target="_blank" rel="noopener noreferrer">8-bit CPU reset circuit and power supply tips</a></li>
-										<li><a href="https://www.youtube.com/watch?v=a73ZXDJtU48" target="_blank" rel="noopener noreferrer">Programming Fibonacci on a breadboard computer</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Output Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=kRlSFm519Bo" target="_blank" rel="noopener noreferrer">Astable 555 timer - 8-bit computer clock - part 1</a></li>
-										<li><a href="https://www.youtube.com/watch?v=81BgFhm2vz8" target="_blank" rel="noopener noreferrer">Monostable 555 timer - 8-bit computer clock - part 2</a></li>
-										<li><a href="https://www.youtube.com/watch?v=WCwJNnx36Rk" target="_blank" rel="noopener noreferrer">Bistable 555 - 8-bit computer clock - part 3</a></li>
-										<li><a href="https://www.youtube.com/watch?v=SmQ5K7UQPMM" target="_blank" rel="noopener noreferrer">Clock logic - 8-bit computer part 4</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Control Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=HyznrdDSSGM" target="_blank" rel="noopener noreferrer">8-bit computer update</a></li>
-										<li><a href="https://www.youtube.com/watch?v=HtFro0UKqkk" target="_blank" rel="noopener noreferrer">8-bit CPU reset circuit and power supply tips</a></li>
-										<li><a href="https://www.youtube.com/watch?v=a73ZXDJtU48" target="_blank" rel="noopener noreferrer">Programming Fibonacci on a breadboard computer</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">BUS Module:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=HyznrdDSSGM" target="_blank" rel="noopener noreferrer">8-bit computer update</a></li>
-										<li><a href="https://www.youtube.com/watch?v=HtFro0UKqkk" target="_blank" rel="noopener noreferrer">8-bit CPU reset circuit and power supply tips</a></li>
-										<li><a href="https://www.youtube.com/watch?v=a73ZXDJtU48" target="_blank" rel="noopener noreferrer">Programming Fibonacci on a breadboard computer</a></li>
-									</ul>
-								</div>
-								<div>
-									<label class="edu-sub-heading">Miscellaneous:</label>
-									<ul class="edu-ul">
-										<li><a href="https://www.youtube.com/watch?v=AqNDk_UJW4k&t=54s" target="_blank" rel="noopener noreferrer">Making a computer Turing complete</a></li>
-									</ul>
-								</div>
-							</div>
-						</div> 
-						<div>	
-							<label class="edu-heading"><u>Boolean World:</u></label>
-							<div class="boolean-world-dropdown">	
-								<ul class="edu-ul">
-									<li>Arithmetic and<br>Basic Logic Gates</li>
-									<li>"Digital" software<br>Basic Logic Gates</li>
-									<li>Truth Tables</li>
-								</ul>
-							</div>
-						</div>
-						<div>	
-							<label class="edu-heading"><u>Architecture:</u></label>
-							<div class="architecture-dropdown">
-								<ul class="edu-ul">
-									<li>Introduction</li>
-									<li>For 8-bit Computer</li>
-									<li>Function of Each Module</li>
-								</ul>
-							</div>
-						</div>
-						<div>	
-							<label class="edu-heading"><u>74LS-- ICs:</u></label>
-							<div class="ics-dropdown">
-								<ul class="edu-ul">
-									<li>Introduction</li>
-									<li>74LS-- ICs in "Digital</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div id="edu-training-dropdown-id" class="edu-dropdown edu-dropdown-none">
-						<div class="edu-dropdown-container">	
-							<label class="edu-heading"><u>Codes:</u></label>
-							<ul class="edu-ul">
-								<li>General</li>
-								<li>Morris Code</li>
-								<li>ASCI Codes</li>
-								<li>Computer Programming</li>
-							</ul>
-						</div>
-						<div>
-							<label class="edu-heading"><u>Boolean World:</u></label>
-							<ul class="edu-ul">
-								<li>Arithmetic and<br>Basic Logic Gates</li>
-								<li>"Digital" software<br>Basic Logic Gates</li>
-								<li>Truth Tables</li>
-							</ul>
-						</div>
-						<div>
-							<label class="edu-heading"><u>Architecture:</u></label>	
-							<ul class="edu-ul">
-								<li>Introduction</li>
-								<li>For 8-bit Computer</li>
-								<li>Function of Each Module</li>
-							</ul>
-						</div>
-						<div>	
-							<label class="edu-heading"><u>74LS-- ICs:</u></label>
-							<ul class="edu-ul">
-								<li>Introduction</li>
-								<li>74LS-- ICs in "Digital</li>
-							</ul>
-						</div>
-					</div>
-					<div id="edu-testing-dropdown-id" class="edu-dropdown edu-dropdown-none">
-						<div class="edu-dropdown-container">	
-							<label class="edu-heading"><u>Codes:</u></label>	
-							<ul class="edu-ul">
-								<li>General</li>
-								<li>Morris Code</li>
-								<li>ASCI Codes</li>
-								<li>Computer Programming</li>
-							</ul>
-						</div>
-						<div>
-							<label class="edu-heading"><u>Boolean World:</u></label>	
-							<ul class="edu-ul">
-								<li>Arithmetic and<br>Basic Logic Gates</li>
-								<li>"Digital" software<br>Basic Logic Gates</li>
-								<li>Truth Tables</li>
-							</ul>
-						</div>
-						<div>
-							<label class="edu-heading"><u>Architecture:</u></label>	
-							<ul class="edu-ul">
-								<li>Introduction</li>
-								<li>For 8-bit Computer</li>
-								<li>Function of Each Module</li>
-							</ul>
-						</div>
-						<div>	
-							<label class="edu-heading"><u>74LS-- ICs:</u></label>
-							<ul class="edu-ul">
-								<li>Introduction</li>
-								<li>74LS-- ICs in "Digital</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div id="edu-contents-id" class="edu-contents">
 		</div>
 		<article id="html-target-id" class="html-target">
 		</article>
 	</div>
 
 
-
     <script>
     	function init(){
     		// initialize
     		NavHandler.init();
+			EduNavHandler.init();
 			HTML_Manager.init();
     	}
     </script>
