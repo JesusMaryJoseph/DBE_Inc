@@ -1,22 +1,107 @@
-<div class="close-html" onclick="HTML_Manager.close()">X</div>
-<label class="proposal-label">Proposal<br></label>
-<label class="a-little-history-label">I. A Little History</label>
-<div class="a-little-history">
-    <p class="text-1-a">A. In 1971 Texas Instruments(TI) introduced the 74LS__ series of Integrated Circuits(ICs).
+<style>
+  
+    .little-history-label{
+        margin-left: 12vw;
+        font-size: 1.6em;
+    }
+
+    .little-history{
+        display: grid;
+        column-gap: 1em;
+        row-gap: 1em;
+        grid-template-columns: 40vw 40vw;
+      /*  grid-auto-rows: 15em; */
+        grid-template-areas:
+        "txta txtb"
+        "imgTi imgMos"
+        ". creditMos"
+        "byteTxt byteTxt"
+        "trinity trinity"
+        "byteImg byteImg"
+        "creditByte creditByte";
+        font-size: 1.3em;
+    }
+
+    .text-1-a{
+        grid-area: txta;
+    }
+    .text-2-a{
+        grid-area: txtb;
+    }
+    .img-1-b{
+       grid-area: imgTi;
+       width: 7em;
+       margin-left: 10vw;
+       margin-top: -5vh; 
+    }
+    .img-2-b{
+       grid-area: imgMos;
+       width: 14em;
+       margin-top: -5vh;  
+    }
+    .credits-2-c{
+        grid-area: creditMos;
+        margin-top: -1.5em;
+    }
+    .text-3-a{
+        grid-area: byteTxt;
+        margin-bottom: -3vh;
+    }
+    .img-4-a{
+        grid-area: byteImg;
+        width: 90vw;
+    }
+    .credits-5-a{
+        grid-area: creditByte;
+    }
+    .trinity{
+      grid-area: trinity;
+      font-size: 1.7em;
+      margin-bottom: -0.3em;
+      margin-left: 8vw;
+    }
+
+    .proposal-container{
+        margin: 0 2em;
+    }
+    
+    .proposal-label{
+        font-size: 2.6em;
+       /* margin-left: 12vw; */
+    }
+    .list-type-A{
+        font-size: 1.5em;
+    }
+
+
+</style>
+
+
+
+
+
+
+<div class="little-history-label container">
+    <label class="little-history-label">A Little History</label>
+</div>
+<div class="little-history">
+    <p class="text-1-a">In 1971 Texas Instruments(TI) introduced the 74LS__ series of Integrated Circuits(ICs).
     </p>
     <img class="img-1-b" src="media/imgs/74LS_series_ICs.png">
-    <p class="text-2-a">B. In 1975 MOS Technology introduced the 6502 8-bit microprocessor.
+    <p class="text-2-a">In 1975 MOS Technology introduced the 6502 8-bit microprocessor.
     </p>
     <img class="img-2-b" src="media/imgs/6502_IC.png">
     <label class="credits-2-c">https://commons.wikimedia.org/w/index.php?curid=91538</label> 
-    <p class="text-3-a">C. In 1977, based on these two technologies, Companies like Apple, Radio Shack, Commodore introduced the first Personal Computers. The magazine Byte introduced them as:<br>"1977 trinity": Commodore PET, Apple II, and TRS-80 Model I</p>
+    <p class="text-3-a">In 1977, based on these two technologies, companies like Apple, Radio Shack and Commodore introduced the first Personal Computers. The magazine Byte introduced them as:</p>
+    <label class="trinity">"1977 trinity": Commodore PET, Apple II, and TRS-80 Model I</label>
     <img class="img-4-a" src="media/imgs/PET_AppleII_TRS-80.jpg">
     <label class="credits-5-a">https://commons.wikimedia.org/w/index.php?curid=144826526</label>
 </div><br>
-<div class="proposal">
-    <label>II. Proposal:</label>
+
+<div class="proposal-container">
+    <label class="proposal-label">Proposal:</label>
     <ol type="A"> 
-        <li>Form a Company that will:
+        <li class="list-type-A">Form a Company that will:
             <ol type="1">
                 <li>Simulate Commodore, Apple and Radio Shack</li>
                 <li>Design and Build an 8-bit Computer from the 74LS__ series of Integrated Circuits(ICs).</li> 
@@ -24,7 +109,7 @@
                 of the Apple II, TRS-80, or PET; however, the fundamental operations of the computer will be very similar.</li>
             </ol>
         </li><br>
-        <li>Structure of the Company:
+        <li class="list-type-A">Structure of the Company:
             <ol type="1">
                 <li>CEO</li>
                 <li>Departments
@@ -39,7 +124,7 @@
                 </li>
             </ol>
         </li><br>
-        <li>Who: Some possibilities
+        <li class="list-type-A">Who: Some possibilities
             <ol type="1">
                 <li>For Summer of 2025
                     <ol type="a">
@@ -51,7 +136,7 @@
                 <li>Option 1 for Summer of 2026
                     <ol type="a">
                         <li>Six to eight Students from Chesterton Academy High School in Albuquerque, NM.</li>
-                        <li>Six to eight Students from <ul>other</ul> Chesterton Academy High Schools.</li>
+                        <li>Six to eight Students from <u>other</u> Chesterton Academy High Schools.</li>
                         <li>This would provide a nice personal connection between the Chesterton Academy Schools</li>
                     </ol>
                 </li>
@@ -71,16 +156,16 @@
                 </li>
             </ol>
         </li><br>
-        <li>When:
+        <li class="list-type-A">When:
             <ol type="1">
                 <li>June 3 to Aug 1, 2025</li>
                 <li>June-July, for 2026, 2027 and following years!</li>
             </ol>
         </li><br>
-        <li>Where:
+        <li class="list-type-A">Where:
             <ol type="1">
                 <li>For 2025, Queen of Heaven Parish, Albuquerque, NM</li>
-                <li>For 2026: QofH for option 1 and CRYP, Eagle Butte, for option 2 above</li>
+                <li>For 2026: QofH for option 1 and Cheyenne River Youth Project in Eagle Butte, SD for option 2 above</li>
                 <li>For 2027, 2028 . . . . 
                     <ol type="a">
                         <li>Cheyenne River Youth Project, Eagle Butte, SD</li>
@@ -99,7 +184,7 @@
                     One of the advantages would be to help the Native Americans in adjusting to a life outside the Reservation.</li>
             </ol>
         </li><br>
-        <li>General Time Framework:
+        <li class="list-type-A">General Time Framework:
             <ol type="1">
                 <li>Week 1 (June 1-7)
                     <ol type="a">
@@ -121,9 +206,8 @@
                                 <li>Step 3: Building Phase (see tutorials in the Education Department)
                                     <ol>
                                         <li>Intro to Basic Electronics</li>
-                                        <li>Intro to Multimeters\</li>
+                                        <li>Intro to Multimeters</li>
                                         <li>Working with 74LS_series_ICs</li>
-                                        <li>Introduction to 'Breadboards'</li>
                                     </ol>
                                 </li>    
                                 <li>It is expected that, although they are working on this project individually,
@@ -136,8 +220,8 @@
                         </li>
                         <li>Company Assignments:
                             <ol type="i">
-                                <li>Select the pair to be "CEO"</li>
-                                <li>The CEO will then have the responsibility of assigning Managers to the five(5) Departments: Engineering, Drafting, Technician, Computer, Education, Media Arts</li>
+                                <li>Select the "CEO"/"CEOs<br>Note: When working in pairs, they shoud NOT be from the same school! </li>
+                                <li>The CEO will then have the responsibility of assigning Managers to the six(6) Departments: Engineering, Drafting, Technician, Computer, Education, Media Arts</li>
                                 <li>The CEO is free to make changes as time seems fit.</li>
                                 <li>The CEO should have the authority to fire someone!!!!????</li>
                                 <li>There should be a Board of Directors, which would have the authority to fire or replace the CEO!</li>
@@ -154,7 +238,7 @@
                                 <li>What is the starting time?:</li>
                                 <li>What is the Lunch schedule?</li>
                                 <li>Who does the cooking</li>
-                                <li>Who cleans up-washes dishes, mops the floors</li>
+                                <li>Who cleans up-washes dishes, mops the floors etc.</li>
                                 <li>What time does the work day end?</li>
                                 <li>What about some “play time” at the end of the day?</li>
                                 <li>What about a service project? eg. Invite 2nd-4th graders and teach them 'computer programming' on "Code.org".
@@ -187,7 +271,7 @@
                 </li>
             </ol>
         </li><br>
-        <li>It would be:
+        <li class="list-type-A">It would be:
             <ol type="1">
                 <li>A Pilgrimage with:</li>
                     <ol type="a">
@@ -225,4 +309,4 @@
             </ol>
         </li>
     </ol>
-</div>
+</div>  
