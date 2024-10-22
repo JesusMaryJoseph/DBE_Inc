@@ -18,13 +18,14 @@
 	/*	color: white; */
 		background-image: radial-gradient(blue, black);
 	/*	overflow: hidden; */
-		border: 3px solid green;
+	/*	border: 3px solid green; */
 		padding: 1em; 
 	}
 
 		.welcome-label{
 			position: absolute;
 			top: -0.5em;
+			left: 30vw;
 			display: block;
 			text-align: center;
 			color: yellow;
