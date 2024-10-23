@@ -151,7 +151,9 @@
 
 
 /* End CSS for EDU Nav */
-
+					.edu-dropdown-label-selected{
+						color: orangered;
+					}
 
 						
 	</style>
@@ -184,10 +186,10 @@
     	</div>
 		<div id="edu-nav-dropdown-id" class="edu-nav-dropdown hide-edu-dropdown">
 			<ul>
-				<li onclick="HTML_Manager.load('html/Proposal.html')">Proposal</li>
-				<li onclick="EduNavHandler.displaySecondDropdown('Packets')">Packets:</li>
-				<li onclick="EduNavHandler.displaySecondDropdown('Training')">Training &<br>Testing:</li>
-				<li onclick="EduNavHandler.displaySecondDropdown('Resources')">Resources:</li>
+				<li id="edu-nav-label-proposal-id" onclick="HTML_Manager.load('html/Proposal.html')">Proposal</li>
+				<li id="edu-nav-label-packets-id" onclick="EduNavHandler.displaySecondDropdown('Packets')">Packets:</li>
+				<li id="edu-nav-label-training-id" onclick="EduNavHandler.displaySecondDropdown('Training')">Training &<br>Testing:</li>
+				<li id="edu-nav-label-resources-id" onclick="EduNavHandler.displaySecondDropdown('Resources')">Resources:</li>
 			</ul>
 			<div id="edu-packets-dropdown-id" class="edu-second-dropdown edu-packets edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Packets')">
 				<ul>

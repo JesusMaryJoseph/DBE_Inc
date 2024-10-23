@@ -8,19 +8,25 @@
 
 let EduNavHandler = {
 	//Properties
+	selectedLabel: {},
 	secondDropdownShowing: "",
 	hidden: true,
 	navDropDownId: {},
 	packetsDropdown: {},
 	trainingDropdown: {},
 	resourcesDropdown: {},
+	proposalLabel: {},
+	packetsLabel: {},
+	trainingLabel: {},
+	resourcesLabel: {},
 
 
 	//Methods
 	mouseLeave: function(selection){
+		//alert("in mouseLeave selection =  "+ selection);
 	//	this.mouseActionEle.innerHTML += 'leaving: ' + evt.target.id + '<br>';
 		if(this.hidden == true){ return };
-            if(this.secondDropdownShowing != ""){ return};
+      //  if(this.secondDropdownShowing != ""){ return};
 		this.showHide();
 	},
 
@@ -35,25 +41,46 @@ let EduNavHandler = {
 			//alert('hide dropdown');
 			this.navDropDownId.classList.add('hide-edu-dropdown');
 			this.hidden = true;
+			this.selectedLabel.style.color = "yellow";
+			this.hideSecondDropdown(this.secondDropdownShowing);
+			//alert("after hideSecondDropdown");
 		}
 	}, //End of Mehod: showHide()
 
 	hideNav: function(){
+		//alert("in this.hideNav()");
 		document.getElementById('edu-nav-cntnr-id').classList.remove('edu-display-nav')
 	    this.hidden = true;
 	},
 
 	displaySecondDropdown: function(secondDropdown){
 		//alert("in display SecondDropdown:  " + secondDropdown);
+		this.hideSecondDropdown(this.secondDropdownShowing);
+		//alert("before switch secondDropdown");
 		switch (secondDropdown){
 			case "Packets":
 				this.packetsDropdown.classList.remove("edu-second-dropdown-hidden");
+				this.packetsLabel.style.color = "orangered";
+				this.selectedLabel.style.color = "yellow";
+				this.selectedLabel = this.packetsLabel;
+				this.secondDropdownShowing = "Packets";
+			//	this.changeSelectedLabel("Packets");
 			break;
 			case "Training":
 				this.trainingDropdown.classList.remove("edu-second-dropdown-hidden");
+				this.trainingLabel.style.color = "orangered";
+				this.selectedLabel.style.color = "yellow";
+				this.selectedLabel = this.trainingLabel;
+				this.secondDropdownShowing = "Training";
+				//this.changeSelectedLabel("Training");
 			break;
 			case "Resources":
 				this.resourcesDropdown.classList.remove("edu-second-dropdown-hidden");
+				this.resourcesLabel.style.color = "orangered";
+				this.selectedLabel.style.color = "yellow";
+				this.selectedLabel = this.resourcesLabel;
+				this.secondDropdownShowing = "Resources";
+				//this.changeSelectedLabel("Resources");
 			break;
 			default:
 				alert("no such " + secondDropdown);
@@ -61,8 +88,9 @@ let EduNavHandler = {
 		this.secondDropdownShowing = secondDropdown;
 	},
 
+
 	hideSecondDropdown: function(secondDropdown){
-		//alert("in display SecondDropdown:  " + secondDropdown);
+		//alert("in hide SecondDropdown:  " + secondDropdown);
 		switch (secondDropdown){
 			case "Packets":
 				this.packetsDropdown.classList.add("edu-second-dropdown-hidden");
@@ -85,7 +113,12 @@ let EduNavHandler = {
 		this.packetsDropdown = document.getElementById("edu-packets-dropdown-id");
 		this.trainingDropdown = document.getElementById("edu-training-dropdown-id");
 		this.resourcesDropdown = document.getElementById("edu-resources-dropdown-id");
-	   //alert("NavHandler.init() finished");
+		this.proposalLabel = document.getElementById("edu-nav-label-proposal-id");
+		this.packetsLabel = document.getElementById("edu-nav-label-packets-id");
+		this.trainingLabel = document.getElementById("edu-nav-label-training-id");
+		this.resourcesLabel = document.getElementById("edu-nav-label-resources-id");
+	    this.selectedLabel = this.proposalLabel;
+		//alert("NavHandler.init() finished");
 	}
 
 
