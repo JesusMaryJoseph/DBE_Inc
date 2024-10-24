@@ -15,7 +15,6 @@ let EduNavHandler = {
 	packetsDropdown: {},
 	trainingDropdown: {},
 	resourcesDropdown: {},
-	proposalLabel: {},
 	packetsLabel: {},
 	trainingLabel: {},
 	resourcesLabel: {},
@@ -55,7 +54,9 @@ let EduNavHandler = {
 
 	displaySecondDropdown: function(secondDropdown){
 		//alert("in display SecondDropdown:  " + secondDropdown);
-		this.hideSecondDropdown(this.secondDropdownShowing);
+		if(this.secondDropdownShowing != ""){
+			this.hideSecondDropdown(this.secondDropdownShowing);
+		}
 		//alert("before switch secondDropdown");
 		switch (secondDropdown){
 			case "Packets":
@@ -91,6 +92,7 @@ let EduNavHandler = {
 
 	hideSecondDropdown: function(secondDropdown){
 		//alert("in hide SecondDropdown:  " + secondDropdown);
+		if(this.secondDropdownShowing == ""){return}
 		switch (secondDropdown){
 			case "Packets":
 				this.packetsDropdown.classList.add("edu-second-dropdown-hidden");
@@ -113,11 +115,10 @@ let EduNavHandler = {
 		this.packetsDropdown = document.getElementById("edu-packets-dropdown-id");
 		this.trainingDropdown = document.getElementById("edu-training-dropdown-id");
 		this.resourcesDropdown = document.getElementById("edu-resources-dropdown-id");
-		this.proposalLabel = document.getElementById("edu-nav-label-proposal-id");
 		this.packetsLabel = document.getElementById("edu-nav-label-packets-id");
 		this.trainingLabel = document.getElementById("edu-nav-label-training-id");
 		this.resourcesLabel = document.getElementById("edu-nav-label-resources-id");
-	    this.selectedLabel = this.proposalLabel;
+	    this.selectedLabel = this.packetsLabel;
 		//alert("NavHandler.init() finished");
 	}
 

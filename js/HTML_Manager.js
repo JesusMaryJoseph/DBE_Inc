@@ -9,7 +9,6 @@ let HTML_Manager = {
     resourcesLabel: {},
     trainingLabel: {},
     testingLabel: {},
-    proposalLabel: {},
     activeSelector:{},
     activeSelectorLabel: {},
     eduContentsSelected: "edu-managers-dropdown",
@@ -100,7 +99,6 @@ let HTML_Manager = {
         this.resourcesLabel = document.getElementById("resources-label-id");
         this.trainingLabel = document.getElementById("training-label-id");
         this.testingLabel = document.getElementById("testing-label-id");
-        this.proposalLabel = document.getElementById("proposal-label-id");
         this.activeSelector = this.eduManagersSelector;
         this.activeSelectorLabel = this.managersLabel;
         //alert("after HTML_Manager init()");
