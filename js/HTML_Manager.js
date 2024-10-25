@@ -1,3 +1,12 @@
+/*
+/  HTML_Manager     10
+/
+/  TableManager     120
+*/
+
+
+
+
 let HTML_Manager = {
     //Properties
     //  loaded: false,
@@ -13,18 +22,24 @@ let HTML_Manager = {
     activeSelectorLabel: {},
     eduContentsSelected: "edu-managers-dropdown",
     htmlTargetEle: {},
+    htmlTargetEleOpt: {},
 
     //Methods
-    load: function (HTMLsourceFile) {
+    load: function (HTMLsourceFile, option) {
         //alert("in load");
          // alert("HTMLsourceFile: " + HTMLsourceFile);
-
-        this.htmlTargetEle.style.zIndex = 10;
-        this.htmlTargetEle.style.opacity = "1";
+        // alert("option =  " + option);
+        if(option == "edu"){
+            this.htmlTargetEle.style.zIndex = 10;
+            this.htmlTargetEle.style.opacity = "1";
+        }else{
+            this.htmlTargetEleOpt.style.zIndex = 10;
+            this.htmlTargetEleOpt.style.opacity = "1";
+        }
         //  if(!this.loaded){ 
         fetch(HTMLsourceFile)
             .then(res => {
-               // alert("in res =>");
+                //alert("in res =>");
                 if (res.ok) {
                    // alert("res.ok");
                     return res.text();
@@ -32,7 +47,11 @@ let HTML_Manager = {
             })
             .then(resultHTML => {
                // alert("loading resultHTML");
-                this.htmlTargetEle.innerHTML = resultHTML;
+               if(option == "edu"){
+                    this.htmlTargetEle.innerHTML = resultHTML;
+               }else{
+                    this.htmlTargetEleOpt.innerHTML = resultHTML;
+               }
             })
         // TODO: reset dropdown
         EduNavHandler.showHide();
@@ -91,6 +110,8 @@ let HTML_Manager = {
         // alert("in HTML_Manager init()");
         this.htmlTargetEle = document.getElementById("edu-contents-id");
         this.htmlTargetEle.addEventListener("transitionend", this.transitionHasEnded);
+        this.htmlTargetEleOpt = document.getElementById("html-target-id");
+        this.htmlTargetEleOpt.addEventListener("transitionend", this.transitionHasEnded);
         this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
         this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
         this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
@@ -104,3 +125,22 @@ let HTML_Manager = {
         //alert("after HTML_Manager init()");
     }
 }
+/* End HTML_Manager */
+
+
+
+/* Begin TableManager  */
+let TableManager = {
+    //Properties
+
+    //Methods
+    generateTable: function(lsType){
+       /* alert("lsType = " + lsType); */
+        HTML_Manager.load("html/Education/Resources/Data_Sheets/LS107/LS107_Data_Sheet.html", "art");
+    },
+
+    init: function(){
+    }
+}
+
+/* End TableManager  */

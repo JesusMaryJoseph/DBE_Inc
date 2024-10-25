@@ -1,6 +1,6 @@
 
 <style>
-    .ben-eater-videos-header{
+    .data-sheets-header{
         font-size: 2em;
         margin-left: 30%;
     }
@@ -12,21 +12,13 @@
       /*  grid-auto-rows: 5em; */
         grid-template-areas:
         "head head" 
-        "alu pc"
-        "alu pc"
-        "alu pc"
-        "bus clk"
-        "bus clk"
-        "cntrl mem"
-        "cntrl mem"
-        "cntrl mem"
-        "cntrl mem"
-        "cntrl mem"
-        "out mem"
-        "gen mem"
-        "gen mem";
+        "basic mem"
+        "basic mem"
+        "basic mem"
+        "counter mux"
+        "binary bus";
     }
-    .ben-eater-videos-header{
+    .data-sheets-header{
         grid-area: head;
     }
 
@@ -41,37 +33,32 @@
         margin-top: 0.5em; 
     }
 
-    .alu-container{
-        grid-area: alu;
+    .basic-container{
+        grid-area: basic;
     }
-    .pc-container{
-        grid-area: pc;
+    .mux-container{
+        grid-area: mux;
     }
     .bus-container{
         grid-area: bus;
     }
-    .clock-container{
-        grid-area: clk;
-    }
-    .control-container{
-        grid-area: cntrl;
+    .counter-container{
+        grid-area: counter;
     }
     .memory-container{
         grid-area: mem;
     }
-    .output-container{
-        grid-area: out;
-    }
-    .general-container{
-        grid-area: gen;
+    .binary-adder-container{
+        grid-area: binary;
     }
 
-    .sub-memory-container ol li{
-        padding-bottom: 0.3em;
+    .common-container ol li{
+        padding-bottom: 0.4em;
+        cursor: pointer;
     }
 </style>
-    <label class="ben-eater-videos-header">74LS-- Data Sheets</label>
-    <div class="common-container clock-container">
+    <label class="data-sheets-header">74LS-- Data Sheets</label>
+    <div class="common-container mux-container">
         <label class="mod-header"><u>Multiplexers/Decoders/Demultiplexers:</u></label>
         <ol type="1">
             <li>74LS138  Decoder/Demultiplexer</li>
@@ -79,31 +66,31 @@
             <li>74LS157  Hex Inverting Gates</li>
         </ol>
     </div>
-    <div class="common-container alu-container">
+    <div class="common-container basic-container">
         <label class="mod-header"><u>Basic Logic Gates:</u></label>
-        <ul type="1">
+        <ol type="1">
             <li>74LS00  Quad 2-Input NAND Gate</li>
             <li>74LS02  Quad 2-Input NOR Gate</li>
             <li>74LS04  Hex Inverting Gates</li>
             <li>74LS08  Quad 2-Input AND Gates</li>
             <li>74LS32  Quad 2-Input OR Gate</li>
             <li>74LS86  Quad 2-Input Exclusive-OR Gate</li>
-        </ul>
+        </ol>
     </div>
     <div class="common-container counter-container">
         <label class="mod-header"><u>Counter/Flip-Flops:</u></label>
         <ol type="1">
-            <li>74LS107  DUAL J-K FLIP-FLOPS WITH CLEAR</li>
+            <li onclick="TableManager.generateTable('ls107')">74LS107  DUAL J-K FLIP-FLOPS WITH CLEAR</li>
             <li>74LS161  4-BIT BINARY COUNTER</li>
         </ol>
     </div>
-    <div class="common-container output-container">
+    <div class="common-container bus-container">
         <label class="mod-header"><u>BUS:</u></label>
-        <ul type="1">
+        <ol type="1">
             <li>74LS245  3-STATE Octal Bus Transceiver</li>
-        </ul>
+        </ol>
     </div>
-    <div class="common-container control-container">
+    <div class="common-container memory-container">
         <label class="mod-header"><u>Memory (RAM/Registers/EEPROMs):</u></label>
         <ol type="1">
             <li>74LS173  4-BIT D-TYPE Registers  with 3-State Outputs</li>
@@ -113,10 +100,18 @@
             <li>AT28C16  Electrically Erasable and Programmable Read Only Memory (EEPROM)</li>
         </ol>
     </div>
-    <div class="common-container bus-container">
+    <div class="common-container binary-adder-container">
         <label class="mod-header"><u>Binary Adder:</u></label>
-        <ul type="1">
+        <ol type="1">
             <li>74LS283  4-Bit Binary Adders with Fast Carry</li>
-        </ul>
+        </ol>
     </div> 
 
+<!--
+            <li>74LS00  Quad 2-Input NAND Gate</li>
+            <li>74LS02  Quad 2-Input NOR Gate</li>
+            <li>74LS04  Hex Inverting Gates</li>
+            <li>74LS08  Quad 2-Input AND Gates</li>
+            <li>74LS32  Quad 2-Input OR Gate</li>
+            <li>74LS86  Quad 2-Input Exclusive-OR Gate</li>
+    -->
