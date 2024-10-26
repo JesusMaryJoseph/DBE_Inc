@@ -22,19 +22,22 @@ let HTML_Manager = {
     activeSelectorLabel: {},
     eduContentsSelected: "edu-managers-dropdown",
     htmlTargetEle: {},
-    htmlTargetEleOpt: {},
+    htmlTargetEleArticle: {},
+    loadOption: "",
 
     //Methods
     load: function (HTMLsourceFile, option) {
         //alert("in load");
          // alert("HTMLsourceFile: " + HTMLsourceFile);
         // alert("option =  " + option);
+        this.loadOption = option;
         if(option == "edu"){
             this.htmlTargetEle.style.zIndex = 10;
             this.htmlTargetEle.style.opacity = "1";
         }else{
-            this.htmlTargetEleOpt.style.zIndex = 10;
-            this.htmlTargetEleOpt.style.opacity = "1";
+           // alert("in htmlTargetEleArticle");
+            this.htmlTargetEleArticle.style.zIndex = 10;
+            this.htmlTargetEleArticle.style.opacity = "1";
         }
         //  if(!this.loaded){ 
         fetch(HTMLsourceFile)
@@ -50,7 +53,8 @@ let HTML_Manager = {
                if(option == "edu"){
                     this.htmlTargetEle.innerHTML = resultHTML;
                }else{
-                    this.htmlTargetEleOpt.innerHTML = resultHTML;
+                   // alert("loading into htmlTargetEleOpt");
+                    this.htmlTargetEleArticle.innerHTML = resultHTML;
                }
             })
         // TODO: reset dropdown
@@ -93,9 +97,18 @@ let HTML_Manager = {
     },
 
     close: function() {
-        this.htmlTargetEle.style.opacity = "0";
-        this.setActiveInactiveLabel("set", this.liveDropdown);
-        this.setActiveInactiveLabel("reSet", "Proposal");
+        if(this.loadOption == "edu"){
+            this.htmlTargetEle.style.zIndex = -10;
+            this.htmlTargetEle.style.opacity = "0";
+        }else{
+            this.htmlTargetEleArticle.style.zIndex = -10;
+            this.htmlTargetEleArticle.style.opacity = "0";
+        }
+        if(!EduNavHandler.hidden){
+            EduNavHandler.showHide();
+        }
+      //  this.setActiveInactiveLabel("set", this.liveDropdown);
+      //  this.setActiveInactiveLabel("reSet", "Proposal");
     },
 
     transitionHasEnded: function() {
@@ -110,8 +123,8 @@ let HTML_Manager = {
         // alert("in HTML_Manager init()");
         this.htmlTargetEle = document.getElementById("edu-contents-id");
         this.htmlTargetEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.htmlTargetEleOpt = document.getElementById("html-target-id");
-        this.htmlTargetEleOpt.addEventListener("transitionend", this.transitionHasEnded);
+        this.htmlTargetEleArticle = document.getElementById("html-target-id");
+        this.htmlTargetEleArticle.addEventListener("transitionend", this.transitionHasEnded);
         this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
         this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
         this.eduTrainingSelector = document.getElementById("edu-training-selector-id");

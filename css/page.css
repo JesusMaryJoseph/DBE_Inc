@@ -1,4 +1,6 @@
 
+
+/* CSS for page */
 .body{
 	background: black;
 	box-sizing: border-box;
@@ -51,3 +53,4 @@
 			font-size: 1.6em;
 			font-weight: bold;
 		}
+/* End CSS for page */
