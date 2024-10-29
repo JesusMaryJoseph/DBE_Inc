@@ -1,100 +1,105 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-.description-container{
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* CSS for table */
-    table{
-        table-layout: fixed;
-        width: 30%;
-        font-weight: bold;
-        text-align: center;
-        border-collapse: collapse;
-        border: 3px solid black;
-    }
-    thead{
-        background-color: lightgray;
-    }
-        .main-table-head{
+    <style>
+        .description-container{
+            color: white;
             font-size: 1.5em;
             font-weight: bold;
         }
-        .column-labels{
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-    thead, tbody{
-        border-collapse: collapse;
-        border: 3px solid black;
-    }
-    th, td{
-        border-collapse: collapse;
-        border: 3px solid black;
-    }
-
-    th,
-    td {
-    padding: 0.1em;
-    }
-/* End CSS for table */
-
-/* CSS for data-container */
-    .data-container{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: yellow;
-    }
-
-/* End CSS for data-container */
-
-/* CSS for pin-Layout-container, logic-diagram-container */
-    .pin-layout-container, .logic-diagram-container{
-        font-size: 1.2em;
-        font-weight: bold;
-        color: yellow;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-        .pin-layout-container img{
-            width: 15em;
-        }
-        .logic-diagram-container img{
-            width: 15em;
-        }
-/* End CSS for pin-layout-container logic-diagram-container */
-
-/* CSS for function-table-container */
-    .function-table-container{
-        width: 55vw;
-        background-color: white;
-        color: black;
-        margin: 0.5em 0;
-    }
-        .function-table-container table{
-            width: 100%;
-        }
-/*End CSS for function-table-container */
-        .description-container{
-            font-size: 1.2em;
-            font-weight: bold;
-            color: yellow;
-        }
-
-</style>
-
-
-<html>
+    
+        /* CSS for table */
+            table{
+                table-layout: fixed;
+                width: 30%;
+                font-weight: bold;
+                text-align: center;
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            thead{
+                background-color: lightgray;
+            }
+                .main-table-head{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+                .column-labels{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+    
+            thead, tbody{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            th, td{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+    
+            th,
+            td {
+            padding: 0.1em;
+            }
+        /* End CSS for table */
+    
+        /* CSS for data-container */
+            .data-container{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: yellow;
+            }
+    
+        /* End CSS for data-container */
+    
+        /* CSS for pin-Layout-container, logic-diagram-container */
+            .pin-layout-container, .logic-diagram-container{
+                font-size: 1.2em;
+                font-weight: bold;
+                color: yellow;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
+                .pin-layout-container img{
+                    width: 15em;
+                }
+                .logic-diagram-container img{
+                    width: 15em;
+                }
+        /* End CSS for pin-layout-container logic-diagram-container */
+    
+        /* CSS for function-table-container */
+            .function-table-container{
+                width: 55vw;
+                background-color: white;
+                color: black;
+                margin: 0.5em 0;
+            }
+                .function-table-container table{
+                    width: 100%;
+                }
+        /*End CSS for function-table-container */
+                .description-container{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: yellow;
+                }
+    
+        </style>
+</head>
+<body>
     <div class="packet">
         <div class="data-container">
-            <div class="close-html" onclick="HTML_Manager.close()">X</div>
+            <div class="close-html" onclick="EduHTML_Manager.close()">X</div>
             <div class="description-container">
                 <!-- 74LS107 Data Sheet as HTML */ -->
                 <label class="packet-label">74LS107 Description</label>
@@ -174,4 +179,8 @@
             </div>
         </div>
     </div>
+</body>
 </html>
+
+
+

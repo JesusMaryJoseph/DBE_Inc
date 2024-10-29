@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/edu-nav.css">
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<link rel="stylesheet" type="text/css" href="css/education/edu.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/proposal.css"> -->
 	<script src="js/Nav_Handler.js"></script>
 	<script src="js/EduNav_Handler.js"></script>
 	<script src="js/HTML_Manager.js"></script>
@@ -51,28 +50,28 @@
 			</ul>
 			<div id="edu-packets-dropdown-id" class="edu-second-dropdown edu-packets edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Packets')">
 				<ul>
-					<li onclick="HTML_Manager.load('html/CEO/CEO_Packet.html', 'edu')">CEO</li>
-					<li onclick="HTML_Manager.load('html/Engineering/Engineering_Packet.html', 'edu')">Engineering</li>
-					<li onclick="HTML_Manager.load('html/Drafting/Drafting_Packet.html', 'edu')">Drafting</li>
-					<li onclick="HTML_Manager.load('html/Technician/Technician_Packet.html', 'edu')">Technician</li>
-					<li onclick="HTML_Manager.load('html/Computer/Computer_Packet.html', 'edu')">Computer</li>
-					<li onclick="HTML_Manager.load('html/Education/Education_Packet.html', 'edu')">Education</li>
-					<li onclick="HTML_Manager.load('html/MediaArts/MediaArts_Packet.html', 'edu')">Media Arts</li>
+					<li onclick="EduHTML_Manager.load('html/CEO/CEO_Packet.html', 'edu')">CEO</li>
+					<li onclick="EduHTML_Manager.load('html/Engineering/Engineering_Packet.html', 'edu')">Engineering</li>
+					<li onclick="EduHTML_Manager.load('html/Drafting/Drafting_Packet.html', 'edu')">Drafting</li>
+					<li onclick="EduHTML_Manager.load('html/Technician/Technician_Packet.html', 'edu')">Technician</li>
+					<li onclick="EduHTML_Manager.load('html/Computer/Computer_Packet.html', 'edu')">Computer</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Education_Packet.html', 'edu')">Education</li>
+					<li onclick="EduHTML_Manager.load('html/MediaArts/MediaArts_Packet.html', 'edu')">Media Arts</li>
 				</ul>
 			</div>
 			<div id="edu-training-dropdown-id" class="edu-second-dropdown edu-training edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Training')">
 				<ul>
-					<li onclick="HTML_Manager.load('html/Education/Training/Codes.html','edu')">Codes:</li>
-					<li onclick="HTML_Manager.load('html/Education/Training/BooleanWorld.html','edu')">Boolean World:</li>
-					<li onclick="HTML_Manager.load('html/Education/Training/Architecture.html','edu')">Architecture:</li>
-					<li onclick="HTML_Manager.load('html/Education/Training/Software.html','edu')">Software:</li> 
-					<li onclick="HTML_Manager.load('html/Education/Training/LS_ICs.html','edu')">74LS-- ICs</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Training/Codes.html','edu')">Codes:</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Training/BooleanWorld.html','edu')">Boolean World:</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Training/Architecture.html','edu')">Architecture:</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Training/Software.html','edu')">Software:</li> 
+					<li onclick="EduHTML_Manager.load('html/Education/Training/LS_ICs.html','edu')">74LS-- ICs</li>
 				</ul>
 			</div>
 			<div id="edu-resources-dropdown-id" class="edu-second-dropdown edu-resources edu-second-dropdown-hidden" onmouseleave="EduNavHandler.hideSecondDropdown('Resources')">
 				<ul>
-					<li onclick="HTML_Manager.load('html/Education/Resources/BenEaterVideos.html', 'edu')">Ben Eater Videos</li>
-					<li onclick="HTML_Manager.load('html/Education/Resources/DataSheets.html', 'edu')">74LS-- Data Sheets</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Resources/BenEaterVideos.html', 'edu')">Ben Eater Videos</li>
+					<li onclick="EduHTML_Manager.load('html/Education/Resources/DataSheets.html', 'edu')">74LS-- Data Sheets</li>
 				</ul>
 			</div>
 		</div>
@@ -83,7 +82,7 @@
 		<div id="edu-contents-id" class="edu-contents">
 			<h1 class="welcome-label">Welcome to the<br>Education Department</h1>
 		</div>
-		<article id="html-target-id" class="html-target">
+		<article id="edu-html-target-id" class="html-target">
 		</article>
 	</div>
 
@@ -91,11 +90,15 @@
 
     <script>
     	function init(){
+			//alert("in education html init()");
     		// initialize
     		NavHandler.init();
 			EduNavHandler.init();
-			HTML_Manager.init();
+			//alert("after EduNavHandler.init()<br>Entering EduHTML_Manager.init()");
+			EduHTML_Manager.init();
+			//alert("after EduHTML_Manager.init()");
 			TableManager.init();
+			//alert("finish education html inti()");
     	}
     </script>
 </body>
