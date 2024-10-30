@@ -25,12 +25,13 @@ let EduHTML_Manager = {
     htmlTargetEle: {},
     eduEle: {},
     eduArticleEle: {},
-
+    pdfIframe: {},
+  
     //Methods
     load: function(HTMLsourceFile, targetOption) {
-        //alert("in load");
-         // alert("HTMLsourceFile: " + HTMLsourceFile);
-        // alert("targetOption =  " + targetOption);
+       // alert("in load");
+        //  alert("HTMLsourceFile: " + HTMLsourceFile);
+       //  alert("targetOption =  " + targetOption);
         switch(targetOption){
             case "edu":
                 this.htmlTargetEle = this.eduEle;
@@ -58,7 +59,16 @@ let EduHTML_Manager = {
             })
         // TODO: reset dropdown
         EduNavHandler.showHide();
-    }, 
+    },
+    
+    loadPDF: function(pdfSource){
+        let iframeSource = "media/pdf/Data_Sheets/" + pdfSource;
+        alert("iframeSource =  " + iframeSource);
+        alert("in loadPDF setting pdfIframe.src");
+        this.pdfIframe.src = iframeSource;
+        alert("sending LS_DataSheet.html to this.load()");
+        this.load("html/Education/Resources/Data_Sheets/LS_Data_Sheet.html","edu-article");
+    },
 
     display: function (contentsSelected) {
        // alert("in display");
@@ -127,146 +137,13 @@ let EduHTML_Manager = {
         this.trainingLabel = document.getElementById("training-label-id");
         this.testingLabel = document.getElementById("testing-label-id");
         this.activeSelector = this.eduManagersSelector;
-        this.activeSelectorLabel = this.managersLabel; 
-      //alert("after EduHTML_Manager init()");
+        this.activeSelectorLabel = this.managersLabel;
+   // alert("just before this.pdfIframe");
+        this.pdfIframe = document.getElementById("pdf-iframe-id"); 
+      //alert("leaving EduHTML_Manager init()");
     }
 }
 /* End EduHTML_Manager */
-
-/* Begin CeoHTML_Manager */
-/*
-let CeoHTML_Manager = {
-    //Properties
-    //  loaded: false,
-    eduManagersSelector: {},
-    eduResourcesSelector: {},
-    eduTestingSelector: {},
-    eduTrainingSelector: {},
-    managersLabel: {},
-    resourcesLabel: {},
-    trainingLabel: {},
-    testingLabel: {},
-    activeSelector:{},
-    activeSelectorLabel: {},
-    eduContentsSelected: "edu-managers-dropdown",
-    htmlTargetEle: {},
-    eduEle: {},
-    eduArticleEle: {},
-    ceoArticleEle: {},
-
-    //Methods
-    load: function (HTMLsourceFile, targetOption) {
-        //alert("in load");
-         // alert("HTMLsourceFile: " + HTMLsourceFile);
-         alert("targetOption =  " + targetOption);
-        switch(targetOption){
-            case "edu":
-                this.htmlTargetEle = this.eduEle;
-            break;
-            case "edu-article":
-                this.htmlTargetEle = this.eduArticleEle;
-            break;
-            case "ceo-article":
-                alert("Setting ceo-article as selected element");
-                this.htmlTargetEle = this.ceoArticleEle;
-            break;
-            default:
-                alert("no such load target");
-        }
-        this.htmlTargetEle.style.zIndex = 10;
-        this.htmlTargetEle.style.opacity = "1";
-        //  if(!this.loaded){ 
-        fetch(HTMLsourceFile)
-            .then(res => {
-                //alert("in res =>");
-                if (res.ok) {
-                   // alert("res.ok");
-                    return res.text();
-                }
-            })
-            .then(resultHTML => {
-               // alert("loading resultHTML");
-                this.htmlTargetEle.innerHTML = resultHTML;
-            })
-        // TODO: reset dropdown
-        EduNavHandler.showHide();
-    }, 
-
-    display: function (contentsSelected) {
-       // alert("in display");
-       // alert("contentsSelected: " + contentsSelected);
-        this.activeSelector.classList.replace("edu-dropdown-display","edu-dropdown-none");
-        this.activeSelector.style.display = "none";
-        this.activeSelectorLabel.classList.remove("edu-label-active");
-        switch (contentsSelected) {
-            case "Managers":
-                this.activeSelector = this.eduManagersSelector;
-                this.activeSelectorLabel = this.managersLabel;
-                break;
-            case "Resources":
-              //  alert("in case-Resources");
-                this.activeSelector = this.eduResourcesSelector;
-                this.activeSelectorLabel = this.resourcesLabel;
-              //  alert("leaving case: Resources");
-                break;
-            case "Training":
-                this.activeSelector = this.eduTrainingSelector;
-                this.activeSelectorLabel = this.trainingLabel;
-                break;
-            case "Testing":
-                this.activeSelector = this.eduTestingSelector;
-                this.activeSelectorLabel = this.testingLabel;
-                break;
-            default: alert("no such edu-contents");
-        }
-      //  alert("before activeSelector.classList.replace");
-        this.activeSelector.classList.replace("edu-dropdown-none","edu-dropdown-display")
-      //  alert("before actDrpdwn.style.display = flex");
-        this.activeSelector.style.display = "flex";
-      //  alert("before activeSelectorLabel classList.add");
-        this.activeSelectorLabel.classList.add("edu-label-active"); 
-    },
-
-    close: function() {
-        this.htmlTargetEle.style.zIndex = -10;
-        this.htmlTargetEle.style.opacity = "0";
-        if(!EduNavHandler.hidden){
-            EduNavHandler.showHide();
-        }
-      //  this.setActiveInactiveLabel("set", this.liveDropdown);
-      //  this.setActiveInactiveLabel("reSet", "Proposal");
-    },
-
-    transitionHasEnded: function() {
-        //alert("in transitionHasEnded");
-        if (this.htmlTargetEle.style.opacity == 0) {
-            this.htmlTargetEle.style.zIndex = -10;
-        } 
-    },
-
-    init: function() {
-     alert("in HTML_Manager init()");
-        this.eduEle = document.getElementById("edu-contents-id");
-        this.eduEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.eduArticleEle = document.getElementById("edu-html-target-id");
-        this.eduArticleEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.ceoArticleEle = document.getElementById("ceo-html-target-id");
-        this.ceoArticleEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
-        this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
-        this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
-        this.eduTestingSelector = document.getElementById("edu-testing-selector-id");
-        this.managersLabel = document.getElementById("managers-label-id");
-        this.resourcesLabel = document.getElementById("resources-label-id");
-        this.trainingLabel = document.getElementById("training-label-id");
-        this.testingLabel = document.getElementById("testing-label-id");
-        this.activeSelector = this.eduManagersSelector;
-        this.activeSelectorLabel = this.managersLabel;
-      alert("after HTML_Manager init()");
-    }
-} */
-/* End CeoHTML_Manager */
-
 
 
 /* Begin TableManager  */
