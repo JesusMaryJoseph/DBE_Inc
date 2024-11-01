@@ -8,121 +8,89 @@
 
 let EduNavHandler = {
 	//Properties
-	selectedLabel: {},
-	secondDropdownShowing: "",
-	hidden: true,
-	navDropDownId: {},
+	packetsDropdownHidden: true,
 	packetsDropdown: {},
+	videosDropdownHidden: true,
+	videosDropdown: {},
+	datasheetsDropdownHidden: true,
+	datasheetsDropdown: {},
+	trainingDropdownHidden: true,
 	trainingDropdown: {},
-	resourcesDropdown: {},
-	packetsLabel: {},
-	trainingLabel: {},
-	resourcesLabel: {},
-
-
+	testingDropdownHidden: true,
+	testingDropdown: {},
+	
 	//Methods
-	mouseLeave: function(selection){
-		//alert("in mouseLeave selection =  "+ selection);
-	//	this.mouseActionEle.innerHTML += 'leaving: ' + evt.target.id + '<br>';
-		if(this.hidden == true){ return };
-      //  if(this.secondDropdownShowing != ""){ return};
-		this.showHide();
+	mouseLeave: function(selectedNav){
+		switch(selectedNav){
+			case "packets":
+				//alert("mouseLeave for packets");
+				this.finishShowHide(this.packetsDropdownHidden, this.packetsDropdown, "packets");
+				break;
+				case "videos":
+					//alert("mouseLeave for packets");
+					this.finishShowHide(this.videosDropdownHidden, this.videosDropdown, "videos");
+					break;
+				case "datasheets":
+					//alert("mouseLeave for packets");
+					this.finishShowHide(this.datasheetsDropdownHidden, this.datasheetsDropdown, "datasheets");
+					break;
+			default: alert("no such " + selectedNav);
+		}
 	},
 
-	showHide: function() {  //show or hide Navigation selection list
-		//alert("in showHide");
-		if(this.hidden) {
-		//	alert('show dropdown');
-		    this.navDropDownId.classList.remove('hide-edu-dropdown');
-			this.hidden = false; 
-		//	alert('this.hidden: ' + this.hidden);
+	showHide: function(selectedNav) {
+		//show or hide Navigation selection list
+		//alert("in showHide with selectedNav =  " + selectedNav);
+		switch(selectedNav){
+			case "packets":
+				//alert("in case: packets");
+				this.finishShowHide(this.packetsDropdownHidden, this.packetsDropdown, "packets");
+				this.packetsDropdownHidden = !this.packetsDropdownHidden;
+				break;
+			case "videos":
+				//alert("in case: videos");
+				this.finishShowHide(this.videosDropdownHidden, this.videosDropdown, "videos");
+				this.videosDropdownHidden = !this.videosDropdownHidden;
+				break;
+			case "datasheets":
+				//alert("in case: datasheets");
+				this.finishShowHide(this.datasheetsDropdownHidden, this.datasheetsDropdown, "datasheets");
+				this.datasheetsDropdownHidden = !this.datasheetsDropdownHidden;
+				break;
+			case "training":
+				//alert("in case: training");
+				this.finishShowHide(this.trainingDropdownHidden, this.trainingDropdown, "training");
+				this.trainingDropdownHidden = !this.trainingDropdownHidden;
+				break;
+			case "testing":
+				//alert("in case: testing");
+				this.finishShowHide(this.testingDropdownHidden, this.testingDropdown, "testing");
+				this.testingDropdownHidden = !this.testingDropdownHidden;
+				break;
+			default: alert("no such " + selectedNav);
+		}
+	},
+
+	finishShowHide(dropdownHidden, dropdownEle, dropdown){
+		//alert("in finishShowHide and dropdownHidden =  " + dropdownHidden);
+		if(dropdownHidden){
+			//alert('hide-'+dropdown+'-dropdown')
+			dropdownEle.classList.remove('hide-'+dropdown+'-dropdown');
 		}else{
-			//alert('hide dropdown');
-			this.navDropDownId.classList.add('hide-edu-dropdown');
-			this.hidden = true;
-			this.selectedLabel.style.color = "yellow";
-			this.hideSecondDropdown(this.secondDropdownShowing);
-			//alert("after hideSecondDropdown");
+			dropdownEle.classList.add('hide-'+dropdown+'-dropdown');
 		}
-	}, //End of Mehod: showHide()
-
-	hideNav: function(){
-		//alert("in this.hideNav()");
-		document.getElementById('edu-nav-cntnr-id').classList.remove('edu-display-nav')
-	    this.hidden = true;
-	},
-
-	displaySecondDropdown: function(secondDropdown){
-		//alert("in display SecondDropdown:  " + secondDropdown);
-		if(this.secondDropdownShowing != ""){
-			this.hideSecondDropdown(this.secondDropdownShowing);
-		}
-		//alert("before switch secondDropdown");
-		switch (secondDropdown){
-			case "Packets":
-				this.packetsDropdown.classList.remove("edu-second-dropdown-hidden");
-				this.packetsLabel.style.color = "orangered";
-				this.selectedLabel.style.color = "yellow";
-				this.selectedLabel = this.packetsLabel;
-				this.secondDropdownShowing = "Packets";
-			//	this.changeSelectedLabel("Packets");
-			break;
-			case "Training":
-				this.trainingDropdown.classList.remove("edu-second-dropdown-hidden");
-				this.trainingLabel.style.color = "orangered";
-				this.selectedLabel.style.color = "yellow";
-				this.selectedLabel = this.trainingLabel;
-				this.secondDropdownShowing = "Training";
-				//this.changeSelectedLabel("Training");
-			break;
-			case "Resources":
-				this.resourcesDropdown.classList.remove("edu-second-dropdown-hidden");
-				this.resourcesLabel.style.color = "orangered";
-				this.selectedLabel.style.color = "yellow";
-				this.selectedLabel = this.resourcesLabel;
-				this.secondDropdownShowing = "Resources";
-				//this.changeSelectedLabel("Resources");
-			break;
-			default:
-				alert("no such " + secondDropdown);
-		}
-		this.secondDropdownShowing = secondDropdown;
-	},
-
-
-	hideSecondDropdown: function(secondDropdown){
-		//alert("in hide SecondDropdown:  " + secondDropdown);
-		if(this.secondDropdownShowing == ""){return}
-		switch (secondDropdown){
-			case "Packets":
-				this.packetsDropdown.classList.add("edu-second-dropdown-hidden");
-			break;
-			case "Training":
-				this.trainingDropdown.classList.add("edu-second-dropdown-hidden");
-			break;
-			case "Resources":
-				this.resourcesDropdown.classList.add("edu-second-dropdown-hidden");
-			break;
-			default:
-				alert("no such " + secondDropdown);
-		}
-		this.secondDropdownShowing = secondDropdown;
 	},
 
 	init: function(){
-		//alert("in NavHandler.init()");
-		this.navDropDownId = document.getElementById("edu-nav-dropdown-id");
-		this.packetsDropdown = document.getElementById("edu-packets-dropdown-id");
-		this.trainingDropdown = document.getElementById("edu-training-dropdown-id");
-		this.resourcesDropdown = document.getElementById("edu-resources-dropdown-id");
-		this.packetsLabel = document.getElementById("edu-nav-label-packets-id");
-		this.trainingLabel = document.getElementById("edu-nav-label-training-id");
-		this.resourcesLabel = document.getElementById("edu-nav-label-resources-id");
-	    this.selectedLabel = this.packetsLabel;
-		//alert("NavHandler.init() finished");
+		//alert("in EduNavHandler.init");
+		this.packetsDropdown = document.getElementById("packets-dropdown-id");
+		this.videosDropdown = document.getElementById("videos-dropdown-id");
+		this.datasheetsDropdown = document.getElementById("datasheets-dropdown-id");
+		this.trainingDropdown = document.getElementById("training-dropdown-id");
+		this.testingDropdown = document.getElementById("testing-dropdown-id");
+		//alert("this.testingDropdown.classList = " + this.testingDropdown.classList);
 	}
-
-
+		
 } 
 
 //End of Class(Object): EduNavHandler
