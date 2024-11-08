@@ -20,66 +20,58 @@ let EduNavHandler = {
 	testingDropdown: {},
 	
 	//Methods
-	mouseLeave: function(selectedNav){
+	hide: function(selectedNav){
+		//alert("in mouseLeave");
+		//alert("selectedNav =  " + selectedNav);
+		//alert("this.packetsDropdownHidden =  " + this.packetsDropdownHidden);
+	//	if (this.packetsDropdownHidden){return}
 		switch(selectedNav){
 			case "packets":
-				//alert("mouseLeave for packets");
-				this.finishShowHide(this.packetsDropdownHidden, this.packetsDropdown, "packets");
+				this.packetsDropdown.classList.add('hide-packets-dropdown');
+				this.packetsDropdownHidden  = true; //!this.trainingDropdownHidden;
 				break;
-				case "videos":
-					//alert("mouseLeave for packets");
-					this.finishShowHide(this.videosDropdownHidden, this.videosDropdown, "videos");
-					break;
-				case "datasheets":
-					//alert("mouseLeave for packets");
-					this.finishShowHide(this.datasheetsDropdownHidden, this.datasheetsDropdown, "datasheets");
-					break;
+			case "training":
+				this.trainingDropdown.classList.add('hide-training-dropdown');
+				this.trainingDropdownHidden = true;
+				break;
+			case "testing":
+				this.testingDropdown.classList.add('hide-testing-dropdown');
+				this.testingDropdownHidden = true;
+				break;
 			default: alert("no such " + selectedNav);
 		}
-	},
+	}, 
 
-	showHide: function(selectedNav) {
+	show: function(selectedNav) {
 		//show or hide Navigation selection list
 		//alert("in showHide with selectedNav =  " + selectedNav);
 		switch(selectedNav){
 			case "packets":
-				//alert("in case: packets");
-				this.finishShowHide(this.packetsDropdownHidden, this.packetsDropdown, "packets");
-				this.packetsDropdownHidden = !this.packetsDropdownHidden;
-				break;
-			case "videos":
-				//alert("in case: videos");
-				this.finishShowHide(this.videosDropdownHidden, this.videosDropdown, "videos");
-				this.videosDropdownHidden = !this.videosDropdownHidden;
-				break;
-			case "datasheets":
-				//alert("in case: datasheets");
-				this.finishShowHide(this.datasheetsDropdownHidden, this.datasheetsDropdown, "datasheets");
-				this.datasheetsDropdownHidden = !this.datasheetsDropdownHidden;
+				this.packetsDropdown.classList.remove('hide-packets-dropdown');
+				this.packetsDropdownHidden = false; 
 				break;
 			case "training":
-				//alert("in case: training");
-				this.finishShowHide(this.trainingDropdownHidden, this.trainingDropdown, "training");
-				this.trainingDropdownHidden = !this.trainingDropdownHidden;
+				this.trainingDropdown.classList.remove('hide-training-dropdown');
+				this.trainingDropdownHidden = false;
 				break;
 			case "testing":
-				//alert("in case: testing");
-				this.finishShowHide(this.testingDropdownHidden, this.testingDropdown, "testing");
-				this.testingDropdownHidden = !this.testingDropdownHidden;
+				this.testingDropdown.classList.remove('hide-testing-dropdown');
+				this.testingDropdownHidden = false;
 				break;
 			default: alert("no such " + selectedNav);
 		}
 	},
 
-	finishShowHide(dropdownHidden, dropdownEle, dropdown){
+	/*finishShowHide(dropdownHidden, dropdownEle, dropdown){
 		//alert("in finishShowHide and dropdownHidden =  " + dropdownHidden);
 		if(dropdownHidden){
-			//alert('hide-'+dropdown+'-dropdown')
+			//alert('removing:  hide-'+dropdown+'-dropdown')
 			dropdownEle.classList.remove('hide-'+dropdown+'-dropdown');
 		}else{
+			//alert('adding hide-'+dropdown+'-dropdown');
 			dropdownEle.classList.add('hide-'+dropdown+'-dropdown');
 		}
-	},
+	}, */
 
 	init: function(){
 		//alert("in EduNavHandler.init");

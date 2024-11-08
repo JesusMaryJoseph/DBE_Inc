@@ -39,7 +39,7 @@
 		.close-html{
 			position: absolute;
 			top: 0;
-			right: 40vh; /* 0; */
+			right: 20vw; /* 0; */
 			/*z-index: 10; */
 			cursor: pointer;
 			color: black;

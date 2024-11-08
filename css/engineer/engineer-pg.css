@@ -1,13 +1,13 @@
 
-.body{
+/*.body{
 	background: black;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-}
+} */
 
-	.page{
+	/*.page{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -18,4 +18,4 @@
 		align-content: center;
 		color: white;
 		background-image: radial-gradient(blue, black);
-	}
+	} */

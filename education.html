@@ -27,10 +27,18 @@
 		
 		.edu-contents{
 		position: absolute;
-		top: 2.9em;
-		left: 2.2em;
-		width: 93vw;
-		height: 95vh; 
+		top: 2em; /*2.9em;*/
+		left: 1.4em;
+		right: 1.4em;
+		/*width: 60vw;*/ /*93vw;*/
+		height: 80vh; 
+		color: yellow;
+		font-size: 1.5em;
+		padding: 1em;
+	/*	padding-right: 20em;
+		margin-bottom: 10em; */
+		transition: opacity 1s;
+		opacity: 0;
 	/*	display: flex;
 		justify-content: center;
 		align-content: center; */
@@ -40,6 +48,49 @@
 	/*	overflow-y: scroll; */
 		border: 4px solid green;
 		z-index: 1;
+	}
+
+	.packets-container, .training-container, .testing-container{
+		z-index: 20;
+	}
+
+	.packet-label{
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+
+	a{
+		color: yellow;
+	}
+	/*.binary-adder-container{
+		padding-bottom: 5em;
+	} */
+	/*.sub-memory-general-container, .sub-memory-eeprom-container{
+		padding-bottom: 20em;
+	} */
+	/* .videos-container{
+		padding-bottom: 20em;
+	 }*/
+	 /*.sub-memory-general-container{
+		margin-bottom: 20em;
+	} */
+
+	.edu-article{
+		position: absolute;
+		top: 0em;
+		left: 0em;
+		width: 100%;
+		/*height: 50vh;*/
+		border: 3px solid yellow;
+		border-radius: 5px;
+		background-image: radial-gradient(blue, black);
+		transition: opacity 0.7s;
+		z-index: -1;
+		opacity: 0;
+	}
+
+	.data-container{
+		z-index: 30;
 	}
 	</style>
 	
@@ -66,105 +117,87 @@
     </nav> 
 
 
-	<nav id="packets-container-id" class="packets-container" onmouseleave = "EduNavHandler.showHide('packets')">
+	<nav id="packets-container-id" class="packets-container" onmouseleave = "EduNavHandler.hide('packets')">
 		<div class="packets-label-container">
-    		<label class="packets-label" onmouseover="EduNavHandler.showHide('packets')">Packets</label>
+    		<label class="packets-label" onclick="EduNavHandler.show('packets')">Packets</label>
     	</div>
 		<div id="packets-dropdown-id" class="packets-dropdown hide-packets-dropdown">
 			<ul>
-				<li onclick="EduHTML_Manager.load('html/CEO/CEO_Packet.html', 'edu')">CEO</li>
-				<li onclick="EduHTML_Manager.load('html/Engineering/Engineering_Packet.html', 'edu')">Engineering</li>
-				<li onclick="EduHTML_Manager.load('html/Drafting/Drafting_Packet.html', 'edu')">Drafting</li>
-				<li onclick="EduHTML_Manager.load('html/Technician/Technician_Packet.html', 'edu')">Technician</li>
-				<li onclick="EduHTML_Manager.load('html/Computer/Computer_Packet.html', 'edu')">Computer</li>
-				<li onclick="EduHTML_Manager.load('html/Education/Education_Packet.html', 'edu')">Education</li>
-				<li onclick="EduHTML_Manager.load('html/MediaArts/MediaArts_Packet.html', 'edu')">Media Arts</li>
+				<li onclick="EduHTML_Manager.load('html/CEO/CEO_Packet.html', 'edu'), EduNavHandler.hide('packets')">CEO</li>
+				<li onclick="EduHTML_Manager.load('html/Engineering/Engineering_Packet.html', 'edu'), EduNavHandler.hide('packets')">Engineering</li>
+				<li onclick="EduHTML_Manager.load('html/Drafting/Drafting_Packet.html', 'edu'), EduNavHandler.hide('packets')">Drafting</li>
+				<li onclick="EduHTML_Manager.load('html/Technician/Technician_Packet.html', 'edu'), EduNavHandler.hide('packets')">Technician</li>
+				<li onclick="EduHTML_Manager.load('html/Computer/Computer_Packet.html', 'edu'), EduNavHandler.hide('packets')">Computer</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Education_Packet.html', 'edu'), EduNavHandler.hide('packets')">Education</li>
+				<li onclick="EduHTML_Manager.load('html/MediaArts/MediaArts_Packet.html', 'edu'), EduNavHandler.hide('packets')">Media Arts</li>
 			</ul>
 		</div>
 	</nav>
 
-	<nav id="videos-container-id" class="videos-container" onmouseleave = "EduNavHandler.showHide('videos')">
+	<!--<nav id="videos-container-id" class="videos-container" onmouseleave = "EduNavHandler.showHide('videos')">
+	-->
+	<nav id="videos-container-id" class="videos-container">
 		<div class="videos-label-container">
-			<label class="videos-label" onmouseover="EduNavHandler.showHide('videos')">Videos</label>
-		</div>
-		<div id="videos-dropdown-id" class="videos-dropdown hide-videos-dropdown">
-			<ul>
-				<li>General:</li>
-				<li>Clock:</li>
-				<li>Memory:</li>
-				<li>ALU:</li>
-				<li>Counter:</li>
-				<li>Output:</li>
-				<li>Control:</li>
-				<li>BUS:</li>
-			</ul>
+			<!--<label class="videos-label" onmouseover="EduNavHandler.showHide('videos')">Videos</label> -->
+			<label class="videos-label" onclick="EduHTML_Manager.load('html/Education/Resources/BenEaterVideos.html','edu')">Videos</label>
 		</div>
 	</nav>
 
-	<nav id="datasheets-container-id" class="datasheets-container" onmouseleave = "EduNavHandler.showHide('datasheets')">
+	<nav id="datasheets-container-id" class="datasheets-container">
 		<div class="datasheets-label-container">
-			<label class="datasheets-label" onmouseover="EduNavHandler.showHide('datasheets')">Data Sheets</label>
-		</div>
-		<div id="datasheets-dropdown-id" class="datasheets-dropdown hide-datasheets-dropdown">
-			<ul>
-				<li>Basic<br>Logic Gates:</li>
-				<li>Binary Adder:</li>
-				<li>BUS:</li>
-				<li>Counter/<br>Flip-Flops:</li>
-				<li>Multiplexers/<br>Decoders/<br>Demultiplexers:</li>
-				<label><u>Memory</u></label>
-				<li>RAM:</li>
-				<li>Registers:</li>
-				<li>EEPROMs:</li>
-			</ul>
+			<!--<label class="datasheets-label" onmouseover="EduNavHandler.showHide('datasheets')">Data Sheets</label>-->
+			<label class="datasheets-label" onclick="EduHTML_Manager.load('html/Education/Resources/DataSheets.html','edu')">Data Sheets</label>
 		</div>
 	</nav>
 
-	<nav id="training-container-id" class="training-container" onmouseleave = "EduNavHandler.showHide('training')">
+	<nav id="training-container-id" class="training-container" onmouseleave = "EduNavHandler.hide('training')">
 		<div class="training-label-container">
-    		<label class="training-label" onmouseover="EduNavHandler.showHide('training')">Training</label>
+    		<label class="training-label" onclick="EduNavHandler.show('training')">Training</label>
     	</div>
 		<div id="training-dropdown-id" class="training-dropdown hide-training-dropdown">
 			<ul>
-				<li onclick="EduHTML_Manager.load('html/Training/Codes.html', 'edu')">Codes:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Codes.html', 'edu'), EduNavHandler.hide('training')">Codes:</li>
 				<label><u>Architecture</u></label>
-				<li onclick="EduHTML_Manager.load('html/Training/Instruction_Architecture.html', 'edu')">Instruction Set:</li>
-				<li onclick="EduHTML_Manager.load('html/Training/Hardware_Architecture.html', 'edu')">Hardware:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Instruction_Architecture.html', 'edu'), EduNavHandler.hide('training')">Instruction Set:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Hardware_Architecture.html', 'edu'), EduNavHandler.hide('training')">Hardware:</li>
 				<label><u>Software</u></label>
-				<li onclick="EduHTML_Manager.load('html/Training/Digital.html', 'edu')">Digital:</li>
-				<li onclick="EduHTML_Manager.load('html/Training/Fritzing.html', 'edu')">Fritzing:</li>
-				<li onclick="EduHTML_Manager.load('html/Training/Libre_Office.html', 'edu')">Libre Office:</li>
-				<li onclick="EduHTML_Manager.load('html/Training/Gimp.html', 'edu')">Gimp:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Digital.html', 'edu'), EduNavHandler.hide('training')">Digital:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Fritzing.html', 'edu'), EduNavHandler.hide('training')">Fritzing:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Libre_Office.html', 'edu'), EduNavHandler.hide('training')">Libre Office:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Gimp.html', 'edu'), EduNavHandler.hide('training')">Gimp:</li>
 				<label><u>Programming</u></label>
-				<li onclick="EduHTML_Manager.load('html/Training/Web_Development.html', 'edu')">Web Development:</li>
-				<li onclick="EduHTML_Manager.load('html/Training/Arduino.html', 'edu')">Arduino:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Web_Development.html', 'edu'), EduNavHandler.hide('training')">Web Development:</li>
+				<li onclick="EduHTML_Manager.load('html/Education/Training/Arduino.html', 'edu'), EduNavHandler.hide('training')">Arduino:</li>
 			</ul>
 		</div>
 	</nav>
 
-	<nav id="testing-container-id" class="testing-container" onmouseleave = "EduNavHandler.showHide('testing')">
+	<nav id="testing-container-id" class="testing-container" onmouseleave = "EduNavHandler.hide('testing')">
 		<div id="testing-dropdown-id" class="testing-dropdown hide-testing-dropdown">
 			<ul>
-				<li onclick="EduHTML_Manager.load('html/Testing/Codes.html', 'edu')">Codes:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Codes.html', 'edu'), EduNavHandler.hide('testing')">Codes:</li>
 				<label><u>Architecture</u></label>
-				<li onclick="EduHTML_Manager.load('html/Testing/Instruction_Architecture.html', 'edu')">Instruction Set:</li>
-				<li onclick="EduHTML_Manager.load('html/Testing/Hardware_Architecture.html', 'edu')">Hardware:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Instruction_Architecture.html', 'edu'), EduNavHandler.hide('testing')">Instruction Set:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Hardware_Architecture.html', 'edu'), EduNavHandler.hide('testing')">Hardware:</li>
 				<label><u>Software</u></label>
-				<li onclick="EduHTML_Manager.load('html/Testing/Digital.html', 'edu')">Digital:</li>
-				<li onclick="EduHTML_Manager.load('html/Testing/Fritzing.html', 'edu')">Fritzing:</li>
-				<li onclick="EduHTML_Manager.load('html/Testing/Libre_Office.html', 'edu')">Libre Office:</li>
-				<li onclick="EduHTML_Manager.load('html/Testing/Gimp.html', 'edu')">Gimp:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Digital.html', 'edu'), EduNavHandler.hide('testing')">Digital:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Fritzing.html', 'edu'), EduNavHandler.hide('testing')">Fritzing:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Libre_Office.html', 'edu'), EduNavHandler.hide('testing')">Libre Office:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Gimp.html', 'edu'), EduNavHandler.hide('testing')">Gimp:</li>
 				<label><u>Programming</u></label>
-				<li onclick="EduHTML_Manager.load('html/Testing/Web_Development.html', 'edu')">Web Development:</li>
-				<li onclick="EduHTML_Manager.load('html/Testing/Arduino.html', 'edu')">Arduino:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Web_Development.html', 'edu'), EduNavHandler.hide('testing')">Web Development:</li>
+				<li onclick="EduHTML_Manager.load('html/Testing/Arduino.html', 'edu'), EduNavHandler.hide('testing')">Arduino:</li>
 			</ul>
 		</div>
 		<div class="testing-label-container">
-			<label class="testing-label" onmouseover="EduNavHandler.showHide('testing')">Testing</label>
+			<label class="testing-label" onclick="EduNavHandler.show('testing')">Testing</label>
 		</div>
 	</nav>
 	<div id="edu-contents-id" class="edu-contents">	
 	</div>
+	<article id="edu-article-id" class="edu-article">
+
+	</article>
 </nav>
 
 	
@@ -172,8 +205,8 @@
     <script>
     	function init(){
 			//alert("in education html init()");
-    		// initialize
     		NavHandler.init();
+			//alert("inbetween NavHandler and EduNavHandler.init()");
 			EduNavHandler.init();
 			//alert("after EduNavHandler.init()<br>Entering EduHTML_Manager.init()");
 			EduHTML_Manager.init();

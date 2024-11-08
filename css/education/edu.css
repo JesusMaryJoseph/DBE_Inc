@@ -8,26 +8,26 @@
         color: yellow;
     }  */
 
-    .page{
+  /*  .page{
             position: absolute;
-            top: 0; /*5.0em; */
-            left: 0;/*1em*/
+            top: 0;
+            left: 0;
             width: 97vw;
-            height: 99vh; /*83vh;*/ 
-        /*	display: flex;
+            height: 99vh;
+        	display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: center; */
+            align-items: center; 
             padding: 0 1em;
             color: yellow;
-         /*   border: 2px solid red; */
+            border: 2px solid red; 
             overflow-y: scroll;
             overflow-x: hidden;
     }
 
     a{
         color: yellow;
-    }
+    } */
     
     /* End CSS for Education Page  */
 

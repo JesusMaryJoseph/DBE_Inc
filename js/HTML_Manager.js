@@ -25,13 +25,13 @@ let EduHTML_Manager = {
     htmlTargetEle: {},
     eduEle: {},
     eduArticleEle: {},
-    pdfIframe: {},
+    /*pdfIframe: {}, */
   
     //Methods
     load: function(HTMLsourceFile, targetOption) {
        // alert("in load");
         //  alert("HTMLsourceFile: " + HTMLsourceFile);
-       //  alert("targetOption =  " + targetOption);
+        // alert("targetOption =  " + targetOption);
         switch(targetOption){
             case "edu":
                 this.htmlTargetEle = this.eduEle;
@@ -42,7 +42,8 @@ let EduHTML_Manager = {
             default:
                 alert("no such load target");
         }
-        this.htmlTargetEle.style.zIndex = 10;
+       // alert("this.htmlTargetEle.style.opacity = " + this.eduEle.style.opacity);
+         this.htmlTargetEle.style.zIndex = 10;
         this.htmlTargetEle.style.opacity = "1";
         //  if(!this.loaded){ 
         fetch(HTMLsourceFile)
@@ -54,20 +55,11 @@ let EduHTML_Manager = {
                 }
             })
             .then(resultHTML => {
-               // alert("loading resultHTML");
+                //alert("loading resultHTML");
                 this.htmlTargetEle.innerHTML = resultHTML;
             })
         // TODO: reset dropdown
-        EduNavHandler.showHide();
-    },
-    
-    loadPDF: function(pdfSource){
-        let iframeSource = "media/pdf/Data_Sheets/" + pdfSource;
-        alert("iframeSource =  " + iframeSource);
-        alert("in loadPDF setting pdfIframe.src");
-        this.pdfIframe.src = iframeSource;
-        alert("sending LS_DataSheet.html to this.load()");
-        this.load("html/Education/Resources/Data_Sheets/LS_Data_Sheet.html","edu-article");
+        //EduNavHandler.showHide("packets");
     },
 
     display: function (contentsSelected) {
@@ -105,29 +97,32 @@ let EduHTML_Manager = {
         this.activeSelectorLabel.classList.add("edu-label-active"); 
     },
 
-    close: function() {
+    close: function(selectedNav) {
         this.htmlTargetEle.style.zIndex = -10;
         this.htmlTargetEle.style.opacity = "0";
-        if(!EduNavHandler.hidden){
-            EduNavHandler.showHide();
-        }
+      /*  if(!EduNavHandler.hidden){
+            EduNavHandler.showHide(selectedNav);
+        } */
       //  this.setActiveInactiveLabel("set", this.liveDropdown);
       //  this.setActiveInactiveLabel("reSet", "Proposal");
     },
 
     transitionHasEnded: function() {
-        //alert("in transitionHasEnded");
+       // alert("in transitionHasEnded");
         if (this.htmlTargetEle.style.opacity == 0) {
             this.htmlTargetEle.style.zIndex = -10;
-        } 
+        }
+       /* if(!EduNavHandler.hidden){
+                EduNavHandler.showHide(selectedNav);
+        } */
     }, 
 
     init: function() {
-     //alert("in EduHTML_Manager init()");
+    // alert("in EduHTML_Manager init()");
         this.eduEle = document.getElementById("edu-contents-id");
         this.eduEle.addEventListener("transitionend", this.transitionHasEnded);
-        this.eduArticleEle = document.getElementById("edu-html-target-id");
-        this.eduArticleEle.addEventListener("transitionend", this.transitionHasEnded);
+        this.eduArticleEle = document.getElementById("edu-article-id");
+        this.eduArticleEle.addEventListener("transitionend",this.transitionHasEnded);
         this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
         this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
         this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
@@ -138,9 +133,7 @@ let EduHTML_Manager = {
         this.testingLabel = document.getElementById("testing-label-id");
         this.activeSelector = this.eduManagersSelector;
         this.activeSelectorLabel = this.managersLabel;
-   // alert("just before this.pdfIframe");
-        this.pdfIframe = document.getElementById("pdf-iframe-id"); 
-      //alert("leaving EduHTML_Manager init()");
+     // alert("leaving EduHTML_Manager init()");
     }
 }
 /* End EduHTML_Manager */
