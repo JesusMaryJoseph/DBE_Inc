@@ -30,8 +30,8 @@ let EduHTML_Manager = {
     //Methods
     load: function(HTMLsourceFile, targetOption) {
        // alert("in load");
-        //  alert("HTMLsourceFile: " + HTMLsourceFile);
-        // alert("targetOption =  " + targetOption);
+        //alert("HTMLsourceFile: " + HTMLsourceFile);
+        //alert("targetOption =  " + targetOption);
         switch(targetOption){
             case "edu":
                 this.htmlTargetEle = this.eduEle;

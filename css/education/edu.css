@@ -8,26 +8,7 @@
         color: yellow;
     }  */
 
-  /*  .page{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 97vw;
-            height: 99vh;
-        	display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center; 
-            padding: 0 1em;
-            color: yellow;
-            border: 2px solid red; 
-            overflow-y: scroll;
-            overflow-x: hidden;
-    }
 
-    a{
-        color: yellow;
-    } */
     
     /* End CSS for Education Page  */
 
@@ -56,23 +37,4 @@
         font-size: 1.8em;
         font-weight: bold;
     }
-
-
-    .close-html{
-        position: absolute;
-        top: 0;
-        right: 0; 
-        margin: 0.1em;
-        cursor: pointer;
-        color: black;
-        border: 1px solid black; 
-        border-radius: 5px;
-        background: red;
-        padding: 0 0.2em;
-        font-size: 1.2em;
-    }
-
-    .close-html:hover{
-        font-size: 1.25em;
-        font-weight: bold;
-    } */
+ */

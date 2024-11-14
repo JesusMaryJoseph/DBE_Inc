@@ -39,7 +39,7 @@
 		.close-html{
 			position: absolute;
 			top: 0;
-			right: 20vw; /* 0; */
+			right: 0; /* 0; */
 			/*z-index: 10; */
 			cursor: pointer;
 			color: black;
@@ -52,5 +52,9 @@
 		.close-html:hover{
 			font-size: 1.6em;
 			font-weight: bold;
+		}
+		
+		a{
+			color: yellow;
 		}
 /* End CSS for page */
