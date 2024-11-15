@@ -5,11 +5,23 @@
 */
 
 
+function eduTransitionHasEnded(){
+   // alert("in eduTransitionHasEnded");
+    EduHTML_Manager.transitionFinished = true;
+    EduHTML_Manager.eduFinishTransition();
+}
+
+function eduArticleTransitionHasEnded(){
+    //alert("in transitionhasEnded");
+    EduHTML_Manager.eduFinishTransition();
+}
 
 /* EduHTML_Manager */
 let EduHTML_Manager = {
     //Properties
-    //  loaded: false,
+    eduLoaded: false,
+    eduArticleLoaded: false,
+    transitionFinished: false,
     eduManagersSelector: {},
     eduResourcesSelector: {},
     eduTestingSelector: {},
@@ -31,22 +43,33 @@ let EduHTML_Manager = {
        // alert("in load");
         //alert("HTMLsourceFile: " + HTMLsourceFile);
         //alert("targetOption =  " + targetOption);
+            
         switch(targetOption){
             case "edu":
                 this.htmlTargetEle = this.eduEle;
+                if(this.eduLoaded){
+                    alert("this.eduLoaded = " + this.eduLoaded);
+                    this.htmlTargetEle.style.opacity = 0;
+                    this.htmlTargetEle.innerHTML = "";
+                   // alert("just cleared eduEle");
+                }else{
+                    alert("Nothing is loaded in eduEle");
+                }
+                this.eduLoaded = true;
             break;
             case "edu-article":
                 this.htmlTargetEle = this.eduArticleEle;
+                if(this.eduArticleLoaded){
+                    this.htmlTargetEle.style.opacity = 0;
+                    this.htmlTargetEle.innerHTML = "";
+                }
+                this.eduArticleLoaded = true;
             break;
             default:
                 alert("no such load target");
         }
-       // alert("this.htmlTargetEle.style.opacity = " + this.eduEle.style.opacity);
-        this.htmlTargetEle.style.zIndex = 10;
-        //alert("this.htmlTargetEle.style.zIndex =  " + this.htmlTargetEle.style.zIndex);
-        this.htmlTargetEle.style.opacity = "1";
-        //alert("this.htmlTargetEle.style.opacity =  " + this.htmlTargetEle.style.opacity);
-        //  if(!this.loaded){ 
+        alert("Just before fetch");
+
         fetch(HTMLsourceFile)
             .then(res => {
                 //alert("in res =>");
@@ -61,6 +84,9 @@ let EduHTML_Manager = {
             })
         // TODO: reset dropdown
         //EduNavHandler.showHide("packets");
+        alert("Just after fetch");
+        this.htmlTargetEle.style.zIndex = 10;
+        this.htmlTargetEle.style.opacity = "1";
     },
 
     display: function (contentsSelected) {
@@ -110,40 +136,35 @@ let EduHTML_Manager = {
       //  this.setActiveInactiveLabel("reSet", "Proposal");
     },
 
-    transitionHasEnded: function() {
-        //alert("in transitionHasEnded");
+    eduFinishTransition: function() {
+        // alert("in eduFinishTransition");
        // alert("this.htmlTargetEle.style.opacity =  " + 'this.htmlTargetEle.style.opacity');
         if (this.htmlTargetEle.style.opacity == 0) {
-            //alert("this.htmlTargetEle.style.opacity =  " + 'this.htmlTargetEle.style.opacity');
             this.htmlTargetEle.style.zIndex = -10;
+        }else{
+            this.htmlTargetEle.style.zIndex = 10;
         }
        /* if(!EduNavHandler.hidden){
         EduNavHandler.showHide(selectedNav);
         } */
-    }, 
+    },
 
-    init: function(caller) {
+    init: function() {
      //alert("in EduHTML_Manager init()");
-        if(caller == "CEO"){
-            //alert("caller =  " + caller);
-            this.eduEle = document.getElementById("ceo-contents-id");
-            this.eduEle.addEventListener("transitionend", this.transitionHasEnded);
-        }else{
-            this.eduEle = document.getElementById("edu-contents-id");
-            this.eduEle.addEventListener("transitionend", this.transitionHasEnded);
-            this.eduArticleEle = document.getElementById("edu-article-id");
-            this.eduArticleEle.addEventListener("transitionend",this.transitionHasEnded);
-            this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
-            this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
-            this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
-            this.eduTestingSelector = document.getElementById("edu-testing-selector-id");
-            this.managersLabel = document.getElementById("managers-label-id");
-            this.resourcesLabel = document.getElementById("resources-label-id");
-            this.trainingLabel = document.getElementById("training-label-id");
-            this.testingLabel = document.getElementById("testing-label-id");
-            this.activeSelector = this.eduManagersSelector;
-            this.activeSelectorLabel = this.managersLabel;
-        }
+        this.eduEle = document.getElementById("edu-contents-id");
+        this.eduEle.addEventListener("transitionend", eduTransitionHasEnded);
+        this.eduArticleEle = document.getElementById("edu-article-id");
+        this.eduArticleEle.addEventListener("transitionend", artTransitionHasEnded);
+        this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
+        this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
+        this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
+        this.eduTestingSelector = document.getElementById("edu-testing-selector-id");
+        this.managersLabel = document.getElementById("managers-label-id");
+        this.resourcesLabel = document.getElementById("resources-label-id");
+        this.trainingLabel = document.getElementById("training-label-id");
+        this.testingLabel = document.getElementById("testing-label-id");
+        this.activeSelector = this.eduManagersSelector;
+        this.activeSelectorLabel = this.managersLabel;
      // alert("leaving EduHTML_Manager init()");
     }
 }
@@ -151,9 +172,9 @@ let EduHTML_Manager = {
 
 
 
-function transitionHasEnded(){
+function ceoTransitionHasEnded(){
     //alert("in transitionhasEnded");
-    CeoHTML_Manager.finishTransition();
+    CeoHTML_Manager.ceoFinishTransition();
 }
 
 /* CeoHTML_Manager */
@@ -188,7 +209,7 @@ let CeoHTML_Manager = {
         //this.opacity = 0;
     },
 
-    finishTransition: function() {
+    ceoFinishTransition: function() {
         //alert("in finish.Transition");
        // alert("this.ceoEle.style.opacity =  " + this.ceoEle.style.opacity);
         if (this.ceoEle.style.opacity == 0) {
@@ -201,7 +222,7 @@ let CeoHTML_Manager = {
     init: function() {
     //alert("in CeoHTML_Manager init()");
         this.ceoEle = document.getElementById("ceo-contents-id");
-        this.ceoEle.addEventListener("transitionend", transitionHasEnded, false);
+        this.ceoEle.addEventListener("transitionend", ceoTransitionHasEnded, false);
     //alert("leaving EduHTML_Manager init()");
     }
 }
