@@ -19,9 +19,6 @@ function eduTransitionHasEnded(){
 /* EduHTML_Manager */
 let EduHTML_Manager = {
     //Properties
-    eduLoaded: false,
-    eduArticleLoaded: false,
-    transitionFinished: false,
     eduManagersSelector: {},
     eduResourcesSelector: {},
     eduTestingSelector: {},
@@ -47,28 +44,13 @@ let EduHTML_Manager = {
         switch(targetOption){
             case "edu":
                 this.htmlTargetEle = this.eduEle;
-                if(this.eduLoaded){
-                    alert("this.eduLoaded = " + this.eduLoaded);
-                    this.htmlTargetEle.style.opacity = 0;
-                    this.htmlTargetEle.innerHTML = "";
-                   // alert("just cleared eduEle");
-                }else{
-                    alert("Nothing is loaded in eduEle");
-                }
-                this.eduLoaded = true;
             break;
             case "edu-article":
                 this.htmlTargetEle = this.eduArticleEle;
-                if(this.eduArticleLoaded){
-                    this.htmlTargetEle.style.opacity = 0;
-                    this.htmlTargetEle.innerHTML = "";
-                }
-                this.eduArticleLoaded = true;
             break;
             default:
                 alert("no such load target");
         }
-        alert("Just before fetch");
 
         fetch(HTMLsourceFile)
             .then(res => {
@@ -84,7 +66,6 @@ let EduHTML_Manager = {
             })
         // TODO: reset dropdown
         //EduNavHandler.showHide("packets");
-        alert("Just after fetch");
         this.htmlTargetEle.style.zIndex = 10;
         this.htmlTargetEle.style.opacity = "1";
     },
@@ -124,16 +105,8 @@ let EduHTML_Manager = {
         this.activeSelectorLabel.classList.add("edu-label-active"); 
     },
 
-    close: function() { //selectedNav
-       // alert("this.htmlTargetEle.style.zIndex =  " + this.htmlTargetEle.style.zIndex);
-        //alert("this.htmlTargetEle.style.opacity =  " + this.htmlTargetEle.style.opacity);
-      //  this.htmlTargetEle.style.zIndex = -10;
+    close: function() { 
         this.htmlTargetEle.style.opacity = "0";
-      /*  if(!EduNavHandler.hidden){
-            EduNavHandler.showHide(selectedNav);
-        } */
-      //  this.setActiveInactiveLabel("set", this.liveDropdown);
-      //  this.setActiveInactiveLabel("reSet", "Proposal");
     },
 
     eduFinishTransition: function() {
