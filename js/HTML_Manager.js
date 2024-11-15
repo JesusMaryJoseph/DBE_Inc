@@ -11,10 +11,10 @@ function eduTransitionHasEnded(){
     EduHTML_Manager.eduFinishTransition();
 }
 
-function eduArticleTransitionHasEnded(){
+/*function eduArticleTransitionHasEnded(){
     //alert("in transitionhasEnded");
     EduHTML_Manager.eduFinishTransition();
-}
+} */
 
 /* EduHTML_Manager */
 let EduHTML_Manager = {
