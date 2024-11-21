@@ -6,53 +6,32 @@
 
 
 function eduTransitionHasEnded(){
-   // alert("in eduTransitionHasEnded");
-    EduHTML_Manager.transitionFinished = true;
-    EduHTML_Manager.eduFinishTransition();
+    //alert("in eduTransitionHasEnded and<br>EduHTML_Manager.eduEle.style.opacity =  " + EduHTML_Manager.eduEle.style.opacity);
+   if(EduHTML_Manager.eduEle.style.opacity == 0){
+    EduHTML_Manager.show();
+   }
 }
-
-/*function eduArticleTransitionHasEnded(){
-    //alert("in transitionhasEnded");
-    EduHTML_Manager.eduFinishTransition();
-} */
 
 /* EduHTML_Manager */
 let EduHTML_Manager = {
     //Properties
-    eduManagersSelector: {},
-    eduResourcesSelector: {},
-    eduTestingSelector: {},
-    eduTrainingSelector: {},
-    managersLabel: {},
-    resourcesLabel: {},
-    trainingLabel: {},
-    testingLabel: {},
-    activeSelector:{},
-    activeSelectorLabel: {},
-    eduContentsSelected: "edu-managers-dropdown",
-    htmlTargetEle: {},
     eduEle: {},
-    eduArticleEle: {},
-    /*pdfIframe: {}, */
+    requestedFile: "",
   
     //Methods
-    load: function(HTMLsourceFile, targetOption) {
-       // alert("in load");
+    request: function(HTMLsourceFile){
+        //alert("in request HTMLsourceFile =  " + HTMLsourceFile);
+        this.requestedFile = HTMLsourceFile;
+        this.eduEle.classList.replace("transition-0-1","transition-1-0");
+        this.eduEle.style.opacity = 0;
+    },
+
+    load: function() {
+        //alert("in load");
         //alert("HTMLsourceFile: " + HTMLsourceFile);
         //alert("targetOption =  " + targetOption);
-            
-        switch(targetOption){
-            case "edu":
-                this.htmlTargetEle = this.eduEle;
-            break;
-            case "edu-article":
-                this.htmlTargetEle = this.eduArticleEle;
-            break;
-            default:
-                alert("no such load target");
-        }
 
-        fetch(HTMLsourceFile)
+        fetch(this.requestedFile)
             .then(res => {
                 //alert("in res =>");
                 if (res.ok) {
@@ -62,83 +41,22 @@ let EduHTML_Manager = {
             })
             .then(resultHTML => {
                 //alert("loading resultHTML");
-                this.htmlTargetEle.innerHTML = resultHTML;
+                this.eduEle.innerHTML = resultHTML;
             })
-        // TODO: reset dropdown
-        //EduNavHandler.showHide("packets");
-        this.htmlTargetEle.style.zIndex = 10;
-        this.htmlTargetEle.style.opacity = "1";
     },
 
-    display: function (contentsSelected) {
-       // alert("in display");
-       // alert("contentsSelected: " + contentsSelected);
-        this.activeSelector.classList.replace("edu-dropdown-display","edu-dropdown-none");
-        this.activeSelector.style.display = "none";
-        this.activeSelectorLabel.classList.remove("edu-label-active");
-        switch (contentsSelected) {
-            case "Managers":
-                this.activeSelector = this.eduManagersSelector;
-                this.activeSelectorLabel = this.managersLabel;
-                break;
-            case "Resources":
-              //  alert("in case-Resources");
-                this.activeSelector = this.eduResourcesSelector;
-                this.activeSelectorLabel = this.resourcesLabel;
-              //  alert("leaving case: Resources");
-                break;
-            case "Training":
-                this.activeSelector = this.eduTrainingSelector;
-                this.activeSelectorLabel = this.trainingLabel;
-                break;
-            case "Testing":
-                this.activeSelector = this.eduTestingSelector;
-                this.activeSelectorLabel = this.testingLabel;
-                break;
-            default: alert("no such edu-contents");
-        }
-      //  alert("before activeSelector.classList.replace");
-        this.activeSelector.classList.replace("edu-dropdown-none","edu-dropdown-display")
-      //  alert("before actDrpdwn.style.display = flex");
-        this.activeSelector.style.display = "flex";
-      //  alert("before activeSelectorLabel classList.add");
-        this.activeSelectorLabel.classList.add("edu-label-active"); 
-    },
-
-    close: function() { 
-        this.htmlTargetEle.style.opacity = "0";
-    },
-
-    eduFinishTransition: function() {
-        // alert("in eduFinishTransition");
-       // alert("this.htmlTargetEle.style.opacity =  " + 'this.htmlTargetEle.style.opacity');
-        if (this.htmlTargetEle.style.opacity == 0) {
-            this.htmlTargetEle.style.zIndex = -10;
-        }else{
-            this.htmlTargetEle.style.zIndex = 10;
-        }
-       /* if(!EduNavHandler.hidden){
-        EduNavHandler.showHide(selectedNav);
-        } */
+    show: function() { 
+        //alert("in this.show()");
+        this.load();
+        this.eduEle.classList.replace("transition-1-0","transition-0-1")
+        this.eduEle.style.opacity = "1";
     },
 
     init: function() {
      //alert("in EduHTML_Manager init()");
         this.eduEle = document.getElementById("edu-contents-id");
-        this.eduEle.addEventListener("transitionend", eduTransitionHasEnded);
-        this.eduArticleEle = document.getElementById("edu-article-id");
-        this.eduArticleEle.addEventListener("transitionend", artTransitionHasEnded);
-        this.eduManagersSelector = document.getElementById("edu-managers-selector-id");
-        this.eduResourcesSelector = document.getElementById("edu-resources-selector-id");
-        this.eduTrainingSelector = document.getElementById("edu-training-selector-id");
-        this.eduTestingSelector = document.getElementById("edu-testing-selector-id");
-        this.managersLabel = document.getElementById("managers-label-id");
-        this.resourcesLabel = document.getElementById("resources-label-id");
-        this.trainingLabel = document.getElementById("training-label-id");
-        this.testingLabel = document.getElementById("testing-label-id");
-        this.activeSelector = this.eduManagersSelector;
-        this.activeSelectorLabel = this.managersLabel;
-     // alert("leaving EduHTML_Manager init()");
+        this.eduEle.addEventListener("transitionend", eduTransitionHasEnded, false);
+        this.eduEle.style.opacity = 1;
     }
 }
 /* End EduHTML_Manager */
@@ -157,7 +75,7 @@ let CeoHTML_Manager = {
 
     //Methods
     load: function(HTMLsourceFile) {
-        //alert("in load");
+        //alert("in load HTMLsourceFile =  " + HTMLsourceFile);
         this.ceoEle.style.zIndex = 10;
     // alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
         this.ceoEle.style.opacity = 1;
@@ -212,7 +130,88 @@ let TableManager = {
     },
 
     init: function(){
+        //alert("in TableManager.init()");
     }
 }
 
 /* End TableManager  */
+
+/* Begin CodesTabManager */
+
+let CodesTabManager = {
+    //Properties
+    introductionTabEle: {},
+    exampleTabEle: {},
+    computerTabEle: {},
+    introductionContentsEle: {},
+    exampleContentsEle: {},
+    computerContentsEle: {},
+    initiated: false,
+
+    selectedTab: "1",
+    numberOfTabs: "3",
+    //Methods
+    changeTab: function(newTab){
+       // alert("in CodesTabManager.changeTab");
+       // alert("this.initiated =  " + this.initiated);
+        if(!this.initiated){
+           // alert("sending to this.init()");
+            this.init();
+            this.initiated = true;
+        }
+        //TODO remove .selectedTab from this.selectedTab and add to newTab
+        if(newTab == this.selectedTab){return}
+        //alert("this.selectedTab =  " + this.selectedTab + "<br>newTab =  " + newTab);
+        switch (this.selectedTab){
+            case "1":
+              //  alert("removing selected-tab from intro tab");
+                this.introductionTabEle.classList.replace("selected-tab", "unselected-tab");
+                this.introductionContentsEle.classList.remove("selected-contents");
+              //  alert("after remove selected-tab");
+                break;
+            case "2":
+                this.exampleTabEle.classList.replace("selected-tab", "unselected-tab");
+                this.exampleContentsEle.classList.remove("selected-contents");
+                break;
+            case "3":
+                this.computerTabEle.classList.replace("selected-tab", "unselected-tab");
+                this.computerContentsEle.classList.remove("selected-contents");
+                break;
+            default: alert("No Such Tab Number");
+        }
+        //alert("after 1st switch to remove");
+        switch (newTab){
+            case "1":
+                this.introductionTabEle.classList.add("selected-tab");
+                this.introductionContentsEle.classList.add("selected-contents");
+                break;
+            case "2":
+              //  alert("adding selected-tab to example tab");
+                this.exampleTabEle.classList.add("selected-tab");
+                this.exampleContentsEle.classList.add("selected-contents");
+                break;
+            case "3":
+                this.computerTabEle.classList.add("selected-tab");
+                this.computerContentsEle.classList.add("selected-contents");
+                break;
+            default: alert("No Such Tab Number");
+        }
+        this.selectedTab = newTab;
+        //alert("this.selectedTab now =  " + newTab);
+    },
+    
+    init: function(){
+       // alert("in CodesTabManager.init()");
+        this.introductionTabEle = document.getElementById("introduction-tab-id");
+        this.exampleTabEle = document.getElementById("example-tab-id");
+        this.computerTabEle = document.getElementById("computer-tab-id");
+        this.introductionContentsEle = document.getElementById("introduction-contents-id");
+        this.exampleContentsEle = document.getElementById("example-contents-id");
+        this.computerContentsEle = document.getElementById("computer-contents-id");
+      //  alert("CodesTabManager.init() finished and removing selected-tab from intro");
+       /* this.introductionTabEle.classList.remove("selected-tab");
+        alert("after removal"); */
+    }
+}
+
+/* End of CodesTabManager */

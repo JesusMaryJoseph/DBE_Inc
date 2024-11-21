@@ -1,0 +1,194 @@
+/*  base CSS for: 
+ *    1) Global Navigation
+ *    2) Home page
+ *    3) All pages that uses class="page";
+ */
+
+    * {
+        box-sizing: border-box;
+        margin:0;
+        padding:0; 
+    }
+
+    html, body {
+    	width:100vw;
+        height: 100vh;
+        font-family:  Arial, Helvetica, sans-serif;
+        background-color:black;
+    }
+
+/* End CSS for all pages */
+
+/* CSS for the mainContainer (class="mainCntnr") */
+    .main-cntnr {
+        width: 100%;
+        height: 99vh;
+        overflow: hidden;
+        background: black;
+    }
+/* End CSS for mainContainer */
+
+/* CSS for Nav */
+    .nav-cntnr{
+        position: relative;
+        top: 0;
+        left: 1em;
+        width: 11em;
+        color: yellow;
+        z-index: 100; 
+    }
+
+        .nav-label-container{
+            position: relative;
+            height: 3em;
+            width: 11.1em;
+            margin-left: -0.1em;
+            background-color: rgb(0, 0, 50);
+            z-index: 15;
+        }
+
+            .nav-label{
+                display: block;
+                text-align: center;
+                font-size: 2em;
+                font-weight: bolder;
+                cursor: pointer; 
+                width: 100%; 
+                padding-top: 0em;
+            }
+
+        .hide-dropdown{
+            margin-top: -13em;
+        }
+
+        .nav-dropdown{
+            font-size: 1.3em;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            transition: margin-top 0.7s;
+            padding: 0.5em;
+            background-image: radial-gradient(blue, black);
+            border: 2px solid yellow;
+            border-radius: 5px; 
+        }
+
+            .nav-dropdown a{
+                text-decoration: none;
+                color: white;
+            }
+
+                .nav-dropdown a:hover{
+                    text-decoration: none;
+                    color: yellow;
+                }
+
+            .nav-dropdown label{
+                font-size: 1em;
+                font-weight: bolder;
+                color: yellow;
+            }
+
+            .dept-container{
+                padding-left: 1em;
+            } 
+/* End CSS for Nav */
+
+
+/* CSS for page */
+    .page{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99vw;
+        height: 97vh; 
+    	display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: radial-gradient(blue, black);
+        overflow-x: hidden; 
+    }
+        .welcome-label{
+            position: absolute;
+            top: -0.5em;
+            left: 30vw;
+            display: block;
+            text-align: center;
+            color: yellow;
+        }
+
+        .transition-fade-in{ 
+            transition: opacity 0.5s;
+        }
+        .close-html{
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            color: black;
+            border-radius: 5px;
+            background-color: red;
+            padding: 0 0.2em;
+            font-size: 1.5em;
+        }
+        .close-html:hover{
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+        
+        a{
+            color: yellow;
+        }
+/* End CSS for page */
+
+/* CSS for Home Page  */
+	.home-page{
+		overflow: hidden;
+	}
+    .home-page label{
+        position: absolute;
+        font-weight: bold;
+        color: white;
+        transition: top 1s, left 1s, right 1s, font-size 1s; 
+    }
+    .d-label-start{
+        top: 50vh;
+        left: 50%;
+        font-size: 0vh;
+    }
+
+    .d-label-finish{
+        top: 50%;
+        left: 5%;
+        font-size: 9.5vh;
+    }
+
+    .b-label-start{
+        top: 50vh;
+        left: 50%;
+        font-size: 0vh;
+    }
+
+    .b-label-finish{
+        top: 0.5em;
+        left: 45%;
+        font-size: 9.5vh;
+    }
+
+    .e-label-start{
+        top: 50vh;
+        right: 45%;
+        font-size: 0vh;
+    }
+
+    .e-label-finish{
+        top: 50%;
+        right: 5%;
+        font-size: 9.5vh;
+    }
+
+    .dbe-logo{
+        width: 20%;
+        z-index: 15;
+    }
+/* End of CSS for Home Page  */

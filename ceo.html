@@ -5,78 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CEO</title>
 
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_base.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_11in-16in.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_16in-19in.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_20in_plus.css">
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<link rel="stylesheet" type="text/css" href="css/ceo/ceo.css">
 	<!--<link rel="stylesheet" type="text/css" href="css/proposal.css">-->
 	<script src="js/Nav_Handler.js"></script>
 	<script src="js/HTML_Manager.js"></script>
 
-	<script>
-
-	/*function transitionHasEnded(){
-		alert("in transitionhasEnded");
-		CeoHTML_Manager.finishTransition();
-	}*/
-	
-	/* CeoHTML_Manager */
-/*	let CeoHTML_Manager = {
-		//Properties
-		ceoEle: {},
-		opacity: 0,
-	
-		//Methods
-		load: function(HTMLsourceFile) {
-			alert("in load");
-			this.ceoEle.style.zIndex = 10;
-		// alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
-			this.ceoEle.style.opacity = 1;
-			this.opacity = 1;
-			alert("this.opacity =  " + this.opacity);
-			fetch(HTMLsourceFile)
-				.then(res => {
-					//alert("in res =>");
-					if (res.ok) {
-						//alert("res.ok");
-						return res.text();
-					}
-				})
-				.then(resultHTML => {
-					//alert("loading resultHTML");
-					this.ceoEle.innerHTML = resultHTML;
-				})
-		},
-
-		close: function() { 
-			//alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
-			//alert("this.ceo.style.opacity =  " + this.ceoEle.style.opacity);
-			this.ceoEle.style.opacity = 0;
-			//this.opacity = 0;
-		},
-
-		finishTransition: function() {
-			alert("in finish.Transition");
-			alert("this.ceoEle.style.opacity =  " + this.ceoEle.style.opacity);
-			if (this.ceoEle.style.opacity == 0) {
-				this.ceoEle.style.zIndex = -10;
-			}else{
-				this.ceoEle.style.zIndex = 10;
-			}
-		},
-
-		init: function() {
-		alert("in CeoHTML_Manager init()");
-			this.ceoEle = document.getElementById("ceo-contents-id");
-			this.ceoEle.addEventListener("transitionend", this.transitionHasEnded(){
-
-			});
-		alert("leaving EduHTML_Manager init()");
-		}
-	}*/
-	/* End CeoHTML_Manager */	
-	</script>
-
 	<style>
+		.ceo-contents{
+			background-color: rgb(112, 112, 112);
+			font-weight: bold;
+			color: black;
+		}
 	</style>
 
 
