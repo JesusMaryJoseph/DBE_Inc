@@ -1,0 +1,118 @@
+/*  CEO CSS for media Queries width= 17in-22in: for 
+ *    1) ceo.html
+ */
+
+@media only screen and (min-width: 17in) and (max-width: 22in) {
+      
+  .page{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-content: center;
+  }
+
+  .close-html{
+      top: 0;
+      right: 1rem;
+      padding: 0 1rem;
+      font-size: 2.7rem;
+  }
+  .close-html:hover{
+      font-size: 3rem;
+  }
+
+  .welcome-label{
+      padding-top: 0.2em;
+      display: block;
+      text-align: center;
+      color: yellow;
+  }
+  .welcome-label{
+      font-size: 3.2rem;
+  }
+    
+  .ceo-contents{
+      color: black; 
+  } 
+
+      .ceo-proposal-label{
+          width: 100%;
+          display: block;
+          text-align: center;
+          font-size: 3.2rem;
+          font-weight: bold;
+          color: yellow;
+          z-index: 5;
+      }
+          .ceo-proposal-label:hover{
+              cursor: pointer;
+              font-size: 3.3rem;
+              font-weight: bold;
+          }
+  /* End CSS for CEO page and contents */
+
+  /* CSS for Proposal */
+  .index_I{
+      font-size: 2.6rem;
+      font-weight: bold;
+  }
+  .index-A{
+      font-size: 2.4rem;
+      font-weight: bold;
+      padding-top: 0.5rem;
+      padding-left: 2rem;
+  }
+  .index-1{
+      font-size: 2.2rem;
+      font-weight: bold;
+      padding-top: 0.5rem;
+      margin-left: 4rem;
+  }
+  .index-a{
+      font-size: 2rem;
+      font-weight: bold;
+      padding-top: 0.5rem;
+      margin-left: 4rem;
+  }
+  .index-i{
+      font-size: 2rem;
+      font-weight: bold;
+      padding-top: 0.5rem;
+      margin-left: 4rem;
+  }
+  .index-11{
+      font-size: 2rem;
+      font-weight: bold;
+      padding-top: 0.5rem;
+      margin-left: 4rem;
+  }
+
+  .img-1-b{
+      height: 15vh;
+      padding-left: 30vw;
+      margin-top: -0.2rem;
+      margin-bottom: -0.2rem;
+  }
+  .img-2-b{
+      height: 30vh;
+      padding-left: 20vw;
+      margin-top: -0.6rem;
+  }
+  .credits-2-c{
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 22vw;
+      margin-bottom: 1.2rem;
+  }
+  .img-4-a{
+      width: 98%;
+  }
+  .credits-4-c{
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-left: 20vw;
+      margin-bottom: 1rem;
+  }
+/*End CSS for Proposal */
+
+}

@@ -1,0 +1,46 @@
+/*  CSS for media Queries width= 20in plus: 
+ *    1) Global Navigation
+ *    2) Home page
+ *    3) All pages that uses class="page";
+ */
+
+@media only screen and (min-width: 22in) {
+/* For Global Nav */
+        .nav-label-container{
+            height: 3.7rem;
+        }
+
+            .nav-label{
+                font-size: 3.5rem;
+            }
+
+        .hide-dropdown{
+            margin-top: -16rem;
+        }
+
+        .nav-dropdown{
+            font-size: 1.5rem; 
+            padding: 0.7rem;
+        }
+
+            .nav-dropdown a{
+                text-decoration: none;
+                color: white;
+            }
+
+                .nav-dropdown a:hover{
+                    text-decoration: none;
+                    color: yellow;
+                }
+
+            .nav-dropdown label{
+                font-size: 1rem;
+                font-weight: bolder;
+                color: yellow;
+            }
+
+            .dept-container{
+                padding-left: 1rem;
+            } 
+/* End Global Nav */
+}

@@ -6,18 +6,13 @@
 	<title>Home Page</title>
 
 	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_base.css">
-	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_11in-16in.css">
-	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_16in-19in.css">
-	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_20in_plus.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_11in-17in.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_17in-22in.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_22in_plus.css">
+	
 	<script src="js/Nav_Handler.js"></script>
 
 </head>
-
-<script>	
-</script>
-
-<style>
-</style>
 
 <body onload="init()">
     <nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()">
@@ -51,12 +46,7 @@
 
     <script>
     	function init(){
-			//alert("in init()");
-    		// initialize
     		NavHandler.init();
-		//	alert("inbetween NavHandler and HTML_Manager.init()");
-		/*	EduHTML_Manager.init(); */
-		//	alert("end of init()"); 
 		
     		// Reset 
     		let designEle = document.getElementById("d-label-id");
