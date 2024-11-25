@@ -17,8 +17,14 @@
     }
 
     .nav-dropdown{
-        font-size: 1.4rem; 
         padding: 0.7rem;
     }
+        .dept-label{
+            font-size: 1.4rem;
+        }
+
+        .nav-dropdown a{
+            font-size: 1.4rem;
+        }
 /* End Global Nav */      
 }

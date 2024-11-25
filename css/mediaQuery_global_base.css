@@ -64,7 +64,6 @@
         }
 
         .nav-dropdown{
-            font-size: 1.3rem;
             font-weight: bold;
             display: flex;
             flex-direction: column;
@@ -74,8 +73,14 @@
             border: 2px solid yellow;
             border-radius: 5px; 
         }
+            .dept-label{
+                font-size: 1.3rem;
+                font-weight: bolder;
+                color: yellow;
+            }
 
             .nav-dropdown a{
+                font-size: 1.3rem;
                 text-decoration: none;
                 color: white;
             }
@@ -84,12 +89,6 @@
                     text-decoration: none;
                     color: yellow;
                 }
-
-            .nav-dropdown label{
-                font-size: 1rem;
-                font-weight: bolder;
-                color: yellow;
-            }
 
             .dept-container{
                 padding-left: 1rem;
