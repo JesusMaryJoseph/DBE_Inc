@@ -1,9 +1,9 @@
 /*
-/  EduHTML_Manager     10
-/  CeoHTML_Manager    145
-/  TableManager       280
+/   EduHTML_Manager     8
+/   CeoHTML_Manager     66
+/   TableManager        122
+/   CodesTabManager     139
 */
-
 
 function eduTransitionHasEnded(){
     //alert("in eduTransitionHasEnded and<br>EduHTML_Manager.eduEle.style.opacity =  " + EduHTML_Manager.eduEle.style.opacity);
@@ -166,33 +166,35 @@ let CodesTabManager = {
             case "1":
               //  alert("removing selected-tab from intro tab");
                 this.introductionTabEle.classList.replace("selected-tab", "unselected-tab");
-                this.introductionContentsEle.classList.remove("selected-contents");
-              //  alert("after remove selected-tab");
+                this.introductionContentsEle.classList.replace("selected-contents","unselected-contents");
+              //  alert("after remove selected-tab from #1");
                 break;
             case "2":
                 this.exampleTabEle.classList.replace("selected-tab", "unselected-tab");
-                this.exampleContentsEle.classList.remove("selected-contents");
+                this.exampleContentsEle.classList.replace("selected-contents","unselected-contents");
+              //  alert("after remove selected-tab from #2");
                 break;
             case "3":
                 this.computerTabEle.classList.replace("selected-tab", "unselected-tab");
-                this.computerContentsEle.classList.remove("selected-contents");
+                this.computerContentsEle.classList.replace("selected-contents","unselected-contents");
+              //  alert("after remove selected-tab from #3");
                 break;
             default: alert("No Such Tab Number");
         }
         //alert("after 1st switch to remove");
         switch (newTab){
             case "1":
-                this.introductionTabEle.classList.add("selected-tab");
-                this.introductionContentsEle.classList.add("selected-contents");
+                this.introductionTabEle.classList.replace("unselected-tab","selected-tab");
+                this.introductionContentsEle.classList.replace("unselected-contents","selected-contents");
                 break;
             case "2":
               //  alert("adding selected-tab to example tab");
-                this.exampleTabEle.classList.add("selected-tab");
-                this.exampleContentsEle.classList.add("selected-contents");
+                this.exampleTabEle.classList.replace("unselected-tab","selected-tab");
+                this.exampleContentsEle.classList.replace("unselected-contents","selected-contents");
                 break;
             case "3":
-                this.computerTabEle.classList.add("selected-tab");
-                this.computerContentsEle.classList.add("selected-contents");
+                this.computerTabEle.classList.replace("unselected-tab","selected-tab");
+                this.computerContentsEle.classList.replace("unselected-contents","selected-contents");
                 break;
             default: alert("No Such Tab Number");
         }

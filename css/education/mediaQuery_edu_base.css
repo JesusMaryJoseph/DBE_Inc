@@ -1,14 +1,18 @@
 /*  base CSS for: 
- *    1) EDU.html
+ *    1) education.html
  */
 
-/* CSS for edu page and contents */ 
+/* CSS for page & edu  contents */ 
     .page{
           display: flex;
           flex-direction: column; 
           justify-content: center;
           align-content: center;
     }
+    .nav-label-container{
+        border: 1px solid olivedrab;
+    }
+
     .nav-container{
         position: absolute;
         top: 0;
@@ -16,38 +20,112 @@
         width: 99.5vw;
         height: 97vh;
         background-image: radial-gradient(blue, black);
-   	  /*  border: 2px solid blue; */
         overflow: hidden;
     }
     
     .edu-contents{
         position: absolute;
-        top: 3rem; 
+        top: 2.6rem; 
         left: 2rem;
         right: 2rem;
-        height: 90vh; 
-        color: yellow;
+        height: 99vh; 
+        color: black;
         font-size: 1.5rem;
         padding: 1rem;
         opacity: 1;
-        background-image: radial-gradient(blue, black);
+        background-image: url("media/imgs/low-noise-darker.png"); 
+      /*  background-image: radial-gradient(blue, black);*/
         overflow-x: hidden; 
+        overflow-y: scroll;
         border: 4px solid green;
-        z-index: 1;
+        z-index: 5;
     }
-    
-    .transition-0-1{
-        transition: opacity 0.7s;
-    }
-    
-    .transition-1-0{
-        transition: opacity 0.2s;
-    }
-/*End CSS for edu page and contents */ 
+        .transition-0-1{
+            transition: opacity 0.7s;
+        }
+        
+        .transition-1-0{
+            transition: opacity 0.2s;
+        }
+/*End CSS page & edu  contents */ 
    
-/* 	CSS for Packets, Videos, Datasheets, Training & Testing Nav */
+/* 	CSS for Videos, Datasheets, Packets, Training & Testing Nav */
+    /* CSS for Videos & Datasheets */
+    .videos-datasheets-container{
+        position: absolute;
+        top: 0.2rem;
+        left: 13rem;
+        width: 44vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.3rem 1rem;  
+        background-color: rgb(0, 0, 50);
+        z-index: 10;
+    }
+        .videos-label-container, .datasheets-label-container{
+            color: yellow;
+            cursor: pointer; 
+            z-index: 20;
+        }
+            .packets-label, .videos-label, .datasheets-label{
+                font-size: 1.3rem;/*1.5rem*/
+                font-weight: bold;
+                cursor: pointer; 
+                height: 7rem; 
+                width: 6rem; /*12rem */ 
+                padding: 0 0.2rem;/* 1.5rem */ 
+                background-color: black;
+            }  
+    /*End CSS for Videos & Datasheets */
 
+    /*CSS for Packets */
+    .packets-container{
+        position: absolute;
+        top: 0; 
+        right: 1rem;
+        width:  7rem;
+       /* height: 8vh;*/
+        background-color: black;
+        z-index: 20;
+    }
+        .packets-label-container{
+            position: relative;
+            height: 100%;
+            color: yellow;
+            cursor: pointer; 
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding-top: 0.3rem;
+            background-color: rgb(0, 0, 50);
+            z-index: 15;
+        }
+            
+        .packets-dropdown{
+            position: relative;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            transition: margin-top 0.7s;
+            padding: 0.5rem 0.5rem;
+            background-image: radial-gradient(blue, black);
+            border: 2px solid yellow;
+            border-radius: 5px; 
+            z-index: 5;
+        }
+            .packets-dropdown ul{
+                list-style-type: none;
+                margin-left: 1rem;
+            }
+            .hide-packets-dropdown{
+                margin-top: -30rem; 
+            }
+    /*End CSS for Packets */
 
+    /* CSS for Training & Testing Tabs */
     .training-container{
         position: absolute;
         bottom: 10vh;
@@ -57,46 +135,6 @@
         z-index: 10;
        /* border: 1px solid red; */
     }
-    .testing-container{
-        position: absolute;
-        bottom: 10vh;
-        right: 0; /* -8.5rem;*/
-      /*  width: 11rem; */
-        color: yellow;
-        z-index: 10;
-      /*  border: 5px solid red; */
-    } 
-
-    .packets-videos-datasheets-container{
-        position: absolute;
-        top: 0.3rem;
-        left: 13rem;
-        width: calc(95vw - 13rem);
-        height: 2.5rem;
-      /*  margin-left: 20vw; */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-      /*  border: 3px solid red; */ 
-        background-color: rgb(0, 0, 50);
-        z-index: 40;
-       /* background-image: radial-gradient(blue, black);*/
-    }
-        .packets-container, .videos-label-container, .datasheets-label-container{
-            position: relative;
-            top: 0; 
-            height: 100%;
-            color: yellow;
-            cursor: pointer; 
-            font-size: 1.5rem;
-            font-weight: bolder;
-           /* border: 3px solid green; */
-            z-index: 15;
-        }
-        .packets-label-container{
-            margin-top: 0.3rem
-        }
         .training-label-container, .testing-label-container{
             position: relative;
             cursor: pointer; 
@@ -104,24 +142,12 @@
             height: 100%;
             padding-right: 0.02rem; 
             background-color: rgb(0, 0, 50); 
-         /*   border: 3px solid green; */
+            border: 1px solid rgb(228, 38, 76); 
             z-index: 15;
-        }
-            .packets-label, .videos-label, .datasheets-label{
-               /* font-size: 1.5rem;
-                font-weight: bolder;
-                cursor: pointer; */
-            /*	height: 3rem; */
-            /*	width: 12rem; */
-            /*   padding-top: 0.5rem; 
-                padding: 0 1rem; */
-            /*	background-color: black; */
-            /*	border: 3px solid orange; */ 
-              /*  z-index: 15;*/
-            }            
+        }          
             .training-label, .testing-label{
                 font-size: 1.5rem;
-                font-weight: bolder;
+                font-weight: bold;
                 cursor: pointer; 
                 writing-mode: vertical-lr;
                 text-orientation: upright;
@@ -129,130 +155,224 @@
                 z-index: 15;
             }
 
-        .hide-packets-dropdown{
-            margin-top: -17rem; 
-        }
-        .hide-videos-dropdown{
-            margin-top: -14rem; 
-        }
-        .hide-datasheets-dropdown{
-            margin-top: -21rem; 
-        }
-        .hide-training-dropdown{
-            margin-left: -13rem; 
-        }
-        .hide-testing-dropdown{
-            margin-left: 13rem; 
-        }
-
-        .packets-dropdown, .videos-dropdown, .datasheets-dropdown{
-            position: relative;
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            transition: margin-top 0.7s;
-          /*  transition: margin-bottom 0.7s; */
-            padding: 0 0.5rem;
-            background-image: radial-gradient(blue, black);
-            border: 2px solid yellow;
-            border-radius: 5px; 
-            z-index: 5;
-        }
         .training-dropdown{
             position: absolute;
             top: 0;
-            left: 1.5rem;
+            left: 2rem;
             font-size: 1.3rem;
             font-weight: bold;
-            width: 10rem;
+            width: 11rem;
             color: white;
             display: flex;
             flex-direction: column;
             transition: margin-left 0.7s;
-            padding: 0 0.5rem;
+            padding: 1rem 2rem;
             background-image: radial-gradient(blue, black);
             border: 2px solid yellow;
             border-radius: 5px; 
             z-index: 5;
         }
+            .training-dropdown ul,
+            .testing-dropdown ul{
+                list-style-type: none;
+            }
+            .training-dropdown ul li,
+            .testing-dropdown ul li{
+                margin-bottom: 0.5em;
+            }
+            .hide-training-dropdown{
+                margin-left: -12rem; 
+            }
+
+
+    .testing-container{
+        position: absolute;
+        bottom: 10vh;
+        right: 0; /* -8.5rem;*/
+        /*  width: 11rem; */
+        color: yellow;
+        z-index: 10;
+        /*  border: 5px solid red; */
+    }
         .testing-dropdown {
             position: absolute;
             top: 0;
-            left: -11.2rem;
+            left: -11rem;
             font-size: 1.3rem;
             font-weight: bold;
-            width: 10rem;
+            width: 11rem;
             color: white;
             display: flex;
             flex-direction: column;
             transition: margin-left 0.7s;
-          /*  transition: margin-bottom 0.7s; */
-            padding: 0 0.5rem;
+            /*  transition: margin-bottom 0.7s; */
+            padding: 1rem 2rem;
             background-image: radial-gradient(blue, black);
             border: 2px solid yellow;
             border-radius: 5px; 
-            z-index: 5;
+            z-index: 6;
         }
-        .datasheets-dropdown{
-            width: 8rem;
-        }
-        .datasheets-dropdown label,
-        .training-dropdown label,
-        .testing-dropdown label{
-            margin-left: -1.5rem;
-            font-size: 1.1rem;
-            font-weight: bolder;
-            color: yellow;
 
-        }
-            .packets-dropdown li, 
-            .videos-dropdown li, 
-            .datasheets-dropdown li, 
-            .training-dropdown li, 
-            .testing-dropdown li{
-                margin-left: -1rem;
-                margin-bottom: 0.3rem;
-                cursor: pointer;
+            .hide-testing-dropdown{
+                margin-left: 12.5rem; 
             }
-            .edu-nav-dropdown ul{
-                margin-left: -0.5rem;
-                padding-right: 0.5rem;
+                .packets-dropdown li,
+                .training-dropdown li, 
+                .testing-dropdown li{
+                    margin-left: -1rem;
+                    margin-bottom: 0.3rem;
+                    cursor: pointer;
+                }
+                .packets-dropdown li:hover,
+                .training-dropdown li:hover, 
+                .testing-dropdown li:hover{
+                    color: yellow;
+                }
+
+    /*End CSS for Training & Testing Tabs  */
+
+
+    /*CSS for Training Contents  */
+        /*CSS for Training Codes  */
+      /*   .main-container{
+           color: black; 
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            justify-content:flex-start;
+            align-items: center;
+            background-image: url("media/imgs/low-noise-darker.png"); 
+            border: 3px solid orange;
+            margin: 2px;
+            padding: 2px;
+        }*/
+           /* .main-heading{
+                color: white;
+                font-size: 1.5em;
+            }*/
+
+            .tabs-container{
+                position: fixed;
+                top: 7vh;
+                left: 2rem;
+                right: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around; 
+                padding: 0.5em 0; 
+               /* height: 4rem; 
+                width: 90vw;*/
+                background-image: radial-gradient(blue, black);
+                border: 1px solid yellow; 
+                overflow: hidden;
+                z-index: 40;
             }
-            .packets-dropdown li:hover, 
-            .videos-dropdown li:hover, 
-            .datasheets-dropdown li:hover, 
-            .training-dropdown li:hover, 
-            .testing-dropdown li:hover{
+                .tab-background-general{
+                    width: 100vw;
+                    margin-left: 13.5vw;
+                  /*  background-image: radial-gradient(blue, black);*/
+                }
+
+                .tab{
+                    font-size: 1em;
+                    font-weight: bold; 
+                    cursor: pointer;
+                }
+                .unselected-tab{
+                    color: white;
+                    opacity: 0.7;
+                }
+                .selected-tab{
+                    color: yellow;
+                    opacity: 1; 
+                } 
+
+            .body-container{
+                position: relative;
+                top: 6vh;
+                left: -2vw;
+                width: 88vw;
+                height: 90vh;
+                border: 5px solid blue;
+            }
+                .contents{
+                    position: absolute;
+                    top: 1vh;/* 0;*/
+                   /* left: 0;
+                    width: 50vw;*/
+                   /* height: 90vh;*/
+                    margin: 0 1rem;
+                   /* padding: 0.5em; */
+                    padding-bottom: 5rem;
+                 /*   background-image: url("media/imgs/low-noise-darker.png"); 
+                    background-image: radial-gradient(blue, black);
+                    color: black;*/
+                    z-index: 2;
+                  /*  border: 3px solid red; */
+                }
+                .selected-contents{
+                    display: block;
+                }
+                .unselected-contents{
+                    display: none;
+                }
+              /*  .boundry_container-0{
+                    position: relative;
+                    left: 0;
+                    height: 4em;
+                }
+                .boundry{
+                    height: 4em;
+                }
+                .boundry_container-3{
+                    position: relative;
+                    right: 0;
+                    height: 4em;
+                    border: 2px solid red;
+                } */
+
+            .introduction-contents,
+            .example-contents,
+            .computer-contents{
+                font-size: 1.1em;
+                font-weight: bold;
+                width: 95vw;
+                padding-right: 5em;
+                margin-bottom: 3em;
+                text-indent: 3rem;
+              /*  background-image: radial-gradient(blue, black); */
+              border: 2px solid yellow;
+            }
+            .introduction-contents h1,
+            .example-contents h1,
+            .computer-contents h1{
+                display:block;
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+            }
+                p{
+                    margin-top: 0.5rem;
+                }
+
+            .introduction-contents a{
                 color: yellow;
             }
+            .samuel-morse-key{
+                background-color: white;
+            }
+            .secret-message-audacity{
+                margin-bottom: 16rem;
+            }
 
-/*End CSS for Packets, Videos, Datasheets, Training & Testing Nav */
+            .audio-sos,
+            .audio-secret-message{
+                width: 100%;
+                padding-left: 2rem;
+            }
 
 
-/* CSS for Article id="html-target-id" */
-        /*
-        .packet{
-            position: absolute;
-            top: 0.5rem; 
-            left: 19.7vw;
-            width: 56vw;
-            height: 90vh;
-            opacity: 1;
-            z-index: 10;
-            transition: opacity 1s;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: yellow;
-            background-image: radial-gradient(blue, black);
-            border: 2px solid yellow;
-            border-radius: 10px;
-            padding: 0 1rem;
-            overflow-y: scroll;
-        }
-        .packet-label{
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-     */
+        /*End CSS for Training Codes  */
+
+
+    /*End CSS for Training Contents  */

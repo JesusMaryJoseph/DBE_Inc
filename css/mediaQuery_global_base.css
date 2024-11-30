@@ -64,6 +64,7 @@
         }
 
         .nav-dropdown{
+            width: 10rem;
             font-weight: bold;
             display: flex;
             flex-direction: column;
@@ -74,15 +75,17 @@
             border-radius: 5px; 
         }
             .dept-label{
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 font-weight: bolder;
                 color: yellow;
+               padding-bottom: 0.2rem;
             }
 
             .nav-dropdown a{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 text-decoration: none;
                 color: white;
+                padding-bottom: 0.3rem;
             }
 
                 .nav-dropdown a:hover{
@@ -93,6 +96,13 @@
             .dept-container{
                 padding-left: 1rem;
             } 
+
+              /*  .dept-container a{
+                    font-size: 1.1rem;
+                    text-decoration: none;
+                    color: white;
+                    padding-bottom: 0.3rem;
+                } */
 /* End CSS for Nav */
 
 

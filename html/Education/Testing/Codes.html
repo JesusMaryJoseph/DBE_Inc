@@ -4,15 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+    </script>
+
     <style>
-       /* body{
-            margin: 1rem;
-        }*/
-        .edu-contents{
-            background-image: url("media/imgs/low-noise-darker.png");
-            background-size: cover;
-            color: black; 
-        } 
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: black;
+           /* border: 2px solid yellow; */
+            padding: 2px;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            width: 99vw;
+            justify-content:flex-start;
+            align-items: center; 
+        }
+            .main-heading{
+                color: white;
+                font-size: 1.5em;
+            }
+
+            .tabs-container{
+                position: relative;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+               justify-content:space-around; 
+                padding: 0.5em 0; 
+               /* height: 4em; */
+                width: 90vw;
+                background-image: radial-gradient(blue, black);
+              /*   background-image: url("imgs/Full_Tabs.svg");*/
+                border: 2px solid yellow;
+                overflow: hidden;
+            }
+                .tab-background-general{
+                    width: 100vw;
+                    margin-left: 13.5vw;
+                    background-image: radial-gradient(blue, black);
+                }
+
+                .tab{
+                    font-size: 1.7em;
+                    font-weight: bold; 
+                    cursor: pointer;
+                }
+                .unselected-tab{
+                    color: white;
+                    opacity: 0.7;
+                }
+                .selected-tab{
+                    color: yellow;
+                    opacity: 1; 
+                } 
+
+            .body-container{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 98vw;
+                height: 90vh;
+                border: 5px solid blue;
+            }
+                .contents{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 90vh;
+                    margin: 0 1em;
+                    padding: .5em;
+                    padding-bottom: 5em;
+                    background-image: radial-gradient(blue, black);
+                    color: yellow;
+                }
+                .selected-contents{
+                    z-index: 2;
+                }
+                .boundry_container-0{
+                    position: relative;
+                    left: 0;
+                    height: 4em;
+                }
+                .boundry{
+                    height: 4em;
+                }
+                .boundry_container-3{
+                    position: relative;
+                    right: 0;
+                    height: 4em;
+                    border: 2px solid red;
+                } 
+
+            .introduction-contents,.example-contents{
+                font-size: 1.7em;
+                font-weight: bold;
+                width: 90vw;
+                padding-right: 5em;
+                margin-bottom: 3em;
+                background-image: radial-gradient(blue, black);
+            }
+            .introduction-contents a{
+                color: yellow;
+            }
+            .samuel-morse-key{
+                background-color: white;
+            }
+
     </style>
 </head>
 <body>
@@ -29,19 +133,22 @@
                 <p>“Tora, Tora, Tora” is a coded message. “Dah-he-tih-hi” is another coded message. Can you decode them? Most likely not, after all they are “secret” coded messages both of which were used during World War II.</p>
                 <p>“Tora” means “tiger” in the Japanese Language but “Tora, Tora, Tora” is a coded message which Captain Mitsuo Fuchida sent to the Japanese fleet after flying over Oahu to indicate the Americans had been caught by surprise.</p>
                 <p>In 1942 during World War II, US Marines enlisted 200 native Navajos into the Marines with the specific purpose of using the Navajo Language for creating secret codes.</p>
-                <p>For example:<br>1) “Dah-he-tih-hi” (meaning hummingbird in the Navajo Language) was used as a code word for “fighter plane”<br>
-                2) “Besh-lo”(iron-fish) for “submarine”!</p>
+                <p>Two examples:
+                    <ol type=1>  
+                        <li>“Dah-he-tih-hi” (meaning hummingbird in the Navajo Language) was used as a code word for “fighter plane”</li>
+                        <li>“Besh-lo”(iron-fish) for “submarine”!</li>
+                    </ol>
                 <p>Given a message in English, Navajo Code Talkers would convert(encode) that message into the Navajo Language, which would be transmitted over the air-waves. On the front lines other Navajo Marines would receive it, decode it back into English and hand it over to the commanding officer.</p>
-                <p>For a CIA article about the “Navajo Code Talkers”? <a href="https://www.cia.gov/stories/story/navajo-code-talkers-and-the-unbreakable-code/ target='_blank' and rel='noopener noreferrer'">See</a></p>
+                <p>How effective were the “Navajo Code Talkers”? <a href="www.intelligence.gov/people/barrier-breakers-in-history/453-navajo-code-talkers">See</a></p>
 
                 <p>The above are examples of “secret” codes (see cryptography), whose specific purpose is to prevent anyone, other than the person(s) for which it was intended, from reading(understanding) the message. You will be learning several computer codes, while not secret, are still codes which require “encoding” and “decoding”. First, however, go over the “Two Examples” section to get a better understanding of “codes” in general.</p>
             </div>
-            <div id="example-contents-id" class="contents example-contents unselected-contents">
+            <div id="example-contents-id" class="contents example-contents">
                 <h1>Codes: Two Examples</h1>
-                <h1>First Example: The English Language</h1>
+                <h2>First Example: The English Language</h2>
                     <p>As we saw in the introduction, a language, Navajo, can be considered as a code, even a secret code and it can be very effective! In fact every language unfamiliar to a person is a secret code to them.</p> 
                     <p>Consider the following sentence:
-                <label>“Jewe ndi inzira, n’ukuri, n’ubuzima.</label>
+                <h4>“Jewe ndi inzira, n’ukuri, n’ubuzima.</h4>
                 Unless you are familiar with Kirundi, the native language of the people who live in Burundi, Africa, that sentence conveys no meaning to you whatsoever. To learn and be fluent in Kirundi is very difficult. For most people learning their first language was difficult as well and took many, many years before they were fluent in it. Fortunately the computer codes are not that difficult to learn but will still take a fair amount of effort!</p>
                     <p>To help us in that regard we will consider the one language we know: English. It is both a spoken and written language. All the written words are composed of letters and all the spoken words are composed of basic sounds, called phonemes. While you probably know that there are 26 letters, you may not know how many phonemes there are.</p>
                 <label>Answer.</label> 
@@ -86,7 +193,7 @@
                     <video src="media/audio/sos-signal.mp4" controls width="400"></video>
                 </p>
                 <p>Here's an image of the SOS signal from Audacity
-                    <img class="audio-sos" src="media/audio/SOS_img-from-Audacity.png">
+                    <img src="media/audio/SOS_img-from-Audacity.png">
                     How would you describe the three sound waves for the letter S?
                     Likewise a description for the three sound waves for the O letter?
                     If we say the S is compossed of 3 dots and the O is composed of 3 dashes,
@@ -105,102 +212,16 @@
                     What two letters would you assign to the 1-bit values(eg a == dot and b== dash)
                     Then continue on with c==[dot,dot], d=[dot,dash] etc.
                 </p>
-                <p>Here is Samuel Morse's "key":</p>
+                Here is Samuel Morse's "key":
                 <img class="samuel-morse-key" src="media/audio/SamuelMorseKey.png">
-                <p>Your assignment: Decode the following Morse Code Message:</p>
-                   <audio src="media/audio/morse.mp3" controls></audio>
-                <p>Here's what it looks like in Audacity.</p>
-                <img class="audio-secret-message" src="media/imgs/Audacity_Img_of_Secret_Message.png"><br>
-                <label>For 1-bit you can choose 2 values:</label><br>    	
-                <table>
-                    <tr>
-                        <td>dot</td>
-                        <td>dash</td>
-                    </tr>
-                    <tr>
-                        <td>E</td>
-                        <td>T</td>
-                    </tr>
-                </table><br><br>
-                <label>For 2-bits you can choose 4 values:</label><br>
-                <table>  
-                    <tr>
-                        <td>dot  dot</td>
-                        <td>dot  dash</td>
-                        <td>dash  dot</td>
-                        <td>dash  dash</td> 
-                    </tr>
-                    <tr>
-                        <td>I</td>
-                        <td>A</td>
-                        <td>N</td>
-                        <td>M</td> 
-                    </tr>
-                </table><br><br>
-                <label>For 3-bits you can choose 8 values:</label><br>
-                <table>  
-                    <tr>
-                        <td>dot dot dot</td>
-                        <td>dot dot dash</td>
-                        <td>dot dash dot</td>
-                        <td>dash dot dot</td>
-                        <td>dot dash dash</td>
-                        <td>dash dot dash</td>
-                        <td>dash dash dot</td>
-                        <td>dash  dash dash</td>
-                    </tr>
-                    <tr>
-                        <td>S</td>
-                        <td>U</td>
-                        <td>R</td>
-                        <td>D</td>
-                        <td>G</td>
-                        <td>K</td>
-                        <td>W</td>
-                        <td>O</td>    	 	
-                    </tr>
-                </table><br><br>
-                <label>For 4-bits you can choose 16 values: We already have 14 so only need 12 more!</label><br>
-                <table class="center" > 
-                    <tr>
-                        <td>dot dot dot dot </td>
-                        <td>dot dot dot dash </td>
-                        <td>dot dot dash dot </td>
-                        <td>dot dash dot dot</td>
-                        <td>dash dot dot dot</td>
-                        <td>dot dot dash dash</td>
-                        <td>dot dash dot dash</td>
-                        <td>dash dot dot dash</td>
-                        <td>dot dash dash dot</td>
-                        <td>dash dot dash dot</td>
-                        <td>dash dash dot dot</td>
-                        <td>dot dash dash dash</td>
-                        <td>dash dot dash dash</td>
-                        <td>dash dash dot dash</td>
-                        <td>dash dash dash dot</td>
-                        <td>dash dash dash dash</td>
-                    </tr>
-                    <tr>
-                        <td class="center">H </td>
-                        <td>V</td>
-                        <td>F</td>
-                        <td>L</td>
-                        <td>B</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>X</td>
-                        <td>P</td>
-                        <td>C</td>
-                        <td>Z</td>
-                        <td>J</td>
-                        <td>Y</td>
-                        <td>Q</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </table><br>                                      	 
+                <p>Your assignment decode the following Morse Code Message:
+                    <audio src="media/audio/morse.mp3" controls></audio>
+                </p>
+                <p>
+                </p>
+
             </div>
-            <div id="computer-contents-id" class="contents computer-contents unselected-contents">
+            <div id="computer-contents-id" class="contents computer-contents">
                 <label>Computer Codes Contents</label>
             </div>
         </div>
