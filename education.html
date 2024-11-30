@@ -45,24 +45,7 @@
     <!--    <div id="nav-bottom-id"></div>  -->
     </nav> 
 
-	<nav class="packets-videos-datasheets-container">
-		<nav id="packets-container-id" class="packets-container" onmouseleave = "EduNavHandler.hide('packets')">
-			<div class="packets-label-container">
-				<label class="packets-label" onclick="EduNavHandler.show('packets')">Packets</label>
-			</div>
-			<div id="packets-dropdown-id" class="packets-dropdown hide-packets-dropdown">
-				<ul>
-					<li onclick="EduHTML_Manager.request('html/CEO/CEO_Packet.html', 'edu'), EduNavHandler.hide('packets')">CEO</li>
-					<li onclick="EduHTML_Manager.request('html/Engineering/Engineering_Packet.html', 'edu'), EduNavHandler.hide('packets')">Engineering</li>
-					<li onclick="EduHTML_Manager.request('html/Drafting/Drafting_Packet.html', 'edu'), EduNavHandler.hide('packets')">Drafting</li>
-					<li onclick="EduHTML_Manager.request('html/Technician/Technician_Packet.html', 'edu'), EduNavHandler.hide('packets')">Technician</li>
-					<li onclick="EduHTML_Manager.request('html/Computer/Computer_Packet.html', 'edu'), EduNavHandler.hide('packets')">Computer</li>
-					<li onclick="EduHTML_Manager.request('html/Education/Education_Packet.html', 'edu'), EduNavHandler.hide('packets')">Education</li>
-					<li onclick="EduHTML_Manager.request('html/MediaArts/MediaArts_Packet.html', 'edu'), EduNavHandler.hide('packets')">Media Arts</li>
-				</ul>
-			</div>
-		</nav>
-
+	<nav class="videos-datasheets-container">
 		<!--<nav id="videos-container-id" class="videos-container" onmouseleave = "EduNavHandler.showHide('videos')">
 		-->
 		<nav id="videos-container-id" class="videos-container">
@@ -80,13 +63,30 @@
 		</nav>
 	</nav>
 
+	<nav id="packets-container-id" class="packets-container" onmouseleave = "EduNavHandler.hide('packets')">
+		<div class="packets-label-container">
+			<label class="packets-label" onclick="EduNavHandler.show('packets')">Packets</label>
+		</div>
+		<div id="packets-dropdown-id" class="packets-dropdown hide-packets-dropdown">
+			<ul>
+				<li onclick="EduHTML_Manager.request('html/CEO/CEO_Packet.html', 'edu'), EduNavHandler.hide('packets')">CEO</li>
+				<li onclick="EduHTML_Manager.request('html/Engineering/Engineering_Packet.html', 'edu'), EduNavHandler.hide('packets')">Engineering</li>
+				<li onclick="EduHTML_Manager.request('html/Drafting/Drafting_Packet.html', 'edu'), EduNavHandler.hide('packets')">Drafting</li>
+				<li onclick="EduHTML_Manager.request('html/Technician/Technician_Packet.html', 'edu'), EduNavHandler.hide('packets')">Technician</li>
+				<li onclick="EduHTML_Manager.request('html/Computer/Computer_Packet.html', 'edu'), EduNavHandler.hide('packets')">Computer</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Education_Packet.html', 'edu'), EduNavHandler.hide('packets')">Education</li>
+				<li onclick="EduHTML_Manager.request('html/MediaArts/MediaArts_Packet.html', 'edu'), EduNavHandler.hide('packets')">Media Arts</li>
+			</ul>
+		</div>
+	</nav>
+
 	<nav id="training-container-id" class="training-container" onmouseleave = "EduNavHandler.hide('training')">
 		<div class="training-label-container">
     		<label class="training-label" onclick="EduNavHandler.show('training')">Training</label>
     	</div>
 		<div id="training-dropdown-id" class="training-dropdown hide-training-dropdown">
 			<ul>
-				<li onclick="EduHTML_Manager.request('html/Education/Training/Codes.html', 'edu'), EduNavHandler.hide('training')">Codes:</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Training/Codes.html', 'edu'), EduNavHandler.hide('training')">Codes</li>
 				<li onclick="EduHTML_Manager.request('html/Education/Training/Architecture.html', 'edu'), EduNavHandler.hide('training')">Architecture</li>
 				<li onclick="EduHTML_Manager.request('html/Education/Training/Software.html', 'edu'), EduNavHandler.hide('training')">Software</li>
 				<li onclick="EduHTML_Manager.request('html/Education/Training/Programming.html', 'edu'), EduNavHandler.hide('training')">Programming</li>
@@ -97,10 +97,10 @@
 	<nav id="testing-container-id" class="testing-container" onmouseleave = "EduNavHandler.hide('testing')">
 		<div id="testing-dropdown-id" class="testing-dropdown hide-testing-dropdown">
 			<ul>
-				<li onclick="EduHTML_Manager.request('html/Education/Training/Codes.html', 'edu'), EduNavHandler.hide('training')">Codes:</li>
-				<li onclick="EduHTML_Manager.request('html/Education/Training/Architecture.html', 'edu'), EduNavHandler.hide('training')">Architecture</li>
-				<li onclick="EduHTML_Manager.request('html/Education/Training/Software.html', 'edu'), EduNavHandler.hide('training')">Software</li>
-				<li onclick="EduHTML_Manager.request('html/Education/Training/Programming.html', 'edu'), EduNavHandler.hide('training')">Programming</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Testing/Codes.html', 'edu'), EduNavHandler.hide('testing')">Codes</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Testing/Architecture.html', 'edu'), EduNavHandler.hide('testing')">Architecture</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Testing/Software.html', 'edu'), EduNavHandler.hide('testing')">Software</li>
+				<li onclick="EduHTML_Manager.request('html/Education/Testing/Programming.html', 'edu'), EduNavHandler.hide('testing')">Programming</li>
 			</ul>
 		</div>
 		<div class="testing-label-container">
