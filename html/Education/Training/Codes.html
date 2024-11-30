@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <script>
+    </script>
+    
     <style>
        /* body{
             margin: 1rem;
@@ -13,6 +17,16 @@
             background-size: cover;
             color: black; 
         } 
+
+        .question{
+            cursor: pointer;
+        }
+            .question:hover{
+                color: yellow;
+            }
+        .answer-hidden{
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -32,46 +46,57 @@
                 <p>For example:<br>1) “Dah-he-tih-hi” (meaning hummingbird in the Navajo Language) was used as a code word for “fighter plane”<br>
                 2) “Besh-lo”(iron-fish) for “submarine”!</p>
                 <p>Given a message in English, Navajo Code Talkers would convert(encode) that message into the Navajo Language, which would be transmitted over the air-waves. On the front lines other Navajo Marines would receive it, decode it back into English and hand it over to the commanding officer.</p>
-                <p>For a CIA article about the “Navajo Code Talkers”? <a href="https://www.cia.gov/stories/story/navajo-code-talkers-and-the-unbreakable-code/ target='_blank' and rel='noopener noreferrer'">See</a></p>
-
-                <p>The above are examples of “secret” codes (see cryptography), whose specific purpose is to prevent anyone, other than the person(s) for which it was intended, from reading(understanding) the message. You will be learning several computer codes, while not secret, are still codes which require “encoding” and “decoding”. First, however, go over the “Two Examples” section to get a better understanding of “codes” in general.</p>
+                <p>The above are examples of “secret” codes (see cryptography), whose specific purpose is to prevent anyone, other than the person(s) for which it was intended, from understanding the message. You will be learning several computer codes, while not secret, are still codes which require “encoding” and “decoding”. First, however, go over the “Two Examples” section to get a better understanding of “codes” in general.</p>
             </div>
             <div id="example-contents-id" class="contents example-contents unselected-contents">
                 <h1>Codes: Two Examples</h1>
                 <h1>First Example: The English Language</h1>
-                    <p>As we saw in the introduction, a language, Navajo, can be considered as a code, even a secret code and it can be very effective! In fact every language unfamiliar to a person is a secret code to them.</p> 
-                    <p>Consider the following sentence:
+                <p>As we saw in the introduction, a language, Navajo, can be considered as a code, even a secret code and it can be very effective! In fact every language unfamiliar to a person is a secret code to them.</p> 
+                <p>Consider the following sentence:
                 <label>“Jewe ndi inzira, n’ukuri, n’ubuzima.</label>
-                Unless you are familiar with Kirundi, the native language of the people who live in Burundi, Africa, that sentence conveys no meaning to you whatsoever. To learn and be fluent in Kirundi is very difficult. For most people learning their first language was difficult as well and took many, many years before they were fluent in it. Fortunately the computer codes are not that difficult to learn but will still take a fair amount of effort!</p>
-                    <p>To help us in that regard we will consider the one language we know: English. It is both a spoken and written language. All the written words are composed of letters and all the spoken words are composed of basic sounds, called phonemes. While you probably know that there are 26 letters, you may not know how many phonemes there are.</p>
-                <label>Answer.</label> 
-                    <p>For now consider English as a written language. We will call each letter of the alphabet a “bit”. So 1-bit can have 26 different values: a, b, c, . . . x, y, z. Does the English have words that are 1-bit in length? What are they?</p> 
-                    <label>Answer(three:a, i, o)</label> 
-                    <p>This seems to be a very sensitive topic as some consider all 26 letters as a word. I’m assuming a word is a word only if it conveys some meaning! I’m no English Major!</p>
-                    <p>How many 1-bit words could there be?</p> 
-                <label>Answer (26)</label>
-                    <p>Again some may disagree with this. Since I am using the English Language for the sole purpose of helping us understand Computer Codes, 26 is the answer!</p>
-                    <p>Next question: how many 2-bit words could there be?</p> <label>Answer (26x26) or 262 = 676</label>
-                    <p>Aside Question: How many 2-bit words are there in the English Language?</p>
-                <label>Answer(127)</label>
-                    <p>How many 3-bit words could there be?<p>
-                <label>Answer(26x26x26) or 263 = 17,576.</label>
-
-                    <p>Final question: How many n-bit words could there be in the English Language?</p> 
-                <label>Answer: 26n</label>
-
-                    <p>In like manner we can consider the English Language as a spoken language. How many sounds are there in the English Language?</p>
-                <label>Answer(44)</label>
-                    <p>Again let us call each individual sound as 1-bit.
-                How many 1-bit words could we pronounce?</p>
-                <label>Answer (44)</label>
-                <p>How many 2-bit words could we pronounce?</p>
-                <label>Answer (442 = 1,936)</label>
+                <p>Unless you are familiar with Kirundi, which is the native language of the people who live in Burundi, Africa, that sentence conveys no meaning to you whatsoever. To learn and be fluent in Kirundi would be very difficult to say the least. For everyone, learning their first language was difficult and took many, many years before they were fluent in it. Fortunately the computer codes are not that difficult to learn but will still take a fair amount of effort!</p>
+                <p>To help us in that regard we will consider the one language we know: English. It is both a spoken and written language. All the written words are composed of letters and all the spoken words are composed of basic sounds, called phonemes. While you probably know that there are 26 letters, you may not know how many phonemes there are.</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('phonemes')">Answer = </label>
+                    <label id="phonemes-id" class="answer-hidden">approximately 44. <a href="https://www.readingrockets.org/sites/default/files/migrated/the-44-phonemes-of-english.pdf"  target='_blank' and rel='noopener noreferrer'>See</a></label>
+                </div> 
+                <p>Now consider English as a written language. Every "word" is composed of one or more "letters". We will call each "letter" of a "word" a “bit”. Thus the word "train" is composed of 5 letters and is therefore called a 5-bit word. "hello" is also a 5-bit word even though the letter "l" occurs twice!</p>
+                <p>Next question: how many 2-bit words "could" there be?</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('one-bit-words')">Answer = </label>
+                    <label id="one-bit-words-id" class="answer-hidden">(26x26) or 26^2 = 676</label>
+                </div>
+                <p>Aside Question: How many 2-bit words are there in the English Language?</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('two-bit-english-words')">Answer = </label>
+                    <label id="two-bit-english-words-id" class="answer-hidden">127</label>
+                </div>
+                <p>How many 3-bit words "could" there be?<p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('three-bit-words')">Answer = </label>
+                    <label id="three-bit-words-id" class="answer-hidden">(26x26x26) or 26^3 = 17,576</label>
+                </div>
+                <p>Final question: How many n-bit words could there be in the English Language?</p> 
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-words')">Answer = </label>
+                    <label id="n-bit-words-id" class="answer-hidden">2^n</label>
+                </div>
+                <p>In like manner we can consider the English Language as a spoken language. Each individual sound, phoneme, could then be considered as a "1-bit" "spoken word".</p>
+                <p>How many 2-bit "spoken words" could we pronounce?</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('2-bit-spoken-words')">Answer = </label>
+                    <label id="2-bit-spoken-words-id" class="answer-hidden">44x44 = 44^2 = 1,936</label>
+                </div>
                 <p>How many 3-bit words could we pronounce?</p>
-                <label>Answer (443 = 85,184)<label>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('3-bit-spoken-words')">Answer = </label>
+                    <label id="3-bit-spoken-words-id" class="answer-hidden">44x44x44 = 44^3 = 85,184</label>
+                </div>
                 <p>In general how many n-bit words could we pronounce?</p>
-                <label>Answer (44n)</label>
-
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-spoken-words')">Answer = </label>
+                    <label id="n-bit-spoken-words-id" class="answer-hidden">44^n</label>
+                </div>
                 <h2>Second Example: Morse Code</h2>
                 <p>Play the two audio files below. They both play the same message; however, the first one plays the message several times, while
                     the second one only plays the message once. Do you recognize the message?
@@ -79,9 +104,7 @@
                 <audio src="media/audio/sos-signal.mp3" controls></audio>
                 <audio src="media/audio/sos-signal-1.mp3" controls></audio>
                 <p>It's Morse Code for S-O-S.</p>
-                <P>Can you describe the audio signal for the letter S? For the letter O?
-                    How many distince sounds do you hear?
-                </P>
+                <P>Can you describe the audio signal for the letter S? For the letter O? How many distinct sounds do you hear?</P>
                 <p>Here's what it sounds like in Audacity, which is an audio app.
                     <video src="media/audio/sos-signal.mp4" controls width="400"></video>
                 </p>
