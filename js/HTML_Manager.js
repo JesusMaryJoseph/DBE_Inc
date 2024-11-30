@@ -217,3 +217,19 @@ let CodesTabManager = {
 }
 
 /* End of CodesTabManager */
+
+
+/* Begin QuestionAnswerManager */
+
+        let QuestionAnswerManager = {
+            //Properties
+
+            //Methods
+            revealAnswer: function(response){
+               // alert("in revealAnswer");
+               // alert("answer =  " + answer);
+                document.getElementById(response + "-id").classList.remove("answer-hidden");
+            }
+        }
+
+/* End QuestionAnswerManager */
