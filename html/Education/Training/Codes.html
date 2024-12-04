@@ -27,6 +27,13 @@
         .answer-hidden{
             opacity: 0;
         }
+        .tdth-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
     </style>
 </head>
 <body>
@@ -57,44 +64,44 @@
                 <p>Unless you are familiar with Kirundi, which is the native language of the people who live in Burundi, Africa, that sentence conveys no meaning to you whatsoever. To learn and be fluent in Kirundi would be very difficult to say the least. For everyone, learning their first language was difficult and took many, many years before they were fluent in it. Fortunately the computer codes are not that difficult to learn but will still take a fair amount of effort!</p>
                 <p>To help us in that regard we will consider the one language we know: English. It is both a spoken and written language. All the written words are composed of letters and all the spoken words are composed of basic sounds, called phonemes. While you probably know that there are 26 letters, you may not know how many phonemes there are.</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('phonemes')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('phonemes-id')">Answer = </label>
                     <label id="phonemes-id" class="answer-hidden">approximately 44. <a href="https://www.readingrockets.org/sites/default/files/migrated/the-44-phonemes-of-english.pdf"  target='_blank' and rel='noopener noreferrer'>See</a></label>
                 </div> 
                 <p>Now consider English as a written language. Every "word" is composed of one or more "letters". We will call each "letter" of a "word" a “bit”. Thus the word "train" is composed of 5 letters and is therefore called a 5-bit word. "hello" is also a 5-bit word even though the letter "l" occurs twice!</p>
                 <p>Next question: how many 2-bit words "could" there be?</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('one-bit-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('one-bit-words-id')">Answer = </label>
                     <label id="one-bit-words-id" class="answer-hidden">(26x26) or 26^2 = 676</label>
                 </div>
                 <p>Aside Question: How many 2-bit words are there in the English Language?</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('two-bit-english-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('two-bit-english-words-id')">Answer = </label>
                     <label id="two-bit-english-words-id" class="answer-hidden">127</label>
                 </div>
                 <p>How many 3-bit words "could" there be?<p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('three-bit-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('three-bit-words-id')">Answer = </label>
                     <label id="three-bit-words-id" class="answer-hidden">(26x26x26) or 26^3 = 17,576</label>
                 </div>
                 <p>Final question: How many n-bit words could there be in the English Language?</p> 
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-words')">Answer = </label>
-                    <label id="n-bit-words-id" class="answer-hidden">2^n</label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-words-id')">Answer = </label>
+                    <label id="n-bit-words-id" class="answer-hidden">26^n</label>
                 </div>
                 <p>In like manner we can consider the English Language as a spoken language. Each individual sound, phoneme, could then be considered as a "1-bit" "spoken word".</p>
                 <p>How many 2-bit "spoken words" could we pronounce?</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('2-bit-spoken-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('2-bit-spoken-words-id')">Answer = </label>
                     <label id="2-bit-spoken-words-id" class="answer-hidden">44x44 = 44^2 = 1,936</label>
                 </div>
                 <p>How many 3-bit words could we pronounce?</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('3-bit-spoken-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('3-bit-spoken-words-id')">Answer = </label>
                     <label id="3-bit-spoken-words-id" class="answer-hidden">44x44x44 = 44^3 = 85,184</label>
                 </div>
                 <p>In general how many n-bit words could we pronounce?</p>
                 <div>
-                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-spoken-words')">Answer = </label>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-spoken-words-id')">Answer = </label>
                     <label id="n-bit-spoken-words-id" class="answer-hidden">44^n</label>
                 </div>
                 <h2>Second Example: Morse Code</h2>
@@ -106,122 +113,363 @@
                 <p>It's Morse Code for S-O-S.</p>
                 <P>Can you describe the audio signal for the letter S? For the letter O? How many distinct sounds do you hear?</P>
                 <p>Here's what it sounds like in Audacity, which is an audio app.
-                    <video src="media/audio/sos-signal.mp4" controls width="400"></video>
+                    <video src="media/audio/SOS-audacity-resized.mp4" controls width="400"></video>
                 </p>
                 <p>Here's an image of the SOS signal from Audacity
-                    <img class="audio-sos" src="media/audio/SOS_img-from-Audacity.png">
+                    <img class="audio-sos" src="media/imgs/SOS_img-from-Audacity.png">
                     How would you describe the three sound waves for the letter S?
                     Likewise a description for the three sound waves for the O letter?
                     If we say the S is compossed of 3 dots and the O is composed of 3 dashes,
                     the length of one dash is _?__ times the length of one dot.
-                    <div class="answer-container">
-                        <label>Answer</label> 
-                        <div>3</div>
+                    <div>
+                        <label class="question" onclick="QuestionAnswerManager.revealAnswer('sos-waveform-id')">Answer = </label>
+                        <label id="sos-waveform-id" class="answer-hidden">3</label>
                     </div>
                 </p>
-                <p>Morse Code is a "binary" code. All letters of the English are represented by combinations of these two binary values(dot & dash). The dash being 3 times as long as a dot.
-                    1-bit can represent 2 letters      {dot, dash}
-                    2-bits can represent 4 letters      {[dot,dot], [dot,dash], [dash,dot], [dash,dash]}
-                    3-bits can represent 8 letters      {[dot,dot,dot], [dot,dot,dash], [dot,dash,dot], [dash,dot,dot], [dot,dash,dash], [dash,dot,dash], [dash,dash,dot], [dash,dash,dash]}
+                <p>Morse Code is a "binary" code. All letters of the English are represented by combinations of these two binary values(dot & dash). The dash being 3 times as long as a dot.<br>
+                    1-bit can represent 2 letters      {dot, dash}<br>
+                    2-bits can represent 4 letters      {[dot,dot], [dot,dash], [dash,dot], [dash,dash]}<br>
+                    3-bits can represent 8 letters      {[dot,dot,dot], [dot,dot,dash], [dot,dash,dot], [dash,dot,dot], [dot,dash,dash], [dash,dot,dash], [dash,dash,dot], [dash,dash,dash]}<br>
                     4-bits can represent 16 letters     {[dot,dot,dot,dot], [dot,dot,dot,dash] . . . . }
-                    Out of the 30 possibilities you have to choose 26 and then assign letters to each one. 
-                    What two letters would you assign to the 1-bit values(eg a == dot and b== dash)
-                    Then continue on with c==[dot,dot], d=[dot,dash] etc.
+                </p>
+                <p>(Exercise! Finish the above for 4-bits</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('four-bit-combination-id')">Answer = </label>
+                    <p id="four-bit-combination-id" class="answer-hidden">{[dot,dot,dot,dot], [dot,dot,dot,dash], [dot,dot,dash,dot], [dot,dash,dot,dot], [dash,dot,dot,dot], [dot,dot,dash,dash], [dot,dash,dot,dash], [dot,dash,dash,dot], [dash,dot,dot,dash], [dash,dot,dash,dot], [dash,dash,dot,dot], [dot,dash,dash,dash], [dash,dot,dash,dash], [dash,dash,dot,dash], [dash,dash,dash,dot], [dash,dash,dash,dash]}</p>
+                </div>
+                <p>
+                    Out of the 30 possibilities Samuel Morse had to choose 26 and then assign letters to each one.
                 </p>
                 <p>Here is Samuel Morse's "key":</p>
-                <img class="samuel-morse-key" src="media/audio/SamuelMorseKey.png">
-                <p>Your assignment: Decode the following Morse Code Message:</p>
+                <img src="media/imgs/SamuelMorseKey.png">
+                <p>Your assignment: Using the above key, decode the following Morse Code Message:</p>
                    <audio src="media/audio/morse.mp3" controls></audio>
                 <p>Here's what it looks like in Audacity.</p>
-                <img class="audio-secret-message" src="media/imgs/Audacity_Img_of_Secret_Message.png"><br>
-                <label>For 1-bit you can choose 2 values:</label><br>    	
-                <table>
+                <img class="audio-secret-message" src="media/imgs/Audacity_Img_of_Secret_Message.png"><br>       	 
+                
+                <p>It is not the intent that you become proficient in Morse Code; however, since Morse Code is binary in nature, there are specific things we can learn from it. One of these is "Truth Tables".</p>
+                <p>Consider the following table:</p>
+                <table class="samuel-morse-table-1">
                     <tr>
-                        <td>dot</td>
-                        <td>dash</td>
+                        <th class="table-title" colspan="2">Morse Code Key:<br>1-bit</th>
                     </tr>
                     <tr>
-                        <td>E</td>
-                        <td>T</td>
+                        <th>Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr> 
+                        <th>Bit #1</th>
                     </tr>
-                </table><br><br>
-                <label>For 2-bits you can choose 4 values:</label><br>
-                <table>  
+
                     <tr>
-                        <td>dot  dot</td>
-                        <td>dot  dash</td>
-                        <td>dash  dot</td>
-                        <td>dash  dash</td> 
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
                     </tr>
                     <tr>
-                        <td>I</td>
-                        <td>A</td>
-                        <td>N</td>
-                        <td>M</td> 
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
                     </tr>
                 </table><br><br>
-                <label>For 3-bits you can choose 8 values:</label><br>
-                <table>  
+               
+
+                <label>For 2-bits you can choose 4(2^2) values:</label><br>
+                <table class="samuel-morse-table-1">
                     <tr>
-                        <td>dot dot dot</td>
-                        <td>dot dot dash</td>
-                        <td>dot dash dot</td>
-                        <td>dash dot dot</td>
-                        <td>dot dash dash</td>
-                        <td>dash dot dash</td>
-                        <td>dash dash dot</td>
-                        <td>dash  dash dash</td>
+                        <th class="table-title" colspan="3">Morse Code Key: 2-bits</th>
                     </tr>
                     <tr>
-                        <td>S</td>
-                        <td>U</td>
-                        <td>R</td>
-                        <td>D</td>
-                        <td>G</td>
-                        <td>K</td>
-                        <td>W</td>
-                        <td>O</td>    	 	
+                        <th colspan="2">Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr>
+                        <th>Bit #2</th> 
+                        <th>Bit #1</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">I</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">A</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">N</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">M</div></td>
                     </tr>
                 </table><br><br>
-                <label>For 4-bits you can choose 16 values: We already have 14 so only need 12 more!</label><br>
-                <table class="center" > 
+               
+               
+                <label>For 3-bits you can choose 8(2^3) values:</label><br>
+                <table class="samuel-morse-table-1">
                     <tr>
-                        <td>dot dot dot dot </td>
-                        <td>dot dot dot dash </td>
-                        <td>dot dot dash dot </td>
-                        <td>dot dash dot dot</td>
-                        <td>dash dot dot dot</td>
-                        <td>dot dot dash dash</td>
-                        <td>dot dash dot dash</td>
-                        <td>dash dot dot dash</td>
-                        <td>dot dash dash dot</td>
-                        <td>dash dot dash dot</td>
-                        <td>dash dash dot dot</td>
-                        <td>dot dash dash dash</td>
-                        <td>dash dot dash dash</td>
-                        <td>dash dash dot dash</td>
-                        <td>dash dash dash dot</td>
-                        <td>dash dash dash dash</td>
+                        <th class="table-title" colspan="4">Morse Code Key:<br>(3-bits)</th>
                     </tr>
                     <tr>
-                        <td class="center">H </td>
-                        <td>V</td>
-                        <td>F</td>
-                        <td>L</td>
-                        <td>B</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>X</td>
-                        <td>P</td>
-                        <td>C</td>
-                        <td>Z</td>
-                        <td>J</td>
-                        <td>Y</td>
-                        <td>Q</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <th colspan="3">Inputs</th>
+                        <th rowspan="2">Output</th>
                     </tr>
-                </table><br>                                      	 
+                        <th>Bit #3</th>
+                        <th>Bit #2</th> 
+                        <th>Bit #1</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="6"></td>
+                        <td rowspan="2"></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">I</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">A</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">N</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">M</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">S</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">U</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">R</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">W</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">D</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">K</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">G</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">O</div></td>
+                    </tr>
+                </table><br><br>
+
+
+                <label>For 4-bits you can choose 16(2^4) values: We already have 14 so only need 12 more!</label><br>
+                <table class="samuel-morse-table-1">
+                    <tr>
+                        <th class="table-title" colspan="5">Morse Code Key:<br>(4-bits)</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr>
+                        <th>Bit #4</th>
+                        <th>Bit #3</th>
+                        <th>Bit #2</th> 
+                        <th>Bit #1</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="14"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="2"></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">I</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">A</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">M</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">N</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <!--<td rowspan="8">dot</div></td>-->
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">S</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">U</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">R</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">W</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">D</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">K</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">B</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">O</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="8"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">H</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">V</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">F</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">-</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">L</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">-</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">P</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">J</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="8"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">B</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">X</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">C</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">Y</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">Z</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">Q</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">-</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">-</div></td>
+                    </tr>
+                </table><br><br>
+
+                
+            
             </div>
             <div id="computer-contents-id" class="contents computer-contents unselected-contents">
                 <label>Computer Codes Contents</label>

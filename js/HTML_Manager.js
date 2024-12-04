@@ -225,10 +225,10 @@ let CodesTabManager = {
             //Properties
 
             //Methods
-            revealAnswer: function(response){
+            revealAnswer: function(id){
                // alert("in revealAnswer");
-               // alert("answer =  " + answer);
-                document.getElementById(response + "-id").classList.remove("answer-hidden");
+               // alert("id =  " + id);
+                document.getElementById(id).classList.remove("answer-hidden");
             }
         }
 

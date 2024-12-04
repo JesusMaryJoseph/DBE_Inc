@@ -358,9 +358,67 @@
             .introduction-contents a{
                 color: yellow;
             }
-            .samuel-morse-key{
-                background-color: white;
+            .samuel-morse-table{
+                border: 3px solid black;
+                /*table-layout: fixed;*/
+                border-collapse: collapse;
             }
+
+            .table-title{
+                border-collapse: collapse;
+                border: 2px solid black;
+                padding: 0.3rem;
+            }
+
+            th{
+                border-collapse: collapse;
+                border: 2px solid black;
+                padding: 1rem;
+            }
+            td{
+                width: 6rem;
+              /*  display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;*/
+                border-collapse: collapse;
+              /*  width: 100%;*/
+                padding: 1.6rem;
+                border: 2px solid black;
+            }
+                .header{
+                    background-color: lightblue;
+                }
+                .data{
+                    background-color: lightgoldenrodyellow;
+                }
+                .samuel-morse-table thead tr th,
+                .samuel-morse-table tbody tr td{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 1rem;
+                    border: 3px solid black;
+                    border-collapse: collapse;
+                }
+                .td-1{
+                    width: 7rem;
+                }
+                .th-2{
+                    width: 8rem;
+                }
+                .td-2{
+                    width: 14rem;
+                }
+                .td-3{
+                    width: 16rem;
+                    font-size: 1.8rem;
+                }
+                .td-4{
+                    width: 8rem;
+                    font-size: 1.1rem;
+                }
             .secret-message-audacity{
                 margin-bottom: 16rem;
             }
