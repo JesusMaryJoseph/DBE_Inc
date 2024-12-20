@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+        .edu-contents{
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color: black; 
+        }
+        .samuel-morse-key-table{
+            display: flex;
+          /*  flex-direction: row; */
+            justify-content: space-around;
+            align-items: center;
+        }
+            
+        .smk-img-container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 40vw;
+            height: 60vh;
+            border: 1px solid red;
+        }
+        .smk-img-container img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <!-- Directory
+        tabs container          31
+        body container          37
+            Codes-Introduction  38
+            Examples            51    
+            Truth Tables        502     
+            Codes               866
+
+
+    -->
+    <div class="body-container">
+        <!--Start Truth Tables-->
+        <div id="truth-table-contents-id" class="contents truth-table-contents">
+            <p>Consider the following tables for Morse Code:<br>
+                <ol type="1">
+                    <li>The "Header" section of the table has a lightblue background</li>
+                    <li>The "Data" section of the table has a lighyellow background</li>
+                    <li>Notice Bit #1 data in all 4 tables. Its two values, "dot" and "dash" vertically repeat themselves over and over!</li>
+                    <li>Now look at Bit #2. Its two values, "dot" and "dash" also repeat vertically but last for both values of Bit #1.</li>
+                    <li>Bit #3 and Bit #4 repeat in the same fashion of Bit #2, where<br> Bit #3 allows Bit #2 to cycle through its two values<br>
+                    Bit #4 allows Bit #3 to cycle its two values</li>
+                    <li>Did you notice the "blank" spaces in the data for Bit #2, Bit # 3, and Bit #4.! It was Samuel Morse's choice to assign "letters" different lengths.
+                        <ol type="a">
+                            <li>"E" & "T" only need 1 Bit (eg 1-bit words)</li>
+                            <li>"I", "A", "N", & "M" need 2 Bits (2-bit words)</li>
+                            <li>"S", "U", "R", "W", "D", "K", "G" & "O" are all 3-bit words</li>
+                            <li>Finally the remaining 16 letters are 4-bit words</li>
+                        </ol>
+                    </li>
+                </ol>
+            </p>
+            <table class="samuel-morse-table-1">
+                <thead>
+                    <tr>
+                        <th class="table-title" colspan="2">Morse Code Key:<br>1-bit</th>
+                    </tr>
+                    <tr>
+                        <th>Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr> 
+                        <th>Bit #1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            
+
+            <label>For 2-bits you can choose 4(2<sup>2</sup>) values:</label><br>
+            <table class="samuel-morse-table-1">
+                <thead>
+                    <tr>
+                        <th class="table-title" colspan="3">Morse Code Key: 2-bits</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr>
+                        <th>Bit #2</th> 
+                        <th>Bit #1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">I</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">A</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">N</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">M</div></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+            
+            
+            <label>For 3-bits you can choose 8(2<sup>3</sup>) values:</label><br>
+            <table class="samuel-morse-table-1">
+                <thead>
+                    <tr>
+                        <th class="table-title" colspan="4">Morse Code Key:<br>(3-bits)</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Inputs</th>
+                        <th rowspan="2">Output</th>
+                    </tr>
+                        <th>Bit #3</th>
+                        <th>Bit #2</th> 
+                        <th>Bit #1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="6"></td>
+                        <td rowspan="2"></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">E</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">T</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">I</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">A</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper"></div>dash</td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">N</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">M</div></td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">S</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">U</div></td>
+                    </tr>  
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">R</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">W</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                        <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">D</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">K</div></td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">dot</div></td>
+                        <td><div class="tdth-wrapper">G</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="tdth-wrapper">dash</div></td>
+                        <td><div class="tdth-wrapper">O</div></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+
+            <label>Samuel Morse's code also contains 12 letters of length "4-bits" so let's add a 4th bit!</label>
+            <div class="samuel-morse-key-table">
+                <table class="samuel-morse-table-1">
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="5">Morse Code Key:<br>(4-bits)</th>
+                        </tr>
+                        <tr>
+                            <th colspan="4">Inputs</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                            <th>Bit #4</th>
+                            <th>Bit #3</th>
+                            <th>Bit #2</th> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="14"></td>
+                            <td rowspan="6"></td>
+                            <td rowspan="2"></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">E</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">T</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">I</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">A</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">M</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">N</div></td>
+                        </tr>
+
+
+                        <tr>
+                            <!--<td rowspan="8">dot</div></td>-->
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">S</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">U</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">R</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">W</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">D</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">K</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">B</div></td>
+                        </tr>
+                        <tr>
+                            <td class="bit-length-3"><div class="tdth-wrapper">dash</div></td>
+                            <td class="bit-length-3"><div class="tdth-wrapper">O</div></td>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">H</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">V</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">F</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">L</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">P</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">J</div></td>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">B</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">X</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">C</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">Y</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">Z</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">Q</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+                <div class="smk-img-container">
+                    <img src="media/imgs/SamuelMorseKey.png">
+                </div>
+            </div>
+            <p>Notice: Samuel Morse chose to use "varying" word lengths(1-bit,2-bits,3-bits,4-bits). It served his purpose well. The Table above and the Key to the right 
+                present the same information. Is one better than the other? Regardless the Table on the left is in the form that is used in "digital" electronics.
+                It is usually called a "Truth Table" so switch over to "Truth Tables" to learn more about them.
+            </p>
+        </div> <!--End of Examples-->
+
+        <!--Start of Truth Tables-->
+        <div id="truth-table-contents-id" class="contents truth-table-contents unselected-contents">
+            <p>In Examples you saw what a "Truth Table" looks like. It is composed of a "Header" and "Body". 
+                The "Header" usually has a Title and the words "Inputs" and "Outputs"
+                , which require that all inputs(words) must be the same length.
+                With this in mind, we'll pick a word length of 4(eg 4-bits) For Input values, we'll use "0" & "1"
+                in place of "dot" & "dash", which is commonly done. We are not interested in any particular value for the Outputs, so we'll fill it with a "-".
+            </p>
+
+
+            <table class="samuel-morse-table-1">
+                <tr>
+                    <th class="table-title" colspan="5">Truth Table<br>(4-bits)</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Inputs</th>
+                    <th rowspan="2">Output</th>
+                </tr>
+                    <th>Bit #4</th>
+                    <th>Bit #3</th>
+                    <th>Bit #2</th> 
+                    <th>Bit #1</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="8"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">A</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">B</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">C</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">D</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">E</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">F</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">G</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">H</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="8"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">I</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">J</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">K</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">L</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">M</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">N</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">O</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">P</div></td>
+                </tr>  
+
+                <tr>
+                    
+                    <td rowspan="8"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">Q</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">R</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">S</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">T</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">U</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">V</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">W</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">X</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="8"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">Y</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">Z</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+            </table>
+            
+            
+
+
+            <table class="samuel-morse-table-1">
+                <tr>
+                    <th class="table-title" colspan="6">Truth Table<br>(4-bits)</th>
+                </tr>
+                <tr>
+                    <th colspan="5">Inputs</th>
+                    <th rowspan="2">Output</th>
+                </tr>
+                    <th>Bit #5</th>
+                    <th>Bit #4</th>
+                    <th>Bit #3</th>
+                    <th>Bit #2</th> 
+                    <th>Bit #1</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="16"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="8"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">A</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">B</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">C</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">D</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">E</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">F</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">G</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">H</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="8"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">I</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">J</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">K</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">L</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">M</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">N</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">O</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">P</div></td>
+                </tr>  
+
+                <tr>
+                    <td rowspan="16"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="8"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">Q</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">R</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">S</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">T</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">U</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">V</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">W</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">X</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="8"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">Y</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">Z</div></td>
+                </tr>  
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr> 
+                <tr>
+                    <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div class="tdth-wrapper"></div>dash</div></td>
+                    <td><div class="tdth-wrapper">dot</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tdth-wrapper">dash</div></td>
+                    <td><div class="tdth-wrapper">-</div></td>
+                </tr>
+            </table>
+        </div>
+        <!--End of Truth Tables-->
+    </div>
+</body>
+</html>

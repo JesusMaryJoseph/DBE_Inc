@@ -1,0 +1,40 @@
+/*  "NAV" & "HOME" CSS for: [750px, 900px)
+ *  
+ */
+ 
+@media only screen and (min-width: 750px)  and (max-width: 899px){   
+    /* CSS for "NAV" */
+        .nav-cntnr{
+            left: 2.8rem;
+            width: 11.6rem;
+        }
+            .nav-label-container{
+                width: 11.8rem; /* 10.2rem; */
+            }
+                .nav-label{
+                    font-size: 2rem;/* 2rem;*/
+                }
+            .hide-dropdown{
+                margin-top: -16rem;
+            }
+            .nav-dropdown{
+                width: 11.6rem; 
+                padding-left: 1.4rem;
+            }
+                .dept-label{
+                    font-size: 1.2rem; 
+                }
+                .nav-dropdown a{
+                    font-size: 1.1rem;
+                }
+        /* End CSS for "NAV" */
+    
+    
+        /* CSS for "HOME" page */
+        .b-label-finish{
+            top: 1rem;
+            left: calc(50vw - 2.8rem);
+            font-size: min(7.5vh, 7.5vw);
+        }    
+        /* End of CSS for "HOME" page  */
+}

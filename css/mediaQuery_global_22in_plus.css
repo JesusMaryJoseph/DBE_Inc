@@ -6,13 +6,17 @@
 
 @media only screen and (min-width: 22in) {
 /* For Global Nav */
+    .nav-cntnr{
+        left: 5rem;
+    }
+
         .nav-label-container{
             width: 12.3rem;
-            height: 3.7rem;
+            height: 3.5rem;
         }
 
             .nav-label{
-                font-size: 2.8rem;
+                font-size: 2.6rem;
             }
 
         .hide-dropdown{

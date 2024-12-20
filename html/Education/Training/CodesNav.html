@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+       /* body{
+            margin: 1rem;
+        }*/
+        .edu-contents{
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color: black; 
+        } 
+
+        .question{
+            cursor: pointer;
+        }
+            .question:hover{
+                color: yellow;
+            }
+        .answer-hidden{
+            opacity: 0;
+        }
+        .tdth-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .span-dots{
+            opacity: 0;
+        }
+        .bits-vs-letters-morse-code{
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+        }
+        .bits-vs-letters-morse-code table{
+            border-collapse: collapse;
+        }
+        .bits-vs-letters-morse-code table td{
+            padding: 0.5rem;
+        }
+        .bits-vs-letters-morse-code td:nth-child(1){
+            width: 20%;
+        }
+        .bits-vs-letters-morse-code td:nth-child(2){
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="tabs-container">
+            <label id="introduction-tab-id" class="tab selected-tab" onclick="CodesTabManager.changeTab('1');EduHTML_Manager.request('html/Education/Training/Codes.html','edu-contents','codes')">Introduction</label>
+            <label id="example-tab-id" class="tab unselected-tab" onclick="CodesTabManager.changeTab('2')">Two Examples</label>
+            <label id="computer-tab-id" class="tab unselected-tab" onclick="CodesTabManager.changeTab('3')">Codes:</label>
+        </div>
+    </div>
+</body>
+</html>

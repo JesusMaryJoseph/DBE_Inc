@@ -1,0 +1,102 @@
+/*  "NAV" & "HOME" CSS for:  [1050px,1200px)
+ *   
+ */
+ 
+@media only screen and (min-width: 1050px)  and (max-width: 1199px){   
+/* CSS for "NAV" */
+    .nav-cntnr{
+        left: 2.8rem;
+        width: 14.2rem;
+    }
+        .nav-label-container{
+            width: 14.4rem; /* 10.2rem; */
+        }
+            .nav-label{
+                font-size: 2.5rem;/* 2rem;*/
+            }
+        .hide-dropdown{
+            margin-top: -17rem;
+        }
+        .nav-dropdown{
+            width: 14rem; 
+            padding-left: 1.5rem;
+        }
+            .dept-label{
+                font-size: 1.5rem; 
+            }
+            .nav-dropdown a{
+                font-size: 1.3rem;
+            }
+    /* End CSS for "NAV" */
+
+
+    /* CSS for "HOME" page */
+    .page{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99vw;
+        height: 97vh; 
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: radial-gradient(blue, black);
+        overflow-x: hidden; 
+    }
+        .transition-fade-in{ 
+            transition: opacity 0.5s;
+        }
+
+    .home-page{
+        overflow: hidden;
+    }
+    .home-page label{
+        position: absolute;
+        font-weight: bold;
+        color: white;
+        transition: top 1s, left 1s, right 1s, font-size 1s; 
+    }
+    .d-label-start{
+        top: 50vh;
+        left: 50%;
+        font-size: 0vh;
+    }
+
+    .d-label-finish{
+        top: 50%;
+        left: 5%;
+        font-size: min(7.5vh, 7.5vw);
+    }
+
+    .b-label-start{
+        top: 50vh;
+        left: 50%;
+        font-size: 0vh;
+    }
+
+    .b-label-finish{
+        top: 1rem;
+        left: calc(50vw - 2.8rem);
+        font-size: min(7.5vh, 7.5vw);
+    }
+
+    .e-label-start{
+        top: 50vh;
+        right: 45%;
+        font-size: 0vh;
+    }
+
+    .e-label-finish{
+        top: 50%;
+        right: 5%;
+        font-size: min(7.5vh, 7.5vw);
+    }
+
+    .dbe-logo{
+        position: absolute;
+        top: min(50%, calc((20vh + 20vw)/2));
+        width: min(50%, calc((30vh + 20vw)/2));/* 35%;*/
+        z-index: 15;
+    }
+    /* End of CSS for "HOME" page  */
+}

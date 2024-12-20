@@ -34,18 +34,32 @@
             justify-content: center;
             align-content: center;
         }
+        .span-dots{
+            opacity: 0;
+        }
+        .bits-vs-letters-morse-code{
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+        }
+        .bits-vs-letters-morse-code table{
+            border-collapse: collapse;
+        }
+        .bits-vs-letters-morse-code table td{
+            padding: 0.5rem;
+        }
+        .bits-vs-letters-morse-code td:nth-child(1){
+            width: 20%;
+        }
+        .bits-vs-letters-morse-code td:nth-child(2){
+            width: 80%;
+        }
     </style>
 </head>
 <body>
     <div class="main-container">
-        <!--<label class="mail-heading">Codes:</label>-->
-        <div class="tabs-container">
-            <label id="introduction-tab-id" class="tab selected-tab" onclick="CodesTabManager.changeTab('1')">Introduction</label>
-            <label id="example-tab-id" class="tab unselected-tab" onclick="CodesTabManager.changeTab('2')">Two Examples</label>
-            <label id="computer-tab-id" class="tab unselected-tab" onclick="CodesTabManager.changeTab('3')">Computer Codes:</label>
-        </div>
         <div class="body-container">
-            <div id="introduction-contents-id" class="contents introduction-contents selected-contents">
+            <div id="introduction-contents-id" class="introduction-contents selected-contents">
                 <h1>Codes: Introduction</h1>
                 <p>“Tora, Tora, Tora” is a coded message. “Dah-he-tih-hi” is another coded message. Can you decode them? Most likely not, after all they are “secret” coded messages both of which were used during World War II.</p>
                 <p>“Tora” means “tiger” in the Japanese Language but “Tora, Tora, Tora” is a coded message which Captain Mitsuo Fuchida sent to the Japanese fleet after flying over Oahu to indicate the Americans had been caught by surprise.</p>
@@ -68,10 +82,10 @@
                     <label id="phonemes-id" class="answer-hidden">approximately 44. <a href="https://www.readingrockets.org/sites/default/files/migrated/the-44-phonemes-of-english.pdf"  target='_blank' and rel='noopener noreferrer'>See</a></label>
                 </div> 
                 <p>Now consider English as a written language. Every "word" is composed of one or more "letters". We will call each "letter" of a "word" a “bit”. Thus the word "train" is composed of 5 letters and is therefore called a 5-bit word. "hello" is also a 5-bit word even though the letter "l" occurs twice!</p>
-                <p>Next question: how many 2-bit words "could" there be?</p>
+                <p>Next question: how many 2-bit words "could" there be in the English Language?</p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('one-bit-words-id')">Answer = </label>
-                    <label id="one-bit-words-id" class="answer-hidden">(26x26) or 26^2 = 676</label>
+                    <label id="one-bit-words-id" class="answer-hidden">(26x26) or 26<sup>2</sup> = 676</label>
                 </div>
                 <p>Aside Question: How many 2-bit words are there in the English Language?</p>
                 <div>
@@ -81,35 +95,35 @@
                 <p>How many 3-bit words "could" there be?<p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('three-bit-words-id')">Answer = </label>
-                    <label id="three-bit-words-id" class="answer-hidden">(26x26x26) or 26^3 = 17,576</label>
+                    <label id="three-bit-words-id" class="answer-hidden">(26x26x26) or 26<sup>3</sup> = 17,576</label>
                 </div>
                 <p>Final question: How many n-bit words could there be in the English Language?</p> 
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-words-id')">Answer = </label>
-                    <label id="n-bit-words-id" class="answer-hidden">26^n</label>
+                    <label id="n-bit-words-id" class="answer-hidden">26<sup>n</sup></label>
                 </div>
                 <p>In like manner we can consider the English Language as a spoken language. Each individual sound, phoneme, could then be considered as a "1-bit" "spoken word".</p>
                 <p>How many 2-bit "spoken words" could we pronounce?</p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('2-bit-spoken-words-id')">Answer = </label>
-                    <label id="2-bit-spoken-words-id" class="answer-hidden">44x44 = 44^2 = 1,936</label>
+                    <label id="2-bit-spoken-words-id" class="answer-hidden">44x44 = 44<sup>2</sup>> = 1,936</label>
                 </div>
                 <p>How many 3-bit words could we pronounce?</p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('3-bit-spoken-words-id')">Answer = </label>
-                    <label id="3-bit-spoken-words-id" class="answer-hidden">44x44x44 = 44^3 = 85,184</label>
+                    <label id="3-bit-spoken-words-id" class="answer-hidden">44x44x44 = 44<xup>3</xup>> = 85,184</label>
                 </div>
                 <p>In general how many n-bit words could we pronounce?</p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-spoken-words-id')">Answer = </label>
-                    <label id="n-bit-spoken-words-id" class="answer-hidden">44^n</label>
+                    <label id="n-bit-spoken-words-id" class="answer-hidden">44<sup>n</sup>></label>
                 </div>
-                <h2>Second Example: Morse Code</h2>
-                <p>Play the two audio files below. They both play the same message; however, the first one plays the message several times, while
-                    the second one only plays the message once. Do you recognize the message?
+                <h1 class="header-example-morse-code">Second Example: Morse Code</h1>
+                <p>Play the two audio files below. They both play the same message; however, the first one plays the message once, while
+                    the second one plays the message several times. Do you recognize the message?
                 </p>
-                <audio src="media/audio/sos-signal.mp3" controls></audio>
                 <audio src="media/audio/sos-signal-1.mp3" controls></audio>
+                <audio src="media/audio/sos-signal.mp3" controls></audio>
                 <p>It's Morse Code for S-O-S.</p>
                 <P>Can you describe the audio signal for the letter S? For the letter O? How many distinct sounds do you hear?</P>
                 <p>Here's what it sounds like in Audacity, which is an audio app.
@@ -126,12 +140,19 @@
                         <label id="sos-waveform-id" class="answer-hidden">3</label>
                     </div>
                 </p>
-                <p>Morse Code is a "binary" code. All letters of the English are represented by combinations of these two binary values(dot & dash). The dash being 3 times as long as a dot.<br>
-                    1-bit can represent 2 letters      {dot, dash}<br>
-                    2-bits can represent 4 letters      {[dot,dot], [dot,dash], [dash,dot], [dash,dash]}<br>
-                    3-bits can represent 8 letters      {[dot,dot,dot], [dot,dot,dash], [dot,dash,dot], [dash,dot,dot], [dot,dash,dash], [dash,dot,dash], [dash,dash,dot], [dash,dash,dash]}<br>
-                    4-bits can represent 16 letters     {[dot,dot,dot,dot], [dot,dot,dot,dash] . . . . }
+                <p>Morse Code is a "binary" code. All letters of the English are represented by combinations of these two binary values(dot & dash). 
+                    The dash being 3 times as long as a dot. Remember in Binary each bit can only have 2 values so:<br>
                 </p>
+                <div class="bits-vs-letters-morse-code">
+                    <table>
+                        <tbody>
+                            <tr><td>1-bit<br>(2 values)</td><td>{dot, dash}</td></tr>
+                            <tr><td>2-bits<br>(4 values)</td><td>{[dot,dot], [dot,dash], [dash,dot], [dash,dash]}</td></tr>
+                            <tr><td>3-bits<br>(8 values)<t/d><td>{[dot,dot,dot], [dot,dot,dash], [dot,dash,dot], [dash,dot,dot], [dot,dash,dash], [dash,dot,dash], [dash,dash,dot], [dash,dash,dash]}</td></tr>
+                            <tr><td>4-bits<br>(16 values)<t/d><td>{[dot,dot,dot,dot], [dot,dot,dot,dash] . . . . }</td></tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p>(Exercise! Finish the above for 4-bits</p>
                 <div>
                     <label class="question" onclick="QuestionAnswerManager.revealAnswer('four-bit-combination-id')">Answer = </label>
@@ -147,8 +168,14 @@
                 <p>Here's what it looks like in Audacity.</p>
                 <img class="audio-secret-message" src="media/imgs/Audacity_Img_of_Secret_Message.png"><br>       	 
                 
-                <p>It is not the intent that you become proficient in Morse Code; however, since Morse Code is binary in nature, there are specific things we can learn from it. One of these is "Truth Tables".</p>
-                <p>Consider the following table:</p>
+                <p>It is not the intent that you become proficient in Morse Code; however, 
+                    since Morse Code is binary in nature, there are specific things we can learn from it. 
+                    One of these is "Truth Tables" (ie "Key"), which you will definitely encounter in this project!
+                </p>
+                <label onclick="CodesTabManager.changeTab('3')">Go To "Computer Codes</label>
+                
+                
+            <!--<p>Consider the following table:</p>
                 <table class="samuel-morse-table-1">
                     <tr>
                         <th class="table-title" colspan="2">Morse Code Key:<br>1-bit</th>
@@ -346,7 +373,6 @@
 
 
                     <tr>
-                        <!--<td rowspan="8">dot</div></td>-->
                         <td rowspan="4"><div class="tdth-wrapper"></div>dot</div></td>
                         <td rowspan="2"><div class="tdth-wrapper"></div>dot</div></td>
                         <td><div class="tdth-wrapper">dot</div></td>
@@ -467,7 +493,7 @@
                         <td><div class="tdth-wrapper">-</div></td>
                     </tr>
                 </table><br><br>
-
+            -->
                 
             
             </div>

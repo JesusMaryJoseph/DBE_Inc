@@ -1,0 +1,21 @@
+/* CSS for media Queries width= [600px, 1024px)": 
+/  for education.html
+ */
+/* (170px/in for my Acer laptop)    */
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .ben-eater-videos-header{
+        font-size: 2rem;
+    } 
+    .be-mod-header{
+        font-size: 1.8rem;
+    }  
+    .be-sub-labels{
+        font-size: 1.6rem;
+    }
+    .be-ol-type-1{
+        font-size: 1.4rem;
+    }
+    .be-sub-labels-ol{
+        font-size: 1.4rem;
+    }
+}
