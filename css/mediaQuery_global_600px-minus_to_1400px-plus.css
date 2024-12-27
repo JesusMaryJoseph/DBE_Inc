@@ -1,0 +1,221 @@
+/*  CSS for media Queries width= [1400, . . .] 
+ *    1) Global Navigation
+ *    2) Home page
+ *    3) All pages that uses class="page";
+ */
+ @media only screen and (max-width: 599px) {
+    /* For Global Nav [. . . ,600px)*/
+    .nav-cntnr{
+        left: 1rem;
+    }
+        .nav-label-container{
+            width: 11.8rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 2.2rem;
+            }
+        .hide-dropdown{
+            margin-top: -19rem;
+        }
+        .nav-dropdown{
+            width: 11.5rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 1.3rem;
+            }
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.2rem;
+                padding-top: 0.3rem;/*new*/
+            }
+    /* End Global Nav [. . . ,600px) */      
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 749px) {
+    /* For Global Nav [600px,749px) */
+    .nav-cntnr{
+        left: 2rem;
+    }
+        .nav-label-container{
+            width: 11.8rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 2.2rem;
+            }
+        .hide-dropdown{
+            margin-top: -19rem;
+        }
+        .nav-dropdown{
+            width: 11.5rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 1.3rem;
+            }
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.2rem;
+                padding-top: 0.3rem;/*new*/
+            }
+    /* End Global (Nav) [600px,749px) */
+}
+
+@media only screen and (min-width: 750px) and (max-width: 899px) {
+    /* For Global Nav [750px,899px) */
+    .nav-cntnr{
+        left: 2rem;
+    }
+        .nav-label-container{
+            width: 12rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 2.4rem;
+            }
+        .hide-dropdown{
+            margin-top: -21rem;
+        }
+        .nav-dropdown{
+            width: 11.7rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 1.4rem;
+            }
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.3rem;
+                padding-top: 0.4rem;/*new*/
+            }
+    /* End Global (Nav) [750px,899px) */
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1049px) {
+    /* For Global Nav [900px,1049px) */
+    .nav-cntnr{
+        left: 3rem;
+    }
+        .nav-label-container{
+            width: 12.8rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 2.6rem;
+            }
+        .hide-dropdown{
+            margin-top: -21rem;
+        }
+        .nav-dropdown{
+            width: 12.5rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 1.5rem;
+            }
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.4rem;
+                padding-top: 0.4rem;/*new*/
+            }
+    /* End Global (Nav) [900px,1049px) */
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1199px) {
+    /* For Global Nav [1050px,1199px) */
+    .nav-cntnr{
+        left: 3rem;
+    }
+        .nav-label-container{
+            width: 14.3rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 2.8rem;
+            }
+        .hide-dropdown{
+            margin-top: -21.5rem;
+        }
+        .nav-dropdown{
+            width: 14rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 1.6rem;
+            }
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.4rem;
+                padding-top: 0.4rem;/*new*/
+            }
+    /* End Global (Nav) [1050px,1199px) */
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {    
+    /* For Global Nav [1200px,1399px) */
+        .nav-cntnr{
+            left: 4rem;
+        }
+            .nav-label-container{
+                width: 16.3rem;
+                height: 3.5rem;
+            }
+                .nav-label{
+                    font-size: 2.8rem;
+                }
+            .hide-dropdown{
+                margin-top: -24rem;
+            }
+            .nav-dropdown{
+                width: 16rem;
+                padding: 0.7rem;
+            }
+                .dept-label{
+                    font-size: 1.8rem;
+                }
+                .nav-dropdown a{
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    padding-top: 0.4rem;/*new*/
+                }
+    /* End Global (Nav) [1200px,1399px) */
+}
+
+@media only screen and (min-width: 1400px) {
+/* For Global Nav [1400px, . . .) */
+    .nav-cntnr{
+        left: 5rem;
+    }
+        .nav-label-container{
+            width: 16.3rem;
+            height: 3.5rem;
+        }
+            .nav-label{
+                font-size: 3rem;
+            }
+        .hide-dropdown{
+            margin-top: -26rem;
+        }
+        .nav-dropdown{
+            width: 16rem;
+            padding: 0.7rem;
+        }
+            .dept-label{
+                font-size: 2rem;
+            }
+            .nav-dropdown a{
+                display: inline-block;
+                font-size: 1.8rem;
+                padding-top: 0.4rem;/*new*/
+            }
+}
+/* End Global (Nav) [1400px, . . .) */

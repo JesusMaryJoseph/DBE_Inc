@@ -74,6 +74,9 @@
             border: 2px solid yellow;
             border-radius: 5px; 
         }
+            .dept-container ul{
+                list-style: none;
+            }
             .dept-label{
                 font-size: 1.2rem;
                 font-weight: bolder;
