@@ -6,30 +6,33 @@
  @media only screen and (max-width: 599px) {
     /* For Global Nav [. . . ,600px)*/
     .nav-cntnr{
-        left: 1rem;
+        left: 2rem;
     }
         .nav-label-container{
-            width: 11.8rem;
-            height: 3.5rem;
+            width: 8.7rem;
+            padding-top: 0.35rem;
         }
             .nav-label{
-                font-size: 2.2rem;
+                font-size: 1.4rem;
             }
         .hide-dropdown{
-            margin-top: -19rem;
+            margin-top: -15rem;
         }
         .nav-dropdown{
-            width: 11.5rem;
+            width: 8.5rem;
             padding: 0.7rem;
         }
             .dept-label{
-                font-size: 1.3rem;
+               /* display: inline-block;
+                text-align: center;*/
+                font-size: 1rem;
             }
             .nav-dropdown a{
                 text-decoration: none;
                 display: inline-block;
-                font-size: 1.2rem;
-                padding-top: 0.3rem;/*new*/
+                text-align: center;
+                font-size: 1rem;
+                padding-top: 0.1rem;/*new*/
             }
     /* End Global Nav [. . . ,600px) */      
 }

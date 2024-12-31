@@ -77,8 +77,8 @@ function eduTransitionHasEnded(){
         },
 
         show: function() { 
-         alert("in this.show()");
-            this.load();
+         //alert("in EduHTML_Manager this.show()");
+           // this.load();
             this.targetEle.classList.replace("transition-1-0","transition-0-1")
             this.targetEle.style.opacity = "1";
         },
@@ -94,7 +94,7 @@ function eduTransitionHasEnded(){
          //alert("this.eduNavOneContentsEle.classList = " + this.eduNavOneContentsEle.classList);
             this.eduContentsEle = document.getElementById("edu-contents-id");
         // alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
-            this.eduContentsEle.addEventListener("transitionend", this.show.bind, false);
+            this.eduContentsEle.addEventListener("transitionend", this.show().bind, false);
             this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
         //    alert("end of EduHTML_Manager init()");
         }
