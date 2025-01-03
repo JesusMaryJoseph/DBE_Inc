@@ -8,13 +8,14 @@
     .nav-cntnr{
         left: 2rem;
     }
-        .nav-label-container{
-            width: 8.7rem;
-            padding-top: 0.35rem;
+    .nav-label-container{
+        width: 8.7rem; 
+       /* height: 3.5rem; */
+    }
+        .nav-label{
+            padding-top: 0.25rem;
+            font-size: 1.8rem;
         }
-            .nav-label{
-                font-size: 1.4rem;
-            }
         .hide-dropdown{
             margin-top: -15rem;
         }
@@ -44,27 +45,28 @@
         left: 2rem;
     }
         .nav-label-container{
-            width: 11.8rem;
-            height: 3.5rem;
+            width: 8.7rem; 
+           /* height: 3.5rem; */
         }
             .nav-label{
-                font-size: 2.2rem;
+                padding-top: 0.25rem;
+                font-size: 1.8rem;
             }
         .hide-dropdown{
             margin-top: -19rem;
         }
         .nav-dropdown{
-            width: 11.5rem;
-            padding: 0.7rem;
+            width: 8.5rem; 
+            padding: 0.1rem;
         }
             .dept-label{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
             .nav-dropdown a{
                 text-decoration: none;
                 display: inline-block;
-                font-size: 1.2rem;
-                padding-top: 0.3rem;/*new*/
+                font-size: 1rem;
+                padding-top: 0.15rem;/*new*/
             }
     /* End Global (Nav) [600px,749px) */
 }
@@ -75,18 +77,19 @@
         left: 2rem;
     }
         .nav-label-container{
-            width: 12rem;
-            height: 3.5rem;
+            width: 10rem; 
+           /* height: 3.5rem; */
         }
             .nav-label{
-                font-size: 2.4rem;
+                padding-top: 0.25rem;
+                font-size: 2rem;
             }
         .hide-dropdown{
-            margin-top: -21rem;
+            margin-top: -19rem;
         }
         .nav-dropdown{
-            width: 11.7rem;
-            padding: 0.7rem;
+            width: 9.8rem; 
+            padding: 0.1rem;
         }
             .dept-label{
                 font-size: 1.4rem;
@@ -95,7 +98,7 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 1.3rem;
-                padding-top: 0.4rem;/*new*/
+                padding-top: 0.15rem;/*new*/
             }
     /* End Global (Nav) [750px,899px) */
 }
@@ -103,30 +106,31 @@
 @media only screen and (min-width: 900px) and (max-width: 1049px) {
     /* For Global Nav [900px,1049px) */
     .nav-cntnr{
-        left: 3rem;
+        left: 2rem;
     }
         .nav-label-container{
-            width: 12.8rem;
-            height: 3.5rem;
+            width: 9.7rem; 
+           /* height: 3.5rem; */
         }
             .nav-label{
-                font-size: 2.6rem;
+                padding-top: 0.25rem;
+                font-size: 2rem;
             }
         .hide-dropdown{
-            margin-top: -21rem;
+            margin-top: -19rem;
         }
         .nav-dropdown{
-            width: 12.5rem;
-            padding: 0.7rem;
+            width: 9.5rem; 
+            padding: 0.1rem;
         }
             .dept-label{
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
             .nav-dropdown a{
                 text-decoration: none;
                 display: inline-block;
-                font-size: 1.4rem;
-                padding-top: 0.4rem;/*new*/
+                font-size: 1.3rem;
+                padding-top: 0.15rem;/*new*/
             }
     /* End Global (Nav) [900px,1049px) */
 }
@@ -137,88 +141,92 @@
         left: 3rem;
     }
         .nav-label-container{
-            width: 14.3rem;
-            height: 3.5rem;
+            width: 11.2rem; 
+           /* height: 3.5rem; */
         }
             .nav-label{
-                font-size: 2.8rem;
+                padding-top: 0.25rem;
+                font-size: 2rem;
             }
         .hide-dropdown{
-            margin-top: -21.5rem;
+            margin-top: -19rem;
         }
         .nav-dropdown{
-            width: 14rem;
-            padding: 0.7rem;
+            width: 11rem; 
+            padding: 0.1rem;
         }
             .dept-label{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
             .nav-dropdown a{
                 text-decoration: none;
                 display: inline-block;
-                font-size: 1.4rem;
-                padding-top: 0.4rem;/*new*/
+                font-size: 1.3rem;
+                padding-top: 0.15rem;/*new*/
             }
     /* End Global (Nav) [1050px,1199px) */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {    
     /* For Global Nav [1200px,1399px) */
-        .nav-cntnr{
-            left: 4rem;
+    .nav-cntnr{
+        left: 3rem;
+    }
+        .nav-label-container{
+            width: 11.2rem; 
+           /* height: 3.5rem; */
         }
-            .nav-label-container{
-                width: 16.3rem;
-                height: 3.5rem;
+            .nav-label{
+                padding-top: 0.25rem;
+                font-size: 2rem;
             }
-                .nav-label{
-                    font-size: 2.8rem;
-                }
-            .hide-dropdown{
-                margin-top: -24rem;
+        .hide-dropdown{
+            margin-top: -19rem;
+        }
+        .nav-dropdown{
+            width: 11rem; 
+            padding: 0.1rem;
+        }
+            .dept-label{
+                font-size: 1.4rem;
             }
-            .nav-dropdown{
-                width: 16rem;
-                padding: 0.7rem;
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.3rem;
+                padding-top: 0.15rem;/*new*/
             }
-                .dept-label{
-                    font-size: 1.8rem;
-                }
-                .nav-dropdown a{
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 1.6rem;
-                    padding-top: 0.4rem;/*new*/
-                }
     /* End Global (Nav) [1200px,1399px) */
 }
 
 @media only screen and (min-width: 1400px) {
 /* For Global Nav [1400px, . . .) */
     .nav-cntnr{
-        left: 5rem;
+        left: 3rem;
     }
         .nav-label-container{
-            width: 16.3rem;
-            height: 3.5rem;
+            width: 11.2rem; 
+           /* height: 3.5rem; */
         }
             .nav-label{
-                font-size: 3rem;
-            }
-        .hide-dropdown{
-            margin-top: -26rem;
-        }
-        .nav-dropdown{
-            width: 16rem;
-            padding: 0.7rem;
-        }
-            .dept-label{
+                padding-top: 0.25rem;
                 font-size: 2rem;
             }
-            .nav-dropdown a{
-                display: inline-block;
-                font-size: 1.8rem;
-                padding-top: 0.4rem;/*new*/
+        .hide-dropdown{
+            margin-top: -19rem;
+        }
+        .nav-dropdown{
+            width: 11rem; 
+            padding: 0.1rem;
+        }
+            .dept-label{
+                font-size: 1.4rem;
             }
-}
+            .nav-dropdown a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.3rem;
+                padding-top: 0.15rem;/*new*/
+            }
 /* End Global (Nav) [1400px, . . .) */
+}

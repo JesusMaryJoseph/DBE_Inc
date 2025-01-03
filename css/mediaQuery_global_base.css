@@ -55,8 +55,7 @@
                 font-size: 2rem;
                 font-weight: bolder;
                 cursor: pointer; 
-                width: 100%; 
-                padding-top: 0rem;
+                width: 100%;
             }
 
         .hide-dropdown{
@@ -68,6 +67,7 @@
             font-weight: bold;
             display: flex;
             flex-direction: column;
+            align-items: center;
             transition: margin-top 0.7s;
             padding: 0.5rem;
             background-image: radial-gradient(blue, black);
@@ -97,7 +97,10 @@
                 }
 
             .dept-container{
-                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              /*  padding-left: 1rem;*/
             } 
 
               /*  .dept-container a{

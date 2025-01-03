@@ -1,6 +1,13 @@
 /* CSS common to all Screen Widths: 
-//     for education.html
- */
+*     for education.html
+*   Page,Edu: 11                                Videos & Datasheets (NAV): 66      
+*   Training, Testing & Packets (NAV): 94       Packets (NAV): 208  
+*   
+*   Videos (CONTENTS): 259                      Datasheets (CONTENTS): 358
+*   Training (CONTENTS): 437
+*
+*
+*/
 /* CSS for page & edu (NAV) & (CONTENTS)   */ 
     .body{
         box-sizing: border-box;
@@ -59,10 +66,6 @@
     /* CSS for Videos & Datasheets (NAV)*/
         .videos-datasheets-container{
             position: fixed;
-            bottom: 0.2rem;
-            left: 0rem;
-            width: 2rem;
-            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -71,48 +74,48 @@
             z-index: 10;
         /*  border: 2px solid red;*/
         }
-            .videos-label-container, .datasheets-label-container{
+            .videos-label-container, 
+            .datasheets-label-container{
                 color: yellow;
                 cursor: pointer; 
                 z-index: 20;
             }
-                .packets-label{
-                    font-size: 1.4rem;
-                }
-                .packets-label, .videos-label, .datasheets-label{
+                .videos-label, 
+                .datasheets-label{
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     font-weight: bold;
-                    cursor: pointer;
-                    padding: 0 0.2rem; 
-                    background-color: black;
-                }
-                .videos-label,
-                .datasheets-label{
-                    font-size: 1rem;
                     writing-mode: vertical-lr;
                     text-orientation: upright; 
+                    cursor: pointer;
+                    background-color: black;
                 }
     /*End CSS for Videos & Datasheets (NAV) */
 
     /* CSS for  Training, Testing & Packets (NAV) */
-        .training-testing-packets-container{
-            position: absolute;
-            top: 0;
-            left: 10.5rem;
-            width: calc(90vw - 9rem);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            /*padding: 0.1rem 0; */
-            /*background-color:  rgb(0, 0, 50);*/
-            z-index: 10;
-            border: 3px solid rgb(233, 12, 185); 
-        }
+        
+    .training-testing-packets-container{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /*padding: 0.1rem 0; */
+        z-index: 10;
+       /* background-color: blue;*/
+       /* background-image: radial-gradient(blue, black);*/
+       /* border: 1px solid rgb(233, 12, 185); */
+    }
+    .training-testing-packets-background{
+        position: absolute;
+        top: 0;
+        right: 0;
+        /*background-color:  rgb(0, 0, 50);*/
+        background-color: black;
+    }
         
 		.training-container, 
 		.testing-container{
 			position: relative;
-			top: 0.55rem;
 			/*left: 15rem;
 			width: 13rem; */
 			color: yellow;
@@ -123,14 +126,9 @@
 			.testing-label{
 				display: inline-block;
 				text-align: center;
-				width: 100%;
-				font-size: 1.3rem;
 				font-weight: bold;
 				cursor: pointer;
 				background-color:  rgb(0, 0, 50);
-				padding-top: 1rem;
-				margin-top: -1.1rem;
-				padding-bottom: 0.4rem;
 				z-index: 15;
 			}
 			.testing-dropdown,
@@ -139,8 +137,6 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				width: 8rem;
-				padding: 0.5rem 0;
 				color: white;
 				transition: margin-top 0.7s;
 				/*  padding: 0.1rem 0; */
@@ -152,10 +148,8 @@
 				.testing-dropdown-label,
 				.training-dropdown-label{
 					display: inline-block;
-					font-size: 1.1rem;
 					font-weight: bold;
 					cursor: pointer;
-					margin: 0.2rem 0;
 				}
 					.testing-dropdown-label:hover,
 					.training-dropdown-label:hover{
@@ -163,15 +157,7 @@
 					}
 			
 				.dept-label{
-					font-size: 1.2rem;
 					font-weight: bold;
-					margin-left: 0;/*-0.2rem;*/
-				}
-				.hide-training-dropdown{
-					margin-top: -10rem; 
-				}
-				.hide-testing-dropdown{
-					margin-top: -10rem; 
 				}
 
                     .test-media-arts-container, 
@@ -196,59 +182,20 @@
 						display: flex;
 						flex-direction: column;
 						align-items: center;
-                        width: 8rem;
                         color: white;
                         transition: margin-top 0.7s;
-						padding: 0.5rem 0;
                         background-image: radial-gradient(blue, black);
                         border: 2px solid yellow;
                         border-radius: 5px;
                     }
                         .second-dropdown-label{
                             display: inline-block;
-                            font-size: 1rem;
-							margin: 0.2rem 0;
+                            font-weight: bold;
                         }
                             .second-dropdown-label:hover{
                                 font-weight: bold;
                                 color: yellow;
                             }
-
-                    .introduction-dropdown{
-                        top: -0.3rem;
-                        left: -8.4rem;
-                    }
-					.architecture-dropdown{
-                        top: -0.3rem;
-                        left: -8.4rem;
-					}
-                    .tech-dropdown{
-                        top: -1rem;
-                        left: -10.3rem;
-                    }
-                    .media-arts-dropdown{
-                        top: -2rem;
-                        left: -8.9rem;
-                    }
-					
-                    
-                    .test-introduction-dropdown{
-                        top: -0.3rem;
-                        left: -8.4rem;
-                    }
-					.test-architecture-dropdown{
-                        top: -0.3rem;
-                        left: -8.4rem;
-					}
-                    .test-tech-dropdown{
-                        top: -1rem;
-                        left: -10.3rem;
-                    }
-                    .test-media-arts-dropdown{
-                        top: -2rem;
-                        left: -8.9rem;
-                    }
-
 
 					.hide-second-dropdown{
                             display: none;
@@ -261,41 +208,26 @@
         /*CSS for Packets (NAV) */
             .packets-container{
                 position: relative;
-                top: -0.35rem;/* 0;*/ 
-              /*  right: 4rem;*/
-                width:  7rem;
-               /* background-color: black; */
                 z-index: 20;
             }
                 .packets-label-container{
                     position: relative;
                     color: yellow;
-                    cursor: pointer; 
-                    padding-top: 0.3rem;
+                    cursor: pointer;
                     background-color: rgb(0, 0, 50);
-                    padding-top: 0.75rem;
-                    padding-bottom: 0.3rem;
                     z-index: 15;
                 } 
                 .packets-label{
-                    font-size: 1.2rem;
-                   /* font-weight: bold;*/
-                    cursor: pointer;
-                    padding: 0 1rem;
-                    z-index: 15;
-                }
-                    
-                .packets-dropdown{
-                   /* position: relative;*/
-                    font-size: 1rem;
                     font-weight: bold;
-                   /* width: 100%;*/
+                    cursor: pointer;
+                    z-index: 15;
+                }  
+                .packets-dropdown{
+                    font-weight: bold;
                     color: white;
                    /* display: flex;
                     flex-direction: column;*/
                     transition: margin-top 0.7s;
-                    padding-left: 0.5rem;
-                    padding: 0.5rem 0.5rem;
                     background-image: radial-gradient(blue, black);
                     border: 2px solid yellow;
                     border-radius: 5px; 
@@ -303,11 +235,8 @@
                 }
                     .packets-dropdown ul{
                         list-style-type: none;
-                        margin-left: 1rem;
                     }
                     .packets-dropdown li{
-                        margin-left: -1rem;
-                        margin-bottom: 0.1rem;
                         cursor: pointer;
                     }
                     .packets-dropdown li:hover{
@@ -326,6 +255,7 @@
 
 
 /* CSS for Videos, Datasheets, Packets, Training & Testing (CONTENTS) */
+
     /* CSS for Videos (CONTENTS) */
     .ben-eater-videos-header{
         display: block;
@@ -503,11 +433,8 @@
         cursor: pointer;
     }
     /*End CSS for Datasheets (CONTENTS) */
-/*End CSS for Videos, Datasheets, Packets, Training & Testing (CONTENTS) */
 
-
-
-    /*CSS for Training (CONTENTS)  */
+    /* CSS for Training (CONTENTS) */
         /*CSS for Training Codes  */
         .nav-one-two-container{
             position: fixed;
@@ -667,8 +594,14 @@
                 width: 100%;
                 padding-left: 2rem;
             } 
-
-
         /*End CSS for Training Codes  */
-    /*End CSS for Training (CONTENTS)  */
-/*}*/
+
+
+    /*End CSS for Training (CONTENTS) */
+    
+    /* CSS for Testing (CONTENTS) */
+    /*End CSS for Testing (CONTENTS) */
+      
+    /* CSS for Packets (CONTENTS) */
+    /*End CSS for Packets (CONTENTS) */
+/*End CSS for Videos, Datasheets, Training & Testing, Packets (CONTENTS) */

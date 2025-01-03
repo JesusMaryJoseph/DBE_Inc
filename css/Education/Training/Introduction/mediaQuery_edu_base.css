@@ -1,0 +1,58 @@
+/* CSS common to all Screen Widths: 
+*   for Training: Introduction
+*   for Codes:   
+*   for Truth Tables:    
+*   for Gates & ICs:   
+*   for Design:    
+*/
+/* CSS for Introduction */
+    /* CSS for Codes (BASE) */
+        .question{
+            cursor: pointer;
+        }
+            .question:hover{
+                color: yellow;
+            }
+        .answer-hidden{
+            opacity: 0;
+        }
+        .tdth-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .span-dots{
+            opacity: 0;
+        }
+        .bits-vs-letters-morse-code{
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+        }
+        .bits-vs-letters-morse-code table{
+            border-collapse: collapse;
+        }
+        .bits-vs-letters-morse-code table td{
+            padding: 0.5rem;
+        }
+        .bits-vs-letters-morse-code td:nth-child(1){
+            width: 20%;
+        }
+        .bits-vs-letters-morse-code td:nth-child(2){
+            width: 80%;
+        }
+    /*End CSS for Codes (BASE) */
+
+    /*End CSS for Truth Tables (CONTENTS) */
+    /* CSS for Truth Tables (CONTENTS) */
+
+    /* CSS for Gates & ICs (CONTENTS) */
+    /*End CSS for Gates & ICs (CONTENTS) */
+
+    /* CSS for Design (CONTENTS) */
+    /*End CSS for Design (CONTENTS) */
+/*End CSS for Introduction */
+
+    
