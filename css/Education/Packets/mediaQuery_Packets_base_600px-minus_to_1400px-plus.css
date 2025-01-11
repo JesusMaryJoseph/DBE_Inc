@@ -1,0 +1,214 @@
+/* CSS Base, 600px-to1400px+: 
+*   for All Packets:   
+*   
+*/
+/* CSS Bass + all mediaQuery */
+    body{
+        /*  margin: 1rem;
+        padding: 5px;*/
+        overflow: hidden;
+    }
+        
+    .edu-contents{
+        background-image: url("media/imgs/low-noise-darker.png");
+        background-size: cover;
+        color: black;
+        overflow: hidden;
+    }
+    .bottom-buffer{
+        height: 5rem;
+    }
+    
+    /* CSS Base (CONTENTS) */
+    .packet-container{
+        height: 98vh;
+        overflow-y: scroll;
+    }
+        .packet-header{
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            /* margin-left: 30%;*/ 
+        }
+
+    /*End CSS Base (CONTENTS) */
+
+    @media only screen and (max-width: 599px){
+        .packet-container{
+            padding: 0.5rem 2.4rem;
+        }
+        .packet-header{
+            font-size: 1.6rem;
+        }
+        .ol-I{
+            font-size: 1.4rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 1.3rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+
+    @media only screen and (min-width: 600px) and (max-width: 749px){
+        .packet-container{
+            padding: 0.5rem 2.4rem;
+        }
+        .packet-header{
+            font-size: 1.8rem;
+        }
+        .ol-I{
+            font-size: 1.4rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 1.3rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 750px) and (max-width: 899px){
+    .packet-container{
+            padding: 0.5rem 2.4rem;
+        }
+        .packet-header{
+            font-size: 1.8rem;
+        }
+        .ol-I{
+            font-size: 1.4rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 1.3rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1049px){
+        .packet-container{
+            padding: 1rem 3rem;
+        }
+        .packet-header{
+            font-size: 2.2rem;
+        }
+        .ol-I{
+            font-size: 1.8rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 1.6rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.4rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 1050px) and (max-width: 1199px){
+        .packet-container{
+            padding: 1rem 4.6rem;
+            padding-right: 2.6rem;
+        }
+        .packet-header{
+            font-size: 2.2rem;
+        }
+        .ol-I{
+            font-size: 2rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 1.8rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.6rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1399px){
+        .packet-container{
+            padding: 1rem 4.6rem;
+            padding-right: 2.6rem;
+        }
+        .packet-header{
+            font-size: 2.5rem;
+        }
+        .ol-I{
+            font-size: 2.3rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 2.1rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 1.9rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+    }
+
+    @media only screen and (min-width: 1400px){
+        .packet-container{
+            padding: 1rem 4.6rem;
+            padding-right: 2.6rem;
+        }
+        .packet-header{
+            font-size: 2.7rem;
+        }
+        .ol-I{
+            font-size: 2.5rem;
+            padding-left: 0rem;
+        }
+        .ol-A{
+            font-size: 2.3rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+        .ol-i,
+        .ol-a,
+        .ol-1{
+            font-size: 2.1rem;
+            padding-left: 2rem;
+            margin-top: 0.1rem;
+        }
+}
