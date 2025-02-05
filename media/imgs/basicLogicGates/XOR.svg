@@ -7,7 +7,7 @@
    viewBox="0 0 120.67201 63.576935"
    version="1.1"
    id="svg5"
-   sodipodi:docname="XOR_Black-Stroke_No-Fill.svg"
+   sodipodi:docname="XOR.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="2"
-     inkscape:cx="192.75"
-     inkscape:cy="108.5"
+     inkscape:zoom="8"
+     inkscape:cx="112.9375"
+     inkscape:cy="221.125"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
@@ -124,7 +124,7 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:#ff0000;stroke:#ffff01;stroke-width:4.50001;stroke-opacity:1"
-         d="m 30.272781,179.74478 -1.455209,0.39687"
+         d="m 30.272781,179.74478 -0.0024,-0.009"
          id="path2161"
          sodipodi:nodetypes="cc" />
       <path
@@ -134,12 +134,12 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:4.50001;stroke-opacity:1"
-         d="m 29.082156,179.87707 c 12.435417,0.39687 50.667709,-1.71979 67.336454,-30.82396"
+         d="m 29.258702,179.48421 c 12.435417,0.39687 50.491163,-1.32693 67.159908,-30.4311"
          id="path2165"
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#000000;stroke-width:4.50001;stroke-opacity:1"
-         d="m 30.140489,120.6104 c 15.742708,15.21355 16.536459,43.92084 0.529167,58.8698"
+         d="m 30.140489,120.6104 c 15.742708,15.21355 16.734896,43.3586 0.727604,58.30756"
          id="path2192"
          sodipodi:nodetypes="cc" />
       <path

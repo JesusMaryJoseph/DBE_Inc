@@ -21,6 +21,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/Education/Videos_IcData/mediaQuery_Videos_IcData_base_plus_600px-minus_to_1400px-plus.css">
 	<link rel="stylesheet" type="text/css" href="css/Education/Packets/mediaQuery_Packets_base_600px-minus_to_1400px-plus.css">
+	<link rel="stylesheet" type="text/css" href="css/Education/Training/Introduction/Codes/Codes_base_plus_600px-minus_to_1400px-plus.css">
+	<link rel="stylesheet" type="text/css" href="css/Education/Training/Introduction/Design/Desing_base_plus_600px-minus_to_1400px-plus.css">
+	<link rel="stylesheet" type="text/css" href="css/Education/Training/Introduction/GatesIcs/GatesIcs_base_plus_600px-minus_to_1400px-plus.css">
+	<link rel="stylesheet" type="text/css" href="css/Education/Training/Introduction/TruthTables/TruthTables_base_plus_600px-minus_to_1400px-plus.css">
 
 	<script src="js/Nav_Handler.js"></script>
 	<script src="js/EduNav_Handler.js"></script>
@@ -42,7 +46,7 @@
 	</style>
 	
 </head>
-<body onload="init()">
+<body onload="eduInit()">
 <nav class="nav-container">
     <nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()">
     	<div class="nav-label-container">
@@ -98,7 +102,7 @@
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Truth Tables:
 					</label>
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Gates & ICs:
+						EduNavHandler.hide('training'); EduNavHandler.hide('introduction'); PracticeTruthTableManager.onLoad()">Gates & ICs:
 					</label>
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Design.html'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Design:
@@ -177,7 +181,7 @@
 						EduNavHandler.hide('testing'); EduNavHandler.hide('test-introduction')">Truth Tables:
 					</label>
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Testing/GatesIcs.html'); 
-						EduNavHandler.hide('testing'); EduNavHandler.hide('test-introduction')">Gates & ICs:
+						EduNavHandler.hide('testing'); EduNavHandler.hide('test-introduction') ">Gates & ICs:
 					</label>
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Testing/Design.html'); 
 						EduNavHandler.hide('testing'); EduNavHandler.hide('test-introduction')">Design:
@@ -267,29 +271,12 @@
 	
 
     <script>
-    	function init(){
+    	function eduInit(){
 			//alert("in education html init()");
-			/*alert("output values[2][1] label = " + answerTableData.example1.values[2][1]);*/
     		NavHandler.init();
-			//alert("inbetween NavHandler and EduNavHandler.init()");
 			EduNavHandler.init();
-			//alert("after EduNavHandler.init()<br>Entering HtmlContentManager.init()");
-			//HtmlContentManager.init();
-			//alert("after HtmlContentManager.init()");
-			//TableManager.init();
-			//alert("before CodesTabManger.init()");
-         //   CodesTabManager.init();
 			EduHTML_Manager.init();
-			//alert("finish education html inti()");
     	}
-		
-		function checkValue(ele){
-			//alert("in checkValue() ele.value = " + ele.value);
-			const validSet = new Set(['0','1','f','t','F','T']) ;
-				if(!validSet.has(ele.value)){
-					alert("Enter ONLY 0,1,f,t,F,T");
-				}
-            }
 
         function playFourBitVideo(){
            // alert("in play four-bit-video");
@@ -301,188 +288,6 @@
         	let tableEle = document.getElementById("truth-table-3-bit-id");
             tableEle.classList.remove("hide-table");
 		}
-		
-	let TrainingTableManager = {
-		// Properties
-			TableData: [["F","F","F","T"],["F","T","T","T"],["F","T","T","F"],["T","T","T","F"],["T","F","F","F"],["T","F","F","T"]],
-			selectedGateNumber: 0,
-			tableTitle: "",
-			gateImage: "",
-			ffTdValue: "",
-			ftTdValue: "",
-			tfTdValue: "",
-			ttTdValue: "",
-			initialized: false,
-		
-			// Methods
-			setTrainingTable: function(number,gate){
-				this.selectedGateNumber = number;
-				//alert("in setTrainingTable and gate is  " + gate);
-				if(!this.initialized){
-					this.init();
-					this.initialized = true;
-				}
-				//alert("after if");
-				this.tableTitle.innerHTML = "Truth Table for " + gate + " Gate"; //gate
-				this.gateImage.src = "media/imgs/BasicLogicGates/" + gate + "_Black-Stroke_No-Fill.svg";
-				this.resetOutput();
-			},
-
-			showTrainingTableTdLabelValue: function(tdLabel){
-			//alert("tdLabel = " + tdLabel);
-			//alert("entering switch");
-				switch (tdLabel){
-					case "ff":
-						//alert("in case ff this.TableData[0][0] = " + this.TableData[0][0]);
-						this.ffTdValue.innerHTML = this.TableData[this.selectedGateNumber][0];
-						break;
-					case "ft":
-					//alert("in case ft this.TableData[0][1] = " + this.TableData[0][1]);
-						this.ftTdValue.innerHTML = this.TableData[this.selectedGateNumber][1];
-						break;
-					case "tf":
-					//alert("in case tf this.TableData[0][2] = " + this.TableData[0][2]); 
-						this.tfTdValue.innerHTML = this.TableData[this.selectedGateNumber][2];
-						break;
-					case "tt":
-					//alert("in case tt this.TableData[0][3] = " + this.TableData[0][3]);
-						this.ttTdValue.innerHTML = this.TableData[this.selectedGateNumber][3];
-						break;
-					default: Alert("Not a Valid Gate");
-				}
-			},
-
-			resetOutput: function(){
-				this.ffTdValue.innerHTML = "?";
-				this.ftTdValue.innerHTML = "?";
-				this.tfTdValue.innerHTML = "?";
-				this.ttTdValue.innerHTML = "?";
-			},
-		
-
-			init: function(){
-				//alert("in TrainingTableManager.init()");
-				this.tableTitle = document.getElementById("gate-table-title-id");
-				this.gateImage = document.getElementById("gate-img-id");
-				this.ffTdValue = document.getElementById("f-f-id");
-				this.ftTdValue = document.getElementById("f-t-id");
-				this.tfTdValue = document.getElementById("t-f-id");
-				this.ttTdValue = document.getElementById("t-t-id");
-				//alert("leaving init()");
-			}
-	}
-
-	
-		
-	let TestingTableManager = {
-		// Properties
-			TableData: [["F","F","F","T"],["F","T","T","T"],["F","T","T","F"],["T","T","T","F"],["T","F","F","F"],["T","F","F","T"]],
-			//selectedGateNumber: 0,
-			circuit: "OrAndXor",
-			td11AnswerValue: {},
-			th12AnswerValue: {},
-			th13AnswerValue: {},
-			th14AnswerValue: {},
-			th15AnswerValue: {},
-			td21AnswerValue: {},
-			th22AnswerValue: {},
-			th23AnswerValue: {},
-			th24AnswerValue: {},
-			th25AnswerValue: {},
-			td31AnswerValue: {},
-			th32AnswerValue: {},
-			th33AnswerValue: {},
-			th34AnswerValue: {},
-			th35AnswerValue: {},
-			td41AnswerValue: {},
-			th42AnswerValue: {},
-			th43AnswerValue: {},
-			th44AnswerValue: {},
-			th45AnswerValue: {},
-			initialized: false,
-		
-			// Methods
-			setTestingTable: function(circuit){
-				//setting TableHead
-				this.circuit = circuit;
-				//alert("in setTrainingTable and gate is  " + gate);
-				if(!this.initialized){
-					this.init();
-					this.initialized = true;
-				}
-				//alert("after if");
-				let tableTitle = document.getElementById("testing-input-circuit-table-title-id");
-				tableTitle.innerHTML = "Truth Table for " + this.circuit + "  Circuit"; //gate
-				let circuitImage = document.getElementById("circuit-img-id");
-				circuitImage.src = "media/imgs/icons/" + this.circuit + ".png";
-				//this.resetOutput();
-				//alert("setAnswerTableBody next");
-				this.setAnswerTableBody();
-			},
-
-			setAnswerTableBody: function(){
-				//alert("set TableBody Headings 1,2,3 ..");
-				//get the # of headings for this Example
-				let numberHeadings = answerTableData.OrAndXor.headings.length;
-				//alert("# of Headings = " + numberHeadings);
-				let thAnswerHeading = {};
-				let tdAnswerValue = {};
-				switch (this.circuit){
-					case "OrAndXor":
-						for(var i = 0; i<numberHeadings; i++){
-							thAnswerHeading = document.getElementById("answer-heading-" + i + "-id");
-							thAnswerHeading.innerHTML = answerTableData.OrAndXor.headings[i];
-						}
-						for(var row=0; row<numberHeadings; row++){
-							for(col=0; col<4; col++){
-								tdAnswerValue = document.getElementById("td-" + row + col + "-answer-id");
-								tdAnswerValue.innerHTML = answerTableData.OrAndXor.values[row][col];
-							}
-						}
-						break;
-					default: Alert("No Such Circuit");
-				}
-			},
-
-			resetOutput: function(){
-			},
-		
-
-			init: function(){
-				//alert("in TestingTableManager init()");
-				/*this.td11AnswerValue = document.getElementById("td-11-answer-id");
-				this.th12AnswerValue = document.getElementById("td-12-answer-id");
-				this.th13AnswerValue = document.getElementById("td-13-answer-id");
-				this.th14AnswerValue = document.getElementById("td-14-answer-id");
-				this.th15AnswerValue = document.getElementById("td-15-answer-id");
-				this.td21AnswerValue = document.getElementById("td-21-answer-id");
-				this.th22AnswerValue = document.getElementById("td-22-answer-id");
-				this.th23AnswerValue = document.getElementById("td-23-answer-id");
-				this.th24AnswerValue = document.getElementById("td-24-answer-id");
-				this.th25AnswerValue = document.getElementById("td-25-answer-id");
-				this.td31AnswerValue = document.getElementById("td-31-answer-id");
-				this.th32AnswerValue = document.getElementById("td-32-answer-id");
-				this.th33AnswerValue = document.getElementById("td-33-answer-id");
-				this.th34AnswerValue = document.getElementById("td-34-answer-id");
-				this.th35AnswerValue = document.getElementById("td-35-answer-id");
-				this.td41AnswerValue = document.getElementById("td-41-answer-id");
-				this.th42AnswerValue = document.getElementById("td-42-answer-id");
-				this.th43AnswerValue = document.getElementById("td-43-answer-id");
-				this.th44AnswerValue = document.getElementById("td-44-answer-id");
-				this.th45AnswerValue = document.getElementById("td-45-answer-id");*/
-				//alert("leaving init()");
-			}
-	}
-
-	let answerTableDataString = `{
-			"OrAndXor":{
-				"headings":["C","D","E"],
-				"values":[[0,1,1,1],[0,0,0,1],[0,1,1,0]]
-				}
-			}`
-	let answerTableData = JSON.parse(answerTableDataString);
-
-		
 
     </script>
 </body>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+        body{
+           /*  margin: 1rem;
+             padding: 5px;*/
+             overflow: hidden;
+         }
+             
+        .edu-contents{
+             background-image: url("media/imgs/low-noise-darker.png");
+             background-size: cover;
+             color: black;
+            /* border: 3px solid yellow;*/
+             overflow: hidden;
+         }
+        .main-container{
+            overflow: hidden;
+            width: 100%;
+          /*  border: 3px solid red;*/
+        }
+            .body-container{
+                padding-bottom: 5rem;
+               /* height: 100%; */ 
+                padding: 0 1rem;
+                overflow: hidden;
+              /*  overflow-y: scroll;
+                border: 3px solid green;*/
+            }
+         /* CSS Base (CONTENTS) */
+            .truth-table-contents{
+                height: 95vh;
+                padding-bottom: 10rem;
+                overflow-x: hidden;
+                overflow: scroll;
+            }
+                .main-header{
+                    display: block;
+                    text-align: center;
+                    font-weight: bold;
+                    color: black;
+                    /* margin-left: 30%;*/ 
+                }
+                    .sub-header{
+                        display: block;
+                        text-align: center;
+                        font-weight: bold;
+                        color: black;
+                        /* margin-left: 30%;*/ 
+                    }
+                    .truth-table-4-bit-odometer-container,
+                    .table-2-3-bits-container,
+                    .truth-table-2-bits-container, 
+                    .mores-tt-1-bit-container{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                        .four-bit-gif-video-container,
+                        .mores-1-bit-container,
+                        .tt-1-bit-container{
+                            width: 49%;
+                        }   
+        /*End CSS for Codes (BASE) */
+     
+         @media only screen and (max-width: 599px){
+         }
+                 
+         @media only screen and (min-width: 600px) and (max-width: 749px){
+         }
+         
+         @media only screen and (min-width: 750px) and (max-width: 899px){
+         }
+ 
+         @media only screen and (min-width: 900px) and (max-width: 1049px){
+         }
+ 
+         @media only screen and (min-width: 1050px) and (max-width: 1199px){
+         }
+ 
+         @media only screen and (min-width: 1200px) and (max-width: 1399px){
+         }
+ 
+         @media only screen and (min-width: 1400px){
+         }
+ 
+        .samuel-morse-key-table{
+            display: flex;
+          /*  flex-direction: row; */
+            justify-content: space-around;
+            align-items: center;
+        }
+        .truth-table-1-bit,
+        .truth-table-2-bit,
+        .truth-table-3-bit{
+            width: 40%;
+           /* float: right;*/
+        }
+            .truth-table thead{
+                background-color: lightblue;
+            }
+            .truth-table tbody{
+                background-color: lightgoldenrodyellow;
+            }
+        .morse-img-wrapper{
+           /* float: left;*/
+        }
+        .morse-img-table-1-bit-container,
+        .morse-img-table-2-bit-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .four-bit-video-container{
+            width: max-content;
+            height: max-content;
+            position: relative;
+           /* border: 1px solid red;*/
+        }
+        .four-bit-video-button{
+            position: absolute;
+            bottom: 0.45rem;
+            right: 0;
+        }
+        .four-bit-video-button:hover{
+            background-color: yellow;
+        }
+        .hide-table{
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<div class="body-container">
+     Directory
+        TT Values          
+        Morse Code Vs TT      
+        Construction of TT
+    -->
+        
+<div class="main-container">       
+    <div class="body-container">
+        <div id="truth-table-contents-id" class="contents truth-table-contents">
+            <label class="main-header">Codes: Truth Tables</label>
+            <section>
+                <label class="sub-header">Converting Samuel Morse's "key" to a Truth Table:</label>
+                <p>Compare Samuel Morse's "key", on the left below, with the Truth Table on the right.</p>
+                <div class="morse-img-table-1-bit-container">
+                    <div class="morse-img-wrapper">
+                        <img class="morse-key-img" src="media/imgs/SamuelMorseKey.png">
+                    </div>
+                    <!--<p>Here is the "General" form of a Truth Table:</p>-->
+                    <table class="truth-table truth-table-1-bit">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="2">Truth Table Title</th>
+                            </tr>
+                            <tr>
+                                <th>Inputs</th>
+                                <th rowspan="2">Output</th>
+                            </tr> 
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="tdth-wrapper">dot</div></td>
+                                <td><div class="tdth-wrapper">E</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">dash</div></td>
+                                <td><div class="tdth-wrapper">T</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               <p>Notice TWO things:
+                    <ol type="1" class="ol-1">
+                        <li>The Truth Table contains the "Same Information" as Morse's Code (ie for E and T)</li>
+                        <li>The Truth Table has a specific structure: A Header(yellow) and a Body(blue)</li>
+                    </ol>
+               </p><br>
+               <p>Not consider the Truth Table for 2-bits (ie 4=2<sup>2</sup> values):</p><br>
+                <div class="morse-img-table-2-bit-container">
+                    <div class="morse-img-wrapper">
+                        <img class="morse-key-img" src="media/imgs/SamuelMorseKey.png">
+                    </div>
+                    <table class="truth-table truth-table-2-bit">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="3">Truth Table: Input = 2-bits</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Inputs</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #2</th> 
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                                <td><div class="tdth-wrapper">dot</div></td>
+                                <td><div class="tdth-wrapper">E</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">dash</div></td>
+                                <td><div class="tdth-wrapper">T</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                                <td><div class="tdth-wrapper">dot</div></td>
+                                <td><div class="tdth-wrapper">N</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">dash</div></td>
+                                <td><div class="tdth-wrapper">M</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Again Notice:
+                     <ol type="1" class="ol-1">
+                         <li>The first row under Bit#2 has "dot(X). Remember that Samuel Morse deliberately chose "E" and "T" to be 1-bit words; hence, the "X" for Bits 2,3,etc.
+                            You will encounter "X's" in Truth Tables. The "X" means that this bit has "NO" affect on the corresponding Output.</li>
+                         </li>
+                         <li>At this point we are going to say goodbye to Samuel Morse and his Key. That means we will also be saying goodbye to "dots" and "dashes"!</li>
+                         <li>The two most common replacements for (dot,dash) are (F,T) and (0,1): "F" for False and "T" for True, (0,1) for the binary numbers 0<sub>2</sub> and 1<sub>2</sub>. 
+                            Voltage is another less common representation: 0 Volts(eg GND) and the Supply Voltage (eg V<sub>cc</sub>) which
+                            is either 5Volts or 3.3Volts</li>
+                         <li>Following is the same Truth Table but with (0,1) and "NO" output values. Consentrate on the the structure of the Inputs! </li>
+                     </ol>
+                </p><br>
+                <p>Can you guess what the Truth Table will look like with Bit#3 added? Click<button onclick="showTable()">Here</button> to see the Truth Table.
+
+                </p>
+                <div class="table-2-3-bits-container">
+                    <table class="truth-table truth-table-2-bit">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="3">Truth Table: Input = 2-bits</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Inputs</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #2</th> 
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table id="truth-table-3-bit-id" class="truth-table truth-table-3-bit hide-table">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="4">Truth Table: Input = 3-bits</th>
+                            </tr>
+                            <tr>
+                                <th colspan="3">Inputs</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #3</th> 
+                                <th>Bit #2</th> 
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="4"><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            
+                            <tr>
+                                <td rowspan="4"><div class="tdth-wrapper">1</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div><br><br>
+                <div class="truth-table-4-bit-odometer-container">
+                    <table id="truth-table-4-bit-id" class="truth-table truth-table-4-bit">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="5">Truth Table: Input = 4-bits</th>
+                            </tr>
+                            <tr>
+                                <th colspan="4">Inputs</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #4</th> 
+                                <th>Bit #3</th> 
+                                <th>Bit #2</th> 
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="8"><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="4"><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            
+                            <tr>
+                                <td rowspan="4"><div class="tdth-wrapper">1</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="8"><div class="tdth-wrapper">1</div></td>
+                                <td rowspan="4"><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            
+                            <tr>
+                                <td rowspan="4"><div class="tdth-wrapper">1</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">-</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="four-bit-gif-video-container">
+                        <p>The Input Bits are like and odometer: the right most bit(Bit#1) changes the quickest while the left most bit(Bit#4) changes the slowest.
+                        If Bit#1 changes at a rate of 8 per sec, Bit#2 will change at a rate 4 per sec, Bit#3 at 2 per sec while Bit#4 at 1 per sec.
+                        The GIF below illustrates this. Click on "Play" to see a slower version.    
+                        </p>
+                        <img id="four-bit-gif-id" src="media/imgs/Four-Bit.gif"> 
+                        <div class="four-bit-video-container">
+                            <video id="four-bit-video-id" src="media/imgs/Four-Bit.mp4" class="four-bit-video"></video>
+                            <button class="four-bit-video-button" onclick="playFourBitVideo()">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p>One final modification to Truth Tables that you will probably never see elsewhere but hopefully  
+                    will find useful as you get into the heart of this project: Gates/ICs and Design. The Outputs depends upon
+                    the Inputs. For Morse Code, if the "dots" and "dashes" are the Inputs, the Outputs ("Letters") are 
+                    dependent upon the Inputs. 
+                </p>
+                <p>In "Digital Electronics" the Outputs (0s and 1s) will depend upon the Inputs (0s and 1s). To better illustrate, the 
+                    Inputs and Outputs of the Truth Table will be separated by an empty column which will provide a space where
+                    the actual "Digital Circuitry", which accomplishes the task, to be placed, as shown in the Truth Table below.
+                </p><br><br>
+                <table id="truth-table-4-bit-id" class="truth-table truth-table-4-bit">
+                    <thead>
+                        <tr>
+                            <th class="table-title" colspan="6">Truth Table: Input = 5-bits</th>
+                        </tr>
+                        <tr>
+                            <th colspan="4">Inputs</th>
+                            <th rowspan="2">Design<br>Circuitry</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                            <th>Bit #4</th> 
+                            <th>Bit #3</th> 
+                            <th>Bit #2</th> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper">0</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper">0</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td rowspan="16"><div class="tdth-wrapper">Actual Circuit</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">1</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper">1</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper">0</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">1</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">0</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">1</div></td>
+                            <td><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="EduHTML_Manager.request('html/Education/Training/Codes.html')">Previous</button>
+                
+                <button onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html')">Next</button>
+            </section>
+        </div>
+        <!--End of Truth Tables-->
+    </div>
+</div>
+
+</body>
+</html>

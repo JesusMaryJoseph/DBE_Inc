@@ -24,6 +24,7 @@
          /* CSS Base (CONTENTS) */
             .gates-ics-contents{
                 height: 95vh;
+                padding-left: 2rem;
                 padding-bottom: 10rem;
                /* overflow-x: hidden; */
                 overflow: scroll;
@@ -53,21 +54,9 @@
                 display: block;
                 text-align: center;
             }
-            .basic-gate-testing-container{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            .basic-gate-testing-selection-container ul{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-            .basic-gate-testing-icon-container{
-                width: 10rem;
-                display: flex;
-                flex-wrap: wrap;
-                border: 1px solid red;
+            .output-value:hover{
+                cursor: pointer;
+                color: yellow;
             }
             .icon-container{
                width: 4rem;
@@ -82,19 +71,118 @@
                 width: 35rem;
                 border: 1px solid blueviolet;
             }
+            .hide-table-td{
+                display: none;
+                opacity: 0;
+            }
+            .tdInput{
+                display: block;
+                text-align: center;
+                width: 6rem;
+                height: 7rem;
+                font-size: 4rem;
+              /*  margin-left:  0rem;*/
+            }
+            .square-root{
+                height: 1.6rem;
+               /* margin-bottom: -0.5rem; */
+            }
+            .not-gate{
+                height: 1.6rem;
+                margin-bottom: -0.3rem;
+            }
+            .hide-solution-table{
+                opacity: 1;
+            }
+            .show-solution-table{
+                opacity: 1;
+            }
+
+            .selection-container{
+                display: flex;
+                justify-content: space-between;
+            }
+                .select-data-container{
+                    width: 15rem;
+                }  
+                    .select-data-container label{
+                        display: block;
+                        text-align: center;
+                    }
+                .radio-inputs-container{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                
+            .basic-gate-testing-container{
+               display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .basic-gate-testing-selection-container ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .basic-gate-testing-icon-container{
+                width: 10rem;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid red;
+            }
+
+        .circuit-solution-table-container,   
+        .basic-solution-table-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .circuit-table,
+        .basic-table{
+            border: 2px solid blue;
+            width: 50vw;
+            height: 50vh;
+        }
+        .circuit-solution-table,
+        .basic-solution-table{
+            border: 2px solid red;
+            width: 25vw;
+            height: 50vh;
+        }
+        .title-row{
+           /* display: block;
+            text-align: center;*/
+            width: 1000px;
+            background-color:  green;
+            column-span: 3;
+        }
+
+        .img-button{
+            height: 3rem;
+            cursor: pointer
+        }
+            .img-button:hover{
+                border: 1px solid yellow;
+            }
     </style>
 </head>
-<body>
+<body onload="gatesIcsInit()">
     <div class="body-container">
         <div class="main-container">
             <div id="gates-ics-contents-id" class="contents gates-ics-contents">
-                <label>Gates and Integrated Circuits Page</label>
-                <label>Basic Logic Gates:</label>
+                <h1>Logic Gates and Integrated Circuits (IC)</h1>
+                <h2>Basic Logic Gates:</h2>
                 <section class="basic-tools-general">
-                    <p>Every Profession has basic tools(equipment) which must be mastered. Artist need paper, pencils, pens, brushes, etc.
-                        Mechnics: Hand tools, power tools, nails, screws etc.</p>
-                    <p>In this section you will be introduced to the Gates and Integrated Circuits(ICs) that you will
-                        be using.
+                    <p>Every Profession has basic tools(equipment) which must be mastered. Artist need paper, pencils, pens, inks, brushes, etc.
+                        Mechnics: Hand tools, power tools, nails, screws etc. One could classify a Professional in any endeavor as one who is extremely grounded in the fundamentals,
+                    has exceptional talents in how they use those fundamentals and most likely, has a great love for what they do.</p>
+                    <p>The Catholic Church has classified certain individuals as Saints! They're the Professionals of the Church: Well grounded in Faith, extremely talented in ways they
+                        put that Faith into action, and without a doubt, were driven by Love.
+                    </p>
+                    <p>In this section you will be introduced to "Logic Gates" and "Integrated Circuits(ICs)". All Integrated Circuits are designed and built from "Logic Gates",
+                       so "Logic Gates" are your fundamentals. Know them!
                     </p>
                 </section>
                 <section class="not-and-or-gates">
@@ -105,10 +193,10 @@
                         <table id="truth-table-4-bit-id" class="truth-table truth-table-4-bit">
                             <thead>
                                 <tr>
-                                    <th class="table-title" colspan="3">Truth Table: Input = 1-bit</th>
+                                    <th class="table-title" colspan="3">Truth Table for "NOT" Gate</th>
                                 </tr>
                                 <tr>
-                                    <th colspan="1">Inputs</th>
+                                    <th colspan="1">Input</th>
                                     <th rowspan="2">Design<br>Circuitry</th>
                                     <th rowspan="2">Output</th>
                                 </tr>
@@ -117,20 +205,32 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td><div class="tdth-wrapper">F</div></td>
                                     <td rowspan="2"><div class="tdth-wrapper">??? Gate</div></td>
-                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">T</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="tdth-wrapper">1</div></td>
-                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td><div class="tdth-wrapper">T</div></td>
+                                    <td><div class="tdth-wrapper">F</div></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p>As you can see, this Gate has One Input and One Output and the Output has the 
-                            opposite value of the Input. In Binary there are only 2 values. So, if it is NOT "one value" it
-                            must be the "other Value". The name of this Gate is "NOT" and its symbol is:
-                            <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate.svg"> so the Truth Table will look like this:
+                        <p>As you can see, this Gate has One Input and One Output. Notice also that the Output has the opposite value of the Input. 
+                            In Binary there are only 2 values. So, if it is not "one value" it must be the "other Value"; therefore, it makes sense for 
+                             this Logic Gate to be called the "NOT" Gate. Its symbol is:
+                            <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate_4.5mm.png">, where the Input is on its left and the Output on its right.
+                        </p>
+                        <p>Consider the many years you studied Arithmatic. You encountered Numbers(Operands) and Operators(addition/subtraction/multiplications/division). Now enter "The Binary World" 
+                           where you find Operands(eg "T"/"F") and Operators, one of which is the NOT Gate.
+                        </p>
+                        <p>The NOT Gate is similar to Square Root in that it only operates on "One" value(Operand).
+                            Forgetting +/- one would write the Square Root of 4 = 2 as: <img class="square-root" src="media/imgs/SquareRoot_4.svg">. The same expression could have been written with 
+                             the argument(Input) first, followed by the Square Root(Operator) and then immediately followed by the Result(Output)(ie no = sign), 
+                             <img class="square-root" src="media/imgs/4_SquareRoot_2.svg"> , with which you, undoubtedly, feel uncomfortable but which you will be doing from now on.
+                            The Inputs come first then the Logic Gate followed immediately by its Output (eg Input <img class="not-gate" src="media/imgs/basicLogicGates/Not_Gate_4.5mm.png"> Output)
+                        </p>
+                        <p>One Note before covering the remaining "Basic Logic Gates": In Binary the two "values" can be represented many different ways: "up"/"down", "High"/"Low", "5volts"/"0volts", "cake"/"ice cream" but the 
+                            most common pairs that you will see are: "0"/"1" and "F"/"T". 
                         </p>
                         <table id="truth-table-not-gate-id" class="truth-table-basic-gates truth-table-not-gate">
                             <thead>
@@ -147,239 +247,140 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><div class="tdth-wrapper">F</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
                                     <td rowspan="2"><div class="tdth-wrapper"><img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate.svg"></div></td>
-                                    <td><div class="tdth-wrapper">T</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
                                 </tr>
                                 <tr>
-                                    <td><div class="tdth-wrapper">T</div></td>
-                                    <td><div class="tdth-wrapper">F</div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>Note also that the "1" and "0" have been replaced with "T" and "F". 
-                            It's a little more understandable using "True" and "False" (eg NOT "False" is "True"
-                            and NOT "True" is "False").
-                        </p>
-                    </div>
-                        <p>There are three more Basic Logic Gates: AND, OR and XOR. XOR is pronounced as Exclusive OR and means:
-                            One or the other but "NOT BOTH". The Negative of these Gates are:NAND, NOR, NXOR:
-                            NAND == NOT(AND), NOR == NOT(OR), NXOR == NOT(XOR). The following table will allow you to practice
-                            with these 6 Gates. Spend enough time with them so their "DEFINITIONS" are firmly grounded in you mind!
-                        </p><br><br>
-                    <div class="basic-gate-training-container">
-                        <table id="truth-table-and-gate-id" class="truth-table-basic-gates truth-table-and-gate">
-                            <thead>
-                                <tr >
-                                    <th class="basic-gate-selection-container" colspan="4">
-                                        <ul>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('0','AND')">AND</button></li>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('1','OR')">OR</button></li>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('2','XOR')">XOR</button></li>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('3','NAND')">NAND</button></li>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('4','NOR')">NOR</button></li>
-                                            <li><button onclick="TrainingTableManager.setTrainingTable('5','NXOR')">NXOR</button></li>
-                                        </ul>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th id="gate-table-title-id" class="table-title" colspan="4">Truth Table: ?</th>
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Inputs</th>
-                                    <th rowspan="2">Design<br>Circuitry</th>
-                                    <th rowspan="2">Output</th>
-                                </tr>
-                                    <th>Bit #2</th>
-                                    <th>Bit #1</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="2"><div class="tdth-wrapper">F</div></td>
-                                    <td><div class="tdth-wrapper">F</div></td>
-                                    <td rowspan="4"><div class="div-img tdth-wrapper"><img id="gate-img-id" class="and-gate"></div></td>
-                                    <td><div class="tdth-wrapper"><label id="f-f-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('ff')">?</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="tdth-wrapper">T</div></td>
-                                    <td><div class="tdth-wrapper"><label id="f-t-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('ft')">?</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2"><div class="tdth-wrapper">T</div></td>
-                                    <td><div class="tdth-wrapper">F</div></td>
-                                    <td><div class="tdth-wrapper"><label id="t-f-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('tf')">?</label></div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="tdth-wrapper">T</div></td>
-                                    <td><div class="tdth-wrapper"><label id="t-t-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('tt')">?</label></div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="basic-gate-testing-container">
-                        <div class="basic-gate-testing-selection-icon-container">
-                            <div class="basic-gate-testing-selection-container">
-                                <ul>
-                                    <li><button onclick="TestingTableManager.setTestingTable('OrAndXor')">Example 1</button></li>
-                                    <li><button onclick="TestingTableManager.setTestingTable('1','Ex2')">Example 2</button></li>
-                                    <li><button onclick="TestingTableManager.setTestingTable('2','Ex3')">Example 3</button></li>
-                                    <li><button onclick="TestingTableManager.setTestingTable('3','Ex4')">Example 4</button></li>
-                                    <li><button onclick="TestingTableManager.setTestingTable('4','Ex5')">Example 5</button></li>
-                                    <li><button onclick="TestingTableManager.setTestingTable('5','Ex6')">Example 6</button></li>
-                                </ul>
-                            </div>
-                            <div class="basic-gate-testing-icon-container">
-                                <div class="icon-container"><img class="icon-img not-img" src="media/imgs/icons/NOT.svg"></div>
-                                <div class="icon-container"><img class="icon-img and-img" src="media/imgs/icons/AND.svg"></div>
-                                <div class="icon-container"><img class="icon-img or-img" src="media/imgs/icons/OR.svg"></div>
-                                <div class="icon-container"><img class="icon-img xor-img" src="media/imgs/icons/XOR.svg"></div>
-                                <div class="icon-container"><img class="icon-img nand-img" src="media/imgs/icons/NAND.svg"></div>
-                                <div class="icon-container"><img class="icon-img nor-img" src="media/imgs/icons/NOR.svg"></div>
-                                <div class="icon-container"><img class="icon-img nxor-img" src="media/imgs/icons/NXOR.svg"></div>
+                    <p>There are three more Basic Logic Gates: AND, OR and XOR. XOR is pronounced as Exclusive OR and means:
+                        One or the other but "NOT BOTH". The Negative of these Gates are:NAND, NOR, NXOR:
+                        NAND == NOT(AND), NOR == NOT(OR), NXOR == NOT(XOR). The following table will allow you to practice
+                        with these 6 Gates. Spend enough time with them so their "DEFINITIONS" are firmly grounded in you mind!
+                    </p><br><br>
+
+                    <div class="selection-container">
+                        <div class="select-data-container">
+                            <label>Select Data Type:</label>
+                            <div class="radio-inputs-container">
+                                <div>
+                                    <input type="radio" id="basic-01-id" name="fav_language" value="01" checked onchange="TestingTableManager.changeInputType('basic-01')">
+                                    <label for="html">01</label><br>
+                                </div>
+                                <div>
+                                    <input type="radio" id="basic-ft-id" name="fav_language" value="ft" onchange="TestingTableManager.changeInputType('basic-ft')">
+                                    <label for="css">FT</label><br>
+                                </div>
                             </div>
                         </div>
-                        <div class="testing-input-circuit-container">
-                            <table id="testing-input-circuit-table-id" class="testing-input-circuit-table">
-                                <thead>
-                                    <tr>
-                                        <th id="testing-input-circuit-table-title-id" class="testing-table-title" colspan="3">Truth Table: ?</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">Inputs</th>
-                                        <th rowspan="2">Design<br>Circuitry</th>
-                                        <!--<th rowspan="2">Output</th>-->
-                                    </tr>
-                                        <th>B</th>
-                                        <th>A</th>
-                                    </tr>
+                        <div class="basic-gate-selection-container" colspan="4">
+                            <ul>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','AND')">AND</button></li>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','OR')">OR</button></li>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','XOR')">XOR</button></li>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','NAND')">NAND</button></li>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','NOR')">NOR</button></li>
+                                <li><button onclick="PracticeTruthTableManager.update('basic','NXOR')">NXOR</button></li>
+                            </ul>
+                        </div>
+                        <div class="tshow-answer-container">
+                            <input type="button" id="showSolution-id" name="show" value="Show" onclick="TestingTableManager.showSolution()">
+                            <label for="showSolution-id">Show Solution</label>
+                        </div>
+                    </div>
+
+                    <div class="main-container">
+                        <div class="basic-solution-table-container"> 
+                            <div id="basic-table-container-id" class="basic-container">
+                                <table id="basic-table-id" class="basic-table">
+                                    <thead id="basic-thead-id">
+                                    </thead>
+                                    <tbody id="basic-tbody-id">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="basic-solution-container-id" class="basic-solution-container">
+                                <table id="basic-solution-table-id" class="basic-solution-table">
+                                    <thead id="basic-solution-thead-id">
+                                    </thead>
+                                    <tbody id="basic-solution-tbody-id">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <p>The following table will allow you to practice with circuits containing combinations of the Basic Logic Gates.
+                    </p><br>
+                    <div class="selection-container">
+                        <div class="select-data-container">
+                            <label>Select Data Type:</label>
+                            <div class="radio-inputs-container">
+                                <div>
+                                    <input type="radio" id="circuit-zero-one-id" name="fav_language" value="01" checked onchange="TestingTableManager.changeInputType('circuit-01')">
+                                    <label for="html">01</label><br>
+                                </div>
+                                <div>
+                                    <input id="circuit-ft-id" type="radio" id="circuit-ft-id" name="fav_language" value="ft" onchange="TestingTableManager.changeInputType('circuit-ft')">
+                                    <label for="css">FT</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic-gate-testing-selection-container">
+                            <ul>
+                                <li><img src="media/imgs/basicLogicGates/NotXor_wPQ-3.5mm.svg" onclick="PracticeTruthTableManager.update('circuits','NotXor')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/AndNotOr_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','AndNotOr')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/OrAndXor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','OrAndXor')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/NotAndXorOr_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','NotAndXorOr')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/NotXorOrNand_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','NotXorOrNand')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/NandNotNand_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','NandNotNand')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/NorNandNxor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','NorNandNxor')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/AndOrNandNxorNandNor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','AndOrNandNxorNandNor')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/NorNorNor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','NorNorNor')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/TwoToFourDecoder_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits','TwoToFourDecoder')" class="img-button"></li>
+                                <li><img src="media/imgs/basicLogicGates/AndAndOr_w3InPQ.svg" onclick="PracticeTruthTableManager.update('circuits','AndAndOrW3Inputs')" class="img-button"></li>
+                            </ul>
+                        </div>
+                        <div class="tshow-answer-container">
+                            <input type="button" id="showSolution-id" name="show" value="Show" onclick="TestingTableManager.showSolution()">
+                            <label for="showSolution-id">Show Solution</label>
+                        </div>
+                    </div>
+                    <div class="circuit-solution-table-container">
+                        <div id="circuit-table-container-id" class="circuit-container">
+                            <table id="circuit-table-id" class="circuit-table">
+                                <thead id="circuit-thead-id">
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td rowspan="2"><div class="tdth-wrapper">F</div></td>
-                                        <td><div class="tdth-wrapper">F</div></td>
-                                        <td rowspan="4"><div class="div-img tdth-wrapper"><img id="circuit-img-id" class="testing-circuit-img"></div></td>
-                                        <!--<td><div class="tdth-wrapper"><label id="f-f-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('ff')">?</label></div></td>-->
-                                    </tr>
-                                    <tr>
-                                        <td><div class="tdth-wrapper">T</div></td>
-                                        <!--<td><div class="tdth-wrapper"><label id="f-t-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('ft')">?</label></div></td>-->
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2"><div class="tdth-wrapper">T</div></td>
-                                        <td><div class="tdth-wrapper">F</div></td>
-                                        <!--<td><div class="tdth-wrapper"><label id="t-f-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('tf')">?</label></div></td>-->
-                                    </tr>
-                                    <tr>
-                                        <td><div class="tdth-wrapper">T</div></td>
-                                        <!--<td><div class="tdth-wrapper"><label id="t-t-id" class="output-value" onclick="TrainingTableManager.showTrainingTableTdLabelValue('tt')">?</label></div></td>-->
-                                    </tr>
+                                <tbody id="circuit-tbody-id">
                                 </tbody>
                             </table>
                         </div>
-                        <div class="basic-gate-testing-output-container">
-                            <table id="truth-table-and-gate-id" class="truth-table-basic-gates truth-table-and-gate">
-                                <thead>
-                                    <tr>
-                                        <th id="gate-table-title-id" class="table-title" colspan="5">Truth Table: ?</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="5">Outputs</th>
-                                    </tr>
-                                        <th>Output #1</th>
-                                        <th>Output #2</th>
-                                        <th>Output #3</th>
-                                        <th>Output #4</th>
-                                        <th>Output #5</th>
-                                    </tr>
+                        <div id="circuit-solution-container-id" class="circuit-solution-container">
+                            <table id="circuit-solution-table-id" class="circuit-solution-table">
+                                <thead id="circuit-solution-thead-id">
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        <td>5</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="basic-gate-testing-answer-container">
-                            <table id="truth-table-and-gate-id" class="truth-table-basic-gates truth-table-and-gate">
-                                <thead>
-                                    <tr>
-                                        <th id="gate-table-title-id" class="table-title" colspan="5">Truth Table: ?</th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="5">Outputs</th>
-                                    </tr>
-                                        <th id="answer-heading-0-id"></th>
-                                        <th id="answer-heading-1-id"></th>
-                                        <th id="answer-heading-2-id"></th>
-                                        <th id="answer-heading-3-id"></th>
-                                        <th id="answer-heading-4-id"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td id="td-00-answer-id"></td>
-                                        <td id="td-10-answer-id"></td>
-                                        <td id="td-20-answer-id"></td>
-                                        <td id="td-30-answer-id"></td>
-                                        <td id="td-40-answer-id"></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="td-01-answer-id"></td>
-                                        <td id="td-11-answer-id"></td>
-                                        <td id="td-21-answer-id"></td>
-                                        <td id="td-31-answer-id"></td>
-                                        <td id="td-41-answer-id"></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="td-02-answer-id"></td>
-                                        <td id="td-12-answer-id"></td>
-                                        <td id="td-22-answer-id"></td>
-                                        <td id="td-32-answer-id"></td>
-                                        <td id="td-42-answer-id"></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="td-03-answer-id"></td>
-                                        <td id="td-13-answer-id"></td>
-                                        <td id="td-23-answer-id"></td>
-                                        <td id="td-33-answer-id"></td>
-                                        <td id="td-43-answer-id"></td>
-                                    </tr>
+                                <tbody id="circuit-solution-tbody-id">
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </section>
+                <button onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html')">Truth Tables</button>
+                <button onclick="EduHTML_Manager.request('html/Education/Training/Design.html')">Design</button>
             </div>
         </div>
     </div>
 
         <script>
+            function gatesIcsInit(){
+                alert("in gatesIcsInit()");
+                PracticeTruthTableManager.create("basic","AND");
+            }
         </script>
 </body>
 </html>

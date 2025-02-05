@@ -1,0 +1,50 @@
+/* CSS common to all Screen Widths: 
+*   for Training/Introduction/GatesIcs:   6
+*   
+*/
+/* CSS for "Introduction/GatesIcs" Base */
+    
+/*End for "Introduction/GatesIcs" Base  */
+
+
+@media only screen and (max-width: 599px){
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 600px) and (max-width: 749px){
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 750px) and (max-width: 899px){
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 900px) and (max-width: 1049px){
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 1050px) and (max-width: 1199px){
+    /* CSS for "Introduction/GatesIcs" */
+     /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+ 
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+    }
+
+    
+@media only screen and (min-width: 1400px){
+    /* CSS for "Introduction/GatesIcs" */
+    /*End CSS for "Introduction/GatesIcs" */
+}

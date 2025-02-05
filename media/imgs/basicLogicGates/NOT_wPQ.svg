@@ -4,10 +4,10 @@
 <svg
    version="1.1"
    id="svg276"
-   width="146.66667"
-   height="86"
-   viewBox="0 0 146.66667 86"
-   sodipodi:docname="NOT.svg"
+   width="207.35971"
+   height="85.477692"
+   viewBox="0 0 207.35971 85.477692"
+   sodipodi:docname="NOT_wPQ.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="12.760811"
-     inkscape:cx="83.3411"
-     inkscape:cy="45.255745"
+     inkscape:zoom="6.3804055"
+     inkscape:cx="79.540399"
+     inkscape:cy="50.467012"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="1909"
@@ -37,32 +37,32 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="g282">
     <sodipodi:guide
-       position="97.304123,37.569587"
+       position="124.53034,36.357698"
        orientation="1,0"
        id="guide1077"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="120.68814,45.659794"
+       position="147.91436,44.447905"
        orientation="1,0"
        id="guide1079"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="136.09278,43.997422"
+       position="163.319,42.785533"
        orientation="0,-1"
        id="guide1081"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="125.45361,55.079897"
+       position="152.67983,53.868008"
        orientation="0,-1"
        id="guide1083"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="124.78866,33.247422"
+       position="152.01488,32.035533"
        orientation="0,-1"
        id="guide1085"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="109.49484,62.948454"
+       position="136.72106,61.736565"
        orientation="1,0"
        id="guide1193"
        inkscape:locked="false" />
@@ -70,7 +70,8 @@
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
-     id="g282">
+     id="g282"
+     transform="translate(27.22622,0.68958077)">
     <image
        width="146.66667"
        height="86"
@@ -90,6 +91,19 @@
        d="M 33.136598,79.461341 32.914948,4.6546392 94.533505,42.113402 Z"
        id="path1191"
        sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="-29.74622"
+       y="50.877262"
+       id="text304"><tspan
+         sodipodi:role="line"
+         id="tspan302"
+         style="font-size:28px;fill:#000000;stroke-width:0"
+         x="-29.74622"
+         y="50.877262">P<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan5881">0</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:6;stroke-dasharray:none"
        d="m 96.971649,42.002577 c 0.22165,7.203609 4.876291,10.75 11.304131,10.75 6.42783,0 11.19329,-4.765464 11.30411,-10.52835 0.12147,-6.316815 -4.21134,-11.414949 -11.30412,-11.414949 -7.09278,0 -11.414945,5.097938 -11.304121,11.193299 z"
@@ -99,5 +113,18 @@
        style="fill:none;stroke:#000000;stroke-width:6;stroke-dasharray:none"
        d="m 121.79639,41.891753 24.38145,0.221649 z"
        id="path1197" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="148.10851"
+       y="51.663662"
+       id="text304-2"><tspan
+         sodipodi:role="line"
+         id="tspan302-9"
+         style="font-size:28px;fill:#000000;stroke-width:0"
+         x="148.10851"
+         y="51.663662">Q<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan5885">0</tspan></tspan></text>
   </g>
 </svg>
