@@ -1,25 +1,17 @@
 
 
 /* CSS for Codes (BASE) */
-  .main-container{
-      overflow: hidden;
-      width: 100%;
-  }
-      .body-container{
-          padding-bottom: 5rem;
-          height: 100vh;
-          margin-left: 0rem;
-          padding-right:1rem;
-          padding-bottom: 10rem;
-          overflow: hidden;
-          overflow-y: scroll;
+      .contents{
+        overflow: visible;
+        font-weight: bold;
+        border: 3px solid blue;
       }
       .header-one,
       .header-two{
           display: block;
           text-align: center;
-
-      } .morse-code-table-container{
+      } 
+      .morse-code-table-container{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -78,23 +70,24 @@
 /*End CSS for Codes (BASE) */
 @media only screen and (max-width: 599px){
 /* CSS for Text  */
-      .body-container{
-          padding-left: 1rem;
-      }
-      .header-one{
-          font-size: 1.7rem;
-      }
-      .header-two{
-          font-size: 1.6rem;
-         /* text-indent: 1.5rem; */
-      }
-      p{
-        font-size: 1.2rem;
-      }
-      .type-1 li{
-        font-size: 1.2rem;
-        margin-left: 2.5rem;
-      }
+    .contents{
+        padding: 0 1rem;
+    }
+    .header-one{
+        font-size: 1.7rem;
+    }
+    .header-two{
+        font-size: 1.6rem;
+        /* text-indent: 1.5rem; */
+    }
+    p{
+    font-size: 1.2rem;
+    }
+    .type-1 li{
+    font-size: 1.2rem;
+    margin-left: 2.5rem;
+    }
+
 /*END CSS for Text  */
 
 /* CSS for Tables  */
@@ -145,8 +138,8 @@
           
 @media only screen and (min-width: 600px) and (max-width: 749px){
 /* CSS for Text  */
-    .body-container{
-        padding-left: 1rem;
+    .contents{
+        padding: 0 1rem;
     }
     .header-one{
         font-size: 1.7rem;
@@ -212,9 +205,9 @@
   
 @media only screen and (min-width: 750px) and (max-width: 899px){
     /* CSS for Text  */
-        .body-container{
-            padding-left: 1rem;
-        }
+    .contents{
+        padding: 0 1rem;
+    }
         .header-one{
             font-size: 1.9rem;
         }
@@ -279,8 +272,8 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1049px){
     /* CSS for Text  */
-    .body-container{
-        padding-left: 1rem;
+    .contents{
+        padding: 0 1rem;
     }
     .header-one{
         font-size: 2.4rem;
@@ -346,8 +339,8 @@
 
 @media only screen and (min-width: 1050px) and (max-width: 1199px){
     /* CSS for Text  */
-    .body-container{
-        padding-left: 2rem;
+    .contents{
+        padding: 0 2rem;
     }
     .header-one{
         font-size: 2.8rem;
@@ -416,8 +409,8 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     /* CSS for Text  */
-    .body-container{
-        padding-left: 2rem;
+    .contents{
+        padding: 0 2rem;
     }
     .header-one{
         font-size: 3rem;
@@ -486,8 +479,8 @@
 
 @media only screen and (min-width: 1400px){
     /* CSS for Text  */
-    .body-container{
-        padding-left: 2rem;
+    .contents{
+        padding: 0 2rem;
     }
     .header-one{
         font-size: 3.5rem;

@@ -5,40 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+	<link rel="stylesheet" type="text/css" href="css/Education/Training/Introduction/TruthTables/TruthTables_base_plus_600px-minus_to_1400px-plus.css">
+    
     <script>
     </script>
     
     <style>
-    body{
-        /*  margin: 1rem;
-          padding: 5px;*/
-          overflow: hidden;
-      }
-          
-      .edu-contents{
-          background-image: url("media/imgs/low-noise-darker.png");
-          background-size: cover;
-          color: black;
-         /* border: 3px solid yellow;*/
-          overflow: hidden;
-      }
-     
-      
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			border: 3px solid green; 
+        }
     </style>
 </head>
 <body>
-    <div class="main-container">
-    <!-- Directory
-        tabs container          31
-        body container          37
-            Codes-Introduction  38
-            Examples            51    
-            Truth Tables        502     
-            Codes               866
-
-
-    -->
-    <div class="body-container">
+    <div class="truth-table-body-container">
         <!--Start Truth Tables-->
         <div id="truth-table-contents-id" class="contents truth-table-contents">
             <label class="header-one">Codes: Truth Tables</label>
@@ -307,6 +294,7 @@
             <div class="gif-container">
                 <p>Have you got the rythmn? Here's a little gif for you!</p>
                 <video src="media/imgs/Four-bit.mp4" controls></video>
+                <!--<img src="media/imgs/Four-Bit.gif">-->
             </div>
 
             <p>Notice: Samuel Morse chose to use "varying" word lengths(1-bit,2-bits,3-bits,4-bits). It served his purpose well.
@@ -314,14 +302,15 @@
             <p> In "digital" electronics that will not be the case. No matter how many "Inputs" you have they will all be the same length! One additional change. From now on you will
                 no longer see "dots" and "dashes". "Input" and "Output" Values will almost always be "0" and "1" or "T" and "F". You will get an opportunity to
                 practice with Truth Tables in the next section where you will be introduced to the fundamental building blocks of your 8-bit computer:
-                 "Gates and Integrated Circuits (ICs)".
+                "Gates and Integrated Circuits (ICs)".
             </p>
-        </div> <!--End of Examples-->
+        </div> <!--End of Truth Tables-->
 
-        
-    <button onclick="EduHTML_Manager.request('html/Education/Training/Codes.html')">Codes</button>
-    <button onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html')">Gates and ICs</button>
-    </div>
+        <div class="link-container">  
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html')">Codes</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html')">Gates and ICs</button>
+        </div>
+    </div> 
     
 </body>
 </html>
