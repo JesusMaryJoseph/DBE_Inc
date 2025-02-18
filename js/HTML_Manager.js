@@ -655,10 +655,11 @@ function ceoTransitionHasEnded(){
 
         //Methods
         load: function(HTMLsourceFile) {
-            //alert("in load HTMLsourceFile =  " + HTMLsourceFile);
+           // alert("in load HTMLsourceFile =  " + HTMLsourceFile);
             this.ceoEle.style.zIndex = 10;
         // alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
             this.ceoEle.style.opacity = 1;
+            this.ceoEle.style.display = "block";
             fetch(HTMLsourceFile)
                 .then(res => {
                     //alert("in res =>");
@@ -677,6 +678,7 @@ function ceoTransitionHasEnded(){
             //alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
             //alert("this.ceo.style.opacity =  " + this.ceoEle.style.opacity);
             this.ceoEle.style.opacity = 0;
+            this.ceoEle.style.display = "none";
             //this.opacity = 0;
         },
 
