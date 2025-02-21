@@ -80,8 +80,8 @@
 		<nav id="datasheets-container-id" class="datasheets-container">
 			<div class="datasheets-label-container">
 				<!--<label class="datasheets-label" onmouseover="EduNavHandler.showHide('datasheets')">Data Sheets</label>-->
-				<label class="datasheets-label" onclick="EduHTML_Manager.request('html/Education/Resources/DataSheets.html','contents','datasheets')">IC Data</label>
-			</div>
+				<label class="datasheets-label" onclick="EduHTML_Manager.request('html/Education/Resources/DataSheets.html')">IC Data</label>
+			</div>																						<!--,'contents','datasheets'-->
 		</nav>	
 	</nav>
 </div>
@@ -95,24 +95,22 @@
 			<div class="introduction-container">
 				<label class="training-dropdown-label" onclick="EduNavHandler.show('introduction')">Introduction</label>
 				<div id="introduction-dropdown-id" class="introduction-dropdown hide-second-dropdown">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html'); 
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Codes:
 					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html'); 
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Truth Tables:
 					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html'); 
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction'); PracticeTruthTableManager.onLoad()">Gates & ICs:
 					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Design.html'); 
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Design:
 					</label>
 				</div>
 			</div>
 			<div class="architecture-container">
 				<label class="training-dropdown-label" onclick="EduNavHandler.show('architecture')">Architecture</label>
-				<!--<li onclick="EduHTML_Manager.request('html/Education/Training/IntroductionNav.html','nav-one','intro'); 
-					EduNavHandler.hide('training')">Introduction-->
 				<div id="architecture-dropdown-id" class="architecture-dropdown hide-second-dropdown">
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/HardwareArchitecture.html'); 
 							EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Hardware:
@@ -190,8 +188,6 @@
 			</div>
 			<div class="architecture-container">
 				<label class="testing-dropdown-label" onclick="EduNavHandler.show('test-architecture')">Architecture</label>
-				<!--<li onclick="EduHTML_Manager.request('html/Education/testing/IntroductionNav.html','nav-one','intro'); 
-					EduNavHandler.hide('testing')">Introduction-->
 				<div id="test-architecture-dropdown-id" class="test-architecture-dropdown hide-second-dropdown">
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Testing/HardwareArchitecture.html'); 
 							EduNavHandler.hide('testing'); EduNavHandler.hide('architecture')">Hardware:
@@ -262,10 +258,21 @@
 		</div>
 	</nav>
 </div>
-<div class="training-testing-packets-background"></div>
 
+				<!--after line 113 label  <li onclick="EduHTML_Manager.request('html/Education/Training/IntroductionNav.html','nav-one','intro'); 
+					EduNavHandler.hide('training')">Introduction-->
+				<!--after line 190 label  <li onclick="EduHTML_Manager.request('html/Education/testing/IntroductionNav.html','nav-one','intro'); 
+					EduNavHandler.hide('testing')">Introduction-->
+<div class="training-testing-packets-background"></div>
 </nav>
+
 <div id="edu-contents-id" class="edu-contents transition-0-1">
+</div>
+<div id="edu-article-id" class="edu-article">
+	<div class="close-html" onclick="EduHTML_Manager.close()">X</div>
+	<div id="ic-data-contents-id" class="ic-data-contents">
+		<label>Data Sheet for:</label>
+	</div>
 </div>
 
 	

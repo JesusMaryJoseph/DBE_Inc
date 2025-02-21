@@ -63,9 +63,12 @@
           justify-content: center;
           align-items: center;
         }
-          .gif-container video{
-              width: 60%;
-          }
+            .gif-container video{
+                width: 60%;
+            }
+        p{
+            text-indent: 2rem;
+        }
 
 /*End CSS for Codes (BASE) */
 @media only screen and (max-width: 599px){

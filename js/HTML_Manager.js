@@ -551,12 +551,14 @@ let PracticeTruthTableManager = {
       /*  eduNavOneContentsEle: {},
         eduNavTwoContentsEle: {},*/
         eduContentsEle: {},
+        icDataEle: {},
       /*  targetEle: {},*/
         requestedFile: "",
     
         //Methods
-        request: function(HTMLsourceFile){
+        request: function(HTMLsourceFile, contentId){
         //alert("in request HTMLsourceFile =  " + HTMLsourceFile);
+        //alert("contentId = " + contentId);
         // alert("targetEdu = " + targetEdu);
         // alert("requestingEle = " + requestingEle);
             this.requestedFile = HTMLsourceFile;
@@ -587,11 +589,11 @@ let PracticeTruthTableManager = {
            // alert("between");
             //this.targetEle.style.opacity = 1;
            // alert("this.load() next");
-            this.load();
+            this.load(contentId);
         },
 
-        load: function() {
-           // alert("in load");
+        load: function(contentId) {
+            //alert("in load");
             //alert("HTMLsourceFile: " + HTMLsourceFile);
             //alert("targetOption =  " + targetOption);
 
@@ -604,8 +606,9 @@ let PracticeTruthTableManager = {
                     }
                 })
                 .then(resultHTML => {
-                    //alert("loading resultHTML");
+                    //alert("loading resultHTML contentId = " + contentId);
                     this.eduContentsEle.innerHTML = resultHTML;
+                    document.getElementById(contentId).scrollIntoView({block: 'start'});
                 })
                 .then((loaded) =>{
                     if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
@@ -623,6 +626,11 @@ let PracticeTruthTableManager = {
             this.targetEle.style.opacity = "1";
         },
 
+        close: function(){
+            this.icDataEle.style.opacity = 0;
+            this.icDataEle.style.display = "none";
+        },
+
         init: function() {
         //alert("in EduHTML_Manager init()");
            /* this.eduNavOneContentsEle = document.getElementById("edu-nav-one-contents-id");
@@ -637,6 +645,7 @@ let PracticeTruthTableManager = {
             this.eduContentsEle.addEventListener("transitionend", this.show().bind, false);
             this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
         //    alert("end of EduHTML_Manager init()");
+            this.icDataEle = document.getElementById("ic-data-id");
         }
     }
     /* End EduHTML_Manager */

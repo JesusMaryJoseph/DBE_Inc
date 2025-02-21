@@ -46,6 +46,9 @@
         display: flex;
         justify-content: center;
     }
+    p{
+        text-indent: 2rem;
+    }
 /*End CSS for Codes (BASE) */
 @media only screen and (max-width: 599px){
     .contents{

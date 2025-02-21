@@ -1,8 +1,8 @@
 /*  base CSS for: 
- *    1) computer.html
+ *    1) technician.html
  */
 
-/* CSS for Conputer page and contents */ 
+/* CSS for Technician page and contents */ 
 .page{
     display: flex;
     flex-direction: column; 
@@ -23,7 +23,7 @@
         color: yellow;
     }
 
-/* End CSS for Conputer page and contents */
+/* End CSS for Technician page and contents */
 
 @media only screen and (max-width: 599px){
     .page,

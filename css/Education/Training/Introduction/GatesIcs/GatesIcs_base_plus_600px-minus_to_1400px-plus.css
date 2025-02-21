@@ -8,7 +8,7 @@
             .contents{
                 overflow: visible;
                 font-weight: bold;
-                border: 3px solid blue;
+               /* border: 3px solid blue; */
             }
             .header-one,
             .header-two{
@@ -90,14 +90,14 @@
                             font-size: 2rem;
                             flex-direction: column;
                             justify-content: center;
-                            border: 1px solid red;
+                           /* border: 1px solid red;*/
                         }
                         .radio-inputs-container{
                             width: 10rem;
                             display: flex;
                             flex-direction: row;
                             justify-content: space-around;
-                            border: 1px solid green;
+                           /* border: 1px solid green; */
                         }
                             .radio-inputs-container label{
                                 font-size: 2.4rem;
@@ -209,7 +209,7 @@
             .gate-selection-container{
                 width: 60vw;
                 margin-bottom: 1rem;
-                border: 2px solid red;
+                /*border: 2px solid red;*/
             }
                 .gate-selection-container label{
                     width: 4rem;

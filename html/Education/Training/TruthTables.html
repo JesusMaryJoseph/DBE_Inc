@@ -30,18 +30,7 @@
         <div id="truth-table-contents-id" class="contents truth-table-contents">
             <label class="header-one">Codes: Truth Tables</label>
             <label class="header-two">Morse Code Vs Truth Table:</label>
-            <p>Consider the following Table below and on the left and its corresponding Morse Code for the letters "E" and "T".
-                They both contain the same information: the "Key" for the letters "E" and "T". There is "Table Terminology" 
-                with which you should be familiar. 
-
-            </p>
-            <ol type="1" class="type-1">
-                <li>"Table Header": lightblue background</li>
-                <li>"Table Body": lighyellow background</li>
-                <li>The "Table Header" also indicates which parts of the "Key" are "Inputs" and which are "Outputs".</li>
-            </ol><br>
-            <p>Since this Table has "dots" and "dashes" as Inputs and "letters" as Outputs, this particular Table would be used for decoding a message.
-            </p><br>
+            <p>Consider the following:</p>
             <div class="morse-code-table-container">
                 <table class="morse-code-table morse-code-table-1">
                     <thead class="smk-header">
@@ -71,9 +60,20 @@
                     <p>Morse Code<br>for 1 bit word<br>(eg 2 values: 2<sup>1</sup>)</p>
                     <img src="media/imgs/SamuelMorseKey_E-T_1-bit.svg">
                 </div>
-            </div><br><br>
-            
-
+            </div> 
+            <p>On the right is the one-bit Morse Key for the letters "E" and "T". On the right is a "Table" that 
+                contains the same information. It will be called a "Truth Table"! 
+            </p>
+            <p>There is "Table Terminology" with which you should be familiar. 
+            </p>
+            <ol type="1" class="type-1">
+                <li>"Table Header": lightblue background</li>
+                <li>"Table Body": lighyellow background</li>
+                <li>The "Table Header" also indicates which parts of the "Key" are "Inputs" and which are "Outputs".</li>
+            </ol>
+            <p>Since this Table has "dots" and "dashes" as Inputs and "letters" as Outputs, this particular Table could be used
+                 for decoding a message of "dots" and "dashes".
+            </p>
             <p>Now consider the Table for Morse's 2-bit words, of which there are 4 values (ie 2<sup>2</sup>)
             Again the Table and "Key" contain the same information just rearranged. 
             </p><br>
@@ -300,16 +300,18 @@
             <p>Notice: Samuel Morse chose to use "varying" word lengths(1-bit,2-bits,3-bits,4-bits). It served his purpose well.
             </p>
             <p> In "digital" electronics that will not be the case. No matter how many "Inputs" you have they will all be the same length! One additional change. From now on you will
-                no longer see "dots" and "dashes". "Input" and "Output" Values will almost always be "0" and "1" or "T" and "F". You will get an opportunity to
-                practice with Truth Tables in the next section where you will be introduced to the fundamental building blocks of your 8-bit computer:
+                no longer see "dots" and "dashes". "Input" and "Output" Values will almost always be "0" and "1" or "T" and "F". 
+            </p>
+            <p>You will get an opportunity to practice with Truth Tables in the next section 
+                where you will be introduced to the fundamental building blocks of your 8-bit computer:
                 "Gates and Integrated Circuits (ICs)".
             </p>
         </div> <!--End of Truth Tables-->
 
         <div class="link-container">  
-            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html')">Codes</button>
-            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html')">Gates and ICs</button>
-        </div>
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id')">Codes</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id')">Gates and ICs</button>
+        </div>                                                                                      <!--,'gates-ics-contents-id'-->
     </div> 
     
 </body>

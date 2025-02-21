@@ -54,7 +54,7 @@
                     of the "Design Circuitry" column located between the "Inputs" and "Outputs". They are related!
                 </p>
                 <p>A typical Engineering problem is: given the Inputs and Outputs, 
-                    the Engineer must use their knowledge and skills to come up with the "Digital Circuitry" that satisfies that criteria!
+                    the Engineer must use their knowledge and skills, in a creative way, to come up with the "Digital Circuitry" that satisfies that criteria!
                     In the next section, "Design", you will be learn two tools, "Boolean Algebra" and "Karnaugh Maps", that will help in this process.
                 </p>
                 <p>The focus right now is the "Logic Gates" themselves. The following Truth Table is for the "Simplist" Logic Gate.
@@ -90,8 +90,8 @@
                 <p>As you can see, this Gate has One Input and One Output. Notice also that the Output has the opposite value of the Input. 
                     In Binary there are only 2 values. So, if it is not "one Value" it must be the "other Value"; therefore, it makes sense for 
                         this Logic Gate to be called the "NOT" Gate. Its symbol is:
-                    <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate_4.5mm.png">, where the Input is on its left and the Output on its right.<br>
-                    <label>( "F" <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate_4.5mm.png"> "T")</label>
+                    <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate.svg">, where the Input is on its left and the Output on its right.<br>
+                    <label>( "F" <img class="not-gate" src="media/imgs/BasicLogicGates/NOT_Gate.svg"> "T")</label>
                 </p>
                 <p>Consider the many years you studied Arithmatic. You encountered Numbers (Operands) and Operators (addition, subtraction, multiplications, division). Now enter "The Binary World" 
                     where you find Operands (eg "T"/"F") and Operators, one of which is the NOT Gate.
@@ -100,7 +100,7 @@
                     Forgetting +/- one would write the (Square Root of 4) = 2 as: <img class="square-root" src="media/imgs/SquareRoot_4.svg">. The same expression could have been written with 
                         the argument (Input) first, followed by the Square Root (Operator) and then immediately followed by the Result, 
                         <img class="square-root" src="media/imgs/4_SquareRoot_2.svg"> , with which you, undoubtedly, feel uncomfortable but which you will be doing from now on.
-                    The Inputs come first then the Logic Gate followed immediately by its Output<br> eg (Input <img class="not-gate" src="media/imgs/basicLogicGates/Not_Gate_4.5mm.png"> Output)<br>
+                    The Inputs come first then the Logic Gate followed immediately by its Output<br> eg (Input <img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg"> Output)<br>
                 </p><br>
                 <div class="table-container">
                     <table id="truth-table-not-gate-id" class="truth-table truth-table-not-gate" style="border-collapse: collapse">
@@ -203,11 +203,32 @@
                     </table>
                 </div>
             </section><br><br>
-            <h2 class="header-two">II)Integrated Circuits (IC):</h2>
+            <h2 class="header-two">II) Integrated Circuits (IC):</h2>
+            <section class="intro-ics">
+                <p>One of the circuits in the "Circuit Practice Table" above was different than all the others.
+                    Did you notice it? It also had a unique label separating it from all the others, which
+                    were composed of "basic" Logic Gates throwing together without much thought.
+                </p>
+                <p>The circuit diagram for "TwoToFourDecoder", however, has a very different look to it. Go back and run it again but 
+                    this time consentrate on the 4 output columns. Do you see a pattern? It not only has a very organized output it also
+                    performs a very useful function, which is why TI manufactored it as 74LS139 with the label: "2-Line To 4-Line Decoder/Demultiplexer".
+                </p>
+                <p>You, in fact, will also find it useful when designing the Output Module, which 
+                    is composed of Four 7-Segment-Display. You will use it to control which of the Four 7-Segment-Display is lit at any one time.
+                    The 74LS139 Integrated Circuit is only one of 18 ICs you will be using to build the 8-bit computer. Six of the 18 will
+                    be introduced to you right now. The remaining 12 will be covered after you have finished the "Hardware Architecture" material.
+                </p>
+                <p>All the ICs look pretty much the same, differing in size and the number of pins. The following 6 ICs
+                    could easily be called the "basic" ICs as seen by the following list:
+                    <ol type="1">
+                        <li></li>
+                    </ol> 
+                </p>
+            </section>
         </div>
         <div class="link-container">
-            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html')">Truth Tables</button>
-            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/Design.html')">Design</button>
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id')">Truth Tables</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id')">Design</button>
         </div>
     </div>
 

@@ -42,9 +42,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="979"
-     inkscape:cy="727.5"
+     inkscape:zoom="2"
+     inkscape:cx="1001.75"
+     inkscape:cy="855"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="1909"
@@ -223,12 +223,12 @@
        id="guide3092"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="1718.2695,394.15135"
+       position="1136,393.03968"
        orientation="0,-1"
        id="guide3104"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="1706.2487,420.3143"
+       position="1136.5,417.03968"
        orientation="0,-1"
        id="guide3106"
        inkscape:locked="false" />
@@ -431,9 +431,9 @@
        x="510.07022"
        y="873.41046" />
     <rect
-       style="fill:#000000;fill-rule:evenodd;stroke-width:0.931352"
+       style="fill:#000000;fill-rule:evenodd;stroke-width:1.10801"
        id="rect1610"
-       width="451.4306"
+       width="638.9306"
        height="25.455826"
        x="502.29208"
        y="874.11755" />
