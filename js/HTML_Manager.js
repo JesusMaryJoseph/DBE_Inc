@@ -5,6 +5,34 @@
 /   CodesTabManager         139
 /   QuestionAnswerManager   264
 */
+
+
+      //  alert("in this.createData"); 
+      let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
+      "And":{"title": "The AND Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,0,0,1],"solutionsTF":["F","F","F","T"],"img":"media/imgs/basicLogicGates/AND_wPQ.svg"},
+      "Or":{"title": "The OR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,1,1,1],"solutionsTF":["F","T","T","T"],"img":"media/imgs/basicLogicGates/OR_wPQ.svg"},
+      "Xor":{"title": "The XOR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,1,1,0],"solutionsTF":["F","T","T","F"],"img":"media/imgs/basicLogicGates/XOR_wPQ.svg"},
+      "Nand":{"title": "The NAND Logic Gate","inputs": 2,"outputs": 1,"solutions01":[1,1,1,0],"solutionsTF":["T","T","T","F"],"img":"media/imgs/basicLogicGates/NAND_wPQ.svg"},
+      "Nor":{"title": "The NOR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[1,0,0,0],"solutionsTF":["T","F","F","F"],"img":"media/imgs/basicLogicGates/NOR_wPQ.svg"},
+      "Nxor":{"title": "The NXOR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[1,0,0,1],"solutionsTF":["T","F","F","T"],"img":"media/imgs/basicLogicGates/NXOR_wPQ.svg"},
+      "NotXor":{"title": "The NotXor Circuit","inputs": 2,"outputs": 2,"solutions01":[[1,1,0,0],[1,0,0,1]],"solutionsTF":[["T","T","F","F"],["T","F","F","T"]],"img":"media/imgs/basicLogicGates/NotXor_wPQ.svg"},
+      "AndNotOr":{"title": "The AndNotOr Circuit","inputs": 2,"outputs": 3,"solutions01":[[0,0,0,1],[1,0,1,0],[1,0,1,1]],"solutionsTF":[["F","F","F","T"],["T","F","T","F"],["T","F","T","T"]],"img":"media/imgs/basicLogicGates/AndNotOr_wPQ.svg"},
+      "OrAndXor":{"title": "The OrAndXor Circuit","inputs": 2,"outputs": 3,"solutions01":[[0,1,1,1],[0,0,0,1],[0,1,1,0]],"solutionsTF":[["F","T","T","T"],["F","F","F","T"],["F","T","T","F"]],"img":"media/imgs/basicLogicGates/OrAndXor_wPQ.svg"},
+      "NotAndXorOr":{"title": "The NotAndXorOr Circuit","inputs": 2,"outputs": 4,"solutions01":[[1,1,0,0],[0,1,0,0],[1,0,0,1],[1,1,0,1]],"solutionsTF":[["T","T","F","F"],["F","T","F","F"],["T","F","F","T"],["T","T","F","T"]],"img":"media/imgs/basicLogicGates/NotAndXorOr_wPQ.svg"},
+      "NotXorOrNand":{"title": "The NotXorOrNand Circuit","inputs": 2,"outputs": 4,"solutions01":[[1,1,0,0],[1,0,0,1],[1,1,0,1],[0,1,1,0]],"solutionsTF":[["T","T","F","F"],["T","F","F","T"],["T","T","F","T"],["F","T","T","F"]],"img":"media/imgs/basicLogicGates/NotXorOrNand_wPQ.svg"},
+      "NandNotNand":{"title": "The NandNotNand Circuit","inputs": 2,"outputs": 3,"solutions01":[[1,1,1,0],[1,0,1,0],[0,1,0,1]],"solutionsTF":[["T","T","T","F"],["T","F","T","F"],["F","T","F","T"]],"img":"media/imgs/basicLogicGates/NandNotNand_wPQ.svg"},
+      "NorNandNxor":{"title": "The NorNandNxor Circuit","inputs": 2,"outputs": 3,"solutions01":[[1,0,0,0],[1,1,1,0],[1,0,0,1]],"solutionsTF":[["T","F","F","F"],["T","T","T","F"],["T","F","F","T"]],"img":"media/imgs/basicLogicGates/NorNandNxor_wPQ.svg"},
+      "AndOrNandNxorNandNor":{"title": "The AndOrNandNxorNandNor Circuit","inputs": 2,"outputs": 6,"solutions01":[[0,0,0,1],[0,1,1,1],[1,1,1,0],[1,0,0,1],[1,0,0,1],[0,1,1,0]],"solutionsTF":[["F","F","F","T"],["F","T","T","T"],["T","T","T","F"],["T","F","F","T"],["T","F","F","T"],["F","T","T","F"]],"img":"media/imgs/basicLogicGates/AndOrNandNxorNandNor_wPQ.svg"},
+      "NorNorNor":{"title": "The NorNorNor Circuit","inputs": 2,"outputs": 3,"solutions01":[[1,0,1,0],[1,1,0,0],[0,0,0,1]],"solutionsTF":[["T","F","T","F"],["T","T","F","F"],["F","F","F","T"]],"img":"media/imgs/basicLogicGates/NorNorNor_wPQ.svg"},
+      "TwoToFourDecoder":{"title": "The TwoToFourDecoder Circuit","inputs": 2,"outputs": 6,"solutions01":[[1,0,1,0],[1,1,0,0],[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]],"solutionsTF":[["T","F","T","F"],["T","T","F","F"],["F","T","T","T"],["T","F","T","T"],["T","T","F","T"],["T","T","T","F"]],"img":"media/imgs/basicLogicGates/TwoToFourDecoder_wPQ.svg"},
+      "AndAndOrW3Inputs":{"title": "The AndAndOrW3Inputs Circuit","inputs": 3,"outputs": 3,"solutions01":[[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1]],"solutionsTF":[["F","F","F","T","F","T","F","T"],["F","F","F","F","F","T","F","T"],["F","F","F","T","F","T","F","T"]],"img":"media/imgs/basicLogicGates/AndAndOr_w3InPQ.svg"}
+      }`;
+
+//alert("after let dataString =");
+let JsonTableDataSet = JSON.parse(dataString);
+
+
+
 function eduTransitionHasEnded(){
     alert("in eduTransitionHasEnded and<br>EduHTML_Manager.eduEle.style.opacity =  " + EduHTML_Manager.eduEle.style.opacity);
    if(EduHTML_Manager.eduEle.style.opacity == 0){
@@ -37,7 +65,7 @@ let PracticeTruthTableManager = {
     gateName: "AND",
     circuitImgEle: {},
     circuitName: "NotXor",
-    completeDataSet: {},
+    /*completeDataSet: {},*/
     basicDataEle: {},
     circuitDataEle: {},
     practiceTableEle: {},
@@ -169,59 +197,59 @@ let PracticeTruthTableManager = {
          //alert("before switch gateCircuitName = " + gateCircuitName);
          switch (gateCircuitName){  //gateCircuitName){
             case "NOT":
-                this.basicDataEle = this.completeDataSet.Not;
+                this.basicDataEle = JsonTableDataSet.Not;
                 break;
             case "AND":
-                this.basicDataEle = this.completeDataSet.And;
+                this.basicDataEle = JsonTableDataSet.And;
                 break;
             case "OR":
-                this.basicDataEle = this.completeDataSet.Or;
+                this.basicDataEle = JsonTableDataSet.Or;
                 break;
             case "XOR":
-                this.basicDataEle = this.completeDataSet.Xor;
+                this.basicDataEle = JsonTableDataSet.Xor;
                 break;
             case "NAND": 
-                this.basicDataEle = this.completeDataSet.Nand;
+                this.basicDataEle = JsonTableDataSet.Nand;
                 break;
             case "NOR":
-                this.basicDataEle = this.completeDataSet.Nor;
+                this.basicDataEle = JsonTableDataSet.Nor;
                 break;
             case "NXOR":
-                this.basicDataEle = this.completeDataSet.Nxor;
+                this.basicDataEle = JsonTableDataSet.Nxor;
                 break;
             case "NotXor":
                // alert("in case NotXor");
-                this.circuitDataEle = this.completeDataSet.NotXor;
+                this.circuitDataEle = JsonTableDataSet.NotXor;
                 break;
             case "AndNotOr":
-                this.circuitDataEle = this.completeDataSet.AndNotOr;
+                this.circuitDataEle = JsonTableDataSet.AndNotOr;
                 break;
             case "OrAndXor":
-                this.circuitDataEle = this.completeDataSet.OrAndXor;
+                this.circuitDataEle = JsonTableDataSet.OrAndXor;
                 break;
             case "NotAndXorOr":
-                this.circuitDataEle = this.completeDataSet.NotAndXorOr;
+                this.circuitDataEle = JsonTableDataSet.NotAndXorOr;
                 break;
             case "NotXorOrNand":
-                this.circuitDataEle = this.completeDataSet.NotXorOrNand;
+                this.circuitDataEle = JsonTableDataSet.NotXorOrNand;
                 break;
             case "NandNotNand": 
-                this.circuitDataEle = this.completeDataSet.NandNotNand;
+                this.circuitDataEle = JsonTableDataSet.NandNotNand;
                 break;
             case "NorNandNxor":
-                this.circuitDataEle = this.completeDataSet.NorNandNxor;
+                this.circuitDataEle = JsonTableDataSet.NorNandNxor;
             break;
             case "AndOrNandNxorNandNor":
-                this.circuitDataEle = this.completeDataSet.AndOrNandNxorNandNor;
+                this.circuitDataEle = JsonTableDataSet.AndOrNandNxorNandNor;
                 break;
             case "NorNorNor":
-                this.circuitDataEle = this.completeDataSet.NorNorNor;
+                this.circuitDataEle = JsonTableDataSet.NorNorNor;
                 break;
             case "TwoToFourDecoder":
-                this.circuitDataEle = this.completeDataSet.TwoToFourDecoder;
+                this.circuitDataEle = JsonTableDataSet.TwoToFourDecoder;
                 break;
             case "AndAndOrW3Inputs":
-                this.circuitDataEle = this.completeDataSet.AndAndOrW3Inputs;
+                this.circuitDataEle = JsonTableDataSet.AndAndOrW3Inputs;
                 break;
             default: alert("no Data Source for this entry");
          }
@@ -493,7 +521,7 @@ let PracticeTruthTableManager = {
 
     createData: function(){
       //  alert("in this.createData"); 
-        let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
+       /* let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
                            "And":{"title": "The AND Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,0,0,1],"solutionsTF":["F","F","F","T"],"img":"media/imgs/basicLogicGates/AND_wPQ.svg"},
                            "Or":{"title": "The OR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,1,1,1],"solutionsTF":["F","T","T","T"],"img":"media/imgs/basicLogicGates/OR_wPQ.svg"},
                            "Xor":{"title": "The XOR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,1,1,0],"solutionsTF":["F","T","T","F"],"img":"media/imgs/basicLogicGates/XOR_wPQ.svg"},
@@ -512,9 +540,7 @@ let PracticeTruthTableManager = {
                            "TwoToFourDecoder":{"title": "The TwoToFourDecoder Circuit","inputs": 2,"outputs": 6,"solutions01":[[1,0,1,0],[1,1,0,0],[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]],"solutionsTF":[["T","F","T","F"],["T","T","F","F"],["F","T","T","T"],["T","F","T","T"],["T","T","F","T"],["T","T","T","F"]],"img":"media/imgs/basicLogicGates/TwoToFourDecoder_wPQ.svg"},
                            "AndAndOrW3Inputs":{"title": "The AndAndOrW3Inputs Circuit","inputs": 3,"outputs": 3,"solutions01":[[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1]],"solutionsTF":[["F","F","F","T","F","T","F","T"],["F","F","F","F","F","T","F","T"],["F","F","F","T","F","T","F","T"]],"img":"media/imgs/basicLogicGates/AndAndOr_w3InPQ.svg"}
                            }`;
-           
-        //alert("after let dataString =");
-        this.completeDataSet = JSON.parse(dataString);
+        JsonTableDataSet = JSON.parse(dataString);*/
         //alert("after JSON.parse");
         this.gateLabelEle = document.getElementById("and-label-id");
         this.circuitImgEle = document.getElementById("not-xor-img-id")
@@ -664,21 +690,22 @@ function ceoTransitionHasEnded(){
 
         //Methods
         load: function(HTMLsourceFile) {
-           // alert("in load HTMLsourceFile =  " + HTMLsourceFile);
+           //alert("in load HTMLsourceFile =  " + HTMLsourceFile);
+            this.ceoEle.innerHTML = "";
             this.ceoEle.style.zIndex = 10;
         // alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
             this.ceoEle.style.opacity = 1;
             this.ceoEle.style.display = "block";
             fetch(HTMLsourceFile)
                 .then(res => {
-                    //alert("in res =>");
+                   // alert("in res =>");
                     if (res.ok) {
                         //alert("res.ok");
                         return res.text();
                     }
                 })
                 .then(resultHTML => {
-                    //alert("loading resultHTML");
+                   // alert("loading resultHTML");
                     this.ceoEle.innerHTML = resultHTML;
                 })
         },

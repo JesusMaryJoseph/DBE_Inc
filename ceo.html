@@ -9,10 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_base.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_600px-minus_to_1400px-plus.css">
 	
-	<link rel="stylesheet" type="text/css" href="css/ceo/mediaQuery_ceo_base.css">
+	<link rel="stylesheet" type="text/css" href="css/ceo/mediaQuery_ceo_base_to_1400px-plus.css">
 	<script src="js/Nav_Handler.js"></script>
 	<script src="js/HTML_Manager.js"></script>
 
+	<style>
+		.selection-container{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+	</style>
 </head>
 <body onload="init()">
 
@@ -37,7 +44,11 @@
 
 	<div class="page">
 		<h1 class="welcome-label">Welcome To<br>The CEO Page</h1>
-		<label class="ceo-proposal-label" onclick="CeoHTML_Manager.load('html/Proposal.html')">Proposal</label>
+		<div class="selection-container">
+			<label class="ceo-proposal-label" onclick="CeoHTML_Manager.load('html/Proposal.html')">Proposal</label>
+			<label class="ceo-proposal-label" onclick="CeoHTML_Manager.load('html/Invitation.html')">Invitation</label>
+			<label class="ceo-proposal-label" onclick="CeoHTML_Manager.load('html/Application.html')">Application</label>
+		</div>	
 	</div>
 	<div id="ceo-contents-id" class="ceo-contents">
 	</div>
