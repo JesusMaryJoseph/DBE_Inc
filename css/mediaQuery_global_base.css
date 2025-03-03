@@ -123,7 +123,8 @@
         justify-content: center;
         align-content: center;
         background-image: radial-gradient(blue, black);
-        overflow-x: hidden; 
+        overflow-x: hidden;
+        color: yellow; 
     }
         .transition-fade-in{ 
             transition: opacity 0.5s;
