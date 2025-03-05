@@ -112,7 +112,7 @@
 
     /* CSS for Packets (NAV)  */
     .packets-label{
-        color: green;
+        /*color: green;*/
     }
     
     .packets-container{
@@ -143,12 +143,9 @@
                 margin-top: -12rem; 
             }
 
+    /*End CSS for Packets (NAV)  */
 
-/* CSS for Packets (NAV)  */
 /*End CSS for Training, Testing, & Packets (NAV) */
-
-
-
 
 /* CSS for Ben Eater Videos */
     .ben-eater-videos-header{

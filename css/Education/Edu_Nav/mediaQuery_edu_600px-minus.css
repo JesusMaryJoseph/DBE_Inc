@@ -119,7 +119,7 @@
 
     /* CSS for Packets (NAV)  */
         .packets-label{
-            color: red;
+            /*color: red;*/
         }
         .packets-container{
             top: -0.35rem;
