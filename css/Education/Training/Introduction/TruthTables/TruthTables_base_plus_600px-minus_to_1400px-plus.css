@@ -4,7 +4,6 @@
       .contents{
         overflow: visible;
         font-weight: bold;
-        border: 3px solid blue;
       }
       .header-one,
       .header-two{

@@ -27,7 +27,7 @@
             background-size: cover;
             color:  black;
 			overflow: auto;
-			border: 3px solid green; 
+			/*border: 3px solid green;*/ 
         }
        
     </style>
@@ -35,7 +35,7 @@
 <body onload="gatesIcsInit()">
     <div class="gates-ics-body-container">
         <div id="gates-ics-contents-id" class="contents gates-ics-contents">
-            <h1 class="header-one">Logic Gates and<br>Integrated Circuits (IC)</h1>
+            <h1 class="header-one">Logic Gates and Integrated Circuits</h1>
             <h2 class="header-two">I) Basic Logic Gates:</h2>
             <section class="basic-tools-general">
                 <p>Every Profession has basic tools (equipment) and techniques, which must be mastered. For Artists it's paper, pencils, pens, inks, brushes, etc.
@@ -211,19 +211,55 @@
                 </p>
                 <p>The circuit diagram for "TwoToFourDecoder", however, has a very different look to it. Go back and run it again but 
                     this time consentrate on the 4 output columns. Do you see a pattern? It not only has a very organized output it also
-                    performs a very useful function, which is why TI manufactored it as 74LS139 with the label: "2-Line To 4-Line Decoder/Demultiplexer".
+                    performs a very useful function, which is why TI manufactored it as 74LS139 with the label: "dual 2-Line To 4-Line Decoder/Demultiplexer".
                 </p>
-                <p>You, in fact, will also find it useful when designing the Output Module, which 
-                    is composed of Four 7-Segment-Display. You will use it to control which of the Four 7-Segment-Display is lit at any one time.
-                    The 74LS139 Integrated Circuit is only one of 18 ICs you will be using to build the 8-bit computer. Six of the 18 will
+                <div class="ic-container ic-139-container">
+                    <img class="ic-139" src="media/imgs/LS_imgs/Pin_Layouts/74LS139.png">
+                </div>
+                <p>As you can see from the image above, it actually contains two "2-Line To 4-Line Decoder/Demultiplexers". 
+                    When designing the Output Module, you will use the 74LS139 to control which of the Four 7-Segment-Display will be lit at any one time.
+                </p>
+                <p>The 74LS139 Integrated Circuit is only one of 18 ICs you will be using to build the 8-bit computer. Six of the 18 will
                     be introduced to you right now. The remaining 12 will be covered after you have finished the "Hardware Architecture" material.
                 </p>
                 <p>All the ICs look pretty much the same, differing in size and the number of pins. The following 6 ICs
-                    could easily be called the "basic" ICs as seen by the following list:
-                    <ol type="1">
-                        <li></li>
-                    </ol> 
+                    could easily be called the "basic" ICs as seen by the following list:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>IC--</td><td>Name</td><td>image</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>74LS00</td><td>Quad 2-Input NAND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS02</td><td>Quad 2-Input NOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS02.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS04</td><td>hex NOT Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS04.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS08</td><td>Quad 2-Input AND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS08.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS32</td><td>Quad 2-Input OR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS32.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS86</td><td>Quad 2-Input XOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS86.png"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>NOTE: When working as an Engineer you will have access to both the single "AND Gate" as well as the "74LS08 IC"; however,
+                    when working as a Draftsman or Technician you will ONLY have access to the "74LS08 IC". So if the Engineer chooses
+                    to use a single "AND Gate" in their "Design", the Draftsman's Schematic will have to convert that single "AND Gate"
+                    into a 74LS08 IC!
                 </p>
+                <p>Take some time to memorize each particular Gate with its corresponding IC name (eg OR Gate -- 74LS32 IC etc.). Your'e ready
+                    for the "Design" section.
+                </p>
+                
             </section>
         </div>
         <div class="link-container">

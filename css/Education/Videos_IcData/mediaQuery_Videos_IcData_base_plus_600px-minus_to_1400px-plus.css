@@ -285,7 +285,7 @@
             font-size: 1.8rem;
         }
     /*End CSS for Videos & IC-Datasheets */
-    }
+}
 
     
 @media only screen and (min-width: 1050px) and (max-width: 1199px){
@@ -312,7 +312,7 @@
                 font-size: 1.8rem;
             }
      /*End CSS for Videos & IC-Datasheets */
-    }
+}
 
     
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
@@ -340,7 +340,7 @@
                 font-size: 2rem;
             }
     /*End CSS for Videos, IC-Data (CONTENTS) */
-    }
+}
 
     
 @media only screen and (min-width: 1400px){
