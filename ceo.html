@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CEO</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_base.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery_global_600px-minus_to_1400px-plus.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/ceo/mediaQuery_ceo_base_to_1400px-plus.css">
+	<script src="js/Nav_Handler.js"></script>
+	<script src="js/HTML_Manager.js"></script>
+
+	<style>
+		.selection-container{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.welcome-label{
+			color: yellow;	
+		}
+	</style>
+</head>
+<body onload="init()">
+
+    <nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()">
+    	<div class="nav-label-container">
+    		<label class="nav-label" onmouseover="NavHandler.showHide()">Nav</label>
+    	</div>
+		<div id="nav-dropdown-id" class="nav-dropdown hide-dropdown">
+		    <a href="index.html">Home</a>
+		    <label class="dept-label"><u>Departments</u></label>
+		    <div class="dept-container">
+			    <a href="engineering.html">Engineering</a>
+				<a href="architect.html">Architecture</a>
+				<a href="technician.html">Technician</a>
+				<a href="computer.html">Computer</a>
+				<a href="education.html">Education</a>
+				<a href="media_arts.html">Media Arts</a>
+			</div>
+		</div>
+    <!--    <div id="nav-bottom-id"></div>  -->
+    </nav>  
+
+	<div class="page">
+		<h1 class="welcome-label">Welcome To<br>The CEO Page</h1>
+		</div>	
+	</div>
+	<div id="ceo-contents-id" class="ceo-contents">
+	</div>
+
+
+    <script>
+    	function init(){
+    		NavHandler.init();
+			CeoHTML_Manager.init();
+    	}
+    </script>
+
+</body>
+</html>
