@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function drawCanvas(){
+        alert("in draw Canvas");
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        var elementslist = []
+
+        const circle = new Path2D();
+        circle.arc(50, 75, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = 'red';
+        ctx.fill(circle);
+
+        const circletwo = new Path2D();
+        circletwo.arc(150, 75, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = 'red';
+        ctx.fill(circletwo);
+
+        const circlethree = new Path2D();
+        circlethree.arc(250, 75, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = 'red';
+        ctx.fill(circlethree);
+
+        elementslist.push(circle,circletwo,circlethree) 
+
+        document.getElementById("canvas").addEventListener('mousemove', function(event) {
+        event = event || window.event;
+        var ctx = document.getElementById("canvas").getContext("2d")
+
+        for (var i = elementslist.length - 1; i >= 0; i--){  
+
+        if (elementslist[i] && ctx.isPointInPath(elementslist[i], event.offsetX, event.offsetY)) {
+        document.getElementById("canvas").style.cursor = 'pointer';
+            ctx.fillStyle = 'orange';
+            ctx.fill(elementslist[i]);
+        return
+        } else {
+        document.getElementById("canvas").style.cursor = 'default';
+            ctx.fillStyle = 'red';
+            for (var d = elementslist.length - 1; d >= 0; d--){ 
+            ctx.fill(elementslist[d]);
+            }
+        }
+        }  
+
+        }); 
+    }
+</script>
+
+<style>
+    html {cursor: crosshair;}
+</style>
+
+</head>
+<body onload="init()">
+    <canvas id="canvas"></canvas>
+<script>
+    function init(){
+        alert("in init()");
+        drawCanvas();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+      
+    <style>
+        .edu-contents{
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color: black;
+            height: 100vh;  
+        }
+        .hardware-architecture-table{
+            text-align: center;
+            border-collapse: collapse;
+            border: 4px solid black;
+        }
+        
+        .hardware-architecture-table thead th,
+        .hardware-architecture-table tbody td{
+            padding: 0.2rem 0.2rem;
+            border: 4px solid black;
+            width: 15vw;
+        }
+        .hardware-architecture-table tbody td img{
+            width: 10rem;
+        }
+        #img245{
+            width: 15rem;
+        }
+        .computer-contents{
+            padding-bottom: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="body-container">
+            <div id="computer-contents-id" class="contents computer-contents">
+                <label>Architecture Page for "Hardware"</label>
+    <!--Outline
+        I   Introduction
+        II  Main Modules (Overview)
+            A. Memory
+            B. Arithmetic Logic Unit
+            C. Control
+            D. Input/Output
+            E. Program Counter
+            F. BUS
+            G. Clock
+        III  --> 
+                <table class="hardware-architecture-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Computer Hardware Architecture</th>
+                        </tr>
+                        <tr>
+                            <th>Module</th>
+                            <th>Function</th>
+                            <th>Hardware</th>
+                            <th>Images</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Memory</td>
+                            <td>Provide Storage for Language & Data</td>
+                            <td>74LS189,<br>74LS173</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS189.png">
+                                <img src="media/imgs/LS_imgs/Pin_Layouts/74LS173.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Arithmetic<br>Logic<br>Unit (ALU)</td>
+                            <td>Addition,<br>Subtraction</td>
+                            <td>74LS283</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS283.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Input</td>
+                            <td>Allows User To Input Program Instructions & Data into RAM via a user selected Memory Address. 
+                                For this computer the Memory Address for the first Program Instruction must be "0"!
+                            </td>
+                            <td>DIP Switches<br>& 74LS157</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS157.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Output</td>
+                            <td>Allow Internal Data to be Displayed on four 7-Segment Displays</td>
+                            <td>7-Segment Displays<br>74LS107,<br>74LS139,<br>AT28C16</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS107.png">
+                                <img src="media/imgs/LS_imgs/Pin_Layouts/74LS139.png">
+                                <img src="media/imgs/LS_imgs/Pin_Layouts/AT28C16.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Program Counter</td>
+                            <td>Its contents contains the "Memory Address of RAM" for the next "Program Statement" to be executed.
+                                It has the ability to increment the contents by 1 or load a JUMP address from the BUS. 
+                            </td>
+                            <td>74LS161</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS161.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Control</td>
+                            <td>Decode the Instruction (ie Determine the appropriate "Control Signals" for the given 
+                                "Instruction".) Then send those "Control Signals" to the appropriate Modules 
+                                during each step of the "Execution Cycle".</td>
+                            <td>74LS161,<br>74LS138,<br>AT28C16</td>
+                            <td><img src="media/imgs/LS_imgs/Pin_Layouts/AT28C16.png">
+                                <img src="media/imgs/LS_imgs/Pin_Layouts/74LS161.png">
+                                <img src="media/imgs/LS_imgs/Pin_Layouts/74LS138.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Clock</td>
+                            <td>Provide Timing for the Computer.</td>
+                            <td>LM555</td>
+                            <td>images</td>
+                        </tr>
+                        <tr>
+                            <td>BUS</td>
+                            <td>Provide for the transfer<br>of Data between Modules</td>
+                            <td>74LS245</td>
+                            <td><img id="img245" src="media/imgs/LS_imgs/Pin_Layouts/74LS245.png"></td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </div>
+        </div>
+        <div class="bottom-fill">
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <script>
+		function addListenerToInputs(){
+			const inputTags = querySelectorAll("input");
+            alert("# of Inputs = " + inputTags.length);
+			inputTags.forEach( item => {
+				item.addEventListener("keydown", PracticeTruthTableManager.checkInput());
+			})
+		}
+	</script>
+    
+    <style>
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			/*border: 3px solid green;*/ 
+        }
+       
+    </style>
+</head>
+<body onload="gatesIcsInit()">
+    <div class="gates-ics-body-container">
+        <div id="gates-ics-contents-id" class="contents gates-ics-contents">
+            <h1 class="header-one">Logic Gates and Integrated Circuits</h1>
+            <h2 class="header-two">I) Basic Logic Gates:</h2>
+            <section class="basic-tools-general">
+                <p>Every Profession has basic tools (equipment) and techniques, which must be mastered. For Artists it's paper, pencils, pens, inks, brushes, etc.
+                Mechnics: Hand tools, power tools, nails, screws etc. Regradless of Profession, a Professional in any endeavor is one who is well grounded in the fundamentals,
+                utilizes the fundamentals of their trade in exceptional and creative ways and, most likely, has a great love for what they do.
+                </p>
+                <!--For you who are Chesterton students, you study the Classics
+                For us who are Catholics Church has classified certain individuals as Saints! They're the Professionals of the Church: Well grounded in the Fundamentals Faith, Hope, Love, Poverty, Chastity, Obedience, Meekness & Humility.
+                They excelled in how they put these fundamentals into action and, without a doubt, were driven by Love.
+                </p>-->
+                <p>In this section you will be introduced to "Logic Gates" and "Integrated Circuits (ICs)". They are your Fundamentals for this project. Know them!
+                </p>
+            </section>
+            <section class="not-and-or-gates">
+                <p>Directly below is the Truth Table for the simplest Logic Gate. One difference with this Truth Table is the inclusion
+                    of the "Design Circuitry" column located between the "Inputs" and "Outputs". They are related!
+                </p>
+                <p>A typical Engineering problem is: given the Inputs and Outputs, 
+                    the Engineer must use their knowledge and skills, in a creative way, to come up with the "Digital Circuitry" that satisfies that criteria!
+                    In the next section, "Design", you will be learn two tools, "Boolean Algebra" and "Karnaugh Maps", that will help in this process.
+                </p>
+                <p>The focus right now is the "Logic Gates" themselves. The following Truth Table is for the "Simplist" Logic Gate.
+                    Without looking at the paragraph below the Truth Table, try to come up with a "name" for this Gate on your own.
+                </p><br>
+                <div class="table-container">
+                    <table id="truth-table-4-bit-id" class="truth-table truth-table-4-bit" style="border-collapse: collapse">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="3">Truth Table for "?" Gate</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">Input</th>
+                                <th rowspan="2">Design<br>Circuitry</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="tdth-wrapper">F</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper">??? Gate</div></td>
+                                <td><div class="tdth-wrapper">T</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">T</div></td>
+                                <td><div class="tdth-wrapper">F</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <p>As you can see, this Gate has One Input and One Output. Notice also that the Output has the opposite value of the Input. 
+                    In Binary there are only 2 values. So, if it is not "one Value" it must be the "other Value"; therefore, it makes sense for 
+                        this Logic Gate to be called the "NOT" Gate. Its symbol is:
+                    <img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg">, where the Input is on its left and the Output on its right.<br>
+                    <label>( "F" <img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg"> "T")</label>
+                </p>
+                <p>Consider the many years you studied Arithmatic. You encountered Numbers (Operands) and Operators (addition, subtraction, multiplications, division). Now enter "The Binary World" 
+                    where you find Operands (eg "T"/"F") and Operators, one of which is the NOT Gate.
+                </p>
+                <p>The NOT Gate is similar to Square Root in that it only operates on "One" Value (Operand).
+                    Forgetting +/- one would write the (Square Root of 4) = 2 as: <img class="square-root" src="media/imgs/squareRoot_4.svg">. The same expression could have been written with 
+                        the argument (Input) first, followed by the Square Root (Operator) and then immediately followed by the Result, 
+                        <img class="square-root" src="media/imgs/4_SquareRoot_2.svg"> , with which you, undoubtedly, feel uncomfortable but which you will be doing from now on.
+                    The Inputs come first then the Logic Gate followed immediately by its Output<br> eg (Input <img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg"> Output)<br>
+                </p><br>
+                <div class="table-container">
+                    <table id="truth-table-not-gate-id" class="truth-table truth-table-not-gate" style="border-collapse: collapse">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="3">Truth Table: NOT Gate</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">Inputs</th>
+                                <th rowspan="2">Design<br>Circuitry</th>
+                                <th rowspan="2">Output</th>
+                            </tr>
+                                <th>Bit #1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper"><img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg"></div></td>
+                                <td><div class="tdth-wrapper">1</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <p>One Note before covering the remaining "Basic Logic Gates": In Binary the two "values" can be represented many different ways: "up"/"down", "High"/"Low", "5volts"/"0volts", "cake"/"ice cream" but the 
+                    most common pairs that you will see are: "0"/"1", "F"/"T" and "H"/"L". You will be given the opportunity to switch back and forth between "0"/"1" and "F"/"T"
+                    but practice with both options. 
+                </p>
+                <p>There are three more Basic Logic Gates: AND, OR and XOR. XOR is pronounced as Exclusive OR and means:
+                    One or the other but "NOT BOTH".
+                </p> 
+                <p>The Negative of these Gates are:NAND, NOR, NXOR where:<br>
+                    NAND == NOT(AND), NOR == NOT(OR), NXOR == NOT(XOR).
+                </p>
+                <p>The following table will allow you to practice with these 6 Gates. Spend enough time with them so
+                     their "DEFINITIONS" and "SYMBOLS" are firmly grounded in your mind!
+                </p><br>
+
+                <div class="basic-selection-show-container">
+                    <div class="gate-selection-container" colspan="4">
+                        <label id="and-label-id" class="selected-gate" onclick="PracticeTruthTableManager.update('basic',this)">AND</label>
+                        <label id="or-label-id" onclick="PracticeTruthTableManager.update('basic',this)">OR</label>
+                        <label id="xor-label-id" onclick="PracticeTruthTableManager.update('basic',this)">XOR</label>
+                        <label id="nand-label-id" onclick="PracticeTruthTableManager.update('basic',this)">NAND</label>
+                        <label id="nor-label-id" onclick="PracticeTruthTableManager.update('basic',this)">NOR</label>
+                        <label id="nxor-label-id" onclick="PracticeTruthTableManager.update('basic',this)">NXOR</label>
+                    </div>
+                    <div class="show-basic-solution-container">
+                        <label id="show-basic-solution-id" class="show-solution-label" onclick="PracticeTruthTableManager.showSolution('basic')">Show<br>Solution</label>
+                    </div>
+                </div>
+
+                <div id="basic-table-container-id" class="table-container">
+                    <table id="basic-table-id" class="truth-table basic-table" style="border-collapse: collapse">
+                        <thead id="basic-thead-id">
+                        </thead>
+                        <tbody id="basic-tbody-id">
+                        </tbody>
+                    </table>
+                </div><br><br>
+                <div class="select-data-type-outer-container">
+                    <div class="select-data-type-container">
+                        <label>Data Type:</label>
+                        <div class="radio-inputs-container">
+                            <label id="data-type-ft-id" class="selected-data-type"  onclick="PracticeTruthTableManager.changeDataType('ft')">FT</label>
+                            <label id="data-type-01-id" onclick="PracticeTruthTableManager.changeDataType('01')">01</label>
+                        </div>
+                    </div>
+                </div>
+                <p>The following table will allow you to practice with circuits containing combinations of the Basic Logic Gates.
+                </p><br>
+                <div class="circuit-selection-show-container">
+                    <div class="circuit-selection-container">
+                        <img id="NotXor" class="circuit-selected" src="media/imgs/basicLogicGates/NotXor_wPQ-3.5mm.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="AndNotOr" src="media/imgs/basicLogicGates/AndNotOr_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="OrAndXor" src="media/imgs/basicLogicGates/OrAndXor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="NotAndXorOr" src="media/imgs/basicLogicGates/NotAndXorOr_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="NotXorOrNand" src="media/imgs/basicLogicGates/NotXorOrNand_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="NandNotNand" src="media/imgs/basicLogicGates/NandNotNand_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="NorNandNxor" src="media/imgs/basicLogicGates/NorNandNxor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="AndOrNandNxorNandNor" src="media/imgs/basicLogicGates/AndOrNandNxorNandNor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="NorNorNor" src="media/imgs/basicLogicGates/NorNorNor_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="TwoToFourDecoder" src="media/imgs/basicLogicGates/TwoToFourDecoder_wPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                        <img id="AndAndOrW3Inputs" src="media/imgs/basicLogicGates/AndAndOr_w3InPQ.svg" onclick="PracticeTruthTableManager.update('circuits',this)">
+                    </div>
+                    <div class="show-circuit-solution-container">
+                        <label id="show-circuit-solution-id" class="show-solution-label" onclick="PracticeTruthTableManager.showSolution('circuit')">Show<br>Solution</label>
+                    </div>
+                </div>
+                <div id="circuit-table-container-id" class="circuit-table-container">
+                    <table id="circuit-table-id" class="truth-table circuit-table" style="border-collapse: collapse">
+                        <thead id="circuit-thead-id">
+                        </thead>
+                        <tbody id="circuit-tbody-id">
+                        </tbody>
+                    </table>
+                </div>
+            </section><br><br>
+            <h2 class="header-two">II) Integrated Circuits (IC):</h2>
+            <section class="intro-ics">
+                <p>One of the circuits in the "Circuit Practice Table" above was different than all the others.
+                    Did you notice it? It also had a unique label separating it from all the others, which
+                    were composed of "basic" Logic Gates throwing together without much thought.
+                </p>
+                <p>The circuit diagram for "TwoToFourDecoder", however, has a very different look to it. Go back and run it again but 
+                    this time consentrate on the 4 output columns. Do you see a pattern? It not only has a very organized output it also
+                    performs a very useful function, which is why TI manufactored it as 74LS139 with the label: "dual 2-Line To 4-Line Decoder/Demultiplexer".
+                </p>
+                <div class="ic-container ic-139-container">
+                    <img class="ic-139" src="media/imgs/LS_imgs/Pin_Layouts/74LS139.png">
+                </div>
+                <p>As you can see from the image above, it actually contains two "2-Line To 4-Line Decoder/Demultiplexers". 
+                    When designing the Output Module, you will use the 74LS139 to control which of the Four 7-Segment-Display will be lit at any one time.
+                </p>
+                <p>The 74LS139 Integrated Circuit is only one of 18 ICs you will be using to build the 8-bit computer. Six of the 18 will
+                    be introduced to you right now. The remaining 12 will be covered after you have finished the "Hardware Architecture" material.
+                </p>
+                <p>All the ICs look pretty much the same, differing in size and the number of pins. The following 6 ICs
+                    could easily be called the "basic" ICs as seen by the following list:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>IC--</td><td>Name</td><td>image</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>74LS00</td><td>Quad 2-Input NAND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS02</td><td>Quad 2-Input NOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS02.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS04</td><td>hex NOT Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS04.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS08</td><td>Quad 2-Input AND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS08.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS32</td><td>Quad 2-Input OR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS32.png"></td>
+                        </tr>
+                        <tr>
+                            <td>74LS86</td><td>Quad 2-Input XOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS86.png"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>NOTE: When working as an Engineer you will have access to both the single "AND Gate" as well as the "74LS08 IC"; however,
+                    when working as a Draftsman or Technician you will ONLY have access to the "74LS08 IC". So if the Engineer chooses
+                    to use a single "AND Gate" in their "Design", the Draftsman's Schematic will have to convert that single "AND Gate"
+                    into a 74LS08 IC!
+                </p>
+                <p>Take some time to memorize each particular Gate with its corresponding IC name (eg OR Gate -- 74LS32 IC etc.). Your'e ready
+                    for the "Design" section.
+                </p>
+                
+            </section>
+        </div>
+        <div class="link-container">
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id')">Truth Tables</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id')">Design</button>
+        </div>
+    </div>
+
+        <script>
+            function gatesIcsInit(){
+                alert("in gatesIcsInit()");
+                PracticeTruthTableManager.create("basic","AND");
+                addListenerToInputs();
+            }
+        </script>
+</body>
+</html>

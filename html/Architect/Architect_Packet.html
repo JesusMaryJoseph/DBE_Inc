@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    </script>
+    
+    <style>
+    </style>
+
+</head>
+<body>
+    <div class="packet-container">
+        <!--<label class="close-html" onclick="EduHTML_Manager.close('packets')">X</label>-->
+        <label class="packet-header">Drafting Packet<br></label>
+        <ol type="I" class="ol-I">
+            <li>Responsibilities:
+                <ol type="A" class="ol-A">  
+                    <li>Training</li>
+                        <ol type="1" class="ol-1">
+                            <li>All training will done in the Education Department.</li>
+                            <li>First Priority:
+                                <ol type="a" class="ol-a">
+                                    <li>Hardware Architecture.</li>
+                                    <li>Software Architecture(ISA).</li>
+                                </ol>
+                            </li>
+                            <li>Second Priority:
+                                <ol type="a" class="ol-a">
+                                    <li>"Fritzing" Software</li>
+                                    <li>Basic Electronics.</li>
+                                </ol>
+                            </li>
+                            <li>Third Priority: Documentation
+                                <ol type="a" class="ol-a">
+                                    <li><u>NOTE</u>: All Documentation will be uploaded to GitHub (Computer Dept. Responsibilities)</li>
+                                    <li>Encourage every worker to make several copies of their work throughout <u>each</u> day.</li>
+                                    <li>eg save the first work as Program_Counter_rev-1.dig</li>
+                                    <li>For each revision they should make a short description on "Libre Office Write" (or NotePad).</li>
+                                        <ol type="i" class="ol-i">
+                                            <li>eg. 1) Added 74LS161, inputs & outputs.</li>
+                                            <li>2.) Made all connections</li>
+                                            <li>3.) Ran: eveything ok</li>
+                                        </ol>
+                                    <li>Save each revision as Program_Counter_rev-1,2,3 etc</li>
+                                    <li>Make sure each worker is familiar with the "Folder Structure", which should be uniform through out the Company!</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    <li>Assigning Duties: Who does What.
+                        <ol type="1" class="ol-1">
+                            <li>Counter Module
+                                <ol type="a" class="ol-a">
+                                    <li>Program Counter</li>
+                                    <li>Micro Counter (Included in the Control Module)</li>
+                                    <li>Multiplexer for the four 7-Segment Displays<br>
+                                        (Included in the Output Module)</li>
+                                </ol>
+                            </li>
+                            <li>Arithmetic Logic Unit (ALU) Module
+                                <ol type="a" class="ol-a">
+                                    <li>Arithmetic Unit (AU)</li>
+                                    <li>Logic Unit (LU) Only if extra time is available!</li>
+                                    <li>Error Flag(FC) for both + and +/- numbers(2S)</li>
+                                    <li>Sum = 0 Flag(FZ)</li>
+                                    <li>Flag Register to store FC and FZ flags.</li>
+                                </ol>
+                            </li>
+                            <li>Output Module
+                                <ol type="a" class="ol-a">
+                                    <li>8-bit Register</li>
+                                    <li>Multiplexer Clock plus demultiplexer</li>
+                                    <li>Four(4) 7-Segment Displays.</li>
+                                    <li>One EEPROM.</li>
+                                    <li>One Control Signal(2S) which will be connected to address a<sub>10</sub> of the EEPROM and Ground. 
+                                        When 2S is connected to ground(GND) the EEPROM will output only positive numbers [0,255].
+                                        When 2S is connected to 5V(VCC) the EEPROM will ouput +/- numbers [-128,127].</li>
+                                </ol>
+                            </li>
+                            <li>Clock Module
+                                <ol type="a" class="ol-a">
+                                    <li>Clock (LM555) </li>
+                                    <li>Push Botton for Step by Step operation</li>
+                                    <li>Switch which will allow for either 'Continous'(Clock) or 'Step by Step'(Button) operation.</li>
+                                    <li>Provide and "inverse" Clock Signal(Hint: a NOT Gate (74LS04).</li>
+                                </ol>
+                            </li>
+                            <li>BUS Module
+                                <ol type="a" class="ol-a">
+                                    <li>Possible Option: Engineering Manager's responsibility</li>
+                                    <li>Design the BUS which <bold>MUST</bold> include the 74LS245 Transceivers.<br>
+                                        Although Ben Eater places all Transceivers on the individual Modules, the Transceivers provide the integrity of the BUS and,
+                                    therefore, should remain with the BUS Designer!</li>
+                                    <li>Add Modules to the BUS as these Modules are completed.</li>
+                                </ol>
+                            </li>
+                            <li>Memory(RAM) Module:
+                                <ol type="a" class="ol-a">
+                                    <li>Memory Address Register(4-bit)</li>
+                                    <li>Manual Address Input (4-bit DIP Switches)</li>
+                                    <li>4 bit Multiplexer between Memory & Manual Addresses</li>
+                                    <li>Run/Program Switch.</li>
+                                    <li>16 Byte RAM</li>
+                                    <li>Manual Data Input (8-bit DIP Switches)</li>
+                                    <li>8 bit Multiplexer between Memory & Manual Data</li>
+                                </ol>
+                            </li>
+                            <li>Control Module
+                                <ol type="a" class="ol-a">
+                                    <li>Instruction Register(8-bit)</li>
+                                    <li>Micro Step Counter with decoder</li>
+                                    <li>2 EEPROMs.</li>
+                                    <li>Combination of 74LS-- ICs for all "Jump" Instructions!</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Quality Control
+                        <ol type="1" class="ol-1">
+                            <li>Cannot be done inside "Fritzing"</li>
+                            <li>Have a 2nd person(yourself!) do a <u>visual</u> check. This may be the only option!</li>
+                        </ol>
+                    </li>
+                    <li>You should consult the Engineering Manager with regards to nomenclature(labeling) etc. </li>
+                </ol>
+            </li>
+        </ol>
+        <div class="bottom-buffer"></div>
+    </div>
+</body>
+</html>
+
+
+

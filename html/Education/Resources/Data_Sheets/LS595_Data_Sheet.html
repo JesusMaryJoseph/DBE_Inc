@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="data-container">
+        <div class="description-container">
+            <label class="ic-label">74HC595:</label>
+            <p>The 74HC595 is an 8-bit serial-in/serial or parallel-out shift register with a storage register and 3-state outputs.
+                Both the shift and storage register have separate clocks.
+            </p>
+            <p>Device features:</p>
+            <ol type="1">
+                <li>Serial Input control: DS</li>
+                <li>Serial Output control: Q7S</li>
+                <li>Asynchronous reset: !MR<br>A LOW on !MR resets the shift register.</li>
+                <li>Shifting Data: 
+                    <ol type="a">
+                        <li><u>Data</u> is shifted on Low to High transition of S<u>H</u>CP</li>
+                        <li><u>Data in Shift Register</u> is shifted on Low to High transition of S<u>T</u>CP</li>
+                    </ol>
+                </li>
+                <li>Output Enable:
+                    <ol type="a">
+                        <li>!OE (active Low)</li>
+                        <li>A High on !OE outputs assume a high-impedance OFF-state</li>
+                        <li>Note: !OE control does NOT affect the state of the registers</li>
+                    </ol>
+            </ol>
+        </div>
+        <div class="pin-layout-container">
+            <img src="media/imgs/LS_imgs/Pin_Layouts/74LS595.png">
+        </div>
+        <div id="ls595-tt-id" class="truth-table-container">
+            Truth(function) Table goes here
+        </div>
+    </div>
+</body>
+</html>
+
+
+

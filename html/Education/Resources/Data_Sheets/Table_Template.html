@@ -1,0 +1,93 @@
+<style>
+    table{
+        table-layout: fixed;
+        width: 30%;
+        font-weight: bold;
+        text-align: center;
+        border-collapse: collapse;
+        border: 3px solid black;
+    }
+    thead{
+        background-color: lightgray;
+    }
+    thead, tbody{
+        border-collapse: collapse;
+        border: 3px solid black;
+    }
+    th, td{
+        border-collapse: collapse;
+        border: 3px solid black;
+    }
+
+th,
+td {
+  padding: 0.1em;
+}
+</style>
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+           <th colspan="6">Main Title</th>
+        </tr>
+        <tr>
+            <th colspan='4'>Inputs</th>
+            <th colspan='2'>Outputs</th>
+        </tr>
+        <tr>
+            <th>!CLR</th>
+            <th>CLK</th>
+            <th>J</th>
+            <th>K</th>
+            <th>Q0</th>
+            <th>!Q0</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>L</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>L</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Rising Edge</td>
+            <td>L</td>
+            <td>L</td>
+            <td>Q0</td>
+            <td>!Q0</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Rising Edge</td>
+            <td>L</td>
+            <td>H</td>
+            <td>H</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Rising Edge</td>
+            <td>H</td>
+            <td>L</td>
+            <td>L</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Rising Edge</td>
+            <td>H</td>
+            <td>H</td>
+            <td colspan="2">Toggle</td>
+        </tr>
+    </tbody>
+</table> 
+ 
+       

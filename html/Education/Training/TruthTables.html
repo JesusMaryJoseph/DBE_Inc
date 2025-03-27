@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <script>
+    </script>
+    
+    <style>
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			/*border: 3px solid green;*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="truth-table-body-container">
+        <!--Start Truth Tables-->
+        <div id="truth-table-contents-id" class="contents truth-table-contents">
+            <label class="header-one">Codes: Truth Tables</label>
+            <label class="header-two">Morse Code Vs Truth Table:</label>
+            <p>Consider the following:</p>
+            <div class="morse-code-table-container">
+                <table class="morse-code-table morse-code-table-1">
+                    <thead class="smk-header">
+                        <tr>
+                            <th class="table-title" colspan="2">Morse Code Key:<br>1-bit Word</th>
+                        </tr>
+                        <tr class="inputs-output-tr">
+                            <th>Inputs</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                        <tr class="bits"> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody class="smk-body">
+                        <tr>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">E</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">T</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="morse-code-container morse-code-1-bit">
+                    <p>Morse Code<br>for 1 bit word<br>(eg 2 values: 2<sup>1</sup>)</p>
+                    <img src="media/imgs/SamuelMorseKey_E-T_1-bit.svg">
+                </div>
+            </div> 
+            <p>On the right is the one-bit Morse Key for the letters "E" and "T". On the right is a "Table" that 
+                contains the same information. It will be called a "Truth Table"! 
+            </p>
+            <p>There is "Table Terminology" with which you should be familiar. 
+            </p>
+            <ol type="1" class="type-1">
+                <li>"Table Header": lightblue background</li>
+                <li>"Table Body": lighyellow background</li>
+                <li>The "Table Header" also indicates which parts of the "Key" are "Inputs" and which are "Outputs".</li>
+            </ol>
+            <p>Since this Table has "dots" and "dashes" as Inputs and "letters" as Outputs, this particular Table could be used
+                 for decoding a message of "dots" and "dashes".
+            </p>
+            <p>Now consider the Table for Morse's 2-bit words, of which there are 4 values (ie 2<sup>2</sup>)
+            Again the Table and "Key" contain the same information just rearranged. 
+            </p><br>
+            <div class="morse-code-table-container morse-code-table-2-bit">
+                <table class="morse-code-table morse-code-table-2">
+                    <thead class="smk-header">
+                        <tr>
+                            <th class="table-title" colspan="3">Morse Code Key:<br>2-bit Words</th>
+                        </tr>
+                        <tr class="inputs-output-tr">
+                            <th colspan="2">Inputs</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                        <tr class="bits">
+                            <th>Bit #2</th> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody class="smk-body">
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">I</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">A</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">N</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">M</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="morse-code-container morse-code-2-bit">
+                    <p>Morse Code<br>for 2 bit Words<br>(ie 4 values: 2<sup>2</sup>)</p>
+                    <img src="media/imgs/SamuelMorseKey_A-I-M-N_2-bit.svg">
+                </div>
+            </div>
+            <p> Pay attention to how the "dots" and "dashes" vary as you go "down" the Table!
+                It has a rythmn to it. Can you pick it up? Try to visualize the "dots" and "dashes" for the next Table which has Three(3) Inputs.
+                For 3-bits as Inputs there are  8 (2<sup>3</sup>) values.
+            </p><br>
+            
+            <div class="morse-code-table-container morse-code-table-3-bit">
+                <table class="morse-code-table morse-code-table-3">
+                    <thead class="smk-header">
+                        <tr>
+                            <th class="table-title" colspan="4">Morse Code Key:<br>(3-bits)</th>
+                        </tr>
+                        <tr class="inputs-output-tr">
+                            <th colspan="3">Inputs</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                        <tr class="bits">
+                            <th>Bit #3</th>
+                            <th>Bit #2</th> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody class="smk-body">
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">S</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">U</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">R</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">W</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">D</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">K</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">G</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">O</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="morse-code-container morse-code-3-bit">
+                    <p>Morse Code<br>for 3 bit Words<br>(ie 8 values: 2<sup>3</sup>)</p>
+                    <img src="media/imgs/SamuelMorseKey_D-G-K-O-R-S-U-W_3-bit.svg">
+                </div>
+            </div><br><br>
+
+            <!--<p>Samuel Morse's code also conta>ins 12 letters of length "4-bits" so let's add a 4th bit!</p>-->
+            <div class="morse-code-table-container morse-code-table-4-bit">
+                <table class="morse-code-table morse-code-table-4">
+                    <thead class="smk-header">
+                        <tr>
+                            <th class="table-title" colspan="5">Morse Code Key:<br>(4-bits)</th>
+                        </tr>
+                        <tr class="inputs-output-tr">
+                            <th colspan="4">Inputs</th>
+                            <th rowspan="2">Output</th>
+                        </tr>
+                        <tr class="bits">
+                            <th>Bit #4</th>
+                            <th>Bit #3</th>
+                            <th>Bit #2</th> 
+                            <th>Bit #1</th>
+                        </tr>
+                    </thead>
+                    <tbody class="smk-body">
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper">dot</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">H</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">V</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">F</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">-</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child" class="output-child"><div class="tdth-wrapper">L</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">-</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">P</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">J</div></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8"><div class="tdth-wrapper">dash</div></td>
+                            <td rowspan="4"><div class="tdth-wrapper">dot</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">B</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">X</div></td>
+                        </tr>  
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">C</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">Y</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="4"><div class="tdth-wrapper">dash</div></td>
+                            <td rowspan="2"><div class="tdth-wrapper">dot</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">Z</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">Q</div></td>
+                        </tr> 
+                        <tr>
+                            <td rowspan="2"><div class="tdth-wrapper">dash</div></td>
+                            <td><div class="tdth-wrapper">dot</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tdth-wrapper">dash</div></td>
+                            <td class="output-child"><div class="tdth-wrapper">-</div></td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
+                <div class="morse-code-container morse-code-4-bit">
+                    <p>Morse Code<br>for 4 bit Words<br>(ie 16 values: 2<sup>4)</p>
+                    <img src="media/imgs/SamuelMorseKey_B-C-F-H-J-L-P-Q-V-X-Y-Z_4-bit.svg">
+                </div>
+            </div><br>
+
+            <div class="gif-container">
+                <p>Have you got the rythmn? Here's a little gif for you!</p>
+                <video src="media/imgs/Four-bit.mp4" controls></video>
+                <!--<img src="media/imgs/Four-Bit.gif">-->
+            </div>
+
+            <p>Notice: Samuel Morse chose to use "varying" word lengths(1-bit,2-bits,3-bits,4-bits). It served his purpose well.
+            </p>
+            <p> In "digital" electronics that will not be the case. No matter how many "Inputs" you have they will all be the same length! One additional change. From now on you will
+                no longer see "dots" and "dashes". "Input" and "Output" Values will almost always be "0" and "1" or "T" and "F". 
+            </p>
+            <p>You will get an opportunity to practice with Truth Tables in the next section 
+                where you will be introduced to the fundamental building blocks of your 8-bit computer:
+                "Gates and Integrated Circuits (ICs)".
+            </p>
+        </div> <!--End of Truth Tables-->
+
+        <div class="link-container">  
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id')">Codes</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id')">Gates and ICs</button>
+        </div>                                                                                      <!--,'gates-ics-contents-id'-->
+    </div> 
+    
+</body>
+</html>

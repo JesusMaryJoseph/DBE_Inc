@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			/*border: 3px solid green;*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="body-container">
+        <div id="codes-contents-id" class="contents codes-contents">
+            <label class="header-one">Codes: Introduction</label>
+            <p>“Tora, Tora, Tora” is a coded message. “Dah-he-tih-hi” is another coded message. Can you decode them? Most likely not, after all they are “secret” coded messages both of which were used during World War II.</p>
+            <p>“Tora” means “tiger” in the Japanese Language but “Tora, Tora, Tora” is a coded message which Captain Mitsuo Fuchida sent to the Japanese fleet after flying over Oahu to indicate the Americans had been caught by surprise.</p>
+            <p>In 1942 during World War II, US Marines enlisted 200 native Navajos into the Marines with the specific purpose of using the Navajo Language for creating secret codes.</p>
+            <p>For example:<br>1) “Dah-he-tih-hi” (meaning hummingbird in the Navajo Language) was used as a code word for “fighter plane”<br>
+            2) “Besh-lo”(iron-fish) for “submarine”!</p>
+            <img class="navajo-talkers" src="media/imgs/NavajoCodeTalkers.jpg">
+            <p>Given a message in English, Navajo Code Talkers would convert(encode) that message into the Navajo Language, which would be transmitted over the air-waves.
+                    On the front lines other Navajo Marines would receive it, decode it back into English and hand it over to the commanding officer.</p>
+            
+            <p>The above are examples of “secret” codes (see cryptography), whose specific purpose is to prevent anyone, other than the person(s) for which it was intended, from understanding the message. You will be learning several computer codes, while not secret, are still codes which require “encoding” and “decoding”. First, however, go over the “Two Examples” section that follows to get a better understanding of “codes” in general.</p>
+        <!--</div>
+        
+        <div id="example-contents-id" class="contents example-contents">-->
+            <label class="header-one">Codes: Two Examples</label>
+            <label class="header-two">First Example: The English Language</label>
+            <p>As we saw in the introduction, a language, Navajo, can be considered as a code, even a secret code and it can be very effective! In fact every language unfamiliar to a person is a secret code to them.</p> 
+            <p>Consider the following sentence:
+            <label>“Jewe ndi inzira, n’ukuri, n’ubuzima.</label>
+            <p>Unless you are familiar with Kirundi, the native language in Burundi, Africa, that sentence conveys no meaning to you whatsoever. To learn and be fluent in Kirundi would be very difficult as was learning your first language. Consider how many years it took you before you were fluent in your native language. Fortunately the computer codes are not that difficult to learn but will still take a fair amount of effort on your part!</p>
+            <p>To help us in that regard we will consider the one language we know: English. It is both a spoken and written language. All the written words are composed of letters and all the spoken words are composed of basic sounds, called phonemes. While you probably know that there are 26 letters in English, you may not know how many phonemes there are.</p>                   
+        
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('phonemes-id')">Answer = </label>
+                <label id="phonemes-id" class="answer answer-hidden">approximately 44. <a href="https://www.readingrockets.org/sites/default/files/migrated/the-44-phonemes-of-english.pdf"  target='_blank' and rel='noopener noreferrer'>See</a></label>
+            </div> 
+            <p>Now consider English as a written language. Every "word" is composed of one or more "letters". We will call each "letter" of a "word" a “bit”. Thus the word "train" is composed of 5 letters and is therefore called a 5-bit word. "hello" is also a 5-bit word even though the letter "l" occurs twice!</p>
+            <p>Next question: how many 2-bit words "could" there be in the English Language?</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('one-bit-words-id')">Answer = </label>
+                <label id="one-bit-words-id" class="answer answer-hidden">(26x26) or 26<sup>2</sup> = 676</label>
+            </div>
+            <p>Aside Question: How many 2-bit words are there in the English Language?</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('two-bit-english-words-id')">Answer = </label>
+                <label id="two-bit-english-words-id" class="answer answer-hidden">127</label>
+            </div>
+            <p>How many 3-bit words "could" there be?<p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('three-bit-words-id')">Answer = </label>
+                <label id="three-bit-words-id" class="answer answer-hidden">(26x26x26) or 26<sup>3</sup> = 17,576</label>
+            </div>
+            <p>Final question: How many n-bit words could there be in the English Language?</p> 
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-words-id')">Answer = </label>
+                <label id="n-bit-words-id" class="answer answer-hidden">26<sup>n</sup></label>
+            </div>
+            <p>In like manner we can consider the English Language as a spoken language. Each individual sound, phoneme, could then be considered as a "1-bit" "spoken word".</p>
+            <p>How many 2-bit "spoken words" could we pronounce?</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('2-bit-spoken-words-id')">Answer = </label>
+                <label id="2-bit-spoken-words-id" class="answer answer-hidden">44x44 = 44<sup>2</sup> = 1,936</label>
+            </div>
+            <p>How many 3-bit words could we pronounce?</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('3-bit-spoken-words-id')">Answer = </label>
+                <label id="3-bit-spoken-words-id" class="answer answer-hidden">44x44x44 = 44<sup>3</sup> = 85,184</label>
+            </div>
+            <p>In general how many n-bit words could we pronounce?</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('n-bit-spoken-words-id')">Answer = </label>
+                <label id="n-bit-spoken-words-id" class="answer answer-hidden">44<sup>n</sup></label>
+            </div>
+            <label class="header-two">Second Example: Morse Code</label>
+            <p>Play the two audio files below. They both play the same message; however, the first one plays the message once, while
+                the second one plays the message several times. Do you recognize the message?
+            </p>
+            <audio src="media/audio/sos-signal-1.mp3" controls></audio>
+            <audio src="media/audio/sos-signal.mp3" controls></audio>
+            <p>It's Morse Code for S-O-S.</p>
+            <P>Can you describe the audio signal for the letter S? For the letter O? How many distinct sounds do you hear?</P>
+            <video class="audacity-sos" src="media/audio/SOS-audacity-resized.mp4" controls width="400"></video>
+            <p>Here's what it sounds and looks like in Audacity, which is an audio app. Go ahead and play it.</p>
+            
+            <p>Below is an enlarged image of the SOS signal from Audacity:
+                <img class="audio-sos" src="media/imgs/SOS_img-from-Audacity.png">
+                How would you describe the three sound waves for the letter S?
+                Likewise a description for the three sound waves for the O letter?
+                If we say the S is compossed of 3 dots and the O is composed of 3 dashes,
+                the length of one dash is _?__ times the length of one dot.
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('sos-waveform-id')">Answer = </label>
+                    <label id="sos-waveform-id" class="answer answer-hidden">3</label>
+                </div>
+            </p>
+            <p>Morse Code is a "binary" code. All letters of the English are represented by combinations of these two binary values(dot & dash). 
+                The dash being 3 times as long as a dot. Remember in Binary each bit can only have 2 values so:<br>
+            </p>
+            <div class="bits-vs-letters-morse-code">
+                <table>
+                    <tbody>
+                        <tr><td class="fisrt-table-row">1-bit<br>(2 values)</td><td>{dot, dash}</td></tr>
+                        <tr><td class="fisrt-table-row">2-bits<br>(4 values)</td><td>{[dot,dot], [dot,dash], [dash,dot], [dash,dash]}</td></tr>
+                        <tr><td class="fisrt-table-row">3-bits<br>(8 values)<t/d><td>{[dot,dot,dot], [dot,dot,dash], [dot,dash,dot], [dash,dot,dot], [dot,dash,dash], [dash,dot,dash], [dash,dash,dot], [dash,dash,dash]}</td></tr>
+                        <tr><td class="fisrt-table-row">4-bits<br>(16 values)<t/d><td>{[dot,dot,dot,dot], [dot,dot,dot,dash] . . . . }</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>) Exercise! Finish the above for 4-bits</p>
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('four-bit-combination-id')">Answer = </label>
+                <p id="four-bit-combination-id" class="answer answer-hidden">{[dot,dot,dot,dot], [dot,dot,dot,dash], [dot,dot,dash,dot], [dot,dash,dot,dot], [dash,dot,dot,dot], [dot,dot,dash,dash], [dot,dash,dot,dash], [dot,dash,dash,dot], [dash,dot,dot,dash], [dash,dot,dash,dot], [dash,dash,dot,dot], [dot,dash,dash,dash], [dash,dot,dash,dash], [dash,dash,dot,dash], [dash,dash,dash,dot], [dash,dash,dash,dash]}</p>
+            </div>
+            <p>
+                Out of the 30 possibilities Samuel Morse had to choose 26 and then assign letters to each one.
+            </p>
+            <p>Here is Samuel Morse's "key":</p>
+            <div class="img-wrapper">
+                <img src="media/imgs/SamuelMorseKey.png">
+            </div>
+            <p>Your assignment: Using the above key, decode the following Morse Code Message:</p>
+                <audio src="media/audio/morse.mp3" controls></audio>
+            <p>Here's what it looks like in Audacity.</p>
+            <img class="audio-secret-message" src="media/imgs/Audacity_Img_of_Secret_Message.png"><br>       	 
+            <div>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('secret-message-id')">Answer = </label>
+                <label id="secret-message-id" class="answer answer-hidden">Attack on Monday</label>
+            </div>
+            <p>It is not the intent that you become proficient in Morse Code; however, 
+                since Morse Code is binary in nature, there are specific things we can learn from it. 
+                One of these is "Truth Tables" (ie "Key"), which you will definitely encounter in this project!
+            </p>
+        </div>
+        <div class="link-container">
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id')">Truth Tables</button>
+        </div>
+    </div>
+</body>
+</html>

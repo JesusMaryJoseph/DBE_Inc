@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .description-container{
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    
+        /* CSS for table */
+            table{
+                table-layout: fixed;
+                width: 30%;
+                font-weight: bold;
+                text-align: center;
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            thead{
+                background-color: lightgray;
+            }
+                .main-table-head{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+                .column-labels{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+    
+            thead, tbody{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            th, td{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+    
+            th,
+            td {
+            padding: 0.1em;
+            }
+        /* End CSS for table */
+    
+        /* CSS for data-container */
+            .data-container{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: black;
+            }
+    
+        /* End CSS for data-container */
+    
+            .description-container{
+                font-size: 1.2em;
+                font-weight: bold;
+                color: black;
+            }
+        /* CSS for pin-Layout-container, logic-diagram-container */
+            .pin-layout-container, .logic-diagram-container{
+                font-size: 1.2em;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
+                .pin-layout-container img{
+                    width: 15em;
+                }
+                .logic-diagram-container img{
+                    width: 15em;
+                }
+        /* End CSS for pin-layout-container logic-diagram-container */
+    
+        /* CSS for truth-table-container */
+            .truth-table-container{
+                width: 55vw;
+                background-color: white;
+                margin: 0.5em 0;
+            }
+                .truth-table-container table{
+                    width: 100%;
+                }
+        /*End CSS for truth-table-container */
+    
+        </style>
+</head>
+<body>
+    <div class="data-container">
+        <div class="description-container">
+            <!-- 74LS107 Data Sheet as HTML */ -->
+            <p>The 74LS107 contains two independent J-K flip-flops with individual J-K, clock, and direct clear inputs. The 107 is a positive pulse-triggered flip-flop. The J-K input data is loaded into the master while the clock is high and transferred to the slave and the outputs on the high-to-low clock transition. For these devices the J and K inputs must be stable while the clock is high.</p>
+        </div>
+        <div class="pin-layout-container">
+            <label>Pin Layout</label>
+            <img src="media/imgs/LS_imgs/Pin_layouts/74LS107.png" alt="Pin Layout for 74LS107">
+        </div>
+        <div class="truth-table-container">
+            <table>
+                <thead>
+                    <tr>
+                    <th colspan="6" class="main-table-head">Function Table</th>
+                    </tr>
+                    <tr class="column-labels">
+                        <th colspan='4'>Inputs</th>
+                        <th colspan='2'>Outputs</th>
+                    </tr>
+                    <tr class="column-labels">
+                        <th>!CLR</th>
+                        <th>CLK</th>
+                        <th>J</th>
+                        <th>K</th>
+                        <th>Q0</th>
+                        <th>!Q0</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>L</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>L</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>Falling Edge</td>
+                        <td>L</td>
+                        <td>L</td>
+                        <td>Q0</td>
+                        <td>!Q0</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>Falling Edge</td>
+                        <td>L</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>L</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>Falling Edge</td>
+                        <td>H</td>
+                        <td>L</td>
+                        <td>L</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>Falling Edge</td>
+                        <td>H</td>
+                        <td>H</td>
+                        <td colspan="2">Toggle</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+</body>
+</html>
+
+
+

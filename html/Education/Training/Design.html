@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			/*border: 3px solid green;*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="design-body-container">
+        <div id="design-contents-id" class="contents design-contents">
+            <label>Digital Design Page</label>
+            <p>As was mentioned before, this section is not necessary for this project. You will be using the 74LS-- series of ICs which have
+                already been designed by Texas Instruments (TI) back in 1970. If, however, you have any inclinations towards Engineering as 
+                a profession, this section is a must for you!
+            </p>
+            <p>Your boss hands you a set of "Inputs" and "Outputs" and asks you if you can design the circuitry for this set of data. 
+                You have at your desposal the "basic" Gates: AND, OR, NOT, XOR, NAND, NOR. If there are only a few Inputs and one Output you 
+                may intuitively play around with the Gates and come up with a Solution. There's are better ways. One is called "Boolean Algebra". 
+            </p>
+            <p>Around the middle of the 19th century, a mathematician, George Boole, wondered whether or not "mathematics could be applied to how people think?". 
+                He created a new field of mathematics called "Boolean Logic" and then, somewhat latter, "Boolean Algebra". It wasn't until 1937 that Claude Shannon in his 1937 master's thesis 
+                made the connection between "Boolean Algebra" and "Electronic Relays"(Electrical Switches which are binary in nature). In 1945 the first "programmable computer", 
+                ENIAC (Electronic Numerical Integrator And Computer) was built utilizing Gates(AND, OR, NOT ie Boolean Algebra).
+            </p>
+            <p>It is this "Boolean Algebra" that provides us with a systematic tool for coming up with a solution to our problem.
+                We will proceed in the following order:
+                <ol type="1" class="type-1">
+                    <li>Place Inputs and Outputs into a Truth Table</li>
+                    <li>Use some characteristics of the Truth Table as an aid to make the conversion into Boolean Algebraic expressions and/or equations</li>
+                    <li>Simplify/Solve them for your final "design circuit"</li>
+                </ol>
+            </p>
+            <p>Truth Tables and Boolean Algebra are two different entities. First consider Truth Tables. In general: 
+                <ol type="1" class="type-1">
+                    <li>Table Heads only contain "Labels"(<u>English words</u> and/or symbols ie "Inputs", "P<sub>0</sub>"), "Output" etc.</li>
+                    <li>Table Bodies only contain Binary <u>Values</u> ie ("0","1").</li>
+                </ol> 
+            </p>
+            <p>Now consider Boolean Algebra. It consists of:
+                <ol type="1" class="type-1">
+                    <li>"Boolean <u>Variables</u>"(eg P<sub>1</sub>, P<sub>0</sub>)</li>
+                    <li>"Boolean <u>Operators</u>"(eg AND, OR, NOT).</li>
+                </ol><br>
+                <p>Look at the following image:</p>
+                <img class="container-label-contents-img" src="media/imgs/Container-Label-Contents.png">
+                <p class="label-container-contents">
+                    "Boolean Variables" can be viewed as a combination of: A Label, A Container, and
+                    Contents of that Container, which can be "changed" over time.<br><br>
+                    <!--<ul>
+                        <li>A Label</li>
+                        <li>A Container</li>
+                        <li>Contents of that Container, which can be "changed" over time</li>
+                    </ul><br>-->
+                    NOTE: The Label(eg P<sub>0</sub>) in the Truth Table can also be thought of as a container(eg its contents is the Column below it
+                    in the Table Body. This Content, however, is fixed by definition and cannot be changed: thus it's not a variable!)
+                    Important: P<sub>0</sub> in the Truth Table is NOT the same as the Boolean variable P<sub>0</sub>.
+                </p>
+            </p>
+            <p>
+                We will now make begin the translation. Keep in mind the fundamentals of Boolean Logic and Boolean Algebra: "AND", "OR", "NOT" 
+                along with the English Words: "and", "or", "not". Would you be surprized if there is a close connection between them. 
+            </p>  
+                <!--<ol type="1">
+                    <li>Step 1: From the Truth Table, write English sentences using the words ("state" & "or").</li>
+                    <li>Step 2: Replace "state" with the Input/Output Names along with the English word "and".</li>
+                    <li>Step 3: Convert the English sentences into Algebraic equations.</li>
+                    <li>Step 4: Simplify the Algebraic expressions.</li>
+                </ol>  
+                Note: The Algebra we are talking about now is called "Boolean Algebra". "Boolean Algebra" has an Algebraic structure and 
+                is rightly called an Algebra but it does differ from the Algebra you learned in High School.  
+                In Algebra you have Operators (addition, subtraction, multiplication etc)
+                In "Boolean Algebra" you have Operators (AND, OR, NOT etc.). In Algebra you have Operands (Integers, fractions, decimal #'s, 
+                irrational #'s etc). In Boolean Algebra you have "Binary" Operands ("0,1"), ("T,F"), or ("H,L") etc. 
+            </p>-->
+            <p>Consider the Truth Table for the NOT Gate.
+                <div class="not-table-container">
+                    <table style="border-collapse: collapse">
+                        <thead>
+                            <tr>
+                                <th class="table-title" colspan="3">Truth Table: NOT Gate</th>
+                            </tr>
+                            <tr>
+                                <th>Inputs</th>
+                                <th rowspan="2">Design<br>Circuitry</th>
+                                <th>Output</th>
+                            </tr>
+                                <th>P<sub>0</sub></th>
+                                <th>Q<sub>0</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="tdth-wrapper">0</div></td>
+                                <td rowspan="2"><div class="tdth-wrapper"><img class="not-gate" src="media/imgs/basicLogicGates/NOT_Gate.svg"></div></td>
+                                <td><div class="tdth-wrapper">1</div></td>
+                            </tr>
+                            <tr>
+                                <td><div class="tdth-wrapper">1</div></td>
+                                <td><div class="tdth-wrapper">0</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>It only has One Input (P<sub>0</sub>). It's BINARY so it can only take on 2 values: "0" or "1". 
+                    Can P<sub>0</sub> be "0" and "1" AT THE SAME TIME?
+                </p>      	 
+                <div class="design-question-container">
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('b0-1-value-at-time-id')">Answer : </label>
+                    <p id="b0-1-value-at-time-id" class="answer answer-hidden">NO! Binary is like your light switch at home. It can be "UP"(light on) 
+                        or "DOWN"(light off) but <u>not both at the same time</u>!
+                    </p> 
+                </div>
+                <p>Each <u>row</u> of the Truth Table, therefore, represets a unique "state". 
+                    Thus we say the NOT Gate has two "states", where each row represents a particular "state".  
+                </p>
+                <p>Let's call row 1 "State 1(S1)" and row 2 "State 2(S2)". Hopefully the following "English" sentence makes sense:<br>
+                    <br>The NOT Gate is <u>either</u> in "State 1"(row 1) <u>or</u> "State 2"(row 2).<br><br> 
+                    The key word in that sentence is the English word "or". 
+                </p>
+                <p>Consider the following "English" sentence where "or" is replaced with "and":<br> 
+                    <br>The NOT Gate is either in "State 1"(row 1) <u>and</u> "State 2"(row 2).<br>
+                    Does that sentence make logical sense? The two words: ("either", "and") don't go together but ("either", "or") do!
+                </p>
+                <p>Now consider the following Truth Table.
+                    <div class="not-table-container">
+                        <table style="border-collapse: collapse">
+                            <thead>
+                                <tr>
+                                    <th class="table-title" colspan="5">Truth Table</th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">State</th>
+                                    <th colspan="2">Inputs</th>
+                                    <th rowspan="4">Design<br>Circuitry</th>
+                                    <th rowspan="2">Output</th>
+                                </tr>
+                                    <th>P<sub>1</sub></th>
+                                    <th>P<sub>0</sub></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="tdth-wrapper">S1</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td rowspan="4"><div class="tdth-wrapper">?</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="tdth-wrapper">S2</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                </tr>
+                                    <td><div class="tdth-wrapper">S3</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                    <td><div class="tdth-wrapper">0</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="tdth-wrapper">S4</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                    <td><div class="tdth-wrapper">1</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </p>
+                <p>The Table Body has 4 rows, thus 4 "states" with each "state" independent of the other 3 "states".
+                </p>
+                <p>Cay you write the English sentence for the State where the Output is equal to 1.</p>      	 
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('and-1-id')">Answer: </label>
+                    <label id="and-1-id" class="answer answer-hidden">S4 equals 1</label>
+                </div>
+                <p>Now write the English sentence for State<u>s</u> where the Output is equal to 0.
+                    Hint: "or"!
+                </p>      	 
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('and-0-id')">Answer: </label>
+                    <label id="and-0-id" class="answer answer-hidden">S1 or S2 or S3 equals 0</label>
+                </div>
+            </p><br>
+            <p>Step 2: Replace "state" with the Input Names along with the English word "and".
+                <p>Consider row 4 ("state 4" ie S4) in the table above. The values for the Inputs are P<sub>1</sub> = 1 and  P<sub>0</sub> = 1.<br>
+                State 4 (S4) could be expressed as: P<sub>1</sub> = 1  ?   P<sub>0</sub> = 1.<br> What sounds more logical?
+                    <ol type="a">
+                        <li>P<sub>1</sub> = 1  "and"   P<sub>0</sub> = 1</li>
+                        <li>P<sub>1</sub> = 1  "or"   P<sub>0</sub> = 1</li>
+                    </ol>
+                    <div>
+                        <label class="question" onclick="QuestionAnswerManager.revealAnswer('b1-and-b0-id')">Answer:</label>
+                        <p id="b1-and-b0-id" class="answer answer-hidden">a: (P<sub>1</sub> = 1) <u>and</u> (P<sub>0</sub> = 1)<br>
+                            Row 4(S4) is characterized by <u>both</u> Inputs being 1! If <u>either</u> Input = 0 you would be in a different state
+                            other than S4 (ie S1 or S2 or S3). The word "or" only requires "ONE" Input to be 1; on the other hand, "and" requires "both"
+                            Inputs to have a value of "1". 
+                        </p>
+                    </div>
+                </p>
+                <p>For the Truth Table above, only state 4 has an Output with a value of 1; on the other hand, it has 3 states with a corresponding 
+                    value of "0": S1, S2, S3. Previously we learned that we could write the following sentence for multiple rows(states) = 0:<br>S1 "or" S2 "or" S3 equals 0.<br>
+                    Re-write this English statement by replacing the S1, S2 and S3 with the approximate expressions for P<sub>1</sub> and P<sub>0</sub> 
+                </p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('s1-s2-s3-0-id')">Answer : </label>
+                    <label id="s1-s2-s3-0-id" class="answer answer-hidden">[(P<sub>1</sub> = 0) and (P<sub>0</sub> = 0)] or [(P<sub>1</sub> = 0) and (P<sub>0</sub> = 1)] or [(P<sub>1</sub> = 1) and (P<sub>0</sub> = 0)] equals 0</label>
+                </div> 
+            </p>
+            <p>Step 3: Convert the English sentences into Algebraic equations.<br>
+                We now have the two English sentences for the Truth Table above:
+                <ol type="1" class="type-1">
+                    <li>[(P<sub>1</sub> = 0) and (P<sub>0</sub> = 0)] or [(P<sub>1</sub> = 0) and (P<sub>0</sub> = 1)] or [(P<sub>1</sub> = 1) and (B<sub>0</sub> = 0)] equals 0</li>
+                    <li>[(P<sub>1</sub> = 1) and (P<sub>0</sub> = 1)] equals 1</li>
+                </ol>
+                <p>We need to convert these into an Boolean Algebraic Equation! But how? First consider the following:<br>
+                    For the English Expressions we have:
+                    <ol type="1" class="type-1">
+                        <li>labels: P<sub>1</sub>, P<sub>0</sub> which are English Labels(NOT Variables)</li>
+                        <li>numeric values: 0, 1</li>
+                        <li>words: "and", "or", "equals"</li>
+                    </ol>
+                    <p>For Boolean Algebra we have:</p>
+                    <ol type="1" class="type-1">
+                        <li>variable: such as P<sub>1</sub>, P<sub>0</sub></li>
+                        <li>numeric values(operands): 0, 1</li>
+                        <li>Logic Gates(operators): "AND", "OR", "="</li>
+                    </ol>
+                </p>
+                <p>Replace "and" with "AND", "or" with "OR", "equals" with "=".
+                    The <u></u>Output</u> values are fixed values in both cases: 0 or 1. Nothing needs to be done!
+                </p>
+                <p>As was mentioned previously, the labels P<sub>1</sub> and P<sub>0</sub> of the Truth Table cannot be directly replaced
+                    with the labels for the corresponding Algebraic Variables. The following is not obvious but after you think about it, 
+                    it does make sense. We'll use P<sub>0</sub> as an example.
+                </p> 
+                <p class="label-container-contents">P<sub>0</sub> is a Variable which can have a Value of "0" or "1". Consider NOT P<sub>0</sub>. It also can have a Value of
+                    "0" or "1". The NOT operator, however, reverses the Value in P<sub>0</sub> (eg if P<sub>0</sub>) = 0 
+                    then NOT P<sub>0</sub> = 1. If P<sub>0</sub> = 1 then NOT P<sub>0</sub> = 0. Thus we can two options:
+                    <ul>
+                        <li>Replace "0" with P<sub>0</sub></li>
+                        <li>and replace "1" with NOT P<sub>0</sub></li>
+                    </ul>or
+                    <ul>
+                        <li>Replace "1" with P<sub>0</sub></li>
+                        <li>and replace "0" with NOT P<sub>0</sub></li>
+                    </ul>
+                    While both options will work, it turns out the 2<sup>nd</sup> option is preferable.
+                </p>
+                <p>For State 2(S2) the Input Values for P<sub>1</sub> and P<sub>0</sub> are "0", "1" or "P<sub>1</sub>", "NOT P<sub>0</sub>"
+                    where the first pair P<sub>1</sub>, P<sub>0</sub> are Truth Table Lables and the latter pair "P<sub>1</sub>", "NOT P<sub>0</sub> 
+                    are Boolean Variables!
+                </p>
+                <p> State 2(S2) can now be expressed as: P<sub>1</sub> AND "NOT P<sub>0</sub>, which is a Boolean Expression where 
+                    "P<sub>1</sub>", P<sub>0</sub> are Boolean Variables and "AND", "NOT" are Boolean Operators. 
+                </p>
+                <p>Repeat this for States 1,3,4</p>
+                <div>
+                    <label class="question" onclick="QuestionAnswerManager.revealAnswer('s1-s3-s3-boolean-id')">Answer : </label>
+                    <div id="s1-s3-s3-boolean-id" class="answer answer-hidden">
+                        For State 1(S1):  (NOT P<sub>1</sub>)  AND  (NOT P<sub>0</sub>)<br>
+                        For State 3(S3):  (P<sub>1</sub>)  AND  (NOT P<sub>0</sub>)<br>
+                        For State 4(S4):  (P<sub>1</sub>)  AND  (P<sub>0</sub>)
+                    </div>
+                </div>
+                <p>Using everything you have learned so far, write out both "Boolean <u>Equations</u> by using the OUTPUT values for Q<sub>0</sub> ("0" or "1").
+                </p>
+                <label class="question" onclick="QuestionAnswerManager.revealAnswer('s1-s3-s3-boolean-eqs-id')">Answer : </label>
+                <div id="s1-s3-s3-boolean-eqs-id" class="answer answer-hidden">
+                    For Q<sub>0</sub> = "0":  [(NOT P<sub>1</sub>)  AND  (NOT P<sub>0</sub>)] OR [(P<sub>1</sub>) AND (NOT P<sub>0</sub>)] OR [(P<sub>1</sub>)  AND  (NOT P<sub>0</sub>)] = 0<br>
+                    For Q<sub>0</sub> = "0":  (P<sub>1</sub>)  AND  (P<sub>0</sub>) = 1
+                </div>
+                <p>Two observations:
+                    <0l type = "1">
+                        <li>It appears that we have 2 solutions when in actuallity we have 2 versions of the same solution.</li>
+                        <li>You may have noticed from the start that the Truth Table is, by "definition", the AND gate, which is what we ended up with. So Boolean Algebra does work!</li>
+                    </0l>
+                </p>
+                <!-- Add some examples: simple and/or 74LS48 -->
+            </p>
+        </div>
+        <div class="link-container">
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id')">Gates and ICs</button>
+        </div>
+    </div>
+</body>
+</html>
