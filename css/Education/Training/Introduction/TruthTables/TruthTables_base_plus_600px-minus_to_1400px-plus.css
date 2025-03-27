@@ -1,0 +1,549 @@
+
+
+/* CSS for Codes (BASE) */
+      .contents{
+        overflow: visible;
+        font-weight: bold;
+      }
+      .header-one,
+      .header-two{
+          display: block;
+          text-align: center;
+      } 
+      .morse-code-table-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .morse-code-container{
+        padding: 0 0.5rem;
+      }
+      .morse-code-table{
+        border-collapse: collapse;
+      }
+      .morse-code-table th, td{
+        border: 3px solid black;
+      }
+      .smk-header{
+        background-color: lightblue;
+      }
+      .smk-body{
+        background-color: lightgoldenrodyellow;
+      }
+      
+        .samuel-morse-key-table{
+            display: flex;
+        /*  flex-direction: row; */
+            justify-content: space-around;
+            align-items: center;
+        }
+            
+        .smk-img-container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 40vw;
+            height: 60vh;
+            border: 1px solid red;
+        }
+        .smk-img-container img{
+            height: 100%;
+        }
+        .tdth-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .gif-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+            .gif-container video{
+                width: 60%;
+            }
+        p{
+            text-indent: 2rem;
+        }
+
+/*End CSS for Codes (BASE) */
+@media only screen and (max-width: 599px){
+/* CSS for Text  */
+    .contents{
+        padding: 0 1rem;
+    }
+    .header-one{
+        font-size: 1.7rem;
+    }
+    .header-two{
+        font-size: 1.6rem;
+        /* text-indent: 1.5rem; */
+    }
+    p{
+    font-size: 1.2rem;
+    }
+    .type-1 li{
+    font-size: 1.2rem;
+    margin-left: 2.5rem;
+    }
+
+/*END CSS for Text  */
+
+/* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 20% !important;
+    }
+    .morse-code-container p{
+        font-size: 1.35rem;
+    }
+    .morse-code-2-bit img{
+        width: 7rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 10rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 10rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 1.35rem;
+        }
+        .inputs-output-tr{
+            font-size: 1.3rem;
+        }
+        .bits{
+            font-size: 1.2rem;
+        }
+        .tdth-wrapper {
+            font-size: 1.2rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+/*END CSS for Tables  */
+}
+          
+@media only screen and (min-width: 600px) and (max-width: 749px){
+/* CSS for Text  */
+    .contents{
+        padding: 0 1rem;
+    }
+    .header-one{
+        font-size: 1.7rem;
+    }
+    .header-two{
+        font-size: 1.6rem;
+       /* text-indent: 1.5rem; */
+    }
+    p{
+      font-size: 1.4rem;
+    }
+    .type-1 li{
+      font-size: 1.4rem;
+      margin-left: 2.5rem;
+    }
+/*END CSS for Text  */
+
+/* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 50% !important;
+    }
+    .morse-code-container p{
+        font-size: 1.4rem;
+    }
+    .morse-code-2-bit img{
+        width: 7rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 10rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 10rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 1.4rem;
+        }
+        .inputs-output-tr{
+            font-size: 1.35rem;
+        }
+        .bits{
+            font-size: 1.3rem;
+        }
+        .tdth-wrapper {
+            font-size: 1.3rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+/*END CSS for Tables  */
+}
+  
+@media only screen and (min-width: 750px) and (max-width: 899px){
+    /* CSS for Text  */
+    .contents{
+        padding: 0 1rem;
+    }
+        .header-one{
+            font-size: 1.9rem;
+        }
+        .header-two{
+            font-size: 1.8rem;
+           /* text-indent: 1.5rem; */
+        }
+        p{
+          font-size: 1.6rem;
+        }
+        .type-1 li{
+          font-size: 1.5rem;
+          margin-left: 4rem;
+        }
+    /*END CSS for Text  */
+    
+    /* CSS for Tables  */
+        .morse-code-table-1{
+            width: 45% !important;
+        }
+        .morse-code-table-2{
+            width: 55% !important;
+        }
+        .morse-code-table-3{
+            width: 50% !important;
+        }
+        .morse-code-table-4{
+            width: 50% !important;
+        }
+        .morse-code-container p{
+            font-size: 1.4rem;
+        }
+        .morse-code-2-bit img{
+            width: 7rem;
+            padding-top: 1rem;
+        }
+        .morse-code-3-bit img{
+            width: 10rem;
+            padding-top: 1rem;
+        }
+        .morse-code-4-bit img{
+            width: 12rem;
+            padding-top: 1rem;
+        }
+            .table-title{
+            font-size: 1.6rem;
+            }
+            .inputs-output-tr{
+                font-size: 1.5rem;
+            }
+            .bits{
+                font-size: 1.5rem;
+            }
+            .tdth-wrapper {
+                font-size: 1.5rem;
+            }
+            tbody tr td{
+                padding: 1rem 0;
+            }
+    /*END CSS for Tables  */
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1049px){
+    /* CSS for Text  */
+    .contents{
+        padding: 0 1rem;
+    }
+    .header-one{
+        font-size: 2.4rem;
+    }
+    .header-two{
+        font-size: 2.2rem;
+    /* text-indent: 1.5rem; */
+    }
+    p{
+    font-size: 1.9rem;
+    }
+    .type-1 li{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    }
+    /*END CSS for Text  */
+
+    /* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 50% !important;
+    }
+    .morse-code-container p{
+        font-size: 1.7rem;
+    }
+    .morse-code-2-bit img{
+        width: 8rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 12rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 15rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 1.8rem;
+        }
+        .inputs-output-tr{
+            font-size: 1.7rem;
+        }
+        .bits{
+            font-size: 1.7rem;
+        }
+        .tdth-wrapper {
+            font-size: 1.7rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+    /*END CSS for Tables  */ 
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1199px){
+    /* CSS for Text  */
+    .contents{
+        padding: 0 2rem;
+    }
+    .header-one{
+        font-size: 2.8rem;
+    }
+    .header-two{
+        font-size: 2.6rem;
+    /* text-indent: 1.5rem; */
+    }
+    p{
+    font-size: 2.2rem;
+    }
+    .type-1 li{
+    font-size: 2.1rem;
+    margin-left: 4rem;
+    }
+    /*END CSS for Text  */
+
+    /* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 50% !important;
+    }
+    .morse-code-container p{
+        font-size: 1.9rem;
+    }
+    .morse-code-1-bit img{
+        width: 18rem;
+    }
+    .morse-code-2-bit img{
+        width: 9.5rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 15rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 18rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 1.9rem;
+        }
+        .inputs-output-tr{
+            font-size: 1.8rem;
+        }
+        .bits{
+            font-size: 1.8rem;
+        }
+        .tdth-wrapper {
+            font-size: 1.8rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+    /*END CSS for Tables  */ 
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    /* CSS for Text  */
+    .contents{
+        padding: 0 2rem;
+    }
+    .header-one{
+        font-size: 3rem;
+    }
+    .header-two{
+        font-size: 2.8rem;
+    /* text-indent: 1.5rem; */
+    }
+    p{
+    font-size: 2.4rem;
+    }
+    .type-1 li{
+    font-size: 2.2rem;
+    margin-left: 4rem;
+    }
+    /*END CSS for Text  */
+
+    /* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 50% !important;
+    }
+    .morse-code-container p{
+        font-size: 2.4rem;
+    }
+    .morse-code-1-bit img{
+        width: 20rem;
+    }
+    .morse-code-2-bit img{
+        width: 10rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 15rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 18rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 2.1rem;
+        }
+        .inputs-output-tr{
+            font-size: 2rem;
+        }
+        .bits{
+            font-size: 2rem;
+        }
+        .tdth-wrapper {
+            font-size: 2rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+    /*END CSS for Tables  */    
+}
+
+@media only screen and (min-width: 1400px){
+    /* CSS for Text  */
+    .contents{
+        padding: 0 2rem;
+    }
+    .header-one{
+        font-size: 3.5rem;
+    }
+    .header-two{
+        font-size: 3.2rem;
+    }
+    p{
+    font-size: 2.8rem;
+    }
+    .type-1 li{
+    font-size: 2.6rem;
+    margin-left: 7rem;
+    }
+    /*END CSS for Text  */
+
+    /* CSS for Tables  */
+    .morse-code-table-1{
+        width: 45% !important;
+    }
+    .morse-code-table-2{
+        width: 55% !important;
+    }
+    .morse-code-table-3{
+        width: 50% !important;
+    }
+    .morse-code-table-4{
+        width: 50% !important;
+    }
+    .morse-code-container p{
+        font-size: 2.6rem;
+    }
+    .morse-code-1-bit img{
+        width: 24rem;
+    }
+    .morse-code-2-bit img{
+        width: 13rem;
+        padding-top: 1rem;
+    }
+    .morse-code-3-bit img{
+        width: 20rem;
+        padding-top: 1rem;
+    }
+    .morse-code-4-bit img{
+        width: 24rem;
+        padding-top: 1rem;
+    }
+        .table-title{
+        font-size: 2.6rem;
+        }
+        .inputs-output-tr{
+            font-size: 2.4rem;
+        }
+        .bits{
+            font-size: 2.4rem;
+        }
+        .tdth-wrapper {
+            font-size: 2.4rem;
+        }
+        tbody tr td{
+            padding: 1rem 0;
+        }
+    /*END CSS for Tables  */  
+}
