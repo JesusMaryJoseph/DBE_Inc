@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="125.31883mm"
+   height="54.922035mm"
+   viewBox="0 0 125.31883 54.922035"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="CONTROL-BlockDiagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="7.8211883"
+     inkscape:cx="173.95055"
+     inkscape:cy="143.90396"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="42.840089,151.27197"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="47.05014,124.86345"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="32.075753,87.786296"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="80.826239,156.53453"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="99.867148,152.80289"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="112.30594,105.53548"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="46.09331,154.33382"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="117.85556,51.091864"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="95.322208,152.08527"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="91.734098,139.31159"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="32.793376,97.976533"
+       orientation="1,0"
+       id="guide1778"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.922151,-106.39948)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.230341"
+       id="rect426"
+       width="76.737755"
+       height="54.922035"
+       x="77.503227"
+       y="106.39948"
+       inkscape:label="Block" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="g1859"
+         inkscape:label="OUTPUT-Reg-Control Signals"
+         transform="translate(1.25e-6,3.7041659)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.645337,147.57187 c -10.451694,-0.0801 -10.481733,-0.0803 -10.481733,-0.0803 l -0.05667,1.1507 -3.903407,-1.94664 3.885749,-1.97953 0.133943,1.24495 c 0,0 -0.145109,0.10733 10.355655,0.12748 z"
+           id="path1853"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Output-Reg Cntrl Signal" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="28.738182"
+           y="147.91997"
+           id="text1857"
+           inkscape:label="Output-Reg-Label"><tspan
+             style="fill:#000000;stroke-width:0"
+             x="28.738182"
+             y="147.91997"
+             id="tspan1855"
+             sodipodi:role="line">OUTPUT-Reg(In)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1847"
+         inkscape:label="B-Reg-Control Signals"
+         transform="translate(1.25e-6,5.291666)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.645337,138.04681 c -10.451694,-0.0801 -10.481733,-0.0803 -10.481733,-0.0803 l -0.05667,1.1507 -3.903407,-1.94664 3.885749,-1.97953 0.133943,1.24495 c 0,0 -0.145109,0.10733 10.355655,0.12748 z"
+           id="path1841"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="B-Reg Cntrl Signal" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="43.025696"
+           y="138.39507"
+           id="text1845"
+           inkscape:label="B-Reg-Label"><tspan
+             style="fill:#000000;stroke-width:0"
+             x="43.025696"
+             y="138.39507"
+             id="tspan1843"
+             sodipodi:role="line">B-Reg(In)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="CLOCK(HTL)-Control Signals"
+         transform="translate(1.25e-6,3.7041668)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.645337,155.50933 c -10.451694,-0.0801 -10.481733,-0.0803 -10.481733,-0.0803 l -0.05667,1.1507 -3.903407,-1.94664 3.885749,-1.97953 0.133943,1.24495 c 0,0 -0.145109,0.10733 10.355655,0.12748 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="HALT Cntrl Signal" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="36.146523"
+           y="155.85753"
+           id="text1324"
+           inkscape:label="HALT-Label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="36.146523"
+             y="155.85753"
+             id="tspan1326">CLOCK(HLT)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1771"
+         inkscape:label="A-Reg-Control Signals"
+         transform="translate(-14.816668,-31.220847)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 92.469741,166.557 c -10.451992,0.0138 -10.482031,0.0139 -10.482031,0.0139 l -0.04633,1.15117 -3.920734,-1.9115 3.867812,-2.01435 0.145119,1.2437 c 0,0 -0.144138,0.10862 10.356383,0.0345 z"
+           id="path1763"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="A-Reg Cntrl Signal" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.265569"
+           id="rect1765"
+           width="6.458602"
+           height="0.62194854"
+           x="68.67646"
+           y="163.0229"
+           inkscape:label="NOT-A-Reg-Out" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="48.317368"
+           y="166.97005"
+           id="text1769"
+           inkscape:label="Label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="48.317368"
+             y="166.97005"
+             id="tspan1767">A-Reg (In,Out)</tspan></text>
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.193944"
+           id="rect1780"
+           width="3.4445877"
+           height="0.62194854"
+           x="63.576153"
+           y="163.0229"
+           inkscape:label="NOT-A-Reg-In" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1432"
+         inkscape:label="MEM-ADDR-Control Signals"
+         transform="translate(1.25e-6,-23.812504)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.646247,150.21025 c -10.451771,-0.0694 -10.481811,-0.0695 -10.481811,-0.0695 l -0.05549,1.15076 -3.905396,-1.94264 3.883721,-1.9835 0.135217,1.24481 c 0,0 -0.144999,0.10748 10.35578,0.11688 z"
+           id="path1422"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="MenAddr-pointer" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.191231"
+           id="rect1760"
+           width="3.3489046"
+           height="0.62194854"
+           x="56.986954"
+           y="146.69389"
+           inkscape:label="MenAddr-NOT" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="34.559021"
+           y="150.56589"
+           id="text1430"
+           inkscape:label="Label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="34.559021"
+             y="150.56589"
+             id="tspan1428">MEM Addr(In)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1573"
+         inkscape:label="RAM-Control Signals"
+         transform="translate(-14.816668,-31.220847)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 92.469741,149.62358 c -10.451992,0.0138 -10.482031,0.0139 -10.482031,0.0139 l -0.04633,1.15117 -3.920734,-1.9115 3.867812,-2.01435 0.145119,1.2437 c 0,0 -0.144138,0.10862 10.356383,0.0345 z"
+           id="path1563"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="RAM Cntrl Signal" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.273324"
+           id="rect1565"
+           width="6.8413339"
+           height="0.6219486"
+           x="68.293732"
+           y="146.1971"
+           inkscape:label="NOT RamOut" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="50.963203"
+           y="150.03677"
+           id="text1571"
+           inkscape:label="MEM-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="50.963203"
+             y="150.03677"
+             id="tspan1569">RAM (In,Out)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1591"
+         inkscape:label="PC-Control Signals"
+         style="display:inline"
+         transform="translate(0,-38.100017)">
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.240807"
+           id="rect1709"
+           width="5.3104057"
+           height="0.62194854"
+           x="54.636894"
+           y="144.95781"
+           inkscape:label="NOT-LD" />
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.655963,148.01036 c -10.451877,0.051 -10.481916,0.0511 -10.481916,0.0511 l -0.04224,1.15133 -3.927504,-1.89755 3.860627,-2.02809 0.149539,1.24317 c 0,0 -0.143751,0.10914 10.35644,-0.002 z"
+           id="path1581"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="PC Cntrl Signal" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="31.913185"
+           y="148.97841"
+           id="text1589"
+           inkscape:label="PC-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="31.913185"
+             y="148.97841"
+             id="tspan1587">PC (CE,CO,LD)</tspan></text>
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.254518"
+           id="rect1713"
+           width="5.9323454"
+           height="0.62194854"
+           x="47.228554"
+           y="144.95781"
+           inkscape:label="NOT-LD" />
+      </g>
+    </g>
+  </g>
+</svg>

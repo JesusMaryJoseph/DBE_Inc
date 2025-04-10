@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128.60762mm"
+   height="57.303284mm"
+   viewBox="0 0 128.60762 57.303283"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="ALU_Block.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="4"
+     inkscape:cx="266.375"
+     inkscape:cy="124.25"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="8.9541315,44.204835"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-6.336597,55.097788"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="17.976178,45.946342"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="55.974685,106.72897"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.015596,102.99733"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="85.6983,47.10695"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="21.241758,104.52826"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="93.004004,1.2863093"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="67.241577,40.686616"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="62.809971,37.574343"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="96.436044,27.256485"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.254448,53.146486"
+       orientation="1,0"
+       id="guide34710"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="58.276575,12.333913"
+       orientation="0,-1"
+       id="guide36987"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.440496,21.741633"
+       orientation="0,-1"
+       id="guide36992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.798991,43.540814"
+       orientation="1,0"
+       id="guide40123"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="81.629125,46.732771"
+       orientation="1,0"
+       id="guide40309"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="57.249218,37.09573"
+       orientation="0,-1"
+       id="guide40699"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="60.788021,48.836614"
+       orientation="1,0"
+       id="guide40701"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="57.348437,39.840782"
+       orientation="0,-1"
+       id="guide40703"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <rect
+     style="display:inline;fill:#919191;fill-opacity:1;fill-rule:evenodd;stroke-width:0.235281"
+     id="rect426"
+     width="76.737755"
+     height="57.303284"
+     x="23.729525"
+     y="0"
+     inkscape:label="Block" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="A-Reg Block"
+     style="display:inline"
+     transform="translate(-27.784211,1.1906222)" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.773701,-105.20886)">
+    <g
+       id="layer14"
+       inkscape:label="Subtract"
+       transform="translate(25.98949,106.39948)">
+      <path
+         style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 124.22025,47.631296 V 28.856175"
+         id="path36173"
+         inkscape:label="to One's Complement" />
+      <path
+         style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 128.17825,28.822348 H 83.016478"
+         id="path35631"
+         inkscape:label="To ALU" />
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 168.6843,135.97985 c -10.45158,0.0944 -10.48161,0.0947 -10.48161,0.0947 l -0.0374,1.15149 -3.93535,-1.88122 3.85217,-2.0441 0.1547,1.24254 c 0,0 -0.1433,0.10973 10.35635,-0.0454 z"
+         id="path35345"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="SUB arrow"
+         transform="translate(-25.98949,-106.39948)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:13.1959;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="143.97641"
+         y="29.39744"
+         id="text35513"
+         inkscape:label="Subtract Label"
+         transform="translate(-0.46302083,0.56223958)"><tspan
+           x="143.97641"
+           y="29.39744"
+           id="tspan41041"><tspan
+             style="font-size:3.175px"
+             id="tspan41039">Subtract </tspan></tspan><tspan
+           x="143.97641"
+           y="33.366189"
+           id="tspan41045"><tspan
+   style="font-size:3.175px"
+   id="tspan41043">(SUB)</tspan>
+</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline"
+       transform="translate(128.58764)">
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="FZ/FC Flags"
+         transform="translate(1.25e-6)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 25.640738,107.85579 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="FC arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text35238"
+           inkscape:label="FC-label"
+           transform="translate(14.574933,-43.017888)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan41049"><tspan
+               style="fill:#000000"
+               id="tspan41047">FC</tspan></tspan></text>
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 25.640738,111.03081 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path34699"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="FZ arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text39945"
+           inkscape:label="FZ-label"
+           transform="translate(14.574933,-39.842886)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan41053"><tspan
+               style="fill:#000000"
+               id="tspan41051">FZ</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="layer10"
+       inkscape:label="Data In/Out">
+      <g
+         id="layer11"
+         inkscape:label="Data Out"
+         transform="translate(25.271868,109.31781)">
+        <g
+           id="layer13"
+           inkscape:label="A-Reg Out"
+           transform="translate(0.717622,-2.91833)">
+          <path
+             style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+             d="m 52.294509,6.9426997 -17.561382,0.01177 -0.01264,1.861979 -6.099117,-3.58559 6.081285,-3.5208575 0.0034,0.014693 v 0 l 0.0033,1.6237867 17.605897,0.024444 z"
+             id="path34718"
+             sodipodi:nodetypes="cccccccccc"
+             inkscape:label="A-Reg Data Out Arrow"
+             transform="translate(-0.71762199,2.9183301)" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+             x="32.430717"
+             y="117.60285"
+             id="text34714"
+             transform="translate(-1.3070998,-108.7728)"
+             inkscape:label="A-Reg (8-bit) Out Label"><tspan
+               x="32.430717"
+               y="117.60285"
+               id="tspan41055">A Register (8-bit)</tspan></text>
+        </g>
+        <g
+           id="g35129"
+           inkscape:label="ALU Out"
+           transform="translate(0.717622,17.190008)">
+          <path
+             style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+             d="m 52.294509,6.9426997 -17.561382,0.01177 -0.01264,1.861979 -6.099117,-3.58559 6.081285,-3.5208575 0.0034,0.014693 v 0 l 0.0033,1.6237867 17.605897,0.024444 z"
+             id="path35123"
+             sodipodi:nodetypes="cccccccccc"
+             inkscape:label="ALU Data Out Arrow"
+             transform="translate(-0.71762199,2.9183301)" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+             x="32.430717"
+             y="117.60285"
+             id="text35127"
+             transform="translate(2.9262336,-108.7728)"
+             inkscape:label="ALU (8-bit) Out Label"><tspan
+               x="32.430717"
+               y="117.60285"
+               id="tspan41057">ALU (8-bit)</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g34580"
+         inkscape:label="Data In"
+         transform="translate(25.98949,106.39948)">
+        <g
+           id="layer12"
+           inkscape:label="Data In (A-Reg)"
+           transform="translate(-26.061252,-105.75361)">
+          <path
+             style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+             d="m 53.873486,106.73044 17.56137,0.0239 0.01642,-1.86195 6.091822,3.59797 -6.088423,3.5085 -0.0034,-0.0147 v 0 -1.62379 l -17.605811,-0.0602 z"
+             id="path889"
+             sodipodi:nodetypes="cccccccccc"
+             inkscape:label="A-Reg Data In Arrow" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+             x="32.430717"
+             y="117.60285"
+             id="text1231"
+             transform="translate(22.621656,-8.3244202)"
+             inkscape:label="A-Reg (8-bit) Label"><tspan
+               x="32.430717"
+               y="117.60285"
+               id="tspan41059">A Register (8-bit)</tspan></text>
+        </g>
+        <g
+           id="g34732"
+           inkscape:label="Data In (B-Reg)"
+           transform="translate(-26.061252,-58.128577)">
+          <path
+             style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+             d="m 53.873486,106.73044 17.56137,0.0239 0.01642,-1.86195 6.091822,3.59797 -6.088423,3.5085 -0.0034,-0.0147 v 0 -1.62379 l -17.605811,-0.0602 z"
+             id="path34726"
+             sodipodi:nodetypes="cccccccccc"
+             inkscape:label="B-Reg Data In Arrow" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+             x="32.430717"
+             y="117.60285"
+             id="text34730"
+             transform="translate(22.621656,-8.3244202)"
+             inkscape:label="B-Reg (8-bit) Label"><tspan
+               x="32.430717"
+               y="117.60285"
+               id="tspan41061">B Register (8-bit)</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g34676"
+       inkscape:label="One's Complement"
+       transform="translate(43.842443,47.394494)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.283487"
+         id="rect34670"
+         width="31.288336"
+         height="7.0849371"
+         x="78.997864"
+         y="106.72997"
+         inkscape:label="One's Complement Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:31.9815;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34674"
+         inkscape:label="One's Complement Label"
+         transform="translate(-10.27417,0.71041)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41065"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41063">One's Complement</tspan></tspan></text>
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 79.485402,94.083782 c -10.45197,-0.0182 -10.48201,-0.0182 -10.48201,-0.0182 l -0.0499,1.15101 -3.91486,-1.9235 3.87396,-2.00249 0.1413,1.24414 c 0,0 -0.14446,0.10819 10.35623,0.0662 z"
+         id="path36985"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="One's Complement to ALU arrow" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff7f2a;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 79.414494,93.355344 4.894791,-0.0083 v 12.654526"
+         id="path36990"
+         inkscape:label="One's Complement to ALU"
+         sodipodi:nodetypes="ccc" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text38407"
+         inkscape:label="8-bit-label"
+         transform="translate(59.7912,-46.829081)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41067">8-bit</tspan></text>
+    </g>
+    <g
+       id="g34652"
+       inkscape:label="B-Register"
+       transform="translate(0,46.037523)">
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 108.37796,111.56006 c 10.45168,0.0808 10.48172,0.081 10.48172,0.081 l 0.0568,-1.1507 3.90327,1.94691 -3.88588,1.97926 -0.13386,-1.24496 c 0,0 0.14512,-0.10732 -10.35564,-0.1282 z"
+         id="path36848"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="B-reg to One's Complement arrow" />
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 119.90507,82.64912 1.03337,0.58813 -1.02878,0.59789 z"
+         id="path40306"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="B8 arrow head" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 108.87065,108.29771 h 9.23533 V 83.276227 l 1.79685,0.01937"
+         id="path36429"
+         inkscape:label="B8 (B-reg to Flag-reg)"
+         sodipodi:nodetypes="cccc" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.322368"
+         id="rect34646"
+         width="31.288336"
+         height="9.1616459"
+         x="77.58654"
+         y="106.0885"
+         inkscape:label="B-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34650"
+         inkscape:label="B-Reg Label"
+         transform="translate(-4.0594855,1.1501876)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41071"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41069">B Register</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text36556"
+         inkscape:label="B8-label"
+         transform="translate(80.416449,-44.248422)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41073">B8</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text38380"
+         inkscape:label="8-bit-label"
+         transform="translate(86.700302,-41.767942)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41075">8-bit</tspan></text>
+    </g>
+    <g
+       id="layer2"
+       inkscape:label="A-Register"
+       transform="translate(-1.4113241,-1.1960374)">
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 121.36598,123.14461 1.03337,0.58813 -1.02878,0.59789 z"
+         id="path40300"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="A8 arrow head" />
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 95.349826,116.32498 c 0.05601,6.52795 0.05621,6.54671 0.05621,6.54671 l 1.151344,0.026 -1.895651,2.4536 -2.029955,-2.41065 1.243101,-0.0938 c 0,0 0.10921,0.0897 -0.0074,-6.46836 z"
+         id="path36839"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="A-reg to ALU (8-bit)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.456199;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 110.2401,109.42229 h 5.69987 l 0.0661,14.38672 h 5.67306"
+         id="path36288"
+         inkscape:label="A8 (A-reg to Flag-reg)"
+         sodipodi:nodetypes="cccc" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.365371"
+         id="rect34634"
+         width="31.288336"
+         height="11.769008"
+         x="78.997864"
+         y="107.64336"
+         inkscape:label="A-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text36177"
+         inkscape:label="A8-label"
+         transform="translate(81.827774,-43.052353)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41077">A8</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34642"
+         inkscape:label="A-Reg Label"
+         transform="translate(-4.0594855,3.7960211)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41081"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41079">A Register</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text38274"
+         inkscape:label="8-bit-label"
+         transform="translate(70.186105,-31.410684)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41083">8-bit</tspan></text>
+    </g>
+    <g
+       id="g34660"
+       inkscape:label="Arithmetic Logic Unit"
+       transform="translate(-0.00505476,23.368857)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.498818"
+         id="rect34654"
+         width="31.288336"
+         height="21.935888"
+         x="77.644699"
+         y="100.80989"
+         inkscape:label="ALU- Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:31.0343;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34658"
+         inkscape:label="ALU Label"
+         transform="translate(-12.932329,-0.06765808)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41087"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41085">Arithmetic Logic Unit </tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:8.23354;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34926"
+         inkscape:label="ALU Label"
+         transform="translate(-1.8198278,4.1656754)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41091"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41089">ALU </tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text36564"
+         inkscape:label="C4-label"
+         transform="translate(80.416449,-50.069242)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41093">C4</tspan></text>
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 119.94184,101.72454 1.03336,0.58814 -1.02877,0.59789 z"
+         id="path40303"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="C4 arrow head" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 109.00597,102.43252 10.99669,-0.0847"
+         id="path36570"
+         inkscape:label="C4 (ALU to Flag-reg)"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g34696"
+       inkscape:label="Flag-Register"
+       transform="translate(43.896882,-1.1840166)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.281449"
+         id="rect34690"
+         width="31.288336"
+         height="6.9834499"
+         x="78.997864"
+         y="107.64336"
+         inkscape:label="Flag-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34694"
+         inkscape:label="Flag-Reg Label"
+         transform="translate(-6.67149,1.454649)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41097"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41095">Flag Register</tspan></tspan></text>
+    </g>
+    <g
+       id="g39301"
+       inkscape:label="Zero Detection"
+       transform="translate(43.896882,12.574318)">
+      <path
+         style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.334792;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 101.05077,107.54514 -0.0107,-5.74515"
+         id="path40489"
+         inkscape:label="FZ (Zero Detection to Flag-reg)"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 100.46477,101.91078 0.5736,-1.08794 0.61226,1.06723 z"
+         id="path39303"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="FZ arrow head" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.258001"
+         id="rect39285"
+         width="16.273232"
+         height="11.282929"
+         x="94.01297"
+         y="107.64336"
+         inkscape:label="Flag-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text40494"
+         inkscape:label="FZ-label"
+         transform="translate(74.106942,-43.841589)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41099">FZ</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text39299"
+         inkscape:label="Zero-Detection Label"
+         transform="translate(4.3417912,2.1161073)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41103"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41101">   Zero 
+</tspan></tspan><tspan
+           x="91.347206"
+           y="114.57629"
+           id="tspan41107"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41105">Detection</tspan></tspan></text>
+    </g>
+    <g
+       id="g40697"
+       inkscape:label="Error Detection"
+       transform="translate(26.963544,12.574318)">
+      <path
+         style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.334792;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 101.05077,107.54514 -0.0107,-5.74515"
+         id="path40681"
+         inkscape:label="FZ (Zero Detection to Flag-reg)"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 100.46477,101.91078 0.5736,-1.08794 0.61226,1.06723 z"
+         id="path40683"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="FC arrow head" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.258001"
+         id="rect40685"
+         width="16.273232"
+         height="11.282929"
+         x="94.01297"
+         y="107.64336"
+         inkscape:label="Error Detection Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text40689"
+         inkscape:label="FZ-label"
+         transform="translate(74.106942,-43.841589)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan41109">FC</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text40695"
+         inkscape:label="Error-Detection Label"
+         transform="translate(4.3417912,2.1161073)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan41113"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41111">   Error 
+</tspan></tspan><tspan
+           x="91.347206"
+           y="114.57629"
+           id="tspan41117"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan41115">Detection</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

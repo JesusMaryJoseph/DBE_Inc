@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128.60762mm"
+   height="57.303284mm"
+   viewBox="0 0 128.60762 57.303283"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="ControlBlock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="4"
+     inkscape:cx="266.375"
+     inkscape:cy="164.25"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer7">
+    <sodipodi:guide
+       position="8.9541315,44.204835"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-6.336597,55.097788"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="17.976178,45.946342"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="55.974685,106.72897"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.015596,102.99733"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="85.6983,47.10695"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="21.241758,104.52826"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="93.004004,1.2863093"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="67.241577,40.686616"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="62.809971,37.574343"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="96.436044,27.256485"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.254448,53.146486"
+       orientation="1,0"
+       id="guide34710"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="58.276575,12.333913"
+       orientation="0,-1"
+       id="guide36987"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.440496,21.741633"
+       orientation="0,-1"
+       id="guide36992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="75.798991,43.540814"
+       orientation="1,0"
+       id="guide40123"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="81.629125,46.732771"
+       orientation="1,0"
+       id="guide40309"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="57.249218,37.09573"
+       orientation="0,-1"
+       id="guide40699"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="60.788021,48.836614"
+       orientation="1,0"
+       id="guide40701"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="57.348437,39.840782"
+       orientation="0,-1"
+       id="guide40703"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <rect
+     style="display:inline;fill:#919191;fill-opacity:1;fill-rule:evenodd;stroke-width:0.235281"
+     id="rect426"
+     width="76.737755"
+     height="57.303284"
+     x="23.729525"
+     y="0"
+     inkscape:label="Background (Gray)" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.773701,-105.20886)">
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Signals"
+       style="display:inline"
+       transform="translate(128.58764)">
+      <g
+         id="layer8"
+         inkscape:label="Master Reset"
+         transform="translate(1.25e-6,42.862512)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m -51.192979,69.311718 c -10.451995,-0.0113 -10.482035,-0.0113 -10.482035,-0.0113 l -0.0491,1.15105 -3.916129,-1.92091 3.872641,-2.00505 0.142131,1.24404 c 0,0 -0.1444,0.10828 10.356269,0.0593 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="MR arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:6.97449;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text35238"
+           inkscape:label="MR-label"
+           transform="translate(-97.211508,-83.234554)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan38555"
+             style="font-size:3.175px;fill:#000000;fill-opacity:1">MR</tspan></text>
+      </g>
+      <g
+         id="g66596"
+         inkscape:label="Run/Program"
+         transform="translate(1.25e-6,42.862512)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 25.640738,111.03081 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path66590"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="R/P arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:15.375;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text66594"
+           inkscape:label="R/P-label"
+           transform="translate(14.574933,-39.842886)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan66592"
+             style="font-size:3.175px;fill:#000000;fill-opacity:1">CLK</tspan></text>
+      </g>
+      <g
+         id="layer14"
+         inkscape:label="Control Signals"
+         transform="translate(-102.59815,106.39948)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 168.6843,135.97985 c -10.45158,0.0944 -10.48161,0.0947 -10.48161,0.0947 l -0.0374,1.15149 -3.93535,-1.88122 3.85217,-2.0441 0.1547,1.24254 c 0,0 -0.1433,0.10973 10.35635,-0.0454 z"
+           id="path35345"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="SUB arrow"
+           transform="translate(-25.98949,-106.39948)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:13.1959;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           x="143.97641"
+           y="29.39744"
+           id="text35513"
+           inkscape:label="Subtract Label"
+           transform="translate(-0.46302083,0.56223958)"><tspan
+             x="143.97641"
+             y="29.39744"
+             id="tspan38511"><tspan
+   style="font-size:3.175px"
+   id="tspan39935">Subtract (SUB)</tspan>
+</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g34676"
+       inkscape:label="EEPROMs (2)"
+       transform="translate(43.842443,47.394494)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.651729"
+         id="rect34670"
+         width="31.288336"
+         height="37.445877"
+         x="78.997864"
+         y="77.691956"
+         inkscape:label="EEPROM's Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:31.9815;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34674"
+         inkscape:label="EEPROM's Label"
+         transform="translate(-9.8111491,-16.355215)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan38523"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan38521">Instruction Decoder
+   (2 EEPROMs) </tspan></tspan></text>
+    </g>
+    <g
+       id="g34652"
+       inkscape:label="Micro-Step Counter"
+       transform="translate(0,46.037523)">
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:5.2547;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text66540"
+         inkscape:label="3 bit-label"
+         transform="translate(84.848222,-44.347628)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan66538">3-bit</tspan></text>
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 108.37796,109.44338 c 10.45168,0.0808 10.48172,0.081 10.48172,0.081 l 0.0568,-1.1507 3.90327,1.94691 -3.88588,1.97926 -0.13386,-1.24496 c 0,0 0.14512,-0.10732 -10.35564,-0.1282 z"
+         id="path36848"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="Micro-Step arrow" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.342675"
+         id="rect34646"
+         width="31.288336"
+         height="10.352271"
+         x="77.58654"
+         y="104.89787"
+         inkscape:label="Micro-Step Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34650"
+         inkscape:label="Micro-Step Counter Label"
+         transform="translate(-6.6391731,-1.2972082)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan38529"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan38527">Micro-Step
+  Counter</tspan></tspan></text>
+    </g>
+    <g
+       id="layer2"
+       inkscape:label="Master Reset"
+       transform="translate(-1.4113241,-1.1960374)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.365371"
+         id="rect34634"
+         width="31.288336"
+         height="11.769008"
+         x="78.997864"
+         y="107.64336"
+         inkscape:label="A-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34642"
+         inkscape:label="Mster Reset Label"
+         transform="translate(-5.9777147,3.6637294)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan38539"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan38537">Master Reset</tspan></tspan></text>
+    </g>
+    <g
+       id="g34660"
+       inkscape:label="Run/Program Mode (R/P)"
+       transform="translate(0.12723691,22.707399)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.354642"
+         id="rect34654"
+         width="31.288336"
+         height="11.087972"
+         x="77.644699"
+         y="106.3"
+         inkscape:label="ALU- Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:31.0343;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34658"
+         inkscape:label="ALU Label"
+         transform="translate(-8.2359748,0.92452942)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan38545"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan38543">Run/Program
+      Mode</tspan></tspan></text>
+    </g>
+    <g
+       id="g34696"
+       inkscape:label="Instruction-Register"
+       transform="translate(43.896882,-1.1840166)">
+      <g
+         id="layer12"
+         inkscape:label="Data IN/OUT (Instr-Reg)"
+         transform="translate(56.573047,0.77155383)">
+        <path
+           style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           d="m 53.860935,112.38475 17.806396,0.0655 0.02081,-1.84458 6.168802,3.57898 -6.181226,3.46134 -0.0033,-0.0146 v 0 l 0.0037,-1.60868 -17.851375,-0.10156 z"
+           id="path34718"
+           sodipodi:nodetypes="cccccccccc"
+           inkscape:label="A-Reg Data Out Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="32.430717"
+           y="117.60285"
+           id="text34714"
+           transform="translate(21.976004,-2.7546061)"
+           inkscape:label="Instr-Reg (4-bits [LSBs]) Out Label"><tspan
+             x="32.430717"
+             y="117.60285"
+             id="tspan38513">Instr Reg (4 LSBs)</tspan></text>
+        <path
+           style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+           d="m 77.512182,110.18064 -17.561305,-0.0534 -0.01955,1.86192 -6.085776,-3.60818 6.094302,-3.49828 0.0034,0.0147 v 0 l -0.0027,1.62379 17.605685,0.0897 z"
+           id="path889"
+           sodipodi:nodetypes="cccccccccc"
+           inkscape:label="Instr-Reg IN Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="32.430717"
+           y="117.60285"
+           id="text1231"
+           transform="translate(24.209157,-8.3244202)"
+           inkscape:label="Instr-Reg IN (8-bit) Label"><tspan
+             x="32.430717"
+             y="117.60285"
+             id="tspan38517">Instr Reg (8-bit)</tspan></text>
+      </g>
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 94.295998,118.20753 -0.0551,3.99959 1.150827,0.054 -1.937269,3.90806 -1.98884,-3.88098 1.244629,-0.13692 0.102657,-3.87364 z"
+         id="path36985"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:label="Instr Reg arrow" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:9.48803;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text38380"
+         inkscape:label="4 bit-label"
+         transform="translate(68.600299,-31.786507)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan38533">4 MSBs</tspan></text>
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.346019"
+         id="rect34690"
+         width="31.288336"
+         height="10.555325"
+         x="78.997864"
+         y="107.64336"
+         inkscape:label="Instruction-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34694"
+         inkscape:label="Instruction-Reg Label"
+         transform="matrix(1.3332659,0,0,0.995605,-38.306998,1.9459355)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan38559"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan38557">Instruction    Register</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

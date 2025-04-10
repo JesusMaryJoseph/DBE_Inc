@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180.36479mm"
+   height="54.922035mm"
+   viewBox="0 0 180.36479 54.922035"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="PC-BlockDiagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="2.7652076"
+     inkscape:cx="289.85166"
+     inkscape:cy="154.78042"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1591">
+    <sodipodi:guide
+       position="47.35394,100.27578"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="36.828813,2.2007099"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="61.323659,98.170748"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="85.340088,105.53834"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="104.381,101.8067"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="116.81978,54.539299"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="50.607161,103.33763"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="122.3694,0.095680312"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="99.836058,101.08908"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="96.247948,88.315407"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="37.642117,9.3769401"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.408299,-106.39948)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.230341"
+       id="rect426"
+       width="76.737755"
+       height="54.922035"
+       x="77.503227"
+       y="106.39948"
+       inkscape:label="Block" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke:#9b9b9b;stroke-width:0"
+       x="90.372208"
+       y="131.18137"
+       id="text482"
+       inkscape:label="Name"><tspan
+         sodipodi:role="line"
+         id="tspan480"
+         style="font-size:6.35px;fill:#ffffff;stroke-width:0"
+         x="90.372208"
+         y="131.18137">Program Counter</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:6.35px;fill:#ffffff;stroke-width:0"
+         x="90.372208"
+         y="139.11887"
+         id="tspan744">        Module</tspan></text>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="CLR-contrlSign"
+         transform="translate(1.25e-6,3.7041668)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="WE Cntrl Signal"
+           transform="translate(1.25e-6)" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.294485"
+           id="rect1328"
+           width="7.9416881"
+           height="0.62194854"
+           x="51.763489"
+           y="148.76312"
+           inkscape:label="NOT" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="38.273193"
+           y="152.71005"
+           id="text1324"
+           inkscape:label="CLR-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="38.273193"
+             y="152.71005"
+             id="tspan1326">Clear (CLR)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1432"
+         inkscape:label="CLK-contrlSign"
+         transform="translate(1.25e-6,-10.054167)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1422"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="CLK Cntrl Signal"
+           transform="translate(1.25e-6)" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="37.412045"
+           y="153.28415"
+           id="text1430"
+           inkscape:label="CLK-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="37.412045"
+             y="153.28415"
+             id="tspan1428">Clock (CLK)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1573"
+         inkscape:label="LOAD-contrlSign"
+         transform="translate(1.25e-6,-22.754175)"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1563"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Load Cntrl Signal"
+           transform="translate(1.25e-6)" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+           id="rect1565"
+           width="6.4107604"
+           height="0.62194854"
+           x="54.302002"
+           y="149.43289"
+           inkscape:label="NOT" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="38.75161"
+           y="153.37982"
+           id="text1571"
+           inkscape:label="Load-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="38.75161"
+             y="153.37982"
+             id="tspan1569">LOAD  (LD)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g1591"
+         inkscape:label="CLR-contrlSign copy"
+         style="display:inline"
+         transform="translate(0,-35.454182)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1581"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="WE Cntrl Signal"
+           transform="translate(1.25e-6)" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="24.207794"
+           y="152.80573"
+           id="text1589"
+           inkscape:label="CLR-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="24.207794"
+             y="152.80573"
+             id="tspan1587">Count Enable (CE)</tspan></text>
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="MenDataIn">
+      <path
+         style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+         d="m 204.77309,154.05153 c -33.29763,0.0565 -33.39364,-0.13464 -33.39364,-0.13464 l -0.17901,7.27222 -17.05495,-13.74941 17.1035,-13.99878 0.0112,6.60211 0.0957,-1.6e-4 -0.0957,1.6e-4 33.489,-0.0569 z"
+         id="path1057"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:label="Data In" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+         x="162.5654"
+         y="148.54494"
+         id="text1269"><tspan
+           sodipodi:role="line"
+           id="tspan1267"
+           style="stroke-width:0"
+           x="162.5654"
+           y="148.54494">PC Data In (4-bit)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="MenDataOut">
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 154.14529,113.95261 c 33.29768,0 33.39337,0.19136 33.39337,0.19136 l 0.19136,-7.27191 17.03157,13.77836 -17.12725,13.96971 v -6.60212 h -0.0957 0.0957 -33.48905 z"
+         id="path1049"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:label="Data Out" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+         x="156.25032"
+         y="122.42346"
+         id="text1261"><tspan
+           sodipodi:role="line"
+           id="tspan1259"
+           style="stroke-width:0"
+           x="156.25032"
+           y="122.42346">PC Data Out (4-bit)</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="178.7836mm"
+   height="54.922035mm"
+   viewBox="0 0 178.7836 54.922035"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="MemoryBlock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="2.7652076"
+     inkscape:cx="183.16889"
+     inkscape:cy="96.918582"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8">
+    <sodipodi:guide
+       position="45.77275,100.27579"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="49.982801,73.867274"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="59.742468,98.170754"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="83.758899,105.53835"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="102.79981,101.80671"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="115.2386,54.539303"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="49.025971,103.33764"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="120.78822,0.095683043"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="98.25487,101.08909"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="94.666759,88.315413"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="36.060926,9.3769431"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.98949,-106.39948)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.230341"
+       id="rect426"
+       width="76.737755"
+       height="54.922035"
+       x="77.503227"
+       y="106.39948"
+       inkscape:label="Block" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke:#9b9b9b;stroke-width:0"
+       x="93.577957"
+       y="134.81732"
+       id="text482"
+       inkscape:label="Name"><tspan
+         sodipodi:role="line"
+         style="font-size:6.35px;fill:#ffffff;stroke-width:0"
+         x="93.577957"
+         y="134.81732"
+         id="tspan744">Memory Module</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:6.35px;fill:#ffffff;stroke-width:0"
+         x="93.577957"
+         y="142.75482"
+         id="tspan2289">        (RAM)</tspan></text>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="WE-contrlSign"
+         transform="translate(1.25e-6)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="WE Cntrl Signal"
+           transform="translate(1.25e-6)" />
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+           id="rect1328"
+           width="6.4107604"
+           height="0.62194854"
+           x="54.321106"
+           y="148.66743"
+           inkscape:label="NOT" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text1324"
+           inkscape:label="WE-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="25.975019"
+             y="152.9971"
+             id="tspan1326">Write Enable (WE)</tspan></text>
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="MenDataIn">
+      <path
+         style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+         d="m 204.77309,154.05153 c -33.29763,0.0565 -33.39364,-0.13464 -33.39364,-0.13464 l -0.17901,7.27222 -17.05495,-13.74941 17.1035,-13.99878 0.0112,6.60211 0.0957,-1.6e-4 -0.0957,1.6e-4 33.489,-0.0569 z"
+         id="path1057"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:label="Data In" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+         x="162.5654"
+         y="148.54494"
+         id="text1269"><tspan
+           sodipodi:role="line"
+           id="tspan1267"
+           style="stroke-width:0"
+           x="162.5654"
+           y="148.54494">RAM Data In (8-bit)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="MenDataOut">
+      <path
+         style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+         d="m 154.14529,113.95261 c 33.29768,0 33.39337,0.19136 33.39337,0.19136 l 0.19136,-7.27191 17.03157,13.77836 -17.12725,13.96971 v -6.60212 h -0.0957 0.0957 -33.48905 z"
+         id="path1049"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:label="Data Out" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+         x="156.25032"
+         y="122.42346"
+         id="text1261"><tspan
+           sodipodi:role="line"
+           id="tspan1259"
+           style="stroke-width:0"
+           x="156.25032"
+           y="122.42346">RAM Data Out (8-bit)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="MenAddr">
+      <path
+         style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+         d="m 31.38402,112.96496 c 33.297679,0 33.489047,0.19136 33.489047,0.19136 v -6.69781 l 12.725836,9.85535 -12.82152,10.52513 0.287049,-6.79349 v 0 c 0,0 33.680417,0 0,0 -33.680412,0 -33.680412,-0.19137 -33.680412,-0.19137 z"
+         id="path889"
+         sodipodi:nodetypes="cccccccscc"
+         inkscape:label="Address" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+         x="32.430717"
+         y="117.60285"
+         id="text1231"><tspan
+           sodipodi:role="line"
+           id="tspan1229"
+           style="font-size:4.23333px;stroke-width:0"
+           x="32.430717"
+           y="117.60285">RAM Address (4-bit)</tspan></text>
+    </g>
+  </g>
+</svg>
