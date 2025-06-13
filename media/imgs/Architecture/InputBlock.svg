@@ -26,14 +26,14 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="8"
-     inkscape:cx="311.8125"
+     inkscape:cx="200.1875"
      inkscape:cy="116.625"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="1909"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer13">
     <sodipodi:guide
        position="97.730461,26.444381"
        orientation="0,-1"
@@ -45,7 +45,7 @@
        id="guide887"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="16.131887,45.966524"
+       position="121.87369,54.258702"
        orientation="0,-1"
        id="guide992"
        inkscape:locked="false" />
@@ -158,11 +158,10 @@
          style="fill:#0000ff">
         <path
            style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
-           d="m -65.568733,133.51477 c 10.451942,-0.0366 10.481974,-0.0367 10.481974,-0.0367 l 0.04377,-1.15127 3.924889,1.90295 -3.863412,2.02277 -0.147828,-1.24338 c 0,0 0.143905,-0.10893 -10.356443,-0.0118 z"
+           d="m -57.485689,91.03003 c 4.605588,-0.01563 4.618821,-0.01567 4.618821,-0.01567 l 0.01929,-0.491733 1.72948,0.812792 -1.70239,0.86397 -0.06514,-0.531075 c 0,0 0.06341,-0.04653 -4.563506,-0.005 z"
            id="path35345"
            sodipodi:nodetypes="cccccccc"
-           inkscape:label="R/P arrow"
-           transform="translate(-1.0833333e-6,-42.862512)" />
+           inkscape:label="R/P arrow" />
         <text
            xml:space="preserve"
            style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:7.63598;display:inline;fill:#0000ff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
@@ -170,88 +169,84 @@
            y="152.9971"
            id="text66594"
            inkscape:label="R/P-label"
-           transform="translate(-97.542255,-60.74497)"><tspan
+           transform="translate(-89.130623,-60.74497)"><tspan
              x="25.975019"
              y="152.9971"
-             id="tspan4466">R/P</tspan></text>
+             id="tspan5200"><tspan
+               style="fill:#000000;stroke:#000000"
+               id="tspan5198">R/P</tspan></tspan></text>
       </g>
-      <path
-         style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
-         d="m -50.939958,134.26411 h 28.063299 v -16.08963"
-         id="path3724"
-         inkscape:label="R/P to 4-bit Mux" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:round"
-         d="m -22.596026,134.17057 h 20.1588053 v 14.63968"
-         id="path3888"
-         inkscape:label="R/P to 8-bit Mux" />
-      <path
-         style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:round"
-         d="m -14.892805,118.25929 v 8.20881 h 40.434822"
-         id="path3890"
-         inkscape:label="bit-1 Data 4-bit" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m -13.849631,118.26803 v 7.0626 l 39.448311,0.0992"
-         id="path3894"
-         inkscape:label="bit-2 Data 4-bit"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.457006;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m -12.805001,118.2751 v 6.05512 l 38.374675,0.0662"
-         id="path3896"
-         inkscape:label="bit-3 Data 4-bit"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m -11.763071,118.28526 v 4.77353 h 37.368043"
-         id="path3899"
-         inkscape:label="bit-4 Data 4-bit"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt"
-         d="m 16.462848,148.88002 v -6.03021 h 9.21071"
-         id="path3892"
-         inkscape:label="bit-1 Data 8-bit" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.505672;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:round"
-         d="m 17.587814,149.35601 v -5.26286 h 8.069192"
-         id="path3901"
-         inkscape:label="bit-2 Data 8-bit" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 15.195885,148.85703 v -7.24969 l 10.375398,-0.0331"
-         id="path3904"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 13.97981,148.9038 v -8.51254 h 11.599497"
-         id="path3906" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="m 12.870975,148.91515 0.03307,-9.59965 H 25.67285"
-         id="path3908"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="M 11.921833,148.81025 V 138.19297 H 25.651126"
-         id="path3910"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="M 10.799301,148.81025 V 137.21076 H 25.651126"
-         id="path3912"
-         sodipodi:nodetypes="ccc" />
-      <path
-         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         d="M 9.583226,148.81025 V 136.08823 H 25.58498"
-         id="path3914"
-         sodipodi:nodetypes="ccc" />
+      <g
+         inkscape:groupmode="layer"
+         id="layer13"
+         inkscape:label="R/P"
+         style="display:inline">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:round"
+           d="m -22.596026,134.17057 h 20.1588053 v 14.63968"
+           id="path3888"
+           inkscape:label="R/P to 8-bit Mux" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+           d="m -50.939958,134.26411 h 28.063299 v -16.08963"
+           id="path3724"
+           inkscape:label="R/P to 4-bit Mux" />
+      </g>
+      <g
+         id="g4626"
+         inkscape:label="Clock"
+         transform="matrix(1.0065436,0,0,1,91.053508,16.569541)"
+         style="fill:#0000ff">
+        <path
+           style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+           d="m -58.712374,90.935953 c -4.605451,-0.03897 -4.618684,-0.03908 -4.618684,-0.03908 l -0.02504,0.49147 -1.71985,-0.833236 1.71238,-0.843731 0.05892,0.53181 c 0,0 -0.06395,0.04578 4.563131,0.05909 z"
+           id="path4620"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Clock-arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:7.63598;display:inline;fill:#0000ff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text4624"
+           inkscape:label="Clock-label"
+           transform="translate(-84.431942,-61.439501)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan5204"><tspan
+               style="fill:#000000;stroke:#000000"
+               id="tspan5202">CLK</tspan></tspan></text>
+      </g>
+      <g
+         id="g4634"
+         inkscape:label="Clock"
+         transform="matrix(1.0065436,0,0,1,91.053508,19.215376)"
+         style="fill:#0000ff">
+        <path
+           style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+           d="m -58.712374,90.935953 c -4.605451,-0.03897 -4.618684,-0.03908 -4.618684,-0.03908 l -0.02504,0.49147 -1.71985,-0.833236 1.71238,-0.843731 0.05892,0.53181 c 0,0 -0.06395,0.04578 4.563131,0.05909 z"
+           id="path4628"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Clock-arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:7.63598;display:inline;fill:#0000ff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text4632"
+           inkscape:label="Clock-label"
+           transform="translate(-84.431942,-61.439501)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan5208"><tspan
+               style="fill:#000000;stroke:#000000"
+               id="tspan5206">MI</tspan></tspan></text>
+      </g>
     </g>
     <g
        id="g34676"
        inkscape:label="8-bit by 2-Input Mux"
-       transform="translate(43.842443,47.394494)"
+       transform="translate(43.776297,47.361421)"
        style="display:inline">
       <g
          id="g3662"
@@ -274,7 +269,79 @@
            inkscape:label="RAM Data IN (8-bit) Label"><tspan
              x="32.430717"
              y="117.60285"
-             id="tspan4468">RAM Data (8-bit)</tspan></text>
+             id="tspan5210">RAM Data (8-bit)</tspan></text>
+        <path
+           style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           d="m 53.786589,90.683803 17.561256,-0.108417 -0.01,-3.378391 6.14228,6.475331 -6.03891,6.418404 -0.004,-0.0267 v 0 l -0.0229,-2.946168 -17.606205,0.04308 z"
+           id="path4644"
+           sodipodi:nodetypes="cccccccccc"
+           inkscape:label="RAM Data OUT Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="32.430717"
+           y="117.60285"
+           id="text4648"
+           transform="translate(22.125563,-23.108016)"
+           inkscape:label="RAM Data OUT (8-bit) Label"><tspan
+             x="32.430717"
+             y="117.60285"
+             id="tspan5212">RAM Data (8-bit)</tspan></text>
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
+           d="m 16.462848,148.88002 v -6.75781 h 9.21071"
+           id="path3892"
+           inkscape:label="bit-1 Data 8-bit"
+           sodipodi:nodetypes="ccc"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.505672;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 17.587814,149.35601 0,-6.42041 h 8.069192"
+           id="path3901"
+           inkscape:label="bit-2 Data 8-bit"
+           sodipodi:nodetypes="ccc"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 15.195885,148.85703 v -7.64657 l 10.375398,-0.0331"
+           id="path3904"
+           sodipodi:nodetypes="ccc"
+           inkscape:label="bit-3 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 13.97981,148.9038 v -8.51254 h 11.599497"
+           id="path3906"
+           inkscape:label="bit-4 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 12.870975,148.91515 0.03307,-9.30199 H 25.67285"
+           id="path3908"
+           sodipodi:nodetypes="ccc"
+           inkscape:label="bit-5 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="M 11.921833,148.81025 V 138.75521 H 25.651126"
+           id="path3910"
+           sodipodi:nodetypes="ccc"
+           inkscape:label="bit-6 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="M 10.799301,148.81025 V 137.97144 H 25.651126"
+           id="path3912"
+           sodipodi:nodetypes="ccc"
+           inkscape:label="bit-7 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 9.583226,148.81025 0,-11.69676 H 25.58498"
+           id="path3914"
+           sodipodi:nodetypes="ccc"
+           inkscape:label="bit-8 Data 8-bit"
+           transform="translate(28.183856,-46.121138)" />
       </g>
       <rect
          style="fill:#000000;fill-rule:evenodd;stroke-width:0.373967"
@@ -294,15 +361,15 @@
          transform="translate(-5.9290592,-3.9605907)"><tspan
            x="91.347206"
            y="110.59428"
-           id="tspan4472"><tspan
+           id="tspan5216"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4470">8-bit  2-Input
+             id="tspan5214">8-bit  2-Input
 </tspan></tspan><tspan
            x="91.347206"
            y="114.57629"
-           id="tspan4476"><tspan
+           id="tspan5220"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4474"> Multiplexer</tspan></tspan></text>
+             id="tspan5218"> Multiplexer</tspan></tspan></text>
     </g>
     <g
        id="g34652"
@@ -325,7 +392,7 @@
          transform="translate(86.719109,-42.757376)"><tspan
            x="25.975019"
            y="152.9971"
-           id="tspan4478">8-bits</tspan></text>
+           id="tspan5222">8-bits</tspan></text>
       <rect
          style="fill:#000000;fill-rule:evenodd;stroke-width:0.369704"
          id="rect34646"
@@ -344,14 +411,14 @@
          transform="translate(-5.9843631,-2.4197402)"><tspan
            x="91.347206"
            y="110.59428"
-           id="tspan4482"><tspan
+           id="tspan5226"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;display:inline;fill:#ffffff"
-             id="tspan4480">8-bit DIP </tspan></tspan><tspan
+             id="tspan5224">8-bit DIP </tspan></tspan><tspan
            x="91.347206"
            y="114.57629"
-           id="tspan4486"><tspan
+           id="tspan5230"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;display:inline;fill:#ffffff"
-             id="tspan4484">Switches</tspan></tspan></text>
+             id="tspan5228">Switches</tspan></tspan></text>
     </g>
     <g
        id="layer2"
@@ -374,7 +441,7 @@
          transform="translate(71.836511,-39.258032)"><tspan
            x="25.975019"
            y="152.9971"
-           id="tspan4488">4-bits</tspan></text>
+           id="tspan5232">4-bits</tspan></text>
       <rect
          style="fill:#000000;fill-rule:evenodd;stroke-width:0.273177"
          id="rect34634"
@@ -393,14 +460,14 @@
          transform="translate(-9.6259438,1.8396149)"><tspan
            x="91.347206"
            y="110.59428"
-           id="tspan4492"><tspan
+           id="tspan5236"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4490">4-bit DIP </tspan></tspan><tspan
+             id="tspan5234">4-bit DIP </tspan></tspan><tspan
            x="91.347206"
            y="114.57629"
-           id="tspan4496"><tspan
+           id="tspan5240"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4494">Switches</tspan></tspan></text>
+             id="tspan5238">Switches</tspan></tspan></text>
     </g>
     <g
        id="g34660"
@@ -425,15 +492,15 @@
          transform="translate(-3.8255839,0.23170292)"><tspan
            x="91.347206"
            y="110.59428"
-           id="tspan4500"><tspan
+           id="tspan5244"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4498">4-bit  2-Input
+             id="tspan5242">4-bit  2-Input
 </tspan></tspan><tspan
            x="91.347206"
            y="114.57629"
-           id="tspan4504"><tspan
+           id="tspan5248"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4502">  Multiplexer</tspan></tspan></text>
+             id="tspan5246">  Multiplexer</tspan></tspan></text>
     </g>
     <g
        id="g34696"
@@ -442,8 +509,52 @@
        style="display:inline">
       <g
          id="layer12"
-         inkscape:label="Data IN (Memory Address-Reg)"
-         transform="translate(56.573047,4.4757207)">
+         inkscape:label="Data IN/OUT (Memory Address-Reg)"
+         transform="translate(56.573047,8.1798876)">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:round"
+           d="m -14.892805,118.25929 v 8.20881 h 40.434822"
+           id="path3890"
+           inkscape:label="bit-1 Data 4-bit"
+           transform="translate(28.117711,-6.9958707)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m -13.849631,118.26803 v 7.0626 l 39.448311,0.0992"
+           id="path3894"
+           inkscape:label="bit-2 Data 4-bit"
+           sodipodi:nodetypes="ccc"
+           transform="translate(28.117711,-6.9958707)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.457006;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m -12.805001,118.2751 v 6.05512 l 38.374675,0.0662"
+           id="path3896"
+           inkscape:label="bit-3 Data 4-bit"
+           sodipodi:nodetypes="ccc"
+           transform="translate(28.117711,-6.9958707)" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m -11.763071,118.28526 v 4.77353 h 37.368043"
+           id="path3899"
+           inkscape:label="bit-4 Data 4-bit"
+           sodipodi:nodetypes="ccc"
+           transform="translate(28.117711,-6.9958707)" />
+        <path
+           style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           d="m 53.654298,115.07167 17.561256,-0.0934 -0.01,-2.91044 6.14228,5.57842 -6.03891,5.52937 -0.004,-0.0231 v 0 l -0.0229,-2.53808 -17.606205,0.0371 z"
+           id="path4651"
+           sodipodi:nodetypes="cccccccccc"
+           inkscape:label="Mem Addr Data OUT Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.11667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="32.430717"
+           y="117.60285"
+           id="text4658"
+           transform="translate(21.563325,1.101366)"
+           inkscape:label="Mem Addr Data OUT (8-bit) Label"><tspan
+             x="32.430717"
+             y="117.60285"
+             id="tspan5250">MemAddr Data (4-bit)</tspan></text>
         <path
            style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
            d="m 77.512182,110.18064 -17.561305,-0.0534 -0.01955,1.86192 -6.085776,-3.60818 6.094302,-3.49828 0.0034,0.0147 v 0 l -0.0027,1.62379 17.605685,0.0897 z"
@@ -460,7 +571,7 @@
            inkscape:label="IMemory Address IN (8-bit) Label"><tspan
              x="32.430717"
              y="117.60285"
-             id="tspan4506">Mem Addr (4-bit)</tspan></text>
+             id="tspan5252">Mem Addr (4-bit)</tspan></text>
       </g>
       <path
          style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
@@ -478,7 +589,7 @@
          transform="translate(58.684599,-39.176509)"><tspan
            x="25.975019"
            y="152.9971"
-           id="tspan4508">4-bits</tspan></text>
+           id="tspan5254">4-bits</tspan></text>
       <rect
          style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.296978"
          id="rect34690"
@@ -497,15 +608,15 @@
          transform="matrix(1.3325158,0,0,1.1309951,-28.829729,-12.620761)"><tspan
            x="91.347206"
            y="110.59428"
-           id="tspan4512"><tspan
+           id="tspan5258"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4510">Memory
+             id="tspan5256">Memory
 </tspan></tspan><tspan
            x="91.347206"
            y="114.10824"
-           id="tspan4516"><tspan
+           id="tspan5262"><tspan
              style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
-             id="tspan4514">Addr Reg</tspan></tspan></text>
+             id="tspan5260">Addr Reg</tspan></tspan></text>
     </g>
   </g>
 </svg>

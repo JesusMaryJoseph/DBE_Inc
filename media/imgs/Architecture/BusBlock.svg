@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="178.7836mm"
+   height="54.922035mm"
+   viewBox="0 0 178.7836 54.922035"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="BusBlock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="15.642376"
+     inkscape:cx="257.15402"
+     inkscape:cy="44.590412"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8">
+    <sodipodi:guide
+       position="45.77275,100.27579"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="49.982801,73.867274"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="59.742468,98.170754"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="83.758899,105.53835"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="102.79981,101.80671"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="115.2386,54.539303"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="49.025971,103.33764"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="120.78822,0.095683043"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="98.25487,101.08909"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="94.666759,88.315413"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="100.38769,32.882412"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="76.80885,49.627789"
+       orientation="0,-1"
+       id="guide28810"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="77.874465,49.864593"
+       orientation="0,-1"
+       id="guide28812"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="78.517217,49.188012"
+       orientation="1,0"
+       id="guide28814"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.98949,-106.39948)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.230341"
+       id="rect426"
+       width="76.737755"
+       height="54.922035"
+       x="77.401741"
+       y="106.39948"
+       inkscape:label="Block" />
+    <g
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="HLT-Signal"
+         transform="translate(1.25e-6,-19.050006)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 72.157949,126.65276 c 3.787633,0.0293 3.798519,0.0294 3.798519,0.0294 l 0.02057,-0.41701 1.414523,0.70555 -1.408224,0.71727 -0.04851,-0.45117 c 0,0 0.05259,-0.0389 -3.752827,-0.0464 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Halt Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="60.219204"
+           y="127.32661"
+           id="text1324"
+           inkscape:label="Halt-label"><tspan
+             sodipodi:role="line"
+             style="font-size:1.5875px;fill:#000000;stroke-width:0"
+             x="60.219204"
+             y="127.32661"
+             id="tspan1326">Count Out (CO)</tspan></text>
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="M 77.494211,126.95488 H 106.40113 V 129.306"
+           id="path28905" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g27791"
+         inkscape:label="CLK Signal"
+         transform="translate(90.72967,-25.977018)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.442733,151.26859 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path27785"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Clock Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="78.840981"
+           y="153.52626"
+           id="text27789"
+           inkscape:label="Clock-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="78.840981"
+             y="153.52626"
+             id="tspan27787">CLK</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g28172"
+         inkscape:label="NOT CLK Signal"
+         transform="translate(90.72967,-14.864511)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.442733,151.26859 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path28166"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="NOT Clock Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="78.840981"
+           y="153.52626"
+           id="text28170"
+           inkscape:label="NOT Clock-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="78.840981"
+             y="153.52626"
+             id="tspan28168">CLK</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+           id="rect28174"
+           width="7.9895296"
+           height="0.81330538"
+           x="79.262718"
+           y="148.97876"
+           inkscape:label="NOT" />
+      </g>
+    </g>
+    <g
+       id="layer4"
+       inkscape:label="BUS"
+       transform="translate(34.139185,-6.3781246)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.231926;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28368"
+         width="17.055702"
+         height="9.6842127"
+         x="81.235664"
+         y="136.34357"
+         inkscape:label="BUS Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:5.0846px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="84.399384"
+         y="143.13177"
+         id="text28362"
+         inkscape:label="BUS Label"><tspan
+           sodipodi:role="line"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.399384"
+           y="143.13177"
+           id="tspan28360">BUS</tspan></text>
+    </g>
+    <g
+       id="layer3"
+       inkscape:label="Data Out"
+       transform="translate(46.501934,11.645855)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.266609;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28344"
+         width="24.436451"
+         height="8.9319086"
+         x="82.952011"
+         y="135.21272"
+         inkscape:label="DataOut Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:5.0846px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="84.121063"
+         y="141.84006"
+         id="text28350"
+         inkscape:label="DataOut Label"><tspan
+           sodipodi:role="line"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.121063"
+           y="141.84006"
+           id="tspan28348">Data Out</tspan></text>
+    </g>
+    <g
+       id="layer2"
+       inkscape:label="PC Data In"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.138132,-31.204001)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.155323;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28176"
+         width="18.659334"
+         height="3.9701498"
+         x="82.896378"
+         y="116.93864"
+         inkscape:label="PC Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.08401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="85.99762"
+         y="120.12606"
+         id="text28235"
+         inkscape:label="PC Label"><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="85.99762"
+           y="120.12606"
+           id="tspan28237">PC Data</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:3.70417px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#919191;fill-opacity:1;stroke:#ffff00;stroke-width:0.97;stroke-linejoin:round"
+       x="85.982727"
+       y="116.97245"
+       id="text28441"><tspan
+         sodipodi:role="line"
+         id="tspan28439"
+         style="stroke-width:0.97"
+         x="85.982727"
+         y="116.97245" /></text>
+    <g
+       id="g28449"
+       inkscape:label="A-Reg Data In"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.138132,-22.722492)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.176492;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28443"
+         width="18.638165"
+         height="5.1319256"
+         x="82.90696"
+         y="116.94922"
+         inkscape:label="A-Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.08401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="83.54454"
+         y="120.53806"
+         id="text28447"
+         inkscape:label="A-Reg Label"><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="83.54454"
+           y="120.53806"
+           id="tspan28445">A-Reg Data</tspan></text>
+    </g>
+    <g
+       id="g28457"
+       inkscape:label="ALU Data In"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.138132,-23.094611)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.176492;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28451"
+         width="18.638165"
+         height="5.1319256"
+         x="82.90696"
+         y="123.99843"
+         inkscape:label="ALU Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.08401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="84.659828"
+         y="127.58727"
+         id="text28455"
+         inkscape:label="ALU Label"><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.659828"
+           y="127.58727"
+           id="tspan28453">ALU Data</tspan></text>
+    </g>
+    <g
+       id="g28465"
+       inkscape:label="RAM Data In"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.138132,-10.918843)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.176492;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28459"
+         width="18.638165"
+         height="5.1319256"
+         x="82.90696"
+         y="123.99843"
+         inkscape:label="RAM Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.08401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="84.659828"
+         y="127.58727"
+         id="text28463"
+         inkscape:label="RAM Label"><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.659828"
+           y="127.58727"
+           id="tspan28461">RAM Data</tspan></text>
+    </g>
+    <g
+       id="g28477"
+       inkscape:label="Instruction Data In"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.138132,-1.923009)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.230032;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28471"
+         width="18.584625"
+         height="8.7429152"
+         x="82.933731"
+         y="124.0252"
+         inkscape:label="Instruction Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.08401px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="84.659828"
+         y="127.58727"
+         id="text28475"
+         inkscape:label="Instruction Label"><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.659828"
+           y="127.58727"
+           id="tspan28473">Instruction</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.08401px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="84.659828"
+           y="131.44229"
+           id="tspan28539">    Data</tspan></text>
+    </g>
+    <g
+       id="layer13"
+       inkscape:label="74LS245s"
+       transform="translate(-6.4613477,-4.7698955)">
+      <g
+         id="layer14"
+         inkscape:label="PC 245">
+        <rect
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           id="rect28541"
+           width="9.7427654"
+           height="2.4695203"
+           x="111.98293"
+           y="115.09354"
+           inkscape:label="PC 245 Block" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="113.57289"
+           y="117.0218"
+           id="text28602"><tspan
+             sodipodi:role="line"
+             id="tspan28600"
+             style="font-size:1.5875px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="113.57289"
+             y="117.0218">74LS245</tspan></text>
+      </g>
+    </g>
+    <g
+       id="layer15"
+       inkscape:label="Arrows">
+      <g
+         inkscape:groupmode="layer"
+         id="layer16"
+         inkscape:label="One Arrow">
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:round"
+           d="m 101.96953,111.57532 h 3.45056 l -0.89647,-0.84572"
+           id="path28816" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:round"
+           d="m 105.40317,111.57532 -0.82035,0.82036"
+           id="path28818" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 115.31508,111.57532 h 14.6649 v 18.26769 l 0.7627,-1.32105"
+           id="path28826" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 129.97998,129.79226 -0.87956,-1.20093"
+           id="path28828"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -15,16 +15,222 @@
             color: black;
             height: 100vh;  
         }
+        table{
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        td {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+            min-height: 4rem;
+		}
+        td:nth-child(1){
+            width: 4rem;
+        }
+        td:nth-child(2){
+            width: calc(100% - 20rem);
+        }
+        td:nth-child(3){
+            width: 10rem;
+        }
+        td:nth-child(4){
+            width: 6rem;
+        }
+        thead tr:nth-child(1) td{
+            width: 100%;
+        }
+
+        .row-ellipses{
+            height: 5rem;
+        }
     </style>
 </head>
 <body>
     <div class="main-container">
         <div class="body-container">
-            <div id="computer-contents-id" class="contents computer-contents">
+            <div id="software-architecture-contents-id" class="contents computer-contents">
                 <label>Architecture Page for "Software"</label><br>
                 <label>"Instruction Set Architecture"</label>
+                <article>
+                    <p>The RAM for this 8-bit Computer is composed of two 74LS169 chips, where each 74LS169
+                        has a 4-bit address line ie (16 = 2<sup>4</sup> combinations). Consider that each
+                        each 74LS169 only has 64 bits of memory. The INPUTS(D<sub>1</sub>,D<sub>2</sub>,
+                        D<sub>3</sub>,D<sub>4</sub>) and OUTPUTS (O<sub>1</sub>,O<sub>2</sub>,
+                        O<sub>3</sub>,O<sub>4</sub>) are only 4-bits! (64bits/16). That is why two 74LS169s are 
+                        needed- one 74LS169 for the 4 LeastSignificantBits(LSB) and one 74LS169 for the 
+                        4 MostSignificantBits(MSB). <button>Click Here for RAM Schematic</button>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td width="100%">Instruction Set Architecture (ISA)</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>English</td>
+                                <td>Mnemonic</td>
+                                <td>Binary</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td></td>
+                                <td></td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>0001</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td>0010</td>
+                            </tr>
+                            <tr class="row-ellipses">,,,</tr>
+                            <tr>
+                                <td>14</td>
+                                <td></td>
+                                <td></td>
+                                <td>1110</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td></td>
+                                <td></td>
+                                <td>1111</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>The first command (operation) is "to do nothing"!
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td width="100%">Instruction Set Architecture (ISA)</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>English</td>
+                                <td>Mnemonic</td>
+                                <td>Binary</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>Do Nothing</td>
+                                <td>NOP</td>
+                                <td>0000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Notice: the Mnemonic is a 3 letter abbreviation of the English!
+                    </p>
+                    <p>The next 4 commands are needed to perform Addition(+) and Subtraction(+) 
+                        in the ALU. 
+                        <ol type="1">
+                            <li>LOAD from RAM into the 'A' Register of the ALU"!</li>
+                            <li>LOAD from RAM into the 'B' Register of the ALU" and ADD(+)!</li>
+                            <li>LOAD from RAM into the 'B' Register of the ALU" and SUBTRACT(-)!</li>
+                            <li>LOAD this # immediately into the 'A' Register</li>
+                        </ol>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td width="100%">Instruction Set Architecture (ISA)</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>English</td>
+                                <td>Mnemonic</td>
+                                <td>Binary</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>Do Nothing</td>
+                                <td>NOP</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>LOAD from RAM into the ALU 'A' Register</td>
+                                <td>LDA</td>
+                                <td>0001</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>LOAD from RAM into the ALU 'B' Register & Add</td>
+                                <td>ADD</td>
+                                <td>0010</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>LOAD from RAM into the ALU 'B' Register & Subtract</td>
+                                <td>SUB</td>
+                                <td>0011</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>STORE the contents of the 'A' Register into RAM!</td>
+                                <td>STA</td>
+                                <td>0100</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>LOAD a # immediately into the 'A' Register!</td>
+                                <td>LDI</td>
+                                <td>0101</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><u><strong>NOTE</strong></u>: Command's 1,2,3 & 4 will require the 4-bit RAM address of the number to be
+                        added to the Command's Binary number. eg 0010 1010 is the instruction to "Load the number in
+                        RAM address 1010 into the ALU 'B' Register" which is immediately ADDED to the contents of 
+                        the ALU 'A' Register. 0100 1010 will STORE the contents of the 'A' Register into RAM at address 1010.
+                    </p>
+                    <p><u><strong>NOTE</strong></u>: Command 5 requires the "NUMBER(0-15)" to be added to the 
+                        ALU 'A' Register. eg 0101 0110 is the 8-bit instruction to load the Number 3 (0110) 
+                        immediately into the 'A' Register. 
+                    </p>
+                    <p>Let's write a simple program:    
+                    </p>
+                    <p>
+                        In every Programming Language there is the capability to execute a set of statements a certain number of times before going to the next Statement. There is also 
+                        the ability to make a Decision as to which set of statements should be executed next. Following is an example of each of these:<br>
+                        <ul>
+                            For ( count = 1; count < 10; count++){<br>
+                                set of statements<br>
+                            }<br><br>
+                            
+                            If ( altitute < 1000){<br>
+                                set of first statements<br>
+                                }else{<br>
+                                    optional set of statements<br>
+                                }<br>
+                        </ul>
+                    </p>
+                    <p>The next 3 Commands will allow a programmer to execute a set of Commands as they see fit: 
+                    </p>
+                </article>
             </div>
         </div>
+        <div class="link-container">  
+            <button class="link-general link-previous" onclick="EduHTML_Manager.request('html/Education/Training/IntroductionArchitecture.html','intro-architecture-contents-id')">Introduction</button>
+            <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/HardwareArchitecture.html','hardware-architecture-contents-id')">Hardware</button>
+        </div>   
+        <!--<div class="bottom-fill">
+        </div> -->                        
     </div>
 </body>
 </html>

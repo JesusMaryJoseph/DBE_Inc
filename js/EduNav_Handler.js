@@ -86,11 +86,13 @@ let EduNavHandler = {
 		if(this.showingDropdown){	
 			this.hide(this.showingDropdown);
 		}
+		//alert("entering show.switch(selectedNav)");
 		switch(selectedNav){
 			case "packets":
+				//alert("this.packetsDropdown.classList.remove('hide-packets-dropdown');");
 				this.packetsDropdown.classList.remove('hide-packets-dropdown');
 				this.packetsDropdownHidden = false;
-				/*this.showingDropdown = "packets"; */
+				this.showingDropdown = "packets"; 
 				break;
 			case "training":
 				//alert("removing 'hide-training-dropdown'");

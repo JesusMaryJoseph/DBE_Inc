@@ -25,6 +25,10 @@
 	<script src="js/EduNav_Handler.js"></script>
 	<script src="js/HTML_Manager.js"></script>
 
+	
+    <script>
+    </script>
+
 	<style>
         .edu-contents{
 			height: 85vh;
@@ -39,11 +43,6 @@
 			/*border: 3px solid green; */
         }
 	</style>
-    <script>
-    </script>
-
-	
-	
 	
 </head>
 <body onload="eduInit()">
@@ -112,11 +111,14 @@
 			<div class="architecture-container">
 				<label class="training-dropdown-label" onclick="EduNavHandler.show('architecture')">Architecture</label>
 				<div id="architecture-dropdown-id" class="architecture-dropdown hide-second-dropdown">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/HardwareArchitecture.html'); 
-							EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Hardware:
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/IntroductionArchitecture.html'); 
+							EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Intro:
 					</label>
 					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/SoftwareArchitecture.html'); 
 						EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Software:
+					</label>
+					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/HardwareArchitecture.html'); 
+							EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Hardware:
 					</label>
 				</div>
 			</div>
@@ -166,7 +168,7 @@
 
 	<nav id="testing-container-id" class="testing-container" onmouseleave = "EduNavHandler.hide('testing')">
 		<div class="testing-label-container">
-			<label class="testing-label" onclick="EduNavHandler.show('testing')">Testing</label>
+			<label class="testing-label" onclick="EduNavHandler.request('show')">Testing</label>
 		</div>
 		<div id="testing-dropdown-id" class="testing-dropdown hide-testing-dropdown">
 			<div class="introduction-container">

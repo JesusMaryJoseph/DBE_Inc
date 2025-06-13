@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+    </script>
+    
+    <style>
+        .edu-contents{
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color: black;
+            height: 100vh;  
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="body-container">
+            <div id="intro-architecture-contents-id" class="contents computer-contents">
+                <label>Introduction Page for "Architecture"</label>
+                <article>
+                    <p>Consider the following scenario: Two people are having a discussion about building a computer. The first person is a Computer Programmer and 
+                        the second person is an Electrical(Digital) Engineer. Each person is well versed in their respective fields and knows next to nothing about 
+                        the other field of interest. It looks like the two people are having a conversation where each is speaking in a language foreign to the other!
+                    </p>
+                    <p>The Computer Programmer is using terms like: "data", "data structures", "subroutines", "object oriented programming" and the like. The Engineer, 
+                        on the other hand, is using terms like: "Voltages", "Current", "Transistors", "ICs" etc. It would appear that nothing good is going
+                        to come about from this discussion.
+                    </p>
+                    <p>But what's happening here is a discussion that is centered about "the language that the computer programmer would like to have" and "the electrical components" 
+                        the Engineer feels can be built. For example: The Computer Programmer needs to STORE both the language and the data while the Engineer is thinking about 
+                        "filp-flops", "registers", RandomAccessMemory(RAM). The Computer Programmer is thinking about memory and the Engineer is saying: I've got you covered.
+                        The Computer Programmer wants to add numbers and perform basic Logic operations (NOT, OR, AND etc). The Engineer is thinking about Intergrated Circuits
+                        (ICs): 4-bit arithmetic IC (74LS283), HEX NOT Gates (74LS04), Quad 2-Input OR Gate (74LS32), Quad 2-Input AND Gate (74LS08) etc.
+                    </p>
+                    <p>In essence the two are creating a CONTRACT between themselves: composed of:
+                        <ol type="1">
+                            <li>the Language(Software) of this computer</li>
+                            <li>the Electrical components(Hardware) needed to execute the language</li>
+                        </ol>
+                    </p>
+                    <p>The CONTRACT is called the "Instruction Set Architecture" (ISA). Every Computer has a specific ISA. All PC's have the x86 ISA, which is comprised of
+                    approximately 1000 commands. Proceed to the "Software Architecture" first to see which commands your computer will have and then go to the "Hardware Architecture" 
+                    to see the Electrical Components that will be used to build your 8-bit Computer.    
+                    </p>
+                </article>
+                <div class="link-container">  
+                    <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/SoftwareArchitecture.html','software-architecture-contents-id')">Software</button>
+                </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>

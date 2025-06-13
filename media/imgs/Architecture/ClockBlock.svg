@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="178.7836mm"
+   height="54.922035mm"
+   viewBox="0 0 178.7836 54.922035"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="ClockBlock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="5.5304152"
+     inkscape:cx="323.84549"
+     inkscape:cy="86.340715"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="45.77275,100.27579"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="90.420427,62.193943"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="59.742468,98.170754"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="83.758899,105.53835"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="102.79981,101.80671"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="87.071522,45.975676"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="49.025971,103.33764"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="120.78822,0.095683043"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="86.497424,70.614046"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="82.52658,56.070232"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="82.478739,42.291881"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="78.555737,42.578929"
+       orientation="1,0"
+       id="guide25972"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="94.295589,43.774967"
+       orientation="1,0"
+       id="guide25974"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="98.4578,48.559116"
+       orientation="1,0"
+       id="guide25976"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="102.42864,43.918491"
+       orientation="1,0"
+       id="guide25978"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="73.388855,38.75161"
+       orientation="0,-1"
+       id="guide25980"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="88.076195,17.366461"
+       orientation="0,-1"
+       id="guide25982"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="86.784473,13.347776"
+       orientation="0,-1"
+       id="guide25984"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.98949,-106.39948)">
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.230341"
+       id="rect426"
+       width="76.737755"
+       height="54.922035"
+       x="77.503227"
+       y="106.39948"
+       inkscape:label="Block" />
+    <g
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer8"
+         inkscape:label="HLT-Signal"
+         transform="translate(1.25e-6,-19.050006)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.203524,151.07722 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path1271"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Halt Arrow"
+           transform="translate(1.25e-6)" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="41.850033"
+           y="152.9971"
+           id="text1324"
+           inkscape:label="Halt-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="41.850033"
+             y="152.9971"
+             id="tspan1326">Halt (HLT)</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g27791"
+         inkscape:label="CLK Signal"
+         transform="translate(90.72967,-25.977018)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.442733,151.26859 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path27785"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Clock Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="78.840981"
+           y="153.52626"
+           id="text27789"
+           inkscape:label="Clock-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="78.840981"
+             y="153.52626"
+             id="tspan27787">CLK</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="g28172"
+         inkscape:label="NOT CLK Signal"
+         transform="translate(90.72967,-14.864511)">
+        <path
+           style="display:inline;fill:#ff0000;stroke:#9b9b9b;stroke-width:0"
+           d="m 63.442733,151.26859 c 10.451689,0.0808 10.481728,0.081 10.481728,0.081 l 0.05675,-1.1507 3.903271,1.94691 -3.885887,1.97926 -0.133856,-1.24496 c 0,0 0.145116,-0.10732 -10.355646,-0.1282 z"
+           id="path28166"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="NOT Clock Arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+           x="78.840981"
+           y="153.52626"
+           id="text28170"
+           inkscape:label="NOT Clock-label"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;stroke-width:0"
+             x="78.840981"
+             y="153.52626"
+             id="tspan28168">CLK</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+           id="rect28174"
+           width="7.9895296"
+           height="0.81330538"
+           x="79.262718"
+           y="148.97876"
+           inkscape:label="NOT" />
+      </g>
+    </g>
+    <g
+       id="layer4"
+       inkscape:label="AutoManual"
+       transform="translate(36.51251,-12.700002)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.565814;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28368"
+         width="22.845524"
+         height="43.030735"
+         x="94.463341"
+         y="124.78935"
+         inkscape:label="Auto-Manual Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:5.0846px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="97.699318"
+         y="138.53899"
+         id="text28362"
+         inkscape:label="AutoManualSwitch Label"><tspan
+           sodipodi:role="line"
+           id="tspan28358"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="97.699318"
+           y="138.53899">  Auto </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="97.699318"
+           y="144.89473"
+           id="tspan25970">Manual</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="97.699318"
+           y="151.25049"
+           id="tspan28360">Control</tspan></text>
+    </g>
+    <g
+       id="layer3"
+       inkscape:label="ManualButton"
+       transform="translate(-3.7041668,3.7041668)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.360326;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28344"
+         width="22.237709"
+         height="17.928076"
+         x="82.998871"
+         y="135.25958"
+         inkscape:label="555 Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:5.0846px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="85.986885"
+         y="143.13177"
+         id="text28350"
+         inkscape:label="Manual Button Label"><tspan
+           sodipodi:role="line"
+           id="tspan28346"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="85.986885"
+           y="143.13177">Manual</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:5.0846px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="85.986885"
+           y="149.48752"
+           id="tspan28348">Button</tspan></text>
+    </g>
+    <g
+       id="layer2"
+       inkscape:label="555Timer"
+       style="display:inline"
+       transform="matrix(1.2010867,0,0,1.2010867,-20.357909,-28.381353)">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
+         id="rect28176"
+         width="18.514658"
+         height="14.926546"
+         x="-7.7609591"
+         y="131.98921"
+         inkscape:label="555 Block"
+         transform="translate(90.729669,-16.452012)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="85.456467"
+         y="122.09149"
+         id="text28235"
+         inkscape:label="555 Timer Label"><tspan
+           sodipodi:role="line"
+           id="tspan28233"
+           style="font-size:4.23333px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="85.456467"
+           y="122.09149">LM 555</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:4.23333px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+           x="85.456467"
+           y="127.38316"
+           id="tspan28237"> Timer</tspan></text>
+    </g>
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 101.77042,122.71343 h 2.77481 v -3.6838 h 4.06652 v 3.63596 h 3.77948 v -3.63596 h 3.923 v 3.54028 h 3.97085 v -3.54028 h 4.16221 v 3.54028 h 3.87516 v -3.54028 h 2.24855"
+       id="path25986" />
+    <path
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 101.72258,147.97374 h 10.90786 v -3.923 h 3.77947 v 3.82732 h 14.35245"
+       id="path26459" />
+  </g>
+</svg>

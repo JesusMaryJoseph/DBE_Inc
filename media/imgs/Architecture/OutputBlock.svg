@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="99.509758mm"
+   height="44.34903mm"
+   viewBox="0 0 99.509748 44.349029"
+   version="1.1"
+   id="svg253"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="OutputBlock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview255"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="171.38501"
+     inkscape:cy="114.19775"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg253">
+    <sodipodi:guide
+       position="71.530513,41.058962"
+       orientation="0,-1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.72914506,45.32474"
+       orientation="1,0"
+       id="guide887"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="70.571399,44.38279"
+       orientation="0,-1"
+       id="guide992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="61.582134,96.95592"
+       orientation="0,-1"
+       id="guide994"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="80.623044,93.22428"
+       orientation="0,-1"
+       id="guide996"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="63.262285,40.083311"
+       orientation="0,-1"
+       id="guide998"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.849209,94.75521"
+       orientation="0,-1"
+       id="guide1051"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="68.438196,0.94151652"
+       orientation="0,-1"
+       id="guide1053"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="93.325435,6.1271376"
+       orientation="1,0"
+       id="guide1055"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="91.173915,4.7239726"
+       orientation="1,0"
+       id="guide1283"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="103.33468,12.301064"
+       orientation="0,-1"
+       id="guide1320"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="85.239236,23.530318"
+       orientation="1,0"
+       id="guide34710"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="113.43746,13.423595"
+       orientation="0,-1"
+       id="guide36987"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="59.310071,3.3558395"
+       orientation="0,-1"
+       id="guide36992"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="94.447967,8.2786566"
+       orientation="1,0"
+       id="guide40123"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="95.570499,7.0158086"
+       orientation="1,0"
+       id="guide40309"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="69.67843,37.470551"
+       orientation="0,-1"
+       id="guide40699"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="92.249675,4.5368836"
+       orientation="1,0"
+       id="guide40701"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="70.505253,39.074587"
+       orientation="0,-1"
+       id="guide40703"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="68.17361,37.520162"
+       orientation="1,0"
+       id="guide5426"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="19.854085,41.72042"
+       orientation="0,-1"
+       id="guide5428"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs250" />
+  <rect
+     style="display:inline;fill:#919191;fill-opacity:1;fill-rule:evenodd;stroke-width:0.204944"
+     id="rect426"
+     width="76.737755"
+     height="43.478806"
+     x="22.772003"
+     y="0.87022471"
+     inkscape:label="Background (Gray)" />
+  <path
+     style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+     d="M 0.0160206,2.770185 16.89778,2.797808 16.907848,1.1364666e-6 22.774951,5.4034624 l -5.841999,5.2748536 -0.0033,-0.0222 v 0 L 16.924592,8.2161709 5.014883e-7,8.1341509 Z"
+     id="path3656"
+     sodipodi:nodetypes="cccccccccc"
+     inkscape:label="RAM Data IN Arrow" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:2.38125px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:36.0962;display:inline;fill:#ffffff;stroke:#9b9b9b;stroke-width:0"
+     x="32.430717"
+     y="117.60285"
+     id="text3660"
+     transform="translate(-30.562339,-111.43627)"
+     inkscape:label="RAM Data IN (8-bit) Label"><tspan
+       x="32.430717"
+       y="117.60285"
+       id="tspan2334">BUS Data (8-bit)</tspan></text>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.166249,-108.39007)">
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="ControlSignals"
+       style="display:inline"
+       transform="translate(128.58764)">
+      <g
+         id="g4626"
+         inkscape:label="Clock"
+         transform="matrix(-1.0065425,0.00151631,-0.00150645,-0.99999887,-123.02887,213.30379)"
+         style="fill:#0000ff">
+        <path
+           style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+           d="m -58.712374,90.935953 c -4.605451,-0.03897 -4.618684,-0.03908 -4.618684,-0.03908 l -0.02504,0.49147 -1.71985,-0.833236 1.71238,-0.843731 0.05892,0.53181 c 0,0 -0.06395,0.04578 4.563131,0.05909 z"
+           id="path4620"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="Clock-arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:7.63598;display:inline;fill:#0000ff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text4624"
+           inkscape:label="Clock-label"
+           transform="matrix(-0.99995594,-0.00944902,0.00932656,-0.99995594,-27.231092,242.55888)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan2338"><tspan
+               style="fill:#000000;stroke:#000000"
+               id="tspan2336">CLK</tspan></tspan></text>
+      </g>
+      <g
+         id="g4634"
+         inkscape:label="OUTPUT IN"
+         transform="matrix(-1.0065425,0.00151631,-0.00150645,-0.99999887,-123.03285,210.65796)"
+         style="display:inline;fill:#0000ff">
+        <path
+           style="display:inline;fill:#0000ff;stroke:#9b9b9b;stroke-width:0"
+           d="m -58.712374,90.935953 c -4.605451,-0.03897 -4.618684,-0.03908 -4.618684,-0.03908 l -0.02504,0.49147 -1.71985,-0.833236 1.71238,-0.843731 0.05892,0.53181 c 0,0 -0.06395,0.04578 4.563131,0.05909 z"
+           id="path4628"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:label="OI-arrow" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:7.63598;display:inline;fill:#0000ff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+           x="25.975019"
+           y="152.9971"
+           id="text4632"
+           inkscape:label="OI-Label"
+           transform="matrix(-0.99999994,3.4641184e-4,-3.4192236e-4,-0.99999994,-28.88528,242.27235)"><tspan
+             x="25.975019"
+             y="152.9971"
+             id="tspan2342"><tspan
+               style="fill:#000000;stroke:#000000"
+               id="tspan2340">OI</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g34676"
+       inkscape:label="7-Segment Display"
+       transform="translate(43.776297,47.361421)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.47356"
+         id="rect34670"
+         width="31.288336"
+         height="19.77063"
+         x="72.548645"
+         y="84.68425"
+         inkscape:label="7-Segment Display  Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:31.9815;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34674"
+         inkscape:label="7-Segment Display Label"
+         transform="translate(-13.370465,-18.181945)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan2346"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan2344">Four 7-Segment
+</tspan></tspan><tspan
+           x="91.347206"
+           y="114.57629"
+           id="tspan2350"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan2348">      Display</tspan></tspan></text>
+    </g>
+    <g
+       id="g34652"
+       inkscape:label="Display Selector"
+       transform="translate(-6.7799479,36.214868)"
+       style="display:inline">
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.534173"
+         id="rect34646"
+         width="35.787224"
+         height="21.993366"
+         x="77.751907"
+         y="93.587509"
+         inkscape:label="Display Selector Block" />
+      <g
+         id="g1543"
+         inkscape:label="74LS139"
+         style="display:inline"
+         transform="translate(22.754173)">
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.321535;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1535"
+           width="10.859454"
+           height="7.320652"
+           x="78.48214"
+           y="104.21641"
+           inkscape:label="74LS139 Block" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.11667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#d38d5f;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           x="79.628922"
+           y="107.28141"
+           id="text1541"
+           inkscape:label="74LS139 Label"><tspan
+             sodipodi:role="line"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="107.28141"
+             id="tspan1537">74LS139</tspan><tspan
+             sodipodi:role="line"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="109.92725"
+             id="tspan1539">Decoder</tspan></text>
+      </g>
+      <g
+         id="g1474"
+         inkscape:label="FF107"
+         style="display:inline"
+         transform="translate(10.583334)">
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.321535;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1466"
+           width="10.859454"
+           height="7.320652"
+           x="78.48214"
+           y="104.21641"
+           inkscape:label="FF107 Block" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.11667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#d38d5f;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           x="79.628922"
+           y="107.28141"
+           id="text1472"
+           inkscape:label="FF107 Label"><tspan
+             sodipodi:role="line"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="107.28141"
+             id="tspan1470">74LS107</tspan><tspan
+             sodipodi:role="line"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="109.92725"
+             id="tspan1533">FlipFlop</tspan></text>
+      </g>
+      <g
+         id="layer3"
+         inkscape:label="LM555">
+        <rect
+           style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
+           id="rect362"
+           width="9.4257812"
+           height="7.3421874"
+           x="78.471375"
+           y="104.20564"
+           inkscape:label="LM555 Block" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:2.11667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#d38d5f;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           x="79.628922"
+           y="107.28141"
+           id="text1083"
+           inkscape:label="LM Clock Label"><tspan
+             sodipodi:role="line"
+             id="tspan1081"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="107.28141">LM555</tspan><tspan
+             sodipodi:role="line"
+             style="font-size:2.11667px;fill:#ffffff;stroke-width:0;stroke-dasharray:none"
+             x="79.628922"
+             y="109.92725"
+             id="tspan1291">Clock</tspan></text>
+      </g>
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 119.05949,105.26567 3.96717,2.60943 -3.99882,2.61355 z"
+         id="path6085"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="Data Output arrow" />
+      <path
+         style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:6.28634e-09;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 113.59476,106.88453 v 2.01745 h 5.42396 v -2.03399 z"
+         id="path6087"
+         inkscape:label="Data Output arrow leg" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:9.48803;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text6095"
+         inkscape:label="Data Output 4-bit Label"
+         transform="translate(88.615292,-44.621272)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan2352">4-bits</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:7.9375e-09;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         x="83.696892"
+         y="96.797302"
+         id="text5678"
+         inkscape:label="Display Selector Label"><tspan
+           sodipodi:role="line"
+           id="tspan5676"
+           style="font-size:3.175px;fill:#ffffff;fill-opacity:1;stroke-width:7.9375e-09"
+           x="83.696892"
+           y="96.797302">7-Seg Display </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.175px;fill:#ffffff;fill-opacity:1;stroke-width:7.9375e-09"
+           x="83.696892"
+           y="100.76605"
+           id="tspan6091">    Selector</tspan></text>
+    </g>
+    <g
+       id="layer2"
+       inkscape:label="Output Register"
+       transform="translate(-8.009371,2.1939366)"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 123.7947,111.24078 3.96717,2.60943 -3.99882,2.61355 z"
+         id="path3647"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="Data Output arrow" />
+      <path
+         style="fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:1e-08;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 108.61734,111.6636 v 2.01745 h 13.72526 v -2.03399 z"
+         id="path5513"
+         transform="translate(1.411324,1.1960377)"
+         inkscape:label="Data Output arrow leg" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:9.48803;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text3651"
+         inkscape:label="Data Output label"
+         transform="translate(89.150183,-38.546964)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan2354">8-bits</tspan></text>
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.390621"
+         id="rect34634"
+         width="31.050442"
+         height="13.554945"
+         x="78.997864"
+         y="107.64336"
+         inkscape:label="Output Reg Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34642"
+         inkscape:label="Output Reg Label"
+         transform="translate(-3.3090167,1.4427399)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan2358"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan2356"> Output
+</tspan></tspan><tspan
+           x="91.347206"
+           y="114.57629"
+           id="tspan2362"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan2360">Register</tspan></tspan></text>
+    </g>
+    <g
+       id="g34696"
+       inkscape:label="EEPROM"
+       transform="translate(37.331908,2.2059574)"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#ff7f2a;stroke:#9b9b9b;stroke-width:0"
+         d="m 98.765399,125.94541 -2.653692,3.9377 -2.568606,-4.02784 z"
+         id="path5783"
+         sodipodi:nodetypes="cccc"
+         inkscape:label="Data Output arrow" />
+      <path
+         style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:1e-08;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 97.300796,112.16211 -2.017324,-0.0226 -0.153699,13.7244 2.033863,0.0228 z"
+         id="path5785"
+         inkscape:label="Data Output arrow leg" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:1.5875px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;inline-size:9.48803;display:inline;fill:#ffffff;fill-opacity:1;stroke:#9b9b9b;stroke-width:0"
+         x="25.975019"
+         y="152.9971"
+         id="text38380"
+         inkscape:label="EEPROM DataOutput-label"
+         transform="translate(71.483818,-28.692394)"><tspan
+           x="25.975019"
+           y="152.9971"
+           id="tspan2364">8-bits</tspan></text>
+      <rect
+         style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:0.377206"
+         id="rect34690"
+         width="27.884274"
+         height="14.075156"
+         x="82.401924"
+         y="107.64336"
+         inkscape:label="EEPROM Block" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:2.80181px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';white-space:pre;inline-size:20.8856;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="91.347206"
+         y="110.59428"
+         id="text34694"
+         inkscape:label="EEPROM Label"
+         transform="matrix(1.3325158,0,0,1.1309951,-32.103948,-10.437948)"><tspan
+           x="91.347206"
+           y="110.59428"
+           id="tspan2368"><tspan
+             style="font-weight:normal;-inkscape-font-specification:Arial;fill:#ffffff"
+             id="tspan2366">EEPROM</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
