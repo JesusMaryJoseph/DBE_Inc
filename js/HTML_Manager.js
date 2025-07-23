@@ -585,6 +585,8 @@ let PracticeTruthTableManager = {
         //alert("contentId = " + contentId);
         // alert("targetEdu = " + targetEdu);
         // alert("requestingEle = " + requestingEle);
+            //Close Nav "training"
+            TrainingNavEventHandler.closeDropDown("training");
             this.requestedFile = HTMLsourceFile;
             this.load(contentId);
         },

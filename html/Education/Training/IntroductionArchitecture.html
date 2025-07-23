@@ -9,11 +9,22 @@
     </script>
     
     <style>
-        .edu-contents{
+       /* .edu-contents{
             background-image: url("media/imgs/low-noise-darker.png");
             background-size: cover;
             color: black;
             height: 100vh;  
+        } */
+        .edu-contents{
+			height: 85vh;
+			width:93vw;
+			position: relative;
+			/*left: 2rem;*/
+            background-image: url("media/imgs/low-noise-darker.png");
+            background-size: cover;
+            color:  black;
+			overflow: auto;
+			/*border: 3px solid green;*/ 
         }
     </style>
 </head>
@@ -48,7 +59,7 @@
                     to see the Electrical Components that will be used to build your 8-bit Computer.    
                     </p>
                 </article>
-                <div class="link-container">  
+                <div class="link-container"> 
                     <button class="link-general link-next" onclick="EduHTML_Manager.request('html/Education/Training/SoftwareArchitecture.html','software-architecture-contents-id')">Software</button>
                 </div>   
             </div>
