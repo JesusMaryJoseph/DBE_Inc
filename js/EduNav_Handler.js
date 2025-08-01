@@ -35,53 +35,53 @@ let EduNavHandler = {
 				this.packetsDropdown.classList.add('hide-packets-dropdown');
 				break;
 			case "training":
-				//alert("adding 'hide-second-dropdown' to 'training dropdown")
-				this.trainingDropdown.classList.add('hide-training-dropdown');
-				this.introductionDropdown.classList.add('hide-second-dropdown');
-				this.architectureDropdown.classList.add('hide-second-dropdown');
-				this.techDropdown.classList.add('hide-second-dropdown');
-				this.mediaArtsDropdown.classList.add('hide-second-dropdown');
+				//alert("adding 'menu-dd-lev-2-hidden' to 'training dropdown")
+				this.trainingDropdown.classList.add('menu-dd-lev-1-hidden'); /* hide-training-dropdown */
+				this.introductionDropdown.classList.add('menu-dd-lev-2-hidden'); /* menu-dd-lev-2-hidden */
+				this.architectureDropdown.classList.add('menu-dd-lev-2-hidden');
+				this.techDropdown.classList.add('menu-dd-lev-2-hidden');
+				this.mediaArtsDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "introduction":
-				//alert("adding 'hide-second-dropdown' to 'introduction dropdown")
-				this.introductionDropdown.classList.add('hide-second-dropdown');
+				//alert("adding 'menu-dd-lev-2-hidden' to 'introduction dropdown")
+				this.introductionDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "architecture":
 				//alert("in hide architecture");
-				this.architectureDropdown.classList.add('hide-second-dropdown');
+				this.architectureDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "hardware":
 				//alert("in hide architecture");
-				this.hardwareDropdown.classList.add('hide-second-dropdown');
+				this.hardwareDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "tech":
 				alert("in hide tech");
-				this.techDropdown.classList.add('hide-second-dropdown');
+				this.techDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "media-arts":
-				this.mediaArtsDropdown.classList.add('hide-second-dropdown');
+				this.mediaArtsDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "testing":
 				this.testingDropdown.classList.add('hide-testing-dropdown');
-				this.testIntroductionDropdown.classList.add('hide-second-dropdown');
-				this.testArchitectureDropdown.classList.add('hide-second-dropdown');
-				this.testTechDropdown.classList.add('hide-second-dropdown');
-				this.testMediaArtsDropdown.classList.add('hide-second-dropdown');
+				this.testIntroductionDropdown.classList.add('menu-dd-lev-2-hidden');
+				this.testArchitectureDropdown.classList.add('menu-dd-lev-2-hidden');
+				this.testTechDropdown.classList.add('menu-dd-lev-2-hidden');
+				this.testMediaArtsDropdown.classList.add('menu-dd-lev-2-hidden');
 				break;
 			case "test-introduction":
-				this.testIntroductionDropdown.classList.add('hide-second-dropdown');
+				this.testIntroductionDropdown.classList.add('menu-dd-lev-2-hidden');
 				//this.testIntroductionDropdownHidden = true;
 				break;
 			case "test-architecture":
-				this.testArchitectureDropdown.classList.add('hide-second-dropdown');
+				this.testArchitectureDropdown.classList.add('menu-dd-lev-2-hidden');
 				//this.testArchitectureDropdownHidden = true;
 				break;
 			case "test-tech":
-				this.testTechDropdown.classList.add('hide-second-dropdown');
+				this.testTechDropdown.classList.add('menu-dd-lev-2-hidden');
 				//this.testTechDropdownHidden = true;
 				break;
 			case "test-media-arts":
-				this.testMediaArtsDropdown.classList.add('hide-second-dropdown');
+				this.testMediaArtsDropdown.classList.add('menu-dd-lev-2-hidden');
 				//this.testMediaArtsDropdownHidden = true;
 				break;
 			default: alert("no such " + selectedNav);
@@ -108,28 +108,28 @@ let EduNavHandler = {
 				this.trainingDropdownHidden = false;
 				break;
 			case "introduction":
-				this.introductionDropdown.classList.remove('hide-second-dropdown');
+				this.introductionDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.introductionDropdownHidden = false;
 				this.showingDropdown = "introduction"; 
 				break;
 			case "architecture":
-				this.architectureDropdown.classList.remove('hide-second-dropdown');
+				this.architectureDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.architectureDropdownHidden = false;
 				this.showingDropdown = "architecture"; 
 				break;
 			case "hardware":
 				//alert("in show 'hardware'");
-				this.hardwareDropdown.classList.remove('hide-second-dropdown');
+				this.hardwareDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.hardwareDropdownHidden = false;
 				this.showingDropdown = "hardware"; 
 				break;
 			case "tech":
-				this.techDropdown.classList.remove('hide-second-dropdown');
+				this.techDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.techDropdownHidden = false;
 				this.showingDropdown = "tech"; 
 				break;
 			case "media-arts":
-				this.mediaArtsDropdown.classList.remove('hide-second-dropdown');
+				this.mediaArtsDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.mediaArtsDropdownHidden = false;
 				this.showingDropdown = "media-arts";
 				break;
@@ -138,22 +138,22 @@ let EduNavHandler = {
 				this.testingDropdownHidden = false;
 				break;
 			case "test-introduction":
-				this.testIntroductionDropdown.classList.remove('hide-second-dropdown');
+				this.testIntroductionDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.testIntroductionDropdownHidden = false;
 				this.showingDropdown = "test-introduction"; 
 				break;
 			case "test-architecture":
-				this.testArchitectureDropdown.classList.remove('hide-second-dropdown');
+				this.testArchitectureDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.testArchitectureDropdownHidden = false;
 				this.showingDropdown = "test-architecture"; 
 				break;
 			case "test-tech":
-				this.testTechDropdown.classList.remove('hide-second-dropdown');
+				this.testTechDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.testTechDropdownHidden = false;
 				this.showingDropdown = "test-tech"; 
 				break;
 			case "test-media-arts":
-				this.testMediaArtsDropdown.classList.remove('hide-second-dropdown');
+				this.testMediaArtsDropdown.classList.remove('menu-dd-lev-2-hidden');
 				this.testMediaArtsDropdownHidden = false;
 				this.showingDropdown = "test-media-arts";
 				break;
@@ -177,18 +177,18 @@ let EduNavHandler = {
 		this.packetsDropdown = document.getElementById("packets-dropdown-id");
 		this.videosDropdown = document.getElementById("videos-dropdown-id");
 		this.datasheetsDropdown = document.getElementById("datasheets-dropdown-id");
-		this.trainingDropdown = document.getElementById("training-dropdown-id");
-		this.testingDropdown = document.getElementById("testing-dropdown-id");
+		this.trainingDropdown = document.getElementById("training-menu-dd-id");
+		this.testingDropdown = document.getElementById("testing-menu-dd-id");
 		//alert("this.testingDropdown.classList = " + this.testingDropdown.classList);
-		this.introductionDropdown = document.getElementById("introduction-dropdown-id");
-		this.architectureDropdown = document.getElementById("architecture-dropdown-id");
-		this.hardwareDropdown = document.getElementById("hardware-dropdown-id");
-		this.techDropdown = document.getElementById("tech-dropdown-id");
-		this.mediaArtsDropdown = document.getElementById("media-arts-dropdown-id");
-		this.testIntroductionDropdown = document.getElementById("test-introduction-dropdown-id");
-		this.testArchitectureDropdown = document.getElementById("test-architecture-dropdown-id");
-		this.testTechDropdown = document.getElementById("test-tech-dropdown-id");
-		this.testMediaArtsDropdown = document.getElementById("test-media-arts-dropdown-id");
+		this.introductionDropdown = document.getElementById("training-menu-intro-dd-id");
+		this.architectureDropdown = document.getElementById("training-arch-intro-dd-id");
+		/*this.hardwareDropdown = document.getElementById("training-hardware-dropdown-id");*/
+		this.techDropdown = document.getElementById("training-menu-tech-dd-id");
+		this.mediaArtsDropdown = document.getElementById("training-media-arts-dd-id");
+		this.testIntroductionDropdown = document.getElementById("testing-menu-intro-dd-id");
+		this.testArchitectureDropdown = document.getElementById("testing-arch-intro-dd-id");
+		this.testTechDropdown = document.getElementById("testing-menu-tech-dd-id");
+		this.testMediaArtsDropdown = document.getElementById("testing-menu-media-arts-dd-id");
 		//alert("leaving EduNavHandler.init()");
 	}
 		
@@ -425,9 +425,9 @@ let TrainingNavEventHandler = {
 
 	init: function(){
 		// For Main Training DropDown
-		this.trainingNavContainerEle = document.getElementById("training-nav-container-id");
-		this.trainingLabelEle = document.getElementById("training-nav-label-id");
-		this.trainingDropdownEle = document.getElementById("training-nav-dropdown-id");
+		this.trainingNavContainerEle = document.getElementById("training-menu-container-id");
+		this.trainingLabelEle = document.getElementById("training-menu-label-id");
+		this.trainingDropdownEle = document.getElementById("training-menu-dd-id");
 
 		this.trainingNavContainerEle.addEventListener("mouseleave", function(event){
 			TrainingNavEventHandler.closeDropDown(event.target.id, "mouseleave");
@@ -436,9 +436,9 @@ let TrainingNavEventHandler = {
 			TrainingNavEventHandler.openDropDown(event.target.id, "click");
 		}, true)
 			// For "Introduction" Sub Dropdown
-			this.introSubContainerEle = document.getElementById("intro-sub-nav-container-id");
-			this.introSubLabelEle = document.getElementById("intro-sub-nav-label-id");
-			this.introSubDropdownEle = document.getElementById("intro-sub-nav-dropdown-id");
+			this.introSubContainerEle = document.getElementById("training-menu-intro-container-id");
+			this.introSubLabelEle = document.getElementById("training-menu-intro-label-id");
+			this.introSubDropdownEle = document.getElementById("training-menu-intro-dd-id");
 				
 			this.introSubContainerEle.addEventListener("mouseleave", function(event){
 				TrainingNavEventHandler.closeDropDown(event.target.id, "mouseleave");
@@ -447,7 +447,7 @@ let TrainingNavEventHandler = {
 					TrainingNavEventHandler.openDropDown("intro-sub-nav-label-id");
 			}, true); 
 
-				// For "Codes" 
+			/*	// For "Codes" 
 				this.codesSubSubLabelEle = document.getElementById("intro-codes-sub-nav-label-id");
 				this.codesSubSubLabelEle.addEventListener("click", function(event){
 					EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id');
@@ -455,12 +455,12 @@ let TrainingNavEventHandler = {
 					for(var i = this.openDropDownIDs.length; i >= 0; i--){
 						TrainingNavEventHandler.closeDropDown(this.openDropDownIDs, "mouseleave");
 					}
-				}, true)
+				}, true)*/
 
 			// For "Architect" Sub DropDown"
-			this.archSubContainerEle = document.getElementById("architect-sub-nav-container-id");
-			this.archSubLabelEle = document.getElementById("architect-sub-nav-label-id");
-			this.archSubDropdownEle = document.getElementById("architect-sub-nav-dropdown-id");
+			this.archSubContainerEle = document.getElementById("training-menu-arch-container-id");
+			this.archSubLabelEle = document.getElementById("training-menu-arch-label-id");
+			this.archSubDropdownEle = document.getElementById("training-menu-arch-dd-id");
 				
 			this.archSubContainerEle.addEventListener("mouseleave", function(event){
 				TrainingNavEventHandler.closeDropDown(event.target.id, "mouseleave");

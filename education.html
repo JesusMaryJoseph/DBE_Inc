@@ -36,6 +36,20 @@
     </script>
 
 	<style>
+    .edu-contents{
+        height: 85vh;
+        width:93vw;
+        position: relative;
+        background-image: url("media/imgs/low-noise-darker.png");
+        background-size: cover;
+        color:  black;
+        overflow: auto;
+        padding: 1rem;
+    }
+	#testing-menu-dd-id,
+	#testing-menu-container-id{
+		/*border: 1px solid yellowgreen;*/
+	}
 	</style>
 	
 </head>
@@ -79,449 +93,115 @@
 	</nav>
 </div>
 <div class="training-testing-packets-container"> 
-    <nav class="menu-container-lev-1" onmouseout="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
+    <nav id="training-menu-container-id" onmouseout="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
         <label id="training-menu-label-id" class="menu-label-lev-1"
                 onmouseover="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'open')" 
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
+                > <!--onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')"-->
             Training</label>
-        <ul id="training-menu-dd-lev-1-id" class="menu-dd menu-dd-lev-1 menu-dd-lev-1-hidden" 
+        <ul id="training-menu-dd-id" class="menu-dd menu-dd-lev-1 menu-dd-lev-1-hidden" 
                 onmouseover="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
-            <li class="menu-container-lev-2"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')"> 
+            <li id="training-menu-intro-container-id" class="menu-container-lev-2"
                 onmouseover="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'open')"
                 onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                <label id="training-intro-label-id" class="menu-label-lev-2">Introduction</label>
-                <ul id="training-introduction-dropdown-id" class="menu-dd menu-dd-lev-2 intro-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id')">Codes</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id')">Truth Tables</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id')">Gates/ICs</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id')">Design</a></li>
-                </ul>
+                <label id="training-menu-intro-label-id" class="menu-label-lev-2">Introduction</label>
+                <ul id="training-menu-intro-dd-id" class="menu-dd menu-dd-lev-2 intro-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id'); EduNavHandler.hide('training')">Codes</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id'); EduNavHandler.hide('training')">Truth Tables</a></li> <!--EduNavHandler.hide('training'); EduNavHandler.hide('introduction')-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id'); EduNavHandler.hide('training')">Gates/ICs</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id'); EduNavHandler.hide('training')">Design</a></li>; 
+                </ul>																									
             </li>
-            <li class="menu-container-lev-2"
+            <li id="training-menu-arch-container-id" class="menu-container-lev-2"
                 onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'open')"
                 onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'close')">
-                <label id="training-architecture-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">Architecture</label>
-                <ul id="training-architecture-dropdown-id" class="menu-dd menu-dd-lev-2 arch-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">
+                <label id="training-menu-arch-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">Architecture</label>
+                <ul id="training-menu-arch-dd-id" class="menu-dd menu-dd-lev-2 arch-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">
                     <!--<li><a href="#">Intro</a></li>-->
-                    <li><a href="#">Hardware</a></li><!-- class="menu-dd menu-dd-lev-2"-->
-                     <!--<li class="menu-container-lev-3"
-                            onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'open')"
-                            onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'close')">
-                        <label id="training-hardwear-label-id" class="menu-dd menu-dd-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'open')">Hardware</label>
-                       <ul id="training-hardware-dropdown-id" class="menu-dd menu-dd-lev-3 menu-dd-lev-3-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'close')">
-                            <li class="training-menu-container-lev-4"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'close')">
-                                <label id="training-components-label-id" class="menu-label-lev-4" onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown')">Components</label>
-                                <ul id="training-components-dropdown-id" class="menu-dd menu-dd-lev-4 menu-dd-lev-4-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown')">
-                                    <li><a href="#">Breadboards</a></li>
-                                    <li><a href="#">Resistors/Capacitors/Wires</a></li>
-                                    <li><a href="#">Switches/labels</a></li>
-                                    <li><a href="#">ICs</a></li>
-                                </ul>
-                            </li>
-                            <li class="training-menu-container-lev-4"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'close')">
-                                <label id="training-equipment-label-id" class="menu-label-lev-4" onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">Equipment</label>
-                                <ul id="training-equipment-dropdown-id" class="menu-dd menu-dd-lev-4 menu-dd-lev-4-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">
-                                    <li><a href="#">Tools</a></li>
-                                    <li><a href="#">Test Equipment</a></li>
-                                    <li><a href="#">MicroControllers</a></li>
-                                </ul>
-                            </li>
-                        </ul></li>-->
-                    <li><a href="#">Software</a></li><!--  class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/IntroductionArchitecture.html','intro-architecture-contents-id'); EduNavHandler.hide('training')">Introduction</a></li><!-- class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/HardwareArchitecture_OnHOLD.html','hardware-nav-id'); EduNavHandler.hide('training')">Hardware</a></li><!-- class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/SoftwareArchitecture.html','hardware-nav-id'); EduNavHandler.hide('training')">Software</a></li><!--  class="menu-dd menu-dd-lev-2"-->
                 </ul>
             </li>
-            <li class="menu-container-lev-2"
+            <li id="training-menu-tech-container-id" class="menu-container-lev-2"
                 onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'open')"
                 onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'close')">
-                <label id="training-tech-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">Tech</label>
-                <ul id="training-tech-dropdown-id" class="menu-dd menu-dd-lev-2 tech-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Digital.html')">Digital</a></li> <!--EduNavHandler.hide('training'); EduNavHandler.hide('tech')-->
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Fritzing.html')">Fritzing</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/VsCode.html')">VS Code</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/GitHub.html')">GitHub</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/ArduinoIde.html')">Arduino IDE</a></li>
+                <label id="training-menu-tech-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">Tech</label>
+                <ul id="training-menu-tech-dd-id" class="menu-dd menu-dd-lev-2 tech-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Digital.html'); EduNavHandler.hide('training')">Digital</a></li> <!--EduNavHandler.hide('training'); EduNavHandler.hide('tech')-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Fritzing.html'); EduNavHandler.hide('training')">Fritzing</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/VsCode.html'); EduNavHandler.hide('training')">VS Code</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/GitHub.html'); EduNavHandler.hide('training')">GitHub</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/ArduinoIde.html'); EduNavHandler.hide('training')">Arduino IDE</a></li>
                 </ul>
             </li>
-            <li class="menu-container-lev-2"
+            <li id="training-menu-media-arts-container-id" class="menu-container-lev-2"
                 onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'open')"
                 onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'close')">
-                <label id="training-media-arts-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">Media Arts</label>
-                <ul id="training-media-arts-dropdown-id" class="menu-dd menu-dd-lev-2 media-arts-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Gimp.html')">Gimp</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Inkscape.html')">Inkscape</a></li>
-                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/DaVinciResolve.html')">Kdenlive</a></li>
+                <label id="training-menu-media-arts-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">Media Arts</label>
+                <ul id="training-menu-media-arts-dd-id" class="menu-dd menu-dd-lev-2 media-arts-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Gimp.html'); EduNavHandler.hide('training')">Gimp</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/Inkscape.html'); EduNavHandler.hide('training')">Inkscape</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Training/DaVinciResolve.html'); EduNavHandler.hide('training')">Kdenlive</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-
-	 
-    <nav class="menu-container-lev-1" onmouseout="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
-        <label id="testing-menu-label-id" class="menu-label-lev-1">
+   
+    <nav id="testing-menu-container-id" onmouseout="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
+        <label id="testing-menu-label-id" class="menu-label-lev-1"
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-menu-dd-lev-1', 'open')" 
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-menu-dd-lev-1', 'close')">
             Testing</label>
-			<!--
-                onmouseover="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'open')" 
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')"
-			-->
-
-        <ul id="testing-menu-dd-lev-1-id" class="menu-dd menu-dd-lev-1 menu-dd-lev-1-hidden" 
-                onmouseover="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('menu-dd-lev-1', 'close')">
-            <li class="menu-container-lev-2"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                <label id="testing-intro-label-id" class="menu-label-lev-2">Introduction</label>
-                <ul id="testing-introduction-dropdown-id" class="menu-dd menu-dd-lev-2 intro-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                    <li><a href="#">Codes</a></li>
-                    <li><a href="#">Truth Tables</a></li>
-                    <li><a href="#">Gates/ICs</a></li>
-                    <li><a href="#">Design</a></li>
-                </ul>
+        <ul id="testing-menu-dd-id" class="menu-dd menu-dd-lev-1 menu-dd-lev-1-hidden" 
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-menu-dd-lev-1', 'open')"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-menu-dd-lev-1', 'close')"> 
+            <li id="testing-menu-intro-container-id" class="menu-container-lev-2"
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-introduction-dropdown', 'open')"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-introduction-dropdown', 'close')">
+                <label id="testing-menu-intro-label-id" class="menu-label-lev-2">Introduction</label>
+                <ul id="testing-menu-intro-dd-id" class="menu-dd menu-dd-lev-2 intro-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('test-introduction-dropdown', 'close')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Codes.html','codes-contents-id'); EduNavHandler.hide('testing')">Codes</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/TruthTables.html','truth-table-contents-id'); EduNavHandler.hide('testing')">Truth Tables</a></li> <!--EduNavHandler.hide('testing'); EduNavHandler.hide('introduction')-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/GatesIcs.html','gates-ics-contents-id'); EduNavHandler.hide('testing')">Gates/ICs</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Design.html','design-contents-id'); EduNavHandler.hide('testing')">Design</a></li>; 
+                </ul>																									
             </li>
-            <li class="menu-container-lev-2"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'close')">
-                <label id="testing-architecture-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">Architecture</label>
-                <ul id="testing-architecture-dropdown-id" class="menu-dd menu-dd-lev-2 arch-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">
+            <li id="testing-menu-arch-container-id" class="menu-container-lev-2"
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-architecture-dropdown', 'open')"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-architecture-dropdown', 'close')">
+                <label id="testing-menu-arch-label-id" class="menu-label-lev-2">Architecture</label>
+                <ul id="testing-menu-arch-dd-id" class="menu-dd menu-dd-lev-2 arch-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('test-architecture-dropdown', 'close')">
                     <!--<li><a href="#">Intro</a></li>-->
-                    <li><a href="#">Hardware</a></li><!-- class="menu-dd menu-dd-lev-2"-->
-                     <!--<li class="menu-container-lev-3"
-                            onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'open')"
-                            onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'close')">
-                        <label id="testing-hardwear-label-id" class="menu-dd menu-dd-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'open')">Hardware</label>
-                       <ul id="testing-hardware-dropdown-id" class="menu-dd menu-dd-lev-3 menu-dd-lev-3-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'close')">
-                            <li class="testing-menu-container-lev-4"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'close')">
-                                <label id="testing-components-label-id" class="menu-label-lev-4" onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown')">Components</label>
-                                <ul id="testing-components-dropdown-id" class="menu-dd menu-dd-lev-4 menu-dd-lev-4-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown')">
-                                    <li><a href="#">Breadboards</a></li>
-                                    <li><a href="#">Resistors/Capacitors/Wires</a></li>
-                                    <li><a href="#">Switches/labels</a></li>
-                                    <li><a href="#">ICs</a></li>
-                                </ul>
-                            </li>
-                            <li class="testing-menu-container-lev-4"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'close')">
-                                <label id="testing-equipment-label-id" class="menu-label-lev-4" onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">Equipment</label>
-                                <ul id="testing-equipment-dropdown-id" class="menu-dd menu-dd-lev-4 menu-dd-lev-4-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">
-                                    <li><a href="#">Tools</a></li>
-                                    <li><a href="#">Test Equipment</a></li>
-                                    <li><a href="#">MicroControllers</a></li>
-                                </ul>
-                            </li>
-                        </ul></li>-->
-                    <li><a href="#">Software</a></li><!--  class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/IntroductionArchitecture.html','intro-architecture-contents-id'); EduNavHandler.hide('testing')">Introduction</a></li><!-- class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/HardwareArchitecture_OnHOLD.html','hardware-nav-id'); EduNavHandler.hide('testing')">Hardware</a></li><!-- class="menu-dd menu-dd-lev-2"-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/SoftwareArchitecture.html','hardware-nav-id'); EduNavHandler.hide('testing')">Software</a></li><!--  class="menu-dd menu-dd-lev-2"-->
                 </ul>
             </li>
-            <li class="menu-container-lev-2"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'close')">
-                <label id="testing-tech-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">Tech</label>
-                <ul id="testing-tech-dropdown-id" class="menu-dd menu-dd-lev-2 tech-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">
-                    <li><a href="#">Digital</a></li>
-                    <li><a href="#">Fritzing</a></li>
-                    <li><a href="#">VS Code</a></li>
-                    <li><a href="#">Arduino IDE</a></li>
+            <li id="testing-menu-tech-container-id" class="menu-container-lev-2"
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-tech-dropdown', 'open')"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-tech-dropdown', 'close')">
+                <label id="testing-menu-tech-label-id" class="menu-label-lev-2">Tech</label><!-- onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown')"-->
+                <ul id="testing-menu-tech-dd-id" class="menu-dd menu-dd-lev-2 tech-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Digital.html'); EduNavHandler.hide('testing')">Digital</a></li> <!--EduNavHandler.hide('testing'); EduNavHandler.hide('tech')-->
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Fritzing.html'); EduNavHandler.hide('testing')">Fritzing</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/VsCode.html'); EduNavHandler.hide('testing')">VS Code</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/GitHub.html'); EduNavHandler.hide('testing')">GitHub</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/ArduinoIde.html'); EduNavHandler.hide('testing')">Arduino IDE</a></li>
                 </ul>
             </li>
-            <li class="menu-container-lev-2"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'close')">
-                <label id="testing-media-arts-label-id" class="menu-label-lev-2" onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">Media Arts</label>
-                <ul id="testing-media-arts-dropdown-id" class="menu-dd menu-dd-lev-2 media-arts-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">
-                    <li><a href="#">Gimp</a></li>
-                    <li><a href="#">Inkscape</a></li>
-                    <li><a href="#">Kdenlive</a></li>
+            <li id="testing-menu-media-arts-container-id" class="menu-container-lev-2"
+                onmouseover="TrainingDropdownManager.openCloseDropdown('test-media-arts-dropdown', 'open')"
+                onmouseleave="TrainingDropdownManager.openCloseDropdown('test-media-arts-dropdown', 'close')">
+                <label id="testing-menu-media-arts-label-id" class="menu-label-lev-2">Media Arts</label><!-- onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')"-->
+                <ul id="testing-menu-media-arts-dd-id" class="menu-dd menu-dd-lev-2 media-arts-menu-dd-lev-2 menu-dd-lev-2-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Gimp.html'); EduNavHandler.hide('testing')">Gimp</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/Inkscape.html'); EduNavHandler.hide('testing')">Inkscape</a></li>
+                    <li><a href="#" onclick="EduHTML_Manager.request('html/Education/Testing/DaVinciResolve.html'); EduNavHandler.hide('testing')">Kdenlive</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-	<!--<nav id="training-container-id" class="training-container"> 
-        <label id="training-label-id" class="training-nav-label" 
-                onmouseover="TrainingDropdownManager.openCloseDropdown('training-dropdown', 'open')" 
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('training-dropdown', 'close')">
-            Training</label>
-        <ul id="training-dropdown-id" class="training-dropdown training-dropdown-hidden" 
-                onmouseover="TrainingDropdownManager.openCloseDropdown('training-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('training-dropdown', 'close')">
-            <li class="sub-menu-container"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                <label id="intro-label-id" class="training-dropdown-label">Introduction</label>
-                <ul id="introduction-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('introduction-dropdown', 'close')">
-                    <li><a href="#">Codes</a></li>
-                    <li><a href="#">Truth Tables</a></li>
-                    <li><a href="#">Gates/ICs</a></li>
-                    <li><a href="#">Design</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-container"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown', 'close')">
-                <label id="architecture-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">Architecture</label>
-                <ul id="architecture-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('architecture-dropdown')">
-                    <li class="sub-menu-label"
-                            onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'open')"
-                            onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown', 'close')">
-                        <label id="hardwear-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('hardware-dropdown')">Hardware</label>
-                        <ul id="hardware-dropdown-id" class="sub-sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('hardware-dropdown')">
-                            <li class="sub-menu-label"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown', 'close')">
-                                <label id="components-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('components-dropdown')">Components</label>
-                                <ul id="components-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('components-dropdown')">
-                                    <li><a href="#">Breadboards</a></li>
-                                    <li><a href="#">Resistors/Capacitors/Wires</a></li>
-                                    <li><a href="#">Switches/labels</a></li>
-                                    <li><a href="#">ICs</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-menu-label"
-                                    onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'open')"
-                                    onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown', 'close')">
-                                <label id="equipment-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">Equipment</label>
-                                <ul id="equipment-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('equipment-dropdown')">
-                                    <li><a href="#">Tools</a></li>
-                                    <li><a href="#">Test Equipment</a></li>
-                                    <li><a href="#">MicroControllers</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Software</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-container"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown', 'close')">
-                <label id="tech-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">Tech</label>
-                <ul id="tech-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('tech-dropdown')">
-                    <li><a href="#">Digital</a></li>
-                    <li><a href="#">Fritzing</a></li>
-                    <li><a href="#">VS Code</a></li>
-                    <li><a href="#">Arduino IDE</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-container"
-                onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'open')"
-                onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown', 'close')">
-                <label id="media-arts-label-id" onmouseover="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">Media Arts
-					<ul id="media-arts-dropdown-id" class="sub-menu sub-menu-hidden" onmouseleave="TrainingDropdownManager.openCloseDropdown('media-arts-dropdown')">
-						<li><a href="#">Gimp</a></li>
-						<li><a href="#">Inkscape</a></li>
-						<li><a href="#">Kdenlive</a></li>
-					</ul>
-				</label>
-            </li>
-        </ul>
-    </nav>-->
-	
-	<!--<nav id="training-nav-container-id" class="training-nav-container">
-		<label id="training-nav-label-id" class="training-nav-label">Training</label> 
-		<nav id="training-nav-dropdown-id" class="training-nav-dropdown nav-dropdown hide-training-nav-dropdown">	
-			<nav id="intro-sub-nav-container-id" class="sub-nav">
-				<label id="intro-sub-nav-label-id">Introduction</label>
-				<nav id="intro-sub-nav-dropdown-id" class="intro-sub-nav-dropdown nav-dropdown hide-intro-sub-nav-dropdown">
-					<nav id="intro-codes-sub-nav-container-id" class="sub-nav">
-						<label id="intro-codes-sub-nav-label-id" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id')">Codes</label>
-						<nav id="intro-codes-sub-nav-container-id"></nav>
-					</nav>
-					<nav id="intro-truth-tables-sub-nav-container-id" class="sub-nav">
-						<label id="intro-truth-tables-sub-nav-label-id" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id')">TruthTables</label>
-						<nav id="intro-truth-tables-sub-nav-dropdown-id"></nav>
-					</nav>
-					<nav id="intro-gates-ics-sub-nav-container-id" class="sub-nav">
-						<label id="intro-gates-ics-sub-nav-label-id" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id')">Gates & ICs</label>
-						<nav id="intro-gates-ics-sub-nav-dropdown-id"></nav>
-					</nav>
-					<nav id="intro-design-sub-nav-container-id" class="sub-nav">
-						<label id="intro-design-sub-nav-label-id" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id')">Design</label>
-						<nav id="intro-design-sub-nav-dropdown-id"></nav>
-					</nav>
-				</nav>
-			</nav>
-			<nav id="architect-sub-nav-container-id" class="sub-nav">
-				<label id="architect-sub-nav-label-id">Architecture</label>
-				<nav id="architect-sub-nav-dropdown-id" class="architect-sub-nav-dropdown nav-dropdown hide-architect-sub-nav-dropdown"> 
-					<nav id="architect-intro-sub-nav-container-id" class="sub-nav">
-						<label id="architect-intro-sub-nav-label-id">Intro</label>
-						<nav id="architect-intro-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="architect-hardware-sub-nav-container-id" class="sub-nav">
-						<label id="architect-hardware-sub-nav-label-id">Hardware</label>							
-						<nav id="architect-hardware-sub-nav-dropdown-id" class="architect-hardware-sub-nav-dropdown hide-architect-hardware-sub-nav-dropdown">  
-							<nav id="architect-hardware-components-sub-nav-container-id" class="sub-nav">
-								<label id="architect-hardware-components-sub-nav-label-id">Components</label>
-								<nav id="architect-hardware-components-sub-nav-dropdown-id" class="architect-hardware-components-sub-nav-dropdown nav-dropdown hide-architect-hardware-components-sub-nav-dropdown">
-									<label id="architect-hardware-components-breadboards-sub-nav-label-id">Breadboards</label>
-									<label class="second-dropdown-label">ResistorsCapacitorsWires</label>
-									<label class="second-dropdown-label">Switches/labels</label>
-									<label class="second-dropdown-label">Integrated Circuits (ICs)</label>
-								</nav>
-							</nav>
-							<nav id="architect-hardware-equipment-sub-nav-container-id" class="sub-nav">
-								<label id="architect-hardware-equipment-sub-nav-label-id">Equipment</label>
-								<nav id="architect-hardware-equipment-sub-nav-dropdown-id" class="architect-hardware-equipment-sub-nav-dropdown nav-dropdown hide-architect-hardware-equipment-sub-nav-dropdown">
-									<label class="second-dropdown-label">Tools</label>
-									<label class="second-dropdown-label">Test Equipment</label>
-									<label class="second-dropdown-label">Microcontrollers</label>
-								</nav>
-							</nav>						
-						</nav>
-					</nav>
-					<nav id="architect-software-sub-nav-container-id" class="sub-nav">
-						<label id="architect-software-sub-nav-label-id">Instruction Set</label>
-						<nav id="architect-software-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-				</nav>
-			</nav>
-			<label class="separator-label">Software</label>
-			<nav id="tech-sub-nav-container-id" class="sub-nav">
-				<label id="tech-sub-nav-label-id">Tech</label>
-				<nav id="tech-sub-nav-dropdown-id" class="tech-sub-nav-dropdown nav-dropdown hide-tech-sub-nav-dropdown">
-				<nav id="tech-digital-sub-nav-container-id" class="sub-nav">
-						<label id="tech-digital-sub-nav-label-id">Digital</label>
-						<nav id="tech-digital-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="tech-fritzing-sub-nav-container-id" class="sub-nav">
-						<label id="tech-fritzing-sub-nav-label-id">Fritzing</label>
-						<nav id="tech-fritzing-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="tech-vs-code-ide-sub-nav-container-id" class="sub-nav">
-						<label id="tech-vs-code-ide-sub-nav-label-id">VS Code (IDE)</label>
-						<nav id="tech-vs-code-ide-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="tech-arduino-ide-sub-nav-container-id" class="sub-nav">
-						<label id="tech-arduino-ide-sub-nav-label-id">Arduino (IDE)</label>
-						<nav id="tech-arduino-ide-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-				</nav>
-			</nav>
-			<nav id="media-arts-sub-nav-container-id" class="sub-nav">
-				<label id="media-arts-sub-nav-label-id">Media Arts</label>
-				<nav id="media-arts-sub-nav-dropdown-id" class="media-arts-sub-nav-dropdown nav-dropdown hide-media-arts-sub-nav-dropdown">
-					<nav id="media-arts-gimp-sub-nav-container-id" class="sub-nav">
-						<label id="media-arts-gimp-sub-nav-label-id">Gimp</label>
-						<nav id="media-arts-gimp-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="media-arts-inkscape-sub-nav-container-id" class="sub-nav">
-						<label id="media-arts-inkscape-sub-nav-label-id">Inkscape</label>
-						<nav id="media-arts-inkscape-sub-nav-dropdown-id" class="nav-dropdown"></nav>
-					</nav>
-					<nav id="media-arts-davinciresolve-sub-nav-container-id" class="sub-nav">
-						<label id="media-arts-davinciresolve-sub-nav-label-id">DaVinciResolve</label>
-						<nav id="media-arts-davinciresolve-sub-nav-dropdown-id class="nav-dropdown""></nav>
-					</nav>
-				</nav>
-			</nav>
-		</nav>
-	</nav>-->
-
-
-	<!--<nav id="training-container-id" class="training-container" onmouseleave = "EduNavHandler.hide('training')">
-		<div class="training-label-container">
-			<label class="training-label" onclick="EduNavHandler.show('training')">Training</label>
-		</div>
-		<div id="training-dropdown-id" class="training-dropdown hide-training-dropdown" onmouseleave="EduHTML_Manager.hide('introduction')">
-			<div class="introduction-container">
-				<label class="training-dropdown-label" onclick="EduNavHandler.show('introduction')">Introduction</label> 
-				<div id="introduction-dropdown-id" class="introduction-dropdown hide-second-dropdown">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Codes.html','codes-contents-id'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Codes:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/TruthTables.html','truth-table-contents-id'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Truth Tables:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/GatesIcs.html','gates-ics-contents-id'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('introduction'); PracticeTruthTableManager.onLoad()">Gates & ICs:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Design.html','design-contents-id'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('introduction')">Design:
-					</label>
-				</div>
-			</div>
-			<div class="architecture-container">
-				<label class="training-dropdown-label" onclick="EduNavHandler.show('architecture')">Architecture</label>
-				<div id="architecture-dropdown-id" class="architecture-dropdown hide-second-dropdown">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/IntroductionArchitecture.html','intro-architecture-contents-id');
-							EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Intro
-					</label>   
-					<label class="training-dropdown-label second-dropdown-label" onmouseover="EduNavHandler.show('hardware')">Hardware</label>		
-					<div id="hardware-dropdown-id" class="training-dropdown hardware-nav hide-second-dropdown" onmouseleave="EduHTML_Manager.hide('hardware')">  
-						<section id="circuit-components-section-id" class="circuit-components-section">
-							<label class="dept-label">Circuit<br>Components</label>
-							<div id="circuit-components-dropdown-id" class="circuit-components-dropdown hardware-dropdown hide-circuit-components-dropdown" >
-								<label class="second-dropdown-label">Breadboards</label>
-								<label class="second-dropdown-label">ResistorsCapacitorsWires</label>
-								<label class="second-dropdown-label">Switches/labels</label>
-								<label class="second-dropdown-label">Integrated Circuits (ICs)</label>
-							</div>
-						</section>
-						<section id="equipment-section-id" class="equipment-section" onmouseleave="HardwarePageManager.hideDropDown('Equipment')">
-							<label class="training-dropdown-label dept-label">Equipment</label>
-							<div id="equipment-dropdown-id" class="equiment-dropdown hardware-dropdown hide-equipment-dropdown">
-								<label class="second-dropdown-label">Tools</label>
-								<label class="second-dropdown-label">Test Equipment</label>
-								<label class="second-dropdown-label">Microcontrollers</label>
-							</div>
-						</section>
-					</div>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/SoftwareArchitecture.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('architecture')">Software:
-					</label>		
-				</div>
-			</div>
-			<label class="dept-label"><u>Software</u></label>
-			<div class="tech-container">
-				<label class="training-dropdown-label" onclick="EduNavHandler.show('tech')">Tech</label>
-				<div id="tech-dropdown-id" class="tech-dropdown hide-second-dropdown" onmouseleave="EduHTML_Manager.hide('tech')">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Digital.html'); 
-							EduNavHandler.hide('training'); EduNavHandler.hide('tech')">Digital:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Fritzing.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('tech')">Fritzing:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/VsCode.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('tech')">VS Code:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/GitHub.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('tech')">GitHub:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/ArduinoIde.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('tech')">Arduino IDE:
-					</label>
-				</div>
-			</div>
-			<div class="media-arts-container">
-				<label class="training-dropdown-label"  onclick="EduNavHandler.show('media-arts')">MediaArts</label>
-				<div id="media-arts-dropdown-id" class="media-arts-dropdown hide-second-dropdown">
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Gimp.html'); 
-							EduNavHandler.hide('training'); EduNavHandler.hide('media-arts')">GIMP:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/DaVinciResolve.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('media-arts')">DaVinciResolve:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/ObsStudio.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('media-arts')">OSB Studio:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Inkscape.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('media-arts')">Inkscape:
-					</label>
-					<label class="second-dropdown-label" onclick="EduHTML_Manager.request('html/Education/Training/Audacity.html'); 
-						EduNavHandler.hide('training'); EduNavHandler.hide('media-arts')">Audacity:
-					</label>
-				</div>
-			</div>
-		</div>
-	</nav>-->
-
 	
 	<nav id="packets-container-id" class="packets-container" onmouseleave = "EduNavHandler.hide('packets')">
 		<div class="packets-label-container">

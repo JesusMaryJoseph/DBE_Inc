@@ -78,10 +78,10 @@
                         margin-left: 0.3rem;
                     }
             .intro-menu-dd-lev-2{
-                width: 8.8rem;
+                width: 11rem;
             }
             .arch-menu-dd-lev-2{
-                width: 7rem;
+                width: 12rem;
             }
             .tech-menu-dd-lev-2{
                 width: 9.5rem;
@@ -204,7 +204,7 @@
                 top: 2.5rem;
             }
             .architect-hardware-sub-nav-dropdown{
-                left: 8.9rem; /*9.3rem;*/
+                left: 8.9rem; /*9.3rem;
                 top: 1.5rem;
             }
             .media-arts-sub-nav-dropdown{
