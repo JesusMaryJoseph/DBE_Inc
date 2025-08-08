@@ -1,9 +1,8 @@
-
     body{
         margin:0;
         padding: 0;
         box-sizing: border-box;
-        background-image: url(low-noise-darker.png);
+        /*background-image: url("media/imgs/low-noise-darker.png");*/
     }
 
     ul {
@@ -12,20 +11,26 @@
         list-style:none;
 
     }
-  
+
+    .menu-container{
+        /*padding-top: 0.5rem;*/
+    }
     .menu-container-lev-2{
         position: relative;
     }
 
     .menu-label-lev-1{
-        width: 8.2rem;
+        width: 10.2rem;
         display: block;
         text-align: center;
         cursor: pointer;
         color: yellow;
         font-size: 1.5rem;
         font-weight: bold;
+        padding-top: 0.5rem;
+        padding-bottom: 0.3rem;
         background-color: black;
+        /*border: 1px solid red;*/
 		/*background-image: radial-gradient(blue, black);*/
     }
         .menu-label-lev-1:hover{
@@ -44,21 +49,53 @@
         }
             .menu-label-lev-2:hover{
                 color: yellow;
-                margin-left: 0.3rem;
+                /*margin-left: 0.3rem;*/
             }
 
+
         .menu-dd{
+            position: absolute;
+            margin-top: 0.01rem;
 			background-image: radial-gradient(blue, black);
             padding: 0.5rem 0;
             border: 2px solid yellow;
             border-radius: 10px;
+            transition: margin-top 0.00001s;
+            z-index: -5;
         }
             .menu-dd li{
                 margin-bottom: 0.3rem;
             }
 
+            .packets-menu-dd-lev-1{
+                display: block;
+                text-align: center;
+               /* margin-top: -0.5rem;*/
+                /*border: 3px solid red;*/
+            }
+
+            .packets-menu-dd-lev-1{
+                background-image: radial-gradient(blue, black);
+                padding: 0.5rem 0;
+                border: 2px solid yellow;
+                border-radius: 10px;
+            }
+
+                .packets-menu-dd-lev-1 li{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: white;
+                    cursor: pointer;
+                }
+
+            .menu-dd-lev-1{
+                transition: margin-top 0.5s;
+            }
             .menu-dd-lev-1{
                 width: 9.8rem;
+            }
+            .packets-menu-dd-lev-1-hidden{
+                margin-top: -18rem;
             }
             .menu-dd-lev-1-hidden{
                 margin-top: -12rem;
@@ -67,12 +104,17 @@
                 display: block;
                 text-align: center;
             }
+            #packets-menu-container-id{
+                position: relative;
+                /*border: 3px solid blue;*/
+            }
                 .menu-dd-lev-2 li a{
                     text-decoration: none;
                     color: white;
                     font-size: 1.45rem;
                     font-weight: bold;
                 }
+                    .packets-menu-dd-lev-1 li a:hover,
                     .menu-dd-lev-2 li a:hover{
                         color: yellow;
                         margin-left: 0.3rem;

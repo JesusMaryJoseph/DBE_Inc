@@ -1,12 +1,11 @@
-/*
-/   EduHTML_Manager         8
-/   CeoHTML_Manager         66
-/   TableManager            122
-/   CodesTabManager         139
-/   QuestionAnswerManager   264
-/   ModuleArchitectManager  762
+/* 
+/   PracticeTruthTableManager   lines  8 - 566
+/   TableManager                570 - 585
+/   QuestionAnswerManager       749 - 762
 */
 
+
+// Begin PracticeTruthTableManager
 
       //  alert("in this.createData"); 
       let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
@@ -41,7 +40,6 @@ function eduTransitionHasEnded(){
    }
 }
 
-// PracticeTruthTableManager
 let PracticeTruthTableManager = {
     //Properties
     dataCreated: false,
@@ -563,89 +561,13 @@ let PracticeTruthTableManager = {
         //alert("this.dataSelector = " + this.dataSelector);
         //alert("data created");
     }
-    
-
-}// END PracticeTruthTableManager
-
-
+ 
+}
+// END PracticeTruthTableManager   
 
 
 
-
-/* EduHTML_Manager */
-    let EduHTML_Manager = {
-        //Properties
-        eduContentsEle: {},
-        icDataEle: {},
-        requestedFile: "",
-    
-        //Methods
-        request: function(HTMLsourceFile, contentId){
-        //alert("in request HTMLsourceFile =  " + HTMLsourceFile);
-        //alert("contentId = " + contentId);
-        // alert("targetEdu = " + targetEdu);
-        // alert("requestingEle = " + requestingEle);
-            //Close Nav "training"
-            TrainingNavEventHandler.closeDropDown("training");
-            this.requestedFile = HTMLsourceFile;
-            this.load(contentId);
-        },
-
-        load: function(contentId) {
-            //alert("in load");
-            //alert("HTMLsourceFile: " + HTMLsourceFile);
-            //alert("targetOption =  " + targetOption);
-            fetch(this.requestedFile)
-                .then(res => {
-                   // alert("in res =>");
-                    if (res.ok) {
-                       //alert("res.ok");
-                        return res.text();
-                    }
-                })
-                .then(resultHTML => {
-                    //alert("loading resultHTML contentId = " + contentId);
-                    this.eduContentsEle.innerHTML = resultHTML;
-                    document.getElementById(contentId).scrollIntoView({block: 'start'});
-                })
-                .then((loaded) =>{
-                    if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
-                       // alert("in .then(loaded =>");
-                        PracticeTruthTableManager.initialize();
-                       // PracticeTruthTableManager.create("circuit","NotXor");
-                    }
-                })
-        },
-
-        show: function() { 
-         //alert("in EduHTML_Manager this.show()");
-           // this.load();
-            this.targetEle.classList.replace("transition-1-0","transition-0-1")
-            this.targetEle.style.opacity = "1";
-        },
-
-        close: function(){
-           // alert("in EduHTML_Manager this.close");
-            this.icDataEle.style.opacity = 0;
-            this.icDataEle.style.display = "none";
-        },
-
-        init: function() {
-       // alert("in EduHTML_Manager init()");
-         //alert("this.eduNavOneContentsEle.classList = " + this.eduNavOneContentsEle.classList);
-            this.eduContentsEle = document.getElementById("edu-contents-id");
-        // alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
-          //  this.eduContentsEle.addEventListener("transitionend", this.show().bind, false);
-            this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
-       // alert("after this.eduContentsEle");
-            this.icDataEle = document.getElementById("ic-data-contents-id");
-        //alert("end of EduHTML_Manager init()");
-        }
-    }
-    /* End EduHTML_Manager */
-
-
-    /* Begin TableManager  */
+// BEGIN TableManager  
     let TableManager = {
         //Properties
 
@@ -660,93 +582,11 @@ let PracticeTruthTableManager = {
         }
     }
 
-    /* End TableManager  */
+// END TableManager  
 
 
 
-    /* Begin CodesTabManager */
-    let CodesTabManager = {
-        //Properties
-        introductionTabEle: {},
-        exampleTabEle: {},
-        computerTabEle: {},
-        introductionContentsEle: {},
-        exampleContentsEle: {},
-        computerContentsEle: {},
-        initiated: false,
-
-        selectedTab: "1",
-        numberOfTabs: "3",
-        //Methods
-        changeTab: function(newTab){
-        // alert("in CodesTabManager.changeTab");
-        // alert("this.initiated =  " + this.initiated);
-            if(!this.initiated){
-            // alert("sending to this.init()");
-                this.init();
-                this.initiated = true;
-            }
-            //TODO remove .selectedTab from this.selectedTab and add to newTab
-            if(newTab == this.selectedTab){return}
-            //alert("this.selectedTab =  " + this.selectedTab + "<br>newTab =  " + newTab);
-            switch (this.selectedTab){
-                case "1":
-                //  alert("removing selected-tab from intro tab");
-                    this.introductionTabEle.classList.replace("selected-tab", "unselected-tab");
-                    this.introductionContentsEle.classList.replace("selected-contents","unselected-contents");
-                //  alert("after remove selected-tab from #1");
-                    break;
-                case "2":
-                    this.exampleTabEle.classList.replace("selected-tab", "unselected-tab");
-                    this.exampleContentsEle.classList.replace("selected-contents","unselected-contents");
-                //  alert("after remove selected-tab from #2");
-                    break;
-                case "3":
-                    this.computerTabEle.classList.replace("selected-tab", "unselected-tab");
-                    this.computerContentsEle.classList.replace("selected-contents","unselected-contents");
-                //  alert("after remove selected-tab from #3");
-                    break;
-                default: alert("No Such Tab Number");
-            }
-            //alert("after 1st switch to remove");
-            switch (newTab){
-                case "1":
-                    this.introductionTabEle.classList.replace("unselected-tab","selected-tab");
-                    this.introductionContentsEle.classList.replace("unselected-contents","selected-contents");
-                    break;
-                case "2":
-                //  alert("adding selected-tab to example tab");
-                    this.exampleTabEle.classList.replace("unselected-tab","selected-tab");
-                    this.exampleContentsEle.classList.replace("unselected-contents","selected-contents");
-                    break;
-                case "3":
-                    this.computerTabEle.classList.replace("unselected-tab","selected-tab");
-                    this.computerContentsEle.classList.replace("unselected-contents","selected-contents");
-                    break;
-                default: alert("No Such Tab Number");
-            }
-            this.selectedTab = newTab;
-            //alert("this.selectedTab now =  " + newTab);
-        },
-        
-        init: function(){
-         //alert("in CodesTabManager.init()");
-            this.introductionTabEle = document.getElementById("introduction-tab-id");
-            this.exampleTabEle = document.getElementById("example-tab-id");
-            this.computerTabEle = document.getElementById("computer-tab-id");
-            this.introductionContentsEle = document.getElementById("introduction-contents-id");
-            this.exampleContentsEle = document.getElementById("example-contents-id");
-            this.computerContentsEle = document.getElementById("computer-contents-id");
-        //  alert("CodesTabManager.init() finished and removing selected-tab from intro");
-        /* this.introductionTabEle.classList.remove("selected-tab");
-            alert("after removal"); */
-        }
-    }
-
-    /* End of CodesTabManager */
-
-
-    /* Begin QuestionAnswerManager */
+    // BEGIN QuestionAnswerManager 
 
             let QuestionAnswerManager = {
                 //Properties
@@ -759,111 +599,5 @@ let PracticeTruthTableManager = {
                 }
             }
 
-    /* End QuestionAnswerManager */
+    // END QuestionAnswerManager 
 
-
-    /* Begin ModuleArchitectManager */
-        let ModuleBlockManager = {
-            //Properties
-            selectedBlock: "memory",
-            selectedMode: 0, // 0 => "block mode"    1 => "74LS mode"
-            selectionData: {
-                memory: {
-                    title: "Memory Module",
-                    source: ["MemoryBlock.svg", "MemoryBlock74LS.svg"]
-                },
-                alu: {
-                    title: "Arithmetic Logic Unit (ALU) Module",
-                    source: ["ALU_Block.svg","ALU_Block74LS.svg"]
-                },
-                input: {
-                    title: "Input Module",
-                    source: ["InputBlock.svg","InputBlock74LS.svg"]
-                },
-                output: {
-                    title: "Output Module",
-                    source: ["OutputBlock.svg","OutputBlock74LS.svg"]
-                },
-                programCounter: {
-                    title: "Program Counter Module",
-                    source: ["PcBlock.svg","PcBlock74LS.svg"]
-                },
-                control: {
-                    title: "Control Module",
-                    source: ["ControlBlock.svg","ControlBlock74LS.svg"]
-                },
-                clock: {
-                    title: "Clock Module",
-                    source: ["ClockBlock.svg","ClockBlock74LS.svg"]
-                },
-                bus: {
-                    title: "BUS Module",
-                    source: ["BusBlock.svg","BusBlock74LS.svg"]
-                }
-            },
-            //Methods
-            display: function(target){
-              //  alert("this.selectedBlock = " + this.selectedBlock + "  target = " + target);
-                document.getElementById(this.selectedBlock + "-button-id").classList.remove("selected-block-button");
-                document.getElementById(target + "-button-id").classList.add("selected-block-button");
-              //  alert("in between"); 
-                let labelEle = document.getElementById("block-label-id");
-                let imgEle = document.getElementById("block-img-id");
-               // alert("entering switch");
-                switch (target){
-                    case ("memory"):
-                        labelEle.innerHTML = this.selectionData.memory.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.memory.source[this.selectedMode];
-                    break;
-                    case ("alu"):
-                        labelEle.innerHTML =  this.selectionData.alu.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.alu.source[this.selectedMode];
-                    break;
-                    case ("input"):
-                        labelEle.innerHTML = this.selectionData.input.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.input.source[this.selectedMode];
-                    break;
-                    case ("output"):
-                        labelEle.innerHTML =  this.selectionData.output.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.output.source[this.selectedMode];
-                    break;
-                    case ("programCounter"):
-                       // alert("this.selectionData.programCounter.source[this.selectedMode] = " + this.selectionData.programCounter.source[this.selectedMode]);
-                        labelEle.innerHTML = this.selectionData.programCounter.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.programCounter.source[this.selectedMode];
-                    break;
-                    case ("control"):
-                        labelEle.innerHTML =  this.selectionData.control.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.control.source[this.selectedMode];
-                    break;
-                    case ("clock"):
-                        labelEle.innerHTML = this.selectionData.clock.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.clock.source[this.selectedMode];
-                    break;
-                    case ("bus"):
-                        labelEle.innerHTML =  this.selectionData.bus.title;
-                        imgEle.src = "media/imgs/Architecture/" + this.selectionData.bus.source[this.selectedMode];
-                    break;
-                    default: alert("No Such Module");
-                    
-                }
-                
-                this.selectedBlock = target;
-            },
-            changeMode: function(){
-               // alert("in changeMode");
-                let modeBlockEle = document.getElementById("mode-block-id");
-                let mode74lsEle = document.getElementById("mode-74ls-id");
-                if(this.selectedMode == 0){
-                    modeBlockEle.classList.remove("selected-mode");
-                    mode74lsEle.classList.add("selected-mode");
-                    this.selectedMode = 1;
-                }else{
-                    modeBlockEle.classList.add("selected-mode");
-                    mode74lsEle.classList.remove("selected-mode");
-                    this.selectedMode = 0;
-                }
-                this.display(this.selectedBlock);
-            }
-        }
-    /* End ModuleArchitectManager */
