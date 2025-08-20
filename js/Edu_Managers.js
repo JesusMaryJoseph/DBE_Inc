@@ -11,9 +11,9 @@
         //properties
             initialized: false,
             
-            packetslabelEle: {},
-		    packetsDropdownEle: {},
-            packetsDropdownHidden: true,
+            eduNavlabelEle: {},
+            eduNavDropdownEle: {},
+            eduNavDropdownHidden: true,
 
             traininglabelEle: {},
             trainingDropdownEle: {},
@@ -22,6 +22,10 @@
             testinglabelEle: {},
             testingDropdownEle: {},
             testingDropdownHidden: true,
+            
+            packetslabelEle: {},
+		    packetsDropdownEle: {},
+            packetsDropdownHidden: true,
 
             introductionlabelEle: {},
             introductionDropdownEle: {},
@@ -79,11 +83,11 @@
                         this.toggleDropdown(this.trainingDropdownEle, "menu-dd-lev-1-hidden", openOrClose);
                         this.trainingDropdownHidden = !this.trainingDropdownHidden;
                         break;
-                    /*case ("menu-dd-lev-2"):
-				        console.log("in 'menu-dd-lev-2'");
-                        this.toggleDropdown(this.introductionDropdownEle, "menu-dd-lev-2-hidden", openOrClose);
+                    case ("edu-nav-dropdown"):
+				        console.log("in 'edu-nav-dropdown'");
+                        this.toggleDropdown(this.eduNavDropdownEle, "hide-nav-dropdown", openOrClose);
                         this.introductionDropdownEle = !this.introductionDropdownEle;
-                        break;*/
+                        break;
                     case ("test-menu-dd-lev-1"):
 				        console.log("in test-menu-dd-lev-1");
                         this.toggleDropdown(this.testingDropdownEle, "menu-dd-lev-1-hidden", openOrClose);
@@ -128,8 +132,8 @@
             },
 
             toggleDropdown: function(dropdownEle, hiddenClassName, openOrClose){
-                //console.log("dropdownEle.id = " + dropdownEle.id);
-                //console.log("dropdownHidden = " + hiddenClassName);
+                console.log("dropdownHidden = " + hiddenClassName);
+                console.log("dropdownEle.id = " + dropdownEle.id);
                 if(openOrClose === "open"){
                     console.log("removing hidenClassName = " + hiddenClassName);
                     dropdownEle.classList.remove(hiddenClassName);
@@ -141,12 +145,14 @@
 
             init: function(){
             console.log(" in EduNavManager.init()");
-                this.packetslabelEle = document.getElementById('packets-menu-label-id');
-                this.packetsDropdownEle = document.getElementById("packets-menu-dd-id");
+                this.eduNavlabelEle = document.getElementById('edu-nav-label-id');
+                this.eduNavDropdownEle = document.getElementById("edu-nav-dropdown-id");
                 this.traininglabelEle = document.getElementById('training-menu-label-id');
                 this.trainingDropdownEle = document.getElementById('training-menu-dd-id');
                 this.testinglabelEle = document.getElementById('testing-menu-label-id');
                 this.testingDropdownEle = document.getElementById('testing-menu-dd-id');
+                this.packetslabelEle = document.getElementById('packets-menu-label-id');
+                this.packetsDropdownEle = document.getElementById("packets-menu-dd-id");
 
                 this.introductionlabelEle = document.getElementById('training-menu-intro-label-id');
                 this.introductionDropdownEle = document.getElementById('training-menu-intro-dd-id');
@@ -185,12 +191,14 @@
         eduContentsEle: {},
         icDataEle: {},
         requestedFile: "",
+        initialized: false,
     
         //Methods
         request: function(HTMLsourceFile, contentId){
-            console.log("in EduHtmlManager.request() HTMLsourceFile =  " + HTMLsourceFile);
+            if (!this.initialized){this.init(); this.initialized = true;};
+            //console.log("in EduHtmlManager.request() HTMLsourceFile =  " + HTMLsourceFile);
         //alert("in request HTMLsourceFile =  " + HTMLsourceFile);
-        //alert("contentId = " + contentId);
+            //console.log("contentId = " + contentId);
     //        TrainingNavEventHandler.closeDropDown("training"); needs updating
             //EduNavManager("training");
             this.requestedFile = HTMLsourceFile;
@@ -198,11 +206,11 @@
         },
 
         load: function(contentId) {
-            console.log("in EduHtmlManager.load ");
+           // console.log("in EduHtmlManager.load ");
             fetch(this.requestedFile)
                 .then(res => {
                     if (res.ok) {
-                        console.log("res.ok");
+                        //console.log("res.ok");
                         return res.text();
                     }
                 })

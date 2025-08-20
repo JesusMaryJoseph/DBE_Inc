@@ -21,20 +21,14 @@
           justify-content: center;
           align-content: center;
     }
-    .nav-label-container{
-       /* border: 1px solid olivedrab; */
+
+    ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+
     }
 
-    .nav-container{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 99.5vw;
-        height: 97vh;
-        background-image: radial-gradient(blue, black);
-        overflow: hidden;
-    }
-    
     .edu-contents{
         position: absolute;
         top: 2.6rem;
@@ -42,7 +36,7 @@
         width: calc(100vw - 2rem);
         bottom: 0vh; 
         color: black;
-        font-size: 1.5rem;
+        /*font-size: 1.5rem;*/
         font-weight: bold;
       /* padding: 1rem;*/
         opacity: 1;
@@ -91,36 +85,64 @@
                 }
     /*End CSS for Videos & Datasheets (NAV) */
 
-    /* CSS for  Training, Testing & Packets (NAV) */
+    /* CSS for NAV, Training, Testing & Packets (NAV) */
         
-    .training-testing-packets-container{
-        position: absolute;
+    .nav-training-testing-packets-container{
+        position: relative;
         top: 0;
+        left: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         /*padding: 0.1rem 0; */
-        z-index: 10;
-       /* background-color: blue;*/
+        /*background-color: rgb(252, 7, 7);*/
        /* background-image: radial-gradient(blue, black);*/
-       /* border: 1px solid rgb(233, 12, 185); */
+        border: 1px solid rgb(233, 12, 185); 
+       z-index: 100;
     }
-    .training-testing-packets-background{
+
+    .nav-training-testing-packets-background{
         position: absolute;
         top: 0;
-        right: 0;
-        /*background-color:  rgb(0, 0, 50);*/
+        left: 0;
+        width: 100%;
         background-color: black;
+        z-index:10;
     }
+        .span-blank{
+            opacity: 0;
+        }
+    /*.edu-nav-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99.5vw;
+        height: 97vh;
+        background-image: radial-gradient(blue, black);
+        overflow: hidden;
+    }*/
+        .menu-container{
+            padding: 2px;
+           /* border: 3px solid yellow;*/
+        }
+            .edu-nav-container{
+               /* border: 2px solid plum;*/
+            }
+           /* .nav-training-testing-packets-label{
+                color: yellow;
+                font-weight: bolder;
+                cursor: pointer; 
+                width: 100%;
+                height: 2.4rem;
+                background-color: black;
+                border: 1px solid red;
+            }*/
         
-		.training-container, 
+		/*.training-container, 
 		.testing-container{
 			position: relative;
-			/*left: 15rem;
-			width: 13rem; */
 			color: yellow;
 			z-index: 0;
-		/* border: 2px solid rgb(12, 233, 89); */
 		}		
 			.training-label, 
 			.testing-label{
@@ -129,10 +151,9 @@
 				font-weight: bold;
 				cursor: pointer;
                 color: yellow;
-				background-color: black; /* rgb(0, 0, 50); */
+				background-color: black; 
                 margin-top: 0.2em;
                 padding-top: 1rem;
-				z-index: 15;
 			}
 			.testing-dropdown,
 			.training-dropdown{
@@ -142,7 +163,6 @@
 				align-items: center;
 				color: white;
 				transition: margin-top 0.7s;
-				/*  padding: 0.1rem 0; */
 				background-image: radial-gradient(blue, black);
 				border: 2px solid yellow;
 				border-radius: 5px; 
@@ -157,101 +177,136 @@
 					.testing-dropdown-label:hover,
 					.training-dropdown-label:hover{
 						color: yellow;
-					}
+					}*/
 			
 				.dept-label{
 					font-weight: bold;
 				}
-
-                    .test-media-arts-container, 
-                    .test-tech-container,
-                    .test-architecture-container, 
-                    .test-introduction-container,
-					.media-arts-container, 
-                    .tech-container,
-                    .architecture-container, 
-                    .introduction-container{
-                        position: relative;
-                    }  
-					.test-media-arts-dropdown, 
-		            .test-tech-dropdown,
-                    .test-architecture-dropdown,
-                    .test-introduction-dropdown,
-					.media-arts-dropdown, 
-		            .tech-dropdown,
-                    .architecture-dropdown,
-                    .introduction-dropdown{
-                        position: absolute;
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-                        color: white;
-                        transition: margin-top 0.7s;
-                        background-image: radial-gradient(blue, black);
-                        border: 2px solid yellow;
-                        border-radius: 5px;
-                    }
-                        .second-dropdown-label{
-                            display: inline-block;
-                            font-weight: bold;
-                        }
-                            .second-dropdown-label:hover{
-                                font-weight: bold;
-                                color: yellow;
-                            }
-
-					.hide-second-dropdown{
-                            display: none;
-                          /*  opacity: 0; */
-                        }
-			
-    /*End CSS for Training & Testing (NAV))  */ 
-        
-        
-        /*CSS for Packets (NAV) */
-            .packets-container{
-                position: relative;
-                z-index: 20;
-            }
-                .packets-label-container{
+                
+                .menu-container-lev-2{
                     position: relative;
+                }
+                /*.nav-menu-label{
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
                     color: yellow;
-                    cursor: pointer;
-                    background-color: rgb(0, 0, 50);
-                    z-index: 15;
-                } 
-                .packets-label{
                     font-weight: bold;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.3rem;
+                    background-color: black;
+                }*/
+                .menu-label-lev-1{
+                    position: relative;
+                    display: block;
+                    text-align: center;
                     cursor: pointer;
-                    z-index: 15;
-                }  
-                .packets-dropdown{
+                    color: yellow;
+                    font-weight: bold;
+                    padding-top: 0.5rem;
+                    padding-bottom: -0.6rem;
+                    /*background-color: black;*/
+                    /*border: 1px solid red;*/
+                    z-index: 30;
+                }
+                
+                    .menu-label-lev-1:hover{
+                        color: #FFD700;
+                    }
+
+                .menu-label-lev-2{
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
+                    color: white;
+                    font-weight: bold;
+                    padding: 0 0.5rem;
+                }
+                    .menu-label-lev-2:hover{
+                        color: yellow;
+                        /*margin-left: 0.3rem;*/
+                    }
+
+
+        .menu-dd{
+            position: absolute;
+            margin-top: 0.01rem;
+			background-image: radial-gradient(blue, black);
+            padding: 0.5rem 0;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            /*transition: margin-top 0.00001s;*/
+            z-index: -1;
+        }
+            .menu-dd li{
+                margin-bottom: 0.3rem;
+            }
+
+
+            .packets-menu-dd-lev-1{
+                display: block;
+                text-align: center;
+                z-index: -1;
+                background-image: radial-gradient(blue, black);
+                padding: 0.5rem 0;
+                border: 2px solid yellow;
+                border-radius: 10px;
+            }
+
+                .packets-menu-dd-lev-1 li a{
                     font-weight: bold;
                     color: white;
-                   /* display: flex;
-                    flex-direction: column;*/
-                    transition: margin-top 0.7s;
-                    background-image: radial-gradient(blue, black);
-                    border: 2px solid yellow;
-                    border-radius: 5px; 
-                    z-index: 5;
+                    cursor: pointer;
+                    text-decoration: none;
                 }
-                    .packets-dropdown ul{
-                        list-style-type: none;
-                    }
-                    .packets-dropdown li{
-                        cursor: pointer;
-                    }
-                    .packets-dropdown li:hover{
+            .packets-menu-dd-lev-1,
+
+            .menu-dd-lev-1{
+                transition: margin-top 0.5s;
+            }
+            .menu-dd-lev-2 li{
+                display: block;
+                text-align: center;
+            }
+            #packets-menu-container-id{
+                position: relative;
+                /*border: 3px solid blue;*/
+            }
+                .menu-dd-lev-2 li a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+                    .packets-menu-dd-lev-1 li a:hover,
+                    .menu-dd-lev-2 li a:hover{
                         color: yellow;
+                        /*margin-left: 0.3rem;*/
                     }
 
-                    
-                    .hide-packets-dropdown{
-                        margin-top: -12rem; 
+                    .span-1-sp{
+                        opacity: 0;
                     }
-        /*End CSS for Packets (NAV) */
-    /*End CSS for Training, Testing & Packets (NAV) */
+           /* .intro-menu-dd-lev-2{
+                width: 11rem;
+            }
+            .arch-menu-dd-lev-2{
+                width: 12rem;
+            }
+            .tech-menu-dd-lev-2{
+                width: 9.5rem;
+            }
+            .media-arts-menu-dd-lev-2{
+                width: 7rem;
+            }*/
+        .menu-dd-lev-2{
+            position: absolute;
+            top: 0rem;
+            z-index: 10;
+        }
+        .menu-dd-lev-2-hidden{
+            display: none;
+        }
+    /*End CSS for NAV, Training, Testing & Packets (NAV) */
 /*End CSS for Videos, Datasheets, Training, Testing & Packets (NAV) */
 
 

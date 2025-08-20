@@ -19,21 +19,21 @@ let NavHandler = {
 
 	//Methods
 	mouseLeave: function(){
-	//	this.mouseActionEle.innerHTML += 'leaving: ' + evt.target.id + '<br>';
+		console.log("in mouseLeave");
 		if(this.hidden == true){ return };
 		this.showHide();
 	},
 
 	showHide: function() {  //show or hide Navigation selection list
-		//alert("in showHide");
+		console.log("in showHide");
 		if(this.hidden) {
-		//	alert('show dropdown');
-		    this.navDropDownId.classList.remove('hide-dropdown');
+			console.log("in show dropdown");
+		    this.navDropDownId.classList.remove('dbe-hide-dropdown');
 			this.hidden = false; 
 		//	alert('this.hidden: ' + this.hidden);
 		}else{
-			//alert('hide dropdown');
-			this.navDropDownId.classList.add('hide-dropdown');
+			console.log("in hide dropdown");
+			this.navDropDownId.classList.add('dbe-hide-dropdown');
 			this.hidden = true;
 		}
 	}, //End of Mehod: showHide()

@@ -12,29 +12,34 @@
 
 </head>
 
-<body onload="init()">
-    <nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()">
-    	<div class="nav-label-container">
-    		<label class="nav-label" onmouseover="NavHandler.showHide()">Nav</label>
-    	</div>
-		<div id="nav-dropdown-id" class="nav-dropdown hide-dropdown">
-		 <!--   <a href="ceo.html" onclick="PageManager.changePage(event)">CEO</a> -->
-		    <a href="ceo.html">CEO</a>
-		    <label class="dept-label"><u>Departments</u></label>
-		    <div class="dept-container">
-				<ul>
-					<li><a href="engineering.html">Engineering</a></li>
-					<li><a href="architect.html">Architect</a></li>
-					<li><a href="technician.html">Technician</a></li>
-					<li><a href="computer.html">Computer</a></li>
-					<li><a href="education.html">Education</a></li>
-					<li><a href="media_arts.html">Media Arts</a></li>
-				</ul>
-			</div>
-		</div>
-    <!--    <div id="nav-bottom-id"></div>  -->
-    </nav>  
+<style>
+	/*.dbe-hide-dropdown{
+		margin-top: -13rem;
+	}
+	.nav-dropdown{
+		position: relative;
+		z-index: 10;;
+	}*/
+</style>
 
+<body onload="init()">
+   
+
+	<nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()"> <!-- onmouseleave = "NavHandler.mouseLeave()"-->
+    	<!--<div class="nav-label-container">-->
+		<!--</div>-->
+        <label id="nav-label-id" class="nav-label" onmouseover="NavHandler.showHide()">Nav</label>  
+        <ul id="nav-dropdown-id" class="nav-dropdown dbe-hide-dropdown"><!-- class="nav-dropdown index-hide-dropdown"-->
+            <li><a href="ceo.html" class="ceo-a">CEO</a></li>
+		    <label class="dept-label"><u>Departments</u></label>
+			<li><a href="engineering.html">Engineering</a></li>
+			<li><a href="architect.html">Drafting</a></li>
+			<li><a href="technician.html">Technician</a></li>
+			<li><a href="computer.html">Computer</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="media_arts.html">Media Arts</a></li>
+        </ul>
+	</nav>
 	<div class="page home-page">
 		<label id="d-label-id" class="d-label-start">Design</label>
 		<label id="b-label-id" class="b-label-start">Build</label>

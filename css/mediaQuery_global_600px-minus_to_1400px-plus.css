@@ -6,35 +6,39 @@
  @media only screen and (max-width: 599px) {
     /* For Global Nav [. . . ,600px)*/
     .nav-cntnr{
-        left: 2rem;
+        width: 9rem; 
+        left: 1rem;
+    }
+    .edu-nav-container{
+        /*border: 2px solid silver;*/
     }
     .nav-label-container{
-        width: 8.7rem; 
-       /* height: 3.5rem; */
+        /*padding-top: 0.4rem;
+        padding-bottom: 0.2rem;*/
+        /*height: 1.6rem;*/
+        /*margin-bottom: 0.1rem;*/
+        /*height: 2.5rem;*/
+        /*margin-left: -0.2rem;*/
+        /*border: 1px solid red;*/
     }
         .nav-label{
-            padding-top: 0.25rem;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
+            padding-top: 0.3rem;
         }
-        .hide-dropdown{
-            margin-top: -15rem;
-        }
-        .nav-dropdown{
-            width: 8.5rem;
-            padding: 0.7rem;
+        .hide-nav-dropdown{
+            margin-top: -16rem;
         }
             .dept-label{
-               /* display: inline-block;
-                text-align: center;*/
                 font-size: 1rem;
             }
-            .nav-dropdown a{
-                text-decoration: none;
-                display: inline-block;
-                text-align: center;
-                font-size: 1rem;
-                padding-top: 0.1rem;/*new*/
+
+            .nav-dropdown li{
+                margin: 0.2rem 0;
             }
+                .nav-dropdown li a{
+                    font-size: 1rem;
+                    /*padding-top: 0.1rem;new*/
+                }
     /* End Global Nav [. . . ,600px) */      
 }
 
@@ -45,27 +49,25 @@
         left: 2rem;
     }
         .nav-label-container{
-            width: 8.7rem; 
+            width: 11.7rem; 
            /* height: 3.5rem; */
         }
             .nav-label{
                 padding-top: 0.25rem;
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
         .hide-dropdown{
             margin-top: -19rem;
         }
         .nav-dropdown{
-            width: 8.5rem; 
+            /*width: 8.5rem;*/ 
             padding: 0.1rem;
         }
             .dept-label{
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             .nav-dropdown a{
-                text-decoration: none;
-                display: inline-block;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 padding-top: 0.15rem;/*new*/
             }
     /* End Global (Nav) [600px,749px) */
@@ -82,7 +84,7 @@
         }
             .nav-label{
                 padding-top: 0.25rem;
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         .hide-dropdown{
             margin-top: -19rem;
@@ -95,8 +97,6 @@
                 font-size: 1.4rem;
             }
             .nav-dropdown a{
-                text-decoration: none;
-                display: inline-block;
                 font-size: 1.3rem;
                 padding-top: 0.15rem;/*new*/
             }

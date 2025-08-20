@@ -22,6 +22,13 @@
 		.welcome-label{
 			color: yellow;	
 		}
+	.dbe-hide-dropdown{
+		margin-top: -13rem;
+	}
+	.nav-dropdown{
+		position: relative;
+		z-index: 10;;
+	}
 	</style>
 </head>
 <body onload="init()">
@@ -30,7 +37,7 @@
     	<div class="nav-label-container">
     		<label class="nav-label" onmouseover="NavHandler.showHide()">Nav</label>
     	</div>
-		<div id="nav-dropdown-id" class="nav-dropdown hide-dropdown">
+		<div id="nav-dropdown-id" class="nav-dropdown dbe-hide-dropdown">
 		    <a href="index.html">Home</a>
 		    <label class="dept-label"><u>Departments</u></label>
 		    <div class="dept-container">
