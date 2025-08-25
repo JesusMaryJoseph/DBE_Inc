@@ -56,13 +56,14 @@
         }
 /*End CSS page & edu  contents */ 
    
-/* 	CSS for Videos, Datasheets, Training, Testing & Packets (NAV) */
-    /* CSS for Videos & Datasheets (NAV)*/
+/*BEGIN CSS for Videos, Datasheets, Training, Testing & Packets (NAV) */
+    /*BEGIN CSS for Videos & Datasheets (NAV)*/
         .videos-datasheets-container{
             position: fixed;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
             /*padding: 0.3rem 1rem; */ 
             background-color: rgb(0, 0, 50);
             z-index: 10;
@@ -71,7 +72,7 @@
             .videos-label-container, 
             .datasheets-label-container{
                 color: yellow;
-                cursor: pointer; 
+                /*cursor: pointer;*/ 
                 z-index: 20;
             }
                 .videos-label, 
@@ -85,164 +86,97 @@
                 }
     /*End CSS for Videos & Datasheets (NAV) */
 
-    /* CSS for NAV, Training, Testing & Packets (NAV) */
-        
-    .nav-training-testing-packets-container{
-        position: relative;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        /*padding: 0.1rem 0; */
-        /*background-color: rgb(252, 7, 7);*/
-       /* background-image: radial-gradient(blue, black);*/
-        border: 1px solid rgb(233, 12, 185); 
-       z-index: 100;
-    }
-
-    .nav-training-testing-packets-background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: black;
-        z-index:10;
-    }
-        .span-blank{
-            opacity: 0;
+    /*BEGIN CSS for NAV, Training, Testing & Packets (NAV) */
+        .nav-training-testing-packets-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /*border: 1px solid rgb(233, 12, 185); */
+            z-index: 100;
         }
-    /*.edu-nav-container{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 99.5vw;
-        height: 97vh;
-        background-image: radial-gradient(blue, black);
-        overflow: hidden;
-    }*/
-        .menu-container{
-            padding: 2px;
-           /* border: 3px solid yellow;*/
-        }
-            .edu-nav-container{
-               /* border: 2px solid plum;*/
-            }
-           /* .nav-training-testing-packets-label{
-                color: yellow;
-                font-weight: bolder;
-                cursor: pointer; 
-                width: 100%;
-                height: 2.4rem;
-                background-color: black;
-                border: 1px solid red;
-            }*/
-        
-		/*.training-container, 
-		.testing-container{
-			position: relative;
-			color: yellow;
-			z-index: 0;
-		}		
-			.training-label, 
-			.testing-label{
-				display: inline-block;
-				text-align: center;
-				font-weight: bold;
-				cursor: pointer;
-                color: yellow;
-				background-color: black; 
-                margin-top: 0.2em;
-                padding-top: 1rem;
-			}
-			.testing-dropdown,
-			.training-dropdown{
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				color: white;
-				transition: margin-top 0.7s;
-				background-image: radial-gradient(blue, black);
-				border: 2px solid yellow;
-				border-radius: 5px; 
-				z-index: -1; 
-			}
-				.testing-dropdown-label,
-				.training-dropdown-label{
-					display: inline-block;
-					font-weight: bold;
-					cursor: pointer;
-				}
-					.testing-dropdown-label:hover,
-					.training-dropdown-label:hover{
-						color: yellow;
-					}*/
-			
-				.dept-label{
-					font-weight: bold;
-				}
-                
-                .menu-container-lev-2{
-                    position: relative;
-                }
-                /*.nav-menu-label{
-                    display: block;
-                    text-align: center;
-                    cursor: pointer;
-                    color: yellow;
-                    font-weight: bold;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.3rem;
-                    background-color: black;
-                }*/
-                .menu-label-lev-1{
-                    position: relative;
-                    display: block;
-                    text-align: center;
-                    cursor: pointer;
-                    color: yellow;
-                    font-weight: bold;
-                    padding-top: 0.5rem;
-                    padding-bottom: -0.6rem;
-                    /*background-color: black;*/
-                    /*border: 1px solid red;*/
-                    z-index: 30;
-                }
-                
-                    .menu-label-lev-1:hover{
-                        color: #FFD700;
-                    }
 
-                .menu-label-lev-2{
-                    display: block;
-                    text-align: center;
-                    cursor: pointer;
-                    color: white;
-                    font-weight: bold;
-                    padding: 0 0.5rem;
-                }
-                    .menu-label-lev-2:hover{
-                        color: yellow;
-                        /*margin-left: 0.3rem;*/
-                    }
-
-
-        .menu-dd{
+        .nav-training-testing-packets-background{
             position: absolute;
-            margin-top: 0.01rem;
-			background-image: radial-gradient(blue, black);
-            padding: 0.5rem 0;
-            border: 2px solid yellow;
-            border-radius: 10px;
-            /*transition: margin-top 0.00001s;*/
-            z-index: -1;
+            top: -0.2rem;
+            left: 0;
+            width: 100%;
+            height: 1rem;
+            background-color: black;
+            z-index:29;
         }
-            .menu-dd li{
-                margin-bottom: 0.3rem;
+            #packets-menu-container-id{
+                position: relative;
+                /*border: 3px solid blue;*/
             }
+            .span-blank{
+                opacity: 0;
+            }
+	    /*BEGIN CSS for NAV, Training, Testing & Packets (Main Labels) */
+            .edu-nav-label,
+            .menu-label-lev-1{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               /* display: block;
+                text-align: center;*/
+                cursor: pointer;
+                color: yellow;
+                font-weight: bold;
+                padding-top: 0.5rem;
+                padding-bottom: 0.4rem;
+                background-color: black;
+                /*border: 1px solid red;*/
+                z-index: 30;
+            }
+            
+                .menu-label-lev-1:hover{
+                    color: #FFD700;
+                }
 
+                .dept-label{
+                    font-weight: bold;
+                }
 
+            .menu-label-lev-2{
+                display: block;
+                text-align: center;
+                cursor: pointer;
+                color: white;
+                font-weight: bold;
+                padding: 0 0.5rem;
+            }
+                .menu-label-lev-2:hover{
+                    color: yellow;
+                    /*margin-left: 0.3rem;*/
+                }
+	    /*END CSS for NAV, Training, Testing & Packets (Main Labels) */
+        
+	    /*BEGIN CSS for NAV, Training, Testing & Packets (1st DropDown) */
+            .edu-nav-dropdown li a{
+                color: white;
+                text-decoration: none;
+            }
+                .edu-nav-dropdown li a:hover{
+                    color: yellow;
+                }
+            .menu-dd-lev-1{
+                position: relative;
+            } 
+            .menu-dd-lev-2,
+            .menu-dd-lev-1{
+            /* position: absolute;*/
+                margin-top: 0.01rem;
+                background-image: radial-gradient(blue, black);
+                padding: 0.5rem 0;
+                border: 2px solid yellow;
+                border-radius: 10px;
+                /*transition: margin-top 0.00001s;*/
+                z-index: 25;
+            }
             .packets-menu-dd-lev-1{
                 display: block;
                 text-align: center;
@@ -252,7 +186,6 @@
                 border: 2px solid yellow;
                 border-radius: 10px;
             }
-
                 .packets-menu-dd-lev-1 li a{
                     font-weight: bold;
                     color: white;
@@ -260,23 +193,32 @@
                     text-decoration: none;
                 }
             .packets-menu-dd-lev-1,
-
             .menu-dd-lev-1{
                 transition: margin-top 0.5s;
             }
-            .menu-dd-lev-2 li{
-                display: block;
-                text-align: center;
-            }
-            #packets-menu-container-id{
+	    /*END CSS for NAV, Training, Testing & Packets (1st DropDown) */
+        
+	    /*BEGIN CSS for NAV, Training, Testing & Packets (2nd DropDown) */ 
+            .menu-container-lev-2{
                 position: relative;
-                /*border: 3px solid blue;*/
-            }
-                .menu-dd-lev-2 li a{
-                    text-decoration: none;
-                    color: white;
-                    font-weight: bold;
+            } 
+                .menu-dd-lev-2{
+                    position: absolute;
+                    top: 0rem;
+                    z-index: 10;
                 }
+                .menu-dd-lev-2-hidden{
+                    display: none;
+                } 
+                    .menu-dd-lev-2 li{
+                        display: block;
+                        text-align: center;
+                    }
+                        .menu-dd-lev-2 li a{
+                            text-decoration: none;
+                            color: white;
+                            font-weight: bold;
+                        }
                     .packets-menu-dd-lev-1 li a:hover,
                     .menu-dd-lev-2 li a:hover{
                         color: yellow;
@@ -286,33 +228,19 @@
                     .span-1-sp{
                         opacity: 0;
                     }
-           /* .intro-menu-dd-lev-2{
-                width: 11rem;
-            }
-            .arch-menu-dd-lev-2{
-                width: 12rem;
-            }
-            .tech-menu-dd-lev-2{
-                width: 9.5rem;
-            }
-            .media-arts-menu-dd-lev-2{
-                width: 7rem;
-            }*/
-        .menu-dd-lev-2{
-            position: absolute;
-            top: 0rem;
-            z-index: 10;
-        }
-        .menu-dd-lev-2-hidden{
-            display: none;
-        }
-    /*End CSS for NAV, Training, Testing & Packets (NAV) */
-/*End CSS for Videos, Datasheets, Training, Testing & Packets (NAV) */
+	    /*END CSS for NAV, Training, Testing & Packets (2nd DropDown) */
+                /*.packets-dd-zindex,
+                .testing-dd-zindex,
+                .training-dd-zindex{
+                    z-index: 10;
+                }*/
+    /*END CSS for NAV, Training, Testing & Packets (NAV) */
+/*END CSS for Videos, Datasheets, Training, Testing & Packets (NAV) */
 
 
 
 
-/* CSS for Videos, Datasheets, Packets, Training & Testing (CONTENTS) */
+/*BEGIN CSS for Videos, Datasheets, Packets, Training & Testing (CONTENTS) */
 
     /* CSS for Videos (CONTENTS) */
     .ben-eater-videos-header{
@@ -661,5 +589,8 @@
     /*End CSS for Testing (CONTENTS) */
       
     /* CSS for Packets (CONTENTS) */
+            .packet-container{
+                margin-top: 0rem;
+            }
     /*End CSS for Packets (CONTENTS) */
 /*End CSS for Videos, Datasheets, Training & Testing, Packets (CONTENTS) */

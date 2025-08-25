@@ -225,3 +225,28 @@
         z-index: 15;
     }
 /* End of CSS for Home Page  */
+
+				.dept-label{
+					font-weight: bold;
+				}
+
+                .nav-label{
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
+                    color: yellow;
+                    font-weight: bold;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.4rem;
+                    /*background-color: black;*/
+                    /*border: 1px solid red;*/
+                    z-index: 30;
+                }
+                
+                .nav-dropdown{
+                    width: 100%;
+                }
+                .nav-dropdown li a{
+                    text-decoration: none;
+                }   

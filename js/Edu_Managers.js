@@ -94,12 +94,12 @@
                         this.testingDropdownHidden = !this.testingDropdownHidden;
                         break;
                     case ("introduction-dropdown"):
-				        console.log("in 'introduction-dropdown'");
+				        console.log("in training 'introduction-dropdown'");
                         this.toggleDropdown(this.introductionDropdownEle, "menu-dd-lev-2-hidden", openOrClose);
                         this.introductionDropdownHidden = !this.introductionDropdownHidden;
                         break;
                     case ("test-introduction-dropdown"):
-				        console.log("in 'introduction-dropdown'");
+				        console.log("in testing 'introduction-dropdown'");
                         this.toggleDropdown(this.testingIntroductionDropdownEle, "menu-dd-lev-2-hidden", openOrClose);
                         this.testingIntroductionDropdownHidden = !this.testingIntroductionDropdownHidden;
                         break;
@@ -144,7 +144,7 @@
             },
 
             init: function(){
-            console.log(" in EduNavManager.init()");
+            //console.log(" in EduNavManager.init()");
                 this.eduNavlabelEle = document.getElementById('edu-nav-label-id');
                 this.eduNavDropdownEle = document.getElementById("edu-nav-dropdown-id");
                 this.traininglabelEle = document.getElementById('training-menu-label-id');
@@ -175,7 +175,7 @@
                 this.testingMediaArtsDropdownEle = document.getElementById('testing-menu-media-arts-dd-id');
                // console.log("this.equipmentlabelEle.id = " + this.equipmentlabelEle.id);
                 //console.log("this.equipmentDropdownEle.id = " + this.equipmentDropdownEle.id);
-                console.log("Ending EduNavManager.init()");
+                //console.log("Ending EduNavManager.init()");
             }
 
     }
@@ -215,9 +215,10 @@
                     }
                 })
                 .then(resultHTML => {
-                    console.log("loading resultHTML contentId = ");
+                    //alert("loading resultHTML contentId = " + contentId);
+                    console.log("loading resultHTML contentId = " + contentId);
                     this.eduContentsEle.innerHTML = resultHTML;
-                    //document.getElementById(contentId).scrollIntoView({block: 'start'});
+                    document.getElementById(contentId).scrollIntoView({block: 'start'});
                 })
                 .then((loaded) =>{
                     if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
@@ -225,6 +226,8 @@
                         PracticeTruthTableManager.initialize();
                        // PracticeTruthTableManager.create("circuit","NotXor");
                     }
+                    //console.log("Closing Packets DropDown");
+                    //EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close');
                 })
         },
 
