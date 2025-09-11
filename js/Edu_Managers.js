@@ -74,32 +74,33 @@
                 //console.log("after init(). dropdown = " + dropdown);
                 switch(dropdown){
                     case ("packets-menu-dd-lev-1"):
-				        console.log("in 'packets-menu-dd-lev-1'");
+                        console.log("this.packetsDropdownHidden = " + this.packetsDropdownHidden);
+                        console.log("openOrClose = " + openOrClose);
                         this.toggleDropdown(this.packetsDropdownEle, "packets-menu-dd-lev-1-hidden", openOrClose);
                         this.packetsDropdownHidden = !this.packetsDropdownHidden;
                         break;
                     case ("menu-dd-lev-1"):
-				        console.log("in 'menu-dd-lev-1'");
+				        //console.log("in 'menu-dd-lev-1'");
                         this.toggleDropdown(this.trainingDropdownEle, "menu-dd-lev-1-hidden", openOrClose);
                         this.trainingDropdownHidden = !this.trainingDropdownHidden;
                         break;
                     case ("edu-nav-dropdown"):
-				        console.log("in 'edu-nav-dropdown'");
+				        //console.log("in 'edu-nav-dropdown'");
                         this.toggleDropdown(this.eduNavDropdownEle, "hide-nav-dropdown", openOrClose);
                         this.introductionDropdownEle = !this.introductionDropdownEle;
                         break;
                     case ("test-menu-dd-lev-1"):
-				        console.log("in test-menu-dd-lev-1");
+				        //console.log("in test-menu-dd-lev-1");
                         this.toggleDropdown(this.testingDropdownEle, "menu-dd-lev-1-hidden", openOrClose);
                         this.testingDropdownHidden = !this.testingDropdownHidden;
                         break;
                     case ("introduction-dropdown"):
-				        console.log("in training 'introduction-dropdown'");
+				        //console.log("in training 'introduction-dropdown'");
                         this.toggleDropdown(this.introductionDropdownEle, "menu-dd-lev-2-hidden", openOrClose);
                         this.introductionDropdownHidden = !this.introductionDropdownHidden;
                         break;
                     case ("test-introduction-dropdown"):
-				        console.log("in testing 'introduction-dropdown'");
+				        //console.log("in testing 'introduction-dropdown'");
                         this.toggleDropdown(this.testingIntroductionDropdownEle, "menu-dd-lev-2-hidden", openOrClose);
                         this.testingIntroductionDropdownHidden = !this.testingIntroductionDropdownHidden;
                         break;
@@ -132,13 +133,13 @@
             },
 
             toggleDropdown: function(dropdownEle, hiddenClassName, openOrClose){
-                console.log("dropdownHidden = " + hiddenClassName);
-                console.log("dropdownEle.id = " + dropdownEle.id);
+                //console.log("dropdownHidden = " + hiddenClassName);
+                //console.log("dropdownEle.id = " + dropdownEle.id);
                 if(openOrClose === "open"){
-                    console.log("removing hidenClassName = " + hiddenClassName);
+                    //console.log("removing hidenClassName = " + hiddenClassName);
                     dropdownEle.classList.remove(hiddenClassName);
                 }else{
-                    console.log("adding hidenClassName = " + hiddenClassName);
+                    //console.log("adding hidenClassName = " + hiddenClassName);
                     dropdownEle.classList.add(hiddenClassName);
                 }
             },
@@ -245,7 +246,7 @@
         },
 
         init: function() {
-        console.log("in EduHtmlManager.init()");
+        //console.log("in EduHtmlManager.init()");
          //alert("this.eduNavOneContentsEle.classList = " + this.eduNavOneContentsEle.classList);
             this.eduContentsEle = document.getElementById("edu-contents-id");
         // alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
@@ -253,7 +254,7 @@
             this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
        // alert("after this.eduContentsEle");
             this.icDataEle = document.getElementById("ic-data-contents-id");
-        console.log("end of EduHtmlManager.init()");
+        //console.log("end of EduHtmlManager.init()");
         }
     }
     // END EduHtmlManager 

@@ -45,6 +45,9 @@
         overflow: auto;
         padding: 1rem;
     }
+    #training-menu-label-id{
+        margin-bottom: -0.2rem;
+    }
 	
 	</style>
 	
@@ -72,7 +75,7 @@
     </div>
     <div class="nav-training-testing-packets-container">
         <nav id="edu-nav-cntnr-id" class="edu-nav-container" onmouseleave = "EduNavManager.openCloseDropdown('edu-nav-dropdown', 'close')"> <!-- onmouseleave = "NavHandler.mouseLeave()"-->
-            <label id="edu-nav-label-id" class="edu-nav-label" onmouseover="EduNavManager.openCloseDropdown('edu-nav-dropdown', 'open')">Nav</label><!--nav-training-testing-packets-label-->  
+            <label id="edu-nav-label-id" class="edu-nav-label" onclick="EduNavManager.openCloseDropdown('edu-nav-dropdown', 'open')">Nav</label><!--nav-training-testing-packets-label-->  
             <ul id="edu-nav-dropdown-id" class="edu-nav-dropdown hide-nav-dropdown">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="ceo.html" class="ceo-a">CEO</a></li>
@@ -87,7 +90,7 @@
 
         <nav id="training-menu-container-id" class="menu-container training-menu-container" onmouseout="EduNavManager.openCloseDropdown('menu-dd-lev-1', 'close')">
             <label id="training-menu-label-id" class="menu-label-lev-1"
-                    onmouseover="EduNavManager.openCloseDropdown('menu-dd-lev-1', 'open')"> 
+                    onclick="EduNavManager.openCloseDropdown('menu-dd-lev-1', 'open')"> 
                 Training</label>                                            <!-- menu-dd-lev-1-hidden-->
             <ul id="training-menu-dd-id" class="menu-dd-lev-1 menu-dd-zindex menu-dd-lev-1-hidden" 
                     onmouseover="EduNavManager.openCloseDropdown('menu-dd-lev-1', 'open')"
@@ -157,7 +160,7 @@
     
         <nav id="testing-menu-container-id" class="menu-container testing-menu-container" onmouseout="EduNavManager.openCloseDropdown('menu-dd-lev-1', 'close')">
             <label id="testing-menu-label-id" class="menu-label-lev-1"
-                    onmouseover="EduNavManager.openCloseDropdown('test-menu-dd-lev-1', 'open')" 
+                    onclick="EduNavManager.openCloseDropdown('test-menu-dd-lev-1', 'open')" 
                     onmouseleave="EduNavManager.openCloseDropdown('test-menu-dd-lev-1', 'close')">
                 Testing</label>
             <ul id="testing-menu-dd-id" class="menu-dd-lev-1 menu-dd-zindex menu-dd-lev-1-hidden" 
@@ -225,24 +228,25 @@
             </ul>
         </nav>
 
-        <nav id="packets-menu-container-id" class="menu-container" 
-                    onmouseover="EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'open')" 
-                    onmouseout="EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">
-            <label id="packets-menu-label-id" class="menu-label-lev-1">
-                Packets</label><!--onmouseleave="EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')"    EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close') -->
+        <nav id="packets-menu-container-id" class="menu-container"
+                    onmouseleave="EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">
+            <label id="packets-menu-label-id" class="menu-label-lev-1" 
+                    onclick="EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'open')" >
+                Packets</label>
             <ul id="packets-menu-dd-id" class="packets-menu-dd-lev-1 menu-dd-zindex packets-menu-dd-lev-1-hidden">
-                <li><a href="#" onclick="EduHtmlManager.request('html/CEO/CEO_Packet.html', 'contents','packets');">CEO</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/Engineering/Engineering_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/CEO/CEO_Packet.html', 'ceo-contents-id');
+                    EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">CEO</a></li>
+                <li><a href="#" onclick="EduHtmlManager.request('html/Engineering/Engineering_Packet.html', 'engineering-contents-id'); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Engineering</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/Architect/Architect_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/Architect/Architect_Packet.html', 'architect-contents-id'); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Drafting</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/Technician/Technician_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/Technician/Technician_Packet.html', 'technician-contents-id'); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Technician</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/Computer/Computer_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/Computer/Computer_Packet.html', 'computer-contents-id'); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Computer</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/Education/Education_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/Education/Education_Packet.html', 'education-contents-id',); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Education</a></li>
-                <li><a href="#" onclick="EduHtmlManager.request('html/MediaArts/MediaArts_Packet.html', 'contents','packets'), 
+                <li><a href="#" onclick="EduHtmlManager.request('html/MediaArts/MediaArts_Packet.html', 'media-arts-contents-id',); 
                     EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close')">Media Arts</a></li>
             </ul>
         </nav>

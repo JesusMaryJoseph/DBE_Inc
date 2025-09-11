@@ -9,11 +9,24 @@
     </script>
     
     <style>
+        body{
+           /*  margin: 1rem;
+             padding: 5px;*/
+             overflow: hidden;
+         }
+             
+         .edu-contents{
+             background-image: url("media/imgs/low-noise-darker.png");
+             background-size: cover;
+             color: black;
+            /* border: 3px solid yellow;*/
+             overflow: hidden;
+         } 
     </style>
 
 </head>
 <body>
-    <div class="packet-container">
+    <div id="architect-contents-id" class="packet-container">
         <!--<label class="close-html" onclick="EduHTML_Manager.close('packets')">X</label>-->
         <label class="packet-header">Drafting Packet<br></label>
         <ol type="I" class="ol-I">
@@ -124,11 +137,10 @@
                             <li>Have a 2nd person(yourself!) do a <u>visual</u> check. This may be the only option!</li>
                         </ol>
                     </li>
-                    <li>You should consult the Engineering Manager with regards to nomenclature(labeling) etc. </li>
+                    <li class="bottom-buffer">You should consult the Engineering Manager with regards to nomenclature(labeling) etc. </li>
                 </ol>
             </li>
         </ol>
-        <div class="bottom-buffer"></div>
     </div>
 </body>
 </html>

@@ -162,7 +162,8 @@ let PracticeTruthTableManager = {
         }
     },
 
-    update: function(tableSelection, thisElement){    
+    update: function(tableSelection, thisElement){
+        //console.log("tableSelection = " + tableSelection + "   thisElement = " +  thisElement);    
         //alert("in update");
        // alert("tableSelection = " + tableSelection);
         //alert("thisElement.id = " + thisElement.id);
@@ -264,7 +265,7 @@ let PracticeTruthTableManager = {
         let circuitColSpan = this.circuitDataEle.inputs + 1 + 2*this.circuitDataEle.outputs;
         let titleColSpan = {basic:5,circuit:circuitColSpan};
         let titleId = {basic:"basic-title-id",circuit:"circuit-title-id"};
-        let headings = ["Inputs", "Digital Circuit", "Outputs"];
+        let headings = ["Inputs", "Design Circuitry", "Outputs"]; /* Digital Circuit */
         //alert("data set");
 
         if(this.tableSelection == "basic"){
@@ -576,6 +577,76 @@ let PracticeTruthTableManager = {
         /* alert("lsType = " + lsType); */
             EduHTML_Manager.load("html/Education/Resources/Data_Sheets/LS107/LS107_Data_Sheet.html", "edu-article");
         },
+        
+        createComplexTable: function(data, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) {
+                console.error("Container element not found.");
+                return;
+            }
+
+            // Create table element
+            const table = document.createElement('table');
+
+            // Set table attributes (e.g., border, class)
+            table.setAttribute('border', '1');
+            table.classList.add('my-custom-table');
+
+                // Create table header (thead)
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+
+                // Add header cells (th) with attributes
+                for (const key in data[0]) {
+                    const th = document.createElement('th');
+                    th.textContent = key.charAt(0).toUpperCase() + key.slice(1); // Capitalize first letter
+                    th.setAttribute('scope', 'col'); // Accessibility attribute
+                    headerRow.appendChild(th);
+                }
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                // Create table body (tbody)
+                const tbody = document.createElement('tbody');
+
+                // Iterate through data to create rows and cells
+                data.forEach(rowData => {
+                    const tr = document.createElement('tr');
+
+                    // Add data cells (td) with attributes
+                    for (const key in rowData) {
+                        const td = document.createElement('td');
+                        td.textContent = rowData[key];
+                        // Example of conditional attribute setting
+                        if (key === 'status' && rowData[key] === 'Inactive') {
+                            td.style.color = 'red';
+                        }
+                        tr.appendChild(td);
+                    }
+                    tbody.appendChild(tr);
+                });
+                table.appendChild(tbody);
+
+        // Append the table to the container
+        container.appendChild(table);
+    },
+
+// Example data
+/*const tableData = [
+    { name: 'Alice', age: 30, status: 'Active' },
+    { name: 'Bob', age: 24, status: 'Inactive' },
+    { name: 'Charlie', age: 35, status: 'Active' }
+];
+
+// Call the function to create the table
+createComplexTable(tableData, 'tableContainer');
+3. Explanation:
+    • createComplexTable(data, containerId) function: Takes data (an array of objects) and the ID of the container element.
+    • document.createElement(): Creates new HTML elements (e.g., <table>, <thead>, <tr>, <th>, <tbody>, <td>).
+    • element.setAttribute(name, value): Sets an attribute for an HTML element (e.g., border, scope).
+    • element.classList.add(): Adds a CSS class to an element for styling.
+    • element.textContent: Sets the text content of an element.
+    • parent.appendChild(child):*/
 
         init: function(){
             //alert("in TableManager.init()");
@@ -601,3 +672,7 @@ let PracticeTruthTableManager = {
 
     // END QuestionAnswerManager 
 
+//BEGIN TableGenerator
+
+
+//END TableGenerator

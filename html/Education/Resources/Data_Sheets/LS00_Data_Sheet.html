@@ -5,21 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
 	<script src="js/Edu_Managers.js"></script>
+
+    <style>
+        .data-container{
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -1rem;
+           /* border: 2px solid red;*/
+        }
+       /* .general-container{
+            min-width: 33%;
+            border: 1px dashed black;
+            margin: 0.1rem;
+        }*/
+        .description-container{
+            width: 100%;
+            margin: 1rem;
+            margin-bottom: 1rem;
+            /*border: 2px solid blueviolet;*/
+        }
+        .pin-layout-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 47%;
+            margin: 5px;
+           /* border: 2px solid green;*/
+        }
+        .pin-layout-container img{
+            width: 95%;
+        }
+        .truth-table-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 47%;
+            margin: 5px; 
+           /* border: 2px solid rgb(6, 247, 6);*/
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th{
+            padding: 0.3rem 0;
+        }
+        .description-container label{
+            font-size: 1.5rem;
+            display: block;
+            text-align: center;
+        }
+        .description-container p{
+            font-size: 1.3rem;
+        }
+        .th-div{
+            height: 0.5rem;
+        }
+        .div-container{
+            position: relative;
+        }
+        .dash-div{
+            position: absolute;
+            top: -2.1rem;
+            left:52%;
+            font-size: 2rem;
+        }
+        .equa-div{
+            top: -20%;
+            left: 0;
+        }
+    </style>
 
 </head>
 <body>
     <div class="data-container">
-        <div class="description-container">
-            <label class="ic-label">74LS00:</label>
-            <p>Quad 2-Input NAND Gate</p>
+        <div class="general-container description-container">
+            <label class="ic-label">74LS00: Quad 2-Input NAND Gate</label>
+            <!--<label>Quad 2-Input NAND Gate</label>-->
+            <p>This device contains four independent gates each of which performs the logic NAND function.</p>
         </div>
-        <div class="pin-layout-container">
+        <div class="general-container pin-layout-container">
             <img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png">
         </div>
-        <div id="ls00-tt-id" class="truth-table-container">
-            Truth(function) Table goes here
+        <div id="ls00-tt-id" class="general-container truth-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">NAND Gate</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3"><div class="div-container"><div class="equa-div">Y = AB</div><div class="dash-div">_</div></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Inputs</th>
+                        <th>Output</th>
+                    </tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label>L</label></td>
+                        <td>L</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>H</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>L</td>
+                        <td>H</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>H</td>
+                        <td>L</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
