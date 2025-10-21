@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
 
-    <script>
-     
-const TableData74LS02String = `{    "head": { "row":    [
+const TableData74LS00String = `{    "head": { "row":    [
                                                             { "col":    [
-                                                                            {   "label": "74LS02 Quad 2-Input NOR Gate",
+                                                                            {   "label": "74LS00 Quad 2-Input NAND Gate",
                                                                                 "colSpan": 3,
                                                                                 "rowSpan": 1
                                                                             }                                                                                        
@@ -72,7 +79,7 @@ const TableData74LS02String = `{    "head": { "row":    [
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "label": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -87,7 +94,7 @@ const TableData74LS02String = `{    "head": { "row":    [
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "label": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -112,31 +119,4 @@ const TableData74LS02String = `{    "head": { "row":    [
                                         
                                             }
                                 }`;
-        const JsonTableData74LS02 = JSON.parse(TableData74LS02String);
-
-    </script>
-
-</head>
-<body>
-    <div class="data-container">
-        <div class="description-container">
-            <label class="ic-label">74LS02:</label>
-            <p>Quad 2-Input NOR Gate</p>
-        </div>
-        <div class="pin-layout-container">
-            <img src="media/imgs/LS_imgs/Pin_Layouts/74LS02.png">
-        </div>
-
-        <div id="id-table-container">
-            <table id="id-table-7402">
-                <thead id="id-thead-7402"></thead>
-                <tbody id="id-tbody-7402"></tbody>
-            </table>
-        </div>
-
-    </div>
-</body>
-</html>
-
-
-
+        const JsonTableData74LS00 = JSON.parse(TableData74LS00String);

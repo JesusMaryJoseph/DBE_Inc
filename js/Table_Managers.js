@@ -655,7 +655,85 @@ createComplexTable(tableData, 'tableContainer');
 
 // END TableManager  
 
+//BEGIN DataSheetTableManager
 
+
+        let DataSheetTableManager = {
+        //Properties
+        //Methods
+
+        createTable: function(tableData, tableHeadId, tableBodyId){
+            console.log("in this.createTable");
+            console.log("tableHeadId = " + tableHeadId);
+            console.log("tableBodyId = " + tableBodyId);
+            //this.tableData = tableData;
+            //this.tableHeadId = tableHeadId;
+            //this.tableBodyId = tableBodyId;
+            //if (!this.initialized){this.init(); this.initialized = true}
+            this.createTableSection(tableData.head.row, tableHeadId, "th");
+            this.createTableSection(tableData.body.row, tableBodyId, "td");
+            //this.generateTable();
+        },
+
+        createTableSection: function(tableDataRow, tableId, dataType){
+            //console.log("");
+            if(document.getElementById(tableId)){
+                console.log("got document.getElementById(tableId");
+            }else{
+                console.log("did not get document.getElementById(tableId");
+            }
+            //console.log("tableHead = " + document.getElementById("tableId"));
+            //alert("set Table Data");
+            //alert("tableId = " + tableId);
+            //let headRowArray = this.tableData.LS00.head.row;
+            let rowArray = tableDataRow;
+            nmbrRows = rowArray.length;
+            //alert("nmbrRows = " + nmbrRows);
+           // this.nmbrHeadRows = this.tableData.LS00.head.row.length;
+            //alert("allCols[0].label = " + allCols[0].label);
+           // for (const rowEle of JsonTableData74LS00.head.row) {
+            for (let rowEle = 0; rowEle < nmbrRows; rowEle++) {
+                const trEle = document.createElement('tr');
+                //alert("rowEle = " + rowEle);
+                //console.log("rowEle = " + rowEle);
+                let colArray = rowArray[rowEle].col;
+                let nmbrCols = rowArray[rowEle].col.length;
+                //alert("nmbr of cols = " + nmbrCols);
+                for(let colEle = 0; colEle < nmbrCols; colEle++) {
+                    //console.log("colEle = " + colEle);
+                    //alert("colEle = " + colEle);
+                    //alert("dataType = " + dataType);
+                    //let tdhLabel = rowArray[rowEle].col[colEle].label;
+                    if(dataType == "th"){
+                        //alert("creating new dataEld for 'th'");
+                        const thEle = document.createElement('th');
+                        thEle.textContent = colArray[colEle].label;
+                        //console.log("thEle.textContent = " + thEle.textContent);
+                        thEle.setAttribute('colSpan', colArray[colEle].colSpan); // colApan
+                        thEle.setAttribute('rowSpan', colArray[colEle].rowSpan); // rowSpan
+                        trEle.appendChild(thEle);
+                        //console.log("thEle.appended to trEle");
+                    }else{
+                       // alert("creating new dataEld for 'td'");
+                        //const divEle = document.createElement('div');
+                        //divEle.textContent = colArray[colEle].label;
+                        const tdEle = document.createElement('td');
+                        tdEle.textContent = colArray[colEle].label;
+                        //console.log("tdEle.textContent = " + tdEle.textContent);
+                        //tdEle.appendChild(divEle);
+                        tdEle.setAttribute('colSpan', colArray[colEle].colSpan); // colApan
+                        tdEle.setAttribute('rowSpan', colArray[colEle].rowSpan); // rowSpan
+                        trEle.appendChild(tdEle);
+                    }
+                }
+                console.log("tableId = " + tableId);
+                document.getElementById(tableId).appendChild(trEle);
+                                                                 
+            }
+        }
+    }
+
+//END DataSheetTableManager
 
     // BEGIN QuestionAnswerManager 
 

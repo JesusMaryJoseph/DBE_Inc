@@ -6,91 +6,141 @@
     <title>Document</title>
 
 	<script src="js/Edu_Managers.js"></script>
+    <!--<script src="js/TableData/LS7400TableData.js"></script>-->
+    <script src="js/Table_Managers.js"></script>
+    <script>
+         
+const TableData74LS00String = `{    "head": { "row":    [
+                                                            { "col":    [
+                                                                            {   "label": "74LS00 Quad 2-Input NAND Gate",
+                                                                                "colSpan": 3,
+                                                                                "rowSpan": 1
+                                                                            }                                                                                        
+                                                                        ]
+                                                            },
+                                                            { "col":
+                                                                        [
+                                                                            {   "label":  "Inputs",
+                                                                                "colSpan": 2,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {
+                                                                                "label": "Output",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            },
+                                                            { "col":    [                             
+                                                                            {   "label":  "A",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {
+                                                                                "label": "B",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {
+                                                                                "label": "Y",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            }
+                                                        ]                  
+                                            },
+                                    "body": { "row":    [    
+                                                            { "col":   [
+                                                                            {   "label": "L",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "L",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            },
+                                                            { "col":    [
+                                                                            {   "label": "L",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            },
+                                                            { "col":    [
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "L",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            },
+                                                            { "col":    [
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "H",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            },
+                                                                            {   "label": "L",
+                                                                                "colSpan": 1,
+                                                                                "rowSpan": 1
+                                                                            }
+                                                                        ]
+                                                            }
+                                                        ]
+                                        
+                                            }
+                                }`;
+        const JsonTableData74LS00 = JSON.parse(TableData74LS00String);
+    </script>
 
     <style>
-        .data-container{
-            width: 90vw;
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -1rem;
-           /* border: 2px solid red;*/
-        }
-       /* .general-container{
-            min-width: 33%;
-            border: 1px dashed black;
-            margin: 0.1rem;
-        }*/
-        .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-            /*border: 2px solid blueviolet;*/
-        }
-        .pin-layout-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 47%;
-            margin: 5px;
-           /* border: 2px solid green;*/
-        }
-        .pin-layout-container img{
-            width: 95%;
-        }
-        .truth-table-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 47%;
-            margin: 5px; 
-           /* border: 2px solid rgb(6, 247, 6);*/
-        }
-        table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        th{
-            padding: 0.3rem 0;
-        }
-        .description-container label{
-            font-size: 1.5rem;
-            display: block;
-            text-align: center;
-        }
-        .description-container p{
-            font-size: 1.3rem;
-        }
-        .th-div{
-            height: 0.5rem;
-        }
-        .div-container{
-            position: relative;
-        }
-        .dash-div{
-            position: absolute;
-            top: -2.1rem;
-            left:52%;
-            font-size: 2rem;
-        }
-        .equa-div{
-            top: -20%;
-            left: 0;
-        }
     </style>
 
 </head>
-<body>
+<body onload= "alert('in onload');"> <!--DataSheetTableManager.createTable(JsonTableData74LS00, 'id-thead', 'idtbody');-->
     <div class="data-container">
         <div class="general-container description-container">
             <label class="ic-label">74LS00: Quad 2-Input NAND Gate</label>
-            <!--<label>Quad 2-Input NAND Gate</label>-->
+            <!--<label>Quad 2- NAND Gate</label>-->
             <p>This device contains four independent gates each of which performs the logic NAND function.</p>
         </div>
         <div class="general-container pin-layout-container">
             <img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png">
         </div>
-        <div id="ls00-tt-id" class="general-container truth-table-container">
+
+        <div id="id-table-container-7400" class="truth-table-container">
+            <table id="id-table-7400">
+                <thead id="id-thead-7400"></thead>
+                <tbody id="id-tbody-7400"></tbody>
+            </table>
+        </div>
+
+        <!--<div id="ls00-tt-id" class="general-container truth-table-container">
             <table>
                 <thead>
                     <tr>
@@ -131,8 +181,16 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </div>
+
+    <script>
+        function init(){
+            console.log("in LS00Data Sheet html init()");
+            DataSheetTableManager.createTable(JsonTableData74LS00, 'id-thead', 'idtbody');
+        }
+    </script>
+
 </body>
 </html>
 

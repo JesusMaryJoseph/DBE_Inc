@@ -203,6 +203,7 @@
     //        TrainingNavEventHandler.closeDropDown("training"); needs updating
             //EduNavManager("training");
             this.requestedFile = HTMLsourceFile;
+            //console.log("this.requestedFile = " + this.requestedFile);
             this.load(contentId);
         },
 
@@ -216,16 +217,75 @@
                     }
                 })
                 .then(resultHTML => {
-                    //alert("loading resultHTML contentId = " + contentId);
-                    console.log("loading resultHTML contentId = " + contentId);
+                    //console.log("loading resultHTML contentId = " + contentId);
                     this.eduContentsEle.innerHTML = resultHTML;
-                    document.getElementById(contentId).scrollIntoView({block: 'start'});
-                })
-                .then((loaded) =>{
-                    if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
-                       // alert("in .then(loaded =>");
-                        PracticeTruthTableManager.initialize();
+                    //console.log("scrolling Into View");
+                    /*document.getElementById(contentId).scrollIntoView({block: 'start'});*/
+                
+                    //console.log("this.requestedFile = " + resultHTML);
+                    //console.log("this.requestedFile.slice(0,24) = " + this.requestedFile.slice(0,24));
+                    if(this.requestedFile.slice(0,24) == "html/Education/Training/"){
+                        //console.log("reset page to top of page");
+                        document.getElementById(contentId).scrollIntoView({block: 'start'});
+                        //PracticeTruthTableManager.initialize();
                        // PracticeTruthTableManager.create("circuit","NotXor");
+                    }
+                    /*if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
+                        //console.log("reset page to top of page");
+                        document.getElementById(contentId).scrollIntoView({block: 'start'});
+                        //PracticeTruthTableManager.initialize();
+                       // PracticeTruthTableManager.create("circuit","NotXor");
+                    }*/
+                    //console.log("before if(this.requestedFile == 'html////LS00 ");
+                   //if(this.requestedFile == "html/Education/Resources/Data_Sheets/LS00_Data_Sheet.html"){
+                    //console.log("this.requestedFile = " + resultHTML);
+                    //console.log("this.requestedFile.slice(0,37) = " + this.requestedFile.slice(0,37));
+                    if(this.requestedFile.slice(0,37) == "html/Education/Resources/Data_Sheets/"){
+                        //console.log("in DataSheetTableManager.createTable");
+                        console.log("this.requestedFile.slice(37, this.requestedFile.length -5) = " + this.requestedFile.slice(37, this.requestedFile.length -5));
+                        let JsonTableData = {};
+                        let idThead = "";
+                        let idTbody = "";
+                        switch(this.requestedFile.slice(37, this.requestedFile.length -5)){
+                            case "LS00_Data_Sheet":
+                                console.log("in LS00_Data_Sheet");
+                                JsonTableData = JsonTableData74LS00;
+                                idThead = "id-thead-7400";
+                                idTbody = "id-tbody-7400";
+                            break;
+                            case "LS02_Data_Sheet":
+                                console.log("in LS02_Data_Sheet");
+                                JsonTableData = JsonTableData74LS02;
+                                idThead = "id-thead-7402";
+                                idTbody = "id-tbody-7402";
+                            break;
+                            case "LS04_Data_Sheet":
+                                console.log("in LS04_Data_Sheet");
+                                JsonTableData = JsonTableData74LS04;
+                                idThead = "id-thead-7404";
+                                idTbody = "id-tbody-7404";
+                            break;
+                            case "LS08_Data_Sheet":
+                                console.log("in LS08_Data_Sheet");
+                                JsonTableData = JsonTableData74LS08;
+                                idThead = "id-thead-7408";
+                                idTbody = "id-tbody-7408";
+                            break;
+                            case "LS32_Data_Sheet":
+                                console.log("in LS32_Data_Sheet");
+                                JsonTableData = JsonTableData74LS32;
+                                idThead = "id-thead-7432";
+                                idTbody = "id-tbody-7432";
+                            break;
+                            case "LS86_Data_Sheet":
+                                console.log("in LS86_Data_Sheet");
+                                JsonTableData = JsonTableData74LS86;
+                                idThead = "id-thead-7486";
+                                idTbody = "id-tbody-7486";
+                            break;
+                            default: alert("No Such JsonTableData");
+                        }
+                        DataSheetTableManager.createTable(JsonTableData, idThead, idTbody);
                     }
                     //console.log("Closing Packets DropDown");
                     //EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close');

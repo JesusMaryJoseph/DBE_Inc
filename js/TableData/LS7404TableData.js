@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script>
-          
+  
 const TableData74LS04String = `{    "head": { "row":    [
                                                             { "col":    [
                                                                             {   "label": "74LS04 Hex NOT Gate",
@@ -70,30 +62,3 @@ const TableData74LS04String = `{    "head": { "row":    [
                                             }
                                 }`;
         const JsonTableData74LS04 = JSON.parse(TableData74LS04String);
-
-    </script>
-
-</head>
-<body>
-    <div class="data-container">
-        <div class="description-container">
-            <label class="ic-label">74LS04:</label>
-            <p>Hex Inverting Gates</p>
-        </div>
-        <div class="pin-layout-container">
-            <img src="media/imgs/LS_imgs/Pin_Layouts/74LS04.png">
-        </div>
-
-        <div id="id-table-container">
-            <table id="id-table-7404">
-                <thead id="id-thead-7404"></thead>
-                <tbody id="id-tbody-7404"></tbody>
-            </table>
-        </div>
-
-    </div>
-</body>
-</html>
-
-
-
