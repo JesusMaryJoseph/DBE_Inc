@@ -9,7 +9,8 @@
     <script>
 		function addListenerToInputs(){
 			const inputTags = querySelectorAll("input");
-            alert("# of Inputs = " + inputTags.length);
+            //alert("# of Inputs = " + inputTags.length);
+            console.log("# of Inputs = " + inputTags.length);
 			inputTags.forEach( item => {
 				item.addEventListener("keydown", PracticeTruthTableManager.checkInput());
 			})
@@ -28,7 +29,8 @@
 			overflow: auto;
 			/*border: 3px solid green;*/ 
         }
-       
+        
+        
     </style>
 </head>
 <body onload="gatesIcsInit()">
@@ -223,33 +225,35 @@
                 </p>
                 <p>All the ICs look pretty much the same, differing in size and the number of pins. The following 6 ICs
                     could easily be called the "basic" ICs as seen by the following list:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>IC--</td><td>Name</td><td>image</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>74LS00</td><td>Quad 2-Input NAND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png"></td>
-                        </tr>
-                        <tr>
-                            <td>74LS02</td><td>Quad 2-Input NOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS02.png"></td>
-                        </tr>
-                        <tr>
-                            <td>74LS04</td><td>hex NOT Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS04.svg"></td>
-                        </tr>
-                        <tr>
-                            <td>74LS08</td><td>Quad 2-Input AND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS08.png"></td>
-                        </tr>
-                        <tr>
-                            <td>74LS32</td><td>Quad 2-Input OR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS32.png"></td>
-                        </tr>
-                        <tr>
-                            <td>74LS86</td><td>Quad 2-Input XOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS86.png"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-basic-ics-container">
+                    <table class="table-basic-ics">
+                        <thead>
+                            <tr>
+                                <th>IC</th><th>Name</th><th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>74LS00</td><td>Quad 2-Input<br>NAND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS00.png"></td>
+                            </tr>
+                            <tr>
+                                <td>74LS02</td><td>Quad 2-Input<br>NOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS02.png"></td>
+                            </tr>
+                            <tr>
+                                <td>74LS04</td><td>Hex<br>NOTGate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS04.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>74LS08</td><td>Quad 2-Input<br>AND Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS08.png"></td>
+                            </tr>
+                            <tr>
+                                <td>74LS32</td><td>Quad 2-Input<br>OR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS32.png"></td>
+                            </tr>
+                            <tr>
+                                <td>74LS86</td><td>Quad 2-Input<br>XOR Gate</td><td><img src="media/imgs/LS_imgs/Pin_Layouts/74LS86.png"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p>NOTE: When working as an Engineer you will have access to both the single "AND Gate" as well as the "74LS08 IC"; however,
                     when working as a Draftsman or Technician you will ONLY have access to the "74LS08 IC". So if the Engineer chooses
                     to use a single "AND Gate" in their "Design", the Draftsman's Schematic will have to convert that single "AND Gate"
@@ -269,7 +273,7 @@
 
         <script>
             function gatesIcsInit(){
-                alert("in gatesIcsInit()");
+			    console.log("In onload='gatesIcsInit()' GatesIcs.html");
                 PracticeTruthTableManager.create("basic","AND");
                 addListenerToInputs();
             }

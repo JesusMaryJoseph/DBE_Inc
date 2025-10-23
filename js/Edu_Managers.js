@@ -224,18 +224,16 @@
                 
                     //console.log("this.requestedFile = " + resultHTML);
                     //console.log("this.requestedFile.slice(0,24) = " + this.requestedFile.slice(0,24));
-                    if(this.requestedFile.slice(0,24) == "html/Education/Training/"){
-                        //console.log("reset page to top of page");
-                        document.getElementById(contentId).scrollIntoView({block: 'start'});
-                        //PracticeTruthTableManager.initialize();
-                       // PracticeTruthTableManager.create("circuit","NotXor");
+                if(this.requestedFile.slice(0,24) == "html/Education/Training/"){
+                    console.log("reset page to top of page");
+                    document.getElementById(contentId).scrollIntoView({block: 'start'});
+                    //PracticeTruthTableManager.initialize();
+                    //PracticeTruthTableManager.create("circuit","NotXor");
+                }
+                    if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
+                        PracticeTruthTableManager.initialize();
+                        PracticeTruthTableManager.create("circuit","NotXor");
                     }
-                    /*if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
-                        //console.log("reset page to top of page");
-                        document.getElementById(contentId).scrollIntoView({block: 'start'});
-                        //PracticeTruthTableManager.initialize();
-                       // PracticeTruthTableManager.create("circuit","NotXor");
-                    }*/
                     //console.log("before if(this.requestedFile == 'html////LS00 ");
                    //if(this.requestedFile == "html/Education/Resources/Data_Sheets/LS00_Data_Sheet.html"){
                     //console.log("this.requestedFile = " + resultHTML);
@@ -306,7 +304,7 @@
         },
 
         init: function() {
-        //console.log("in EduHtmlManager.init()");
+        console.log("in EduHtmlManager.init()");
          //alert("this.eduNavOneContentsEle.classList = " + this.eduNavOneContentsEle.classList);
             this.eduContentsEle = document.getElementById("edu-contents-id");
         // alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
@@ -314,7 +312,7 @@
             this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
        // alert("after this.eduContentsEle");
             this.icDataEle = document.getElementById("ic-data-contents-id");
-        //console.log("end of EduHtmlManager.init()");
+        console.log("end of EduHtmlManager.init()");
         }
     }
     // END EduHtmlManager 
