@@ -1,12 +1,18 @@
 /*
-/   EduHTML_Manager         8
-/   CeoHTML_Manager         66
-/   TableManager            122
-/   CodesTabManager         139
-/   QuestionAnswerManager   264
+/   JSON Data                   15  -   38
+/   Transition Function         42  -   49 
+/   PracticeTruthTableManager   51  -   576
+/   EduHTML_Manager             580 -   683
+/   CeoHTML_Manager             688 -   740   
+/   TableManager                742 -   756
+/   CodesTabManager             758 -   838
+/   QuestionAnswerManager       841 -   854
+
 */
 
 
+
+/* BEGIN  JSON Data */
       //  alert("in this.createData"); 
       let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
       "And":{"title": "The AND Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,0,0,1],"solutionsTF":["F","F","F","T"],"img":"media/imgs/basicLogicGates/AND_wPQ.svg"},
@@ -28,19 +34,21 @@
       "AndAndOrW3Inputs":{"title": "The AndAndOrW3Inputs Circuit","inputs": 3,"outputs": 3,"solutions01":[[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1],[0,0,0,1,0,1,0,1]],"solutionsTF":[["F","F","F","T","F","T","F","T"],["F","F","F","F","F","T","F","T"],["F","F","F","T","F","T","F","T"]],"img":"media/imgs/basicLogicGates/AndAndOr_w3InPQ.svg"}
       }`;
 
-//alert("after let dataString =");
 let JsonTableDataSet = JSON.parse(dataString);
+/* END JSON Data */
 
 
 
+/*BEGIN Transition Fct  */
 function eduTransitionHasEnded(){
     alert("in eduTransitionHasEnded and<br>EduHTML_Manager.eduEle.style.opacity =  " + EduHTML_Manager.eduEle.style.opacity);
    if(EduHTML_Manager.eduEle.style.opacity == 0){
     EduHTML_Manager.show();
    }
 }
+/*END Transition Fct  */
 
-// PracticeTruthTableManager
+/* BEGIN PracticeTruthTableManager  */
 let PracticeTruthTableManager = {
     //Properties
     dataCreated: false,
@@ -75,7 +83,7 @@ let PracticeTruthTableManager = {
     //Methods
 
     initialize: function(){
-        //alert("in PracticeTruthTableManager.initialize");
+        console.log("in PracticeTruthTableManager.initialize");
         this.createData();
         this.dataCreated = true;
         this.update("basic", document.getElementById("and-label-id"));
@@ -564,10 +572,8 @@ let PracticeTruthTableManager = {
     }
     
 
-}// END PracticeTruthTableManager
-
-
-
+}
+/* END PracticeTruthTableManager */
 
 
 
@@ -674,16 +680,12 @@ let PracticeTruthTableManager = {
             this.icDataEle = document.getElementById("ic-data-id");
         }
     }
-    /* End EduHTML_Manager */
+/* END EduHTML_Manager */
 
 
-/*
-function ceoTransitionHasEnded(){
-    //alert("in transitionhasEnded");
-    CeoHTML_Manager.ceoFinishTransition();
-} */
 
-/* CeoHTML_Manager */
+
+/*BEGIN CeoHTML_Manager */
     let CeoHTML_Manager = {
         //Properties
         ceoEle: {},
@@ -735,9 +737,9 @@ function ceoTransitionHasEnded(){
         //alert("leaving EduHTML_Manager init()");
         } /* ceoTransitionHasEnded   */
     }
-    /* End CeoHTML_Manager */	
+/* END CeoHTML_Manager */	
 
-    /* Begin TableManager  */
+/* BeEGIN TableManager  */
     let TableManager = {
         //Properties
 
@@ -751,10 +753,9 @@ function ceoTransitionHasEnded(){
             //alert("in TableManager.init()");
         }
     }
+/* END TableManager  */
 
-    /* End TableManager  */
-
-    /* Begin CodesTabManager */
+/* BEGIN CodesTabManager */
 
     let CodesTabManager = {
         //Properties
@@ -834,10 +835,10 @@ function ceoTransitionHasEnded(){
         }
     }
 
-    /* End of CodesTabManager */
+/* EnND of CodesTabManager */
 
 
-    /* Begin QuestionAnswerManager */
+/* BEGIN QuestionAnswerManager */
 
             let QuestionAnswerManager = {
                 //Properties
@@ -850,4 +851,4 @@ function ceoTransitionHasEnded(){
                 }
             }
 
-    /* End QuestionAnswerManager */
+/* END QuestionAnswerManager */

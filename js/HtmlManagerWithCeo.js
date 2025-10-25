@@ -1,13 +1,15 @@
-/* 
-/   PracticeTruthTableManager   lines  8 - 566
-/   TableManager                570 - 585
-/   QuestionAnswerManager       749 - 762
+/*
+/   JsonTableDataSet            12  -   35
+/   function eduTransition..    37  -   44
+/   PracticeTruthTableManager   47  -   572              
+/   EduHTML_Manager             575 -   680
+/   CeoHTML_Manager             685 -   737
+/   TableManager                740 -   755  
+/   CodesTabManager             760 -   840
+/   QuestionAnswerManager       845 -   858
 */
 
-
-// Begin PracticeTruthTableManager
-
-      //  alert("in this.createData"); 
+/* BEGIN JsonTableDataSet  */ 
       let dataString = `{"Not":{"title": "The NOT Logic Gate","inputs": 1,"outputs": 1,"solutions01":[1,0],"solutionsTF":["T","F"],"img":"media/imgs/basicLogicGates/NOT_wPQ.svg"},
       "And":{"title": "The AND Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,0,0,1],"solutionsTF":["F","F","F","T"],"img":"media/imgs/basicLogicGates/AND_wPQ.svg"},
       "Or":{"title": "The OR Logic Gate","inputs": 2,"outputs": 1,"solutions01":[0,1,1,1],"solutionsTF":["F","T","T","T"],"img":"media/imgs/basicLogicGates/OR_wPQ.svg"},
@@ -30,16 +32,19 @@
 
 //alert("after let dataString =");
 let JsonTableDataSet = JSON.parse(dataString);
+/* END JsonTableDataSet  */
 
-
-
+/* BEGIN function eduTransitionHasEnded()  */ 
 function eduTransitionHasEnded(){
     alert("in eduTransitionHasEnded and<br>EduHTML_Manager.eduEle.style.opacity =  " + EduHTML_Manager.eduEle.style.opacity);
    if(EduHTML_Manager.eduEle.style.opacity == 0){
     EduHTML_Manager.show();
    }
 }
+/* END function eduTransitionHasEnded()  */
 
+
+/* BEGIN PracticeTruthTableManager */
 let PracticeTruthTableManager = {
     //Properties
     dataCreated: false,
@@ -162,8 +167,7 @@ let PracticeTruthTableManager = {
         }
     },
 
-    update: function(tableSelection, thisElement){
-        //console.log("tableSelection = " + tableSelection + "   thisElement = " +  thisElement);    
+    update: function(tableSelection, thisElement){    
         //alert("in update");
        // alert("tableSelection = " + tableSelection);
         //alert("thisElement.id = " + thisElement.id);
@@ -265,7 +269,7 @@ let PracticeTruthTableManager = {
         let circuitColSpan = this.circuitDataEle.inputs + 1 + 2*this.circuitDataEle.outputs;
         let titleColSpan = {basic:5,circuit:circuitColSpan};
         let titleId = {basic:"basic-title-id",circuit:"circuit-title-id"};
-        let headings = ["Inputs", "Design Circuitry", "Outputs"]; /* Digital Circuit */
+        let headings = ["Inputs", "Digital Circuit", "Outputs"];
         //alert("data set");
 
         if(this.tableSelection == "basic"){
@@ -562,180 +566,283 @@ let PracticeTruthTableManager = {
         //alert("this.dataSelector = " + this.dataSelector);
         //alert("data created");
     }
- 
+    
+
 }
-// END PracticeTruthTableManager   
+/* END PracticeTruthTableManager */
 
 
 
-// BEGIN TableManager  
+/* BEGIN EduHTML_Manager */
+    let EduHTML_Manager = {
+        //Properties
+      /*  eduNavOneContentsEle: {},
+        eduNavTwoContentsEle: {},*/
+        eduContentsEle: {},
+        icDataEle: {},
+      /*  targetEle: {},*/
+        requestedFile: "",
+    
+        //Methods
+        request: function(HTMLsourceFile, contentId){
+        //alert("in request HTMLsourceFile =  " + HTMLsourceFile);
+        //alert("contentId = " + contentId);
+        // alert("targetEdu = " + targetEdu);
+        // alert("requestingEle = " + requestingEle);
+            this.requestedFile = HTMLsourceFile;
+         /*   switch(targetEdu){
+                case "nav-one":
+                   // alert("in case nav-one");
+                    this.targetEle = this.eduNavOneContentsEle;
+                break;
+                case "nav-two":
+                    //alert("in case nav-two");
+                    this.targetEle = this.eduNavTwoContentsEle;
+                break;
+                case "edu-contents":
+                   // alert("in case contents");
+                    this.targetEle = this.eduContentsEle;
+                    //alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
+                break;
+                default: alert("No Such Target");
+            }*/
+           /* if(requestingEle ==="videos" || requestingEle === "datasheets" || requestingEle === "packets"){
+                // alert("requestingEle = " + requestingEle);
+                // alert("requesting Element was 'true'");
+                this.eduNavOneContentsEle.innerHTML = "";
+                this.eduNavTwoContentsEle.innerHTML = "";
+            }*/
+           // alert("just before  this.targetEle.classList.replace");
+            //this.targetEle.classList.replace("transition-0-1","transition-1-0");
+           // alert("between");
+            //this.targetEle.style.opacity = 1;
+           // alert("this.load() next");
+            this.load(contentId);
+        },
+
+        load: function(contentId) {
+            //alert("in load");
+            //alert("HTMLsourceFile: " + HTMLsourceFile);
+            //alert("targetOption =  " + targetOption);
+
+            fetch(this.requestedFile)
+                .then(res => {
+                   // alert("in res =>");
+                    if (res.ok) {
+                       //alert("res.ok");
+                        return res.text();
+                    }
+                })
+                .then(resultHTML => {
+                    //alert("loading resultHTML contentId = " + contentId);
+                    this.eduContentsEle.innerHTML = resultHTML;
+                    document.getElementById(contentId).scrollIntoView({block: 'start'});
+                })
+                .then((loaded) =>{
+                    if(this.requestedFile == "html/Education/Training/GatesIcs.html"){
+                       // alert("in .then(loaded =>");
+                        PracticeTruthTableManager.initialize();
+                       // PracticeTruthTableManager.create("circuit","NotXor");
+                    }
+                })
+        },
+
+        show: function() { 
+         //alert("in EduHTML_Manager this.show()");
+           // this.load();
+            this.targetEle.classList.replace("transition-1-0","transition-0-1")
+            this.targetEle.style.opacity = "1";
+        },
+
+        close: function(){
+            this.icDataEle.style.opacity = 0;
+            this.icDataEle.style.display = "none";
+        },
+
+        init: function() {
+        //alert("in EduHTML_Manager init()");
+           /* this.eduNavOneContentsEle = document.getElementById("edu-nav-one-contents-id");
+           this.eduNavOneContentsEle.addEventListener("transitionend", eduTransitionHasEnded, false);
+            this.eduNavTwoContentsEle = document.getElementById("edu-nav-two-contents-id");
+            this.eduNavTwoContentsEle.addEventListener("transitionend", eduTransitionHasEnded, false);
+            this.eduNavOneContentsEle.style.opacity = 1;
+            this.eduNavTwoContentsEle.style.opacity = 1;*/
+         //alert("this.eduNavOneContentsEle.classList = " + this.eduNavOneContentsEle.classList);
+            this.eduContentsEle = document.getElementById("edu-contents-id");
+        // alert("this.eduContentsEle.classList = " + this.eduContentsEle.classList);
+            this.eduContentsEle.addEventListener("transitionend", this.show().bind, false);
+            this.eduContentsEle.style.opacity = 1;   /*eduTransitionHasEnded*/
+        //    alert("end of EduHTML_Manager init()");
+            this.icDataEle = document.getElementById("ic-data-id");
+        }
+    }
+
+/* End EduHTML_Manager */
+
+
+
+
+/*BEGIN CeoHTML_Manager */
+    let CeoHTML_Manager = {
+        //Properties
+        ceoEle: {},
+
+        //Methods
+        load: function(HTMLsourceFile) {
+           //alert("in load HTMLsourceFile =  " + HTMLsourceFile);
+            this.ceoEle.innerHTML = "";
+            this.ceoEle.style.zIndex = 10;
+        // alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
+            this.ceoEle.style.opacity = 1;
+            this.ceoEle.style.display = "block";
+            fetch(HTMLsourceFile)
+                .then(res => {
+                   // alert("in res =>");
+                    if (res.ok) {
+                        //alert("res.ok");
+                        return res.text();
+                    }
+                })
+                .then(resultHTML => {
+                   // alert("loading resultHTML");
+                    this.ceoEle.innerHTML = resultHTML;
+                })
+        },
+
+        close: function() { 
+            //alert("this.ceoEle.style.zIndex =  " + this.ceoEle.style.zIndex);
+            //alert("this.ceo.style.opacity =  " + this.ceoEle.style.opacity);
+            this.ceoEle.style.opacity = 0;
+            this.ceoEle.style.display = "none";
+            //this.opacity = 0;
+        },
+
+        ceoFinishTransition: function() {
+            //alert("in finish.Transition");
+        // alert("this.ceoEle.style.opacity =  " + this.ceoEle.style.opacity);
+            if (this.ceoEle.style.opacity == 0) {
+                this.ceoEle.style.zIndex = -10;
+            }else{
+                this.ceoEle.style.zIndex = 10;
+            }
+        },
+
+        init: function() {
+        //alert("in CeoHTML_Manager init()");
+            this.ceoEle = document.getElementById("ceo-contents-id");
+            this.ceoEle.addEventListener("transitionend", this.ceoFinishTransition().bind, false);
+        //alert("leaving EduHTML_Manager init()");
+        } /* ceoTransitionHasEnded   */
+    }
+/* END CeoHTML_Manager */	
+
+    
+/* BEGIN TableManager  */
     let TableManager = {
         //Properties
 
         //Methods
-        generateTable: function(tableType, tableId){
+        generateTable: function(lsType){
         /* alert("lsType = " + lsType); */
             EduHTML_Manager.load("html/Education/Resources/Data_Sheets/LS107/LS107_Data_Sheet.html", "edu-article");
         },
-        
-        createComplexTable: function(data, containerId) {
-            const container = document.getElementById(containerId);
-            if (!container) {
-                console.error("Container element not found.");
-                return;
-            }
-
-            // Create table element
-            const table = document.createElement('table');
-
-            // Set table attributes (e.g., border, class)
-            table.setAttribute('border', '1');
-            table.classList.add('my-custom-table');
-
-                // Create table header (thead)
-                const thead = document.createElement('thead');
-                const headerRow = document.createElement('tr');
-
-                // Add header cells (th) with attributes
-                for (const key in data[0]) {
-                    const th = document.createElement('th');
-                    th.textContent = key.charAt(0).toUpperCase() + key.slice(1); // Capitalize first letter
-                    th.setAttribute('scope', 'col'); // Accessibility attribute
-                    headerRow.appendChild(th);
-                }
-                thead.appendChild(headerRow);
-                table.appendChild(thead);
-
-                // Create table body (tbody)
-                const tbody = document.createElement('tbody');
-
-                // Iterate through data to create rows and cells
-                data.forEach(rowData => {
-                    const tr = document.createElement('tr');
-
-                    // Add data cells (td) with attributes
-                    for (const key in rowData) {
-                        const td = document.createElement('td');
-                        td.textContent = rowData[key];
-                        // Example of conditional attribute setting
-                        if (key === 'status' && rowData[key] === 'Inactive') {
-                            td.style.color = 'red';
-                        }
-                        tr.appendChild(td);
-                    }
-                    tbody.appendChild(tr);
-                });
-                table.appendChild(tbody);
-
-        // Append the table to the container
-        container.appendChild(table);
-    },
-
-// Example data
-/*const tableData = [
-    { name: 'Alice', age: 30, status: 'Active' },
-    { name: 'Bob', age: 24, status: 'Inactive' },
-    { name: 'Charlie', age: 35, status: 'Active' }
-];
-
-// Call the function to create the table
-createComplexTable(tableData, 'tableContainer');
-3. Explanation:
-    • createComplexTable(data, containerId) function: Takes data (an array of objects) and the ID of the container element.
-    • document.createElement(): Creates new HTML elements (e.g., <table>, <thead>, <tr>, <th>, <tbody>, <td>).
-    • element.setAttribute(name, value): Sets an attribute for an HTML element (e.g., border, scope).
-    • element.classList.add(): Adds a CSS class to an element for styling.
-    • element.textContent: Sets the text content of an element.
-    • parent.appendChild(child):*/
 
         init: function(){
             //alert("in TableManager.init()");
         }
     }
 
-// END TableManager  
+/* END TableManager  */
 
-//BEGIN DataSheetTableManager
+    
 
 
-        let DataSheetTableManager = {
+/* BEGIN CodesTabManager */
+
+    let CodesTabManager = {
         //Properties
+        introductionTabEle: {},
+        exampleTabEle: {},
+        computerTabEle: {},
+        introductionContentsEle: {},
+        exampleContentsEle: {},
+        computerContentsEle: {},
+        initiated: false,
+
+        selectedTab: "1",
+        numberOfTabs: "3",
         //Methods
-
-        createTable: function(tableData, tableHeadId, tableBodyId){
-            console.log("in this.createTable");
-            console.log("tableHeadId = " + tableHeadId);
-            console.log("tableBodyId = " + tableBodyId);
-            //this.tableData = tableData;
-            //this.tableHeadId = tableHeadId;
-            //this.tableBodyId = tableBodyId;
-            //if (!this.initialized){this.init(); this.initialized = true}
-            this.createTableSection(tableData.head.row, tableHeadId, "th");
-            this.createTableSection(tableData.body.row, tableBodyId, "td");
-            //this.generateTable();
+        changeTab: function(newTab){
+        // alert("in CodesTabManager.changeTab");
+        // alert("this.initiated =  " + this.initiated);
+            if(!this.initiated){
+            // alert("sending to this.init()");
+                this.init();
+                this.initiated = true;
+            }
+            //TODO remove .selectedTab from this.selectedTab and add to newTab
+            if(newTab == this.selectedTab){return}
+            //alert("this.selectedTab =  " + this.selectedTab + "<br>newTab =  " + newTab);
+            switch (this.selectedTab){
+                case "1":
+                //  alert("removing selected-tab from intro tab");
+                    this.introductionTabEle.classList.replace("selected-tab", "unselected-tab");
+                    this.introductionContentsEle.classList.replace("selected-contents","unselected-contents");
+                //  alert("after remove selected-tab from #1");
+                    break;
+                case "2":
+                    this.exampleTabEle.classList.replace("selected-tab", "unselected-tab");
+                    this.exampleContentsEle.classList.replace("selected-contents","unselected-contents");
+                //  alert("after remove selected-tab from #2");
+                    break;
+                case "3":
+                    this.computerTabEle.classList.replace("selected-tab", "unselected-tab");
+                    this.computerContentsEle.classList.replace("selected-contents","unselected-contents");
+                //  alert("after remove selected-tab from #3");
+                    break;
+                default: alert("No Such Tab Number");
+            }
+            //alert("after 1st switch to remove");
+            switch (newTab){
+                case "1":
+                    this.introductionTabEle.classList.replace("unselected-tab","selected-tab");
+                    this.introductionContentsEle.classList.replace("unselected-contents","selected-contents");
+                    break;
+                case "2":
+                //  alert("adding selected-tab to example tab");
+                    this.exampleTabEle.classList.replace("unselected-tab","selected-tab");
+                    this.exampleContentsEle.classList.replace("unselected-contents","selected-contents");
+                    break;
+                case "3":
+                    this.computerTabEle.classList.replace("unselected-tab","selected-tab");
+                    this.computerContentsEle.classList.replace("unselected-contents","selected-contents");
+                    break;
+                default: alert("No Such Tab Number");
+            }
+            this.selectedTab = newTab;
+            //alert("this.selectedTab now =  " + newTab);
         },
-
-        createTableSection: function(tableDataRow, tableId, dataType){
-            //console.log("");
-            if(document.getElementById(tableId)){
-                console.log("got document.getElementById(tableId");
-            }else{
-                console.log("did not get document.getElementById(tableId");
-            }
-            //console.log("tableHead = " + document.getElementById("tableId"));
-            //alert("set Table Data");
-            //alert("tableId = " + tableId);
-            //let headRowArray = this.tableData.LS00.head.row;
-            let rowArray = tableDataRow;
-            nmbrRows = rowArray.length;
-            //alert("nmbrRows = " + nmbrRows);
-           // this.nmbrHeadRows = this.tableData.LS00.head.row.length;
-            //alert("allCols[0].label = " + allCols[0].label);
-           // for (const rowEle of JsonTableData74LS00.head.row) {
-            for (let rowEle = 0; rowEle < nmbrRows; rowEle++) {
-                const trEle = document.createElement('tr');
-                //alert("rowEle = " + rowEle);
-                //console.log("rowEle = " + rowEle);
-                let colArray = rowArray[rowEle].col;
-                let nmbrCols = rowArray[rowEle].col.length;
-                //alert("nmbr of cols = " + nmbrCols);
-                for(let colEle = 0; colEle < nmbrCols; colEle++) {
-                    //console.log("colEle = " + colEle);
-                    //alert("colEle = " + colEle);
-                    //alert("dataType = " + dataType);
-                    //let tdhLabel = rowArray[rowEle].col[colEle].label;
-                    if(dataType == "th"){
-                        //alert("creating new dataEld for 'th'");
-                        const thEle = document.createElement('th');
-                        thEle.textContent = colArray[colEle].label;
-                        //console.log("thEle.textContent = " + thEle.textContent);
-                        thEle.setAttribute('colSpan', colArray[colEle].colSpan); // colApan
-                        thEle.setAttribute('rowSpan', colArray[colEle].rowSpan); // rowSpan
-                        trEle.appendChild(thEle);
-                        //console.log("thEle.appended to trEle");
-                    }else{
-                       // alert("creating new dataEld for 'td'");
-                        //const divEle = document.createElement('div');
-                        //divEle.textContent = colArray[colEle].label;
-                        const tdEle = document.createElement('td');
-                        tdEle.textContent = colArray[colEle].label;
-                        //console.log("tdEle.textContent = " + tdEle.textContent);
-                        //tdEle.appendChild(divEle);
-                        tdEle.setAttribute('colSpan', colArray[colEle].colSpan); // colApan
-                        tdEle.setAttribute('rowSpan', colArray[colEle].rowSpan); // rowSpan
-                        trEle.appendChild(tdEle);
-                    }
-                }
-                console.log("tableId = " + tableId);
-                document.getElementById(tableId).appendChild(trEle);
-                                                                 
-            }
+        
+        init: function(){
+         //alert("in CodesTabManager.init()");
+            this.introductionTabEle = document.getElementById("introduction-tab-id");
+            this.exampleTabEle = document.getElementById("example-tab-id");
+            this.computerTabEle = document.getElementById("computer-tab-id");
+            this.introductionContentsEle = document.getElementById("introduction-contents-id");
+            this.exampleContentsEle = document.getElementById("example-contents-id");
+            this.computerContentsEle = document.getElementById("computer-contents-id");
+        //  alert("CodesTabManager.init() finished and removing selected-tab from intro");
+        /* this.introductionTabEle.classList.remove("selected-tab");
+            alert("after removal"); */
         }
     }
 
-//END DataSheetTableManager
+/* END CodesTabManager */
 
-    // BEGIN QuestionAnswerManager 
+
+
+
+/* BEGIN QuestionAnswerManager */
 
             let QuestionAnswerManager = {
                 //Properties
@@ -748,9 +855,4 @@ createComplexTable(tableData, 'tableContainer');
                 }
             }
 
-    // END QuestionAnswerManager 
-
-//BEGIN TableGenerator
-
-
-//END TableGenerator
+/* END QuestionAnswerManager */
