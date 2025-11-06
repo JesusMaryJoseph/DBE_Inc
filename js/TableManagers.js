@@ -2,7 +2,7 @@
 /   PracticeTruthTableManager   10   -  560
 /   TableManager                564 - 650
 /   DataSheetTableManager       655 - 730  
-/   QuestionAnswerManager       735 - 748
+/   
 */  
 
 
@@ -567,8 +567,8 @@ let PracticeTruthTableManager = {
 
         //Methods
         generateTable: function(tableType, tableId){
-        /* alert("lsType = " + lsType); */
-            EduHTML_Manager.load("html/Education/Resources/Data_Sheets/LS107/LS107_Data_Sheet.html", "edu-article");
+        /* alert("lsType = " + lsType); 
+            EduHTML_Manager.load("html/Education/Resources/Data_Sheets/LS107/LS107_Data_Sheet.html", "edu-article");*/
         },
         
         createComplexTable: function(data, containerId) {
@@ -658,9 +658,9 @@ createComplexTable(tableData, 'tableContainer');
         //Methods
 
         createTable: function(tableData, tableHeadId, tableBodyId){
-            console.log("in this.createTable");
-            console.log("tableHeadId = " + tableHeadId);
-            console.log("tableBodyId = " + tableBodyId);
+           // console.log("in this.createTable");
+           // console.log("tableHeadId = " + tableHeadId);
+           // console.log("tableBodyId = " + tableBodyId);
             //this.tableData = tableData;
             //this.tableHeadId = tableHeadId;
             //this.tableBodyId = tableBodyId;
@@ -671,11 +671,12 @@ createComplexTable(tableData, 'tableContainer');
         },
 
         createTableSection: function(tableDataRow, tableId, dataType){
-            //console.log("");
+            //console.log("In createTableSection tableId: " + tableId + "dataType = " + dataType);
+            //console.log("tableDataRow[0].col[0].label = " + tableDataRow[0].col[0].label);
             if(document.getElementById(tableId)){
-                console.log("got document.getElementById(tableId");
+                //console.log("got document.getElementById(tableId");
             }else{
-                console.log("did not get document.getElementById(tableId");
+               // console.log("did not get document.getElementById(tableId");
             }
             //console.log("tableHead = " + document.getElementById("tableId"));
             //alert("set Table Data");
@@ -713,6 +714,17 @@ createComplexTable(tableData, 'tableContainer');
                         //const divEle = document.createElement('div');
                         //divEle.textContent = colArray[colEle].label;
                         const tdEle = document.createElement('td');
+                        if(colArray[colEle].label.slice(0,5) == "media"){
+                        console.log("in add img");
+                            const imgEle = document.createElement('img');
+                        console.log("colArray[colEle].label = " + colArray[colEle].label);
+                            imgEle.src = "media/imgs/Rising-Falling-EduHtmlManager.svg"; //colArray[colEle].label;
+                            imgEle.alt = "Rising Edge";
+                            tdEle.appendChild(imgEle);
+                            console.log("imgEle appended");
+                        }else{
+                            tdEle.textContent = colArray[colEle].label;
+                        }
                         tdEle.textContent = colArray[colEle].label;
                         //console.log("tdEle.textContent = " + tdEle.textContent);
                         //tdEle.appendChild(divEle);
@@ -721,7 +733,7 @@ createComplexTable(tableData, 'tableContainer');
                         trEle.appendChild(tdEle);
                     }
                 }
-                console.log("tableId = " + tableId);
+               // console.log("tableId = " + tableId);
                 document.getElementById(tableId).appendChild(trEle);
                                                                  
             }
@@ -729,20 +741,3 @@ createComplexTable(tableData, 'tableContainer');
     }
 /* END DataSheetTableManager */
 
-
-
-
-/* BEGIN QuestionAnswerManager */ 
-
-            let QuestionAnswerManager = {
-                //Properties
-
-                //Methods
-                revealAnswer: function(id){
-                // alert("in revealAnswer");
-                // alert("id =  " + id);
-                    document.getElementById(id).classList.remove("answer-hidden");
-                }
-            }
-
-/* END QuestionAnswerManager */
