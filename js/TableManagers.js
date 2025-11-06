@@ -718,7 +718,7 @@ createComplexTable(tableData, 'tableContainer');
                         console.log("in add img");
                             const imgEle = document.createElement('img');
                         console.log("colArray[colEle].label = " + colArray[colEle].label);
-                            imgEle.src = "media/imgs/Rising-Falling-EduHtmlManager.svg"; //colArray[colEle].label;
+                            imgEle.src = "media/imgs/Rising-Falling-Edge.svg"; //colArray[colEle].label;
                             imgEle.alt = "Rising Edge";
                             tdEle.appendChild(imgEle);
                             console.log("imgEle appended");
