@@ -122,7 +122,7 @@
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Rising Edge",
+                                                                                {   "label": "media/imgs/Rising-Falling-Edge.svg",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
