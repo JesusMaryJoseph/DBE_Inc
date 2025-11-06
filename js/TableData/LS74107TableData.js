@@ -86,7 +86,7 @@
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "RE",
+                                                                            {   "label": "media/imgs/Rising-Falling-Edge.svg",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
