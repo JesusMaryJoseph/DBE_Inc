@@ -715,10 +715,10 @@ createComplexTable(tableData, 'tableContainer');
                         //divEle.textContent = colArray[colEle].label;
                         const tdEle = document.createElement('td');
                         if(colArray[colEle].label.slice(0,5) == "media"){
-                        console.log("in add img");
-                            const imgEle = document.createElement('img');
+                        console.log("adding img");
+                            var imgEle = document.createElement('img');
                         console.log("colArray[colEle].label = " + colArray[colEle].label);
-                            imgEle.src = "media/imgs/Rising-Falling-Edge.svg"; //colArray[colEle].label;
+                            imgEle.src = "media/imgs/Rising-Falling-Edge.svg"; 
                             imgEle.alt = "Rising Edge";
                             tdEle.appendChild(imgEle);
                             console.log("imgEle appended");
