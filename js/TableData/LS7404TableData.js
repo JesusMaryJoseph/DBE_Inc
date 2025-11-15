@@ -1,7 +1,7 @@
   
 const TableData74LS04String = `{    "head": { "row":    [
                                                             { "col":    [
-                                                                            {   "label": "74LS04 Hex NOT Gate",
+                                                                            {   "text": "74LS04 Hex NOT Gate",
                                                                                 "colSpan": 2,
                                                                                 "rowSpan": 1
                                                                             }                                                                                        
@@ -9,24 +9,24 @@ const TableData74LS04String = `{    "head": { "row":    [
                                                             },
                                                             { "col":
                                                                         [
-                                                                            {   "label":  "Input",
+                                                                            {   "text":  "Input",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Output",
+                                                                                "text": "Output",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [                             
-                                                                            {   "label":  "A",
+                                                                            {   "text":  "A",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Y",
+                                                                                "text": "Y",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -36,22 +36,22 @@ const TableData74LS04String = `{    "head": { "row":    [
                                             },
                                     "body": { "row":    [    
                                                             { "col":   [
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }

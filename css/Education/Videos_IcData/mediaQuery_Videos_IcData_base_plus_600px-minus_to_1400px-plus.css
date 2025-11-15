@@ -114,9 +114,6 @@
 
         .datasheets-nav-container{
             width: 98%;
-            /* height: 84vh; */
-        /* padding: 0 0; */
-            /*  right: 1.4em; */
             margin-left: -0.5rem;
             display: grid;
             column-gap: 0.8rem;
@@ -185,7 +182,7 @@
     /*CSS for IC-Datasheets  */
     
         .data-container{
-            width: 92vw;
+            max-width: 95vw;
             display: flex;
             flex-wrap: wrap;
             margin-left: -1rem;
@@ -197,24 +194,22 @@
             margin: 0.1rem;
         }*/
         .description-container{
-            width: 100%;
+            width: 95vw;
             margin: 1rem;
             margin-bottom: 1rem;
-            /*border: 2px solid blueviolet;*/
+            border: 2px solid blueviolet;
         }
             .description-container label{
-                font-size: 1.5rem;
                 display: block;
                 text-align: center;
             }
             .description-container p{
-                font-size: 1.3rem;
+                text-align: center;
             }
         .pin-layout-container{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 47%;
             margin: 5px;
            /* border: 2px solid green;*/
         }
@@ -225,57 +220,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 47%;
             margin: 5px; 
-            border: 2px solid rgb(6, 247, 6);
+           /* border: 2px solid rgb(6, 247, 6); */
         }
-            .truth-table-container table,
-            .truth-table-container table th,
-            .truth-table-container table td{
+            .data-table,
+            .data-table th,
+            .data-table td{
                 border: 2px solid black;
                 border-collapse: collapse;
                 text-align: center;
-                width: 13rem;
+               /* width: 13rem;*/
                 font-weight: bold;
             }
-            
-                .truth-table-container table thead tr:nth-child(1){
-                    font-size: 1.2rem;
-                }
-                .truth-table-container table thead tr:nth-child(2) th{
-                    font-size: 1.1rem;
-                }
-                .truth-table-container table thead tr:nth-child(3) th{
-                    font-size: 1rem;
-                }
-
-                .truth-table-container table tbody td{
-                    font-size: 1rem;
-                }
-        
-        /*th{
-            padding: 0.3rem 0;
-        }*/
-        
-        /*.th-div{
-            height: 0.5rem;
-        }
-        .div-container{
-            position: relative;
-        }
-        .dash-div{
-            position: absolute;
-            top: -2.1rem;
-            left:52%;
-            font-size: 2rem;
-        }
-        .equa-div{
-            top: -20%;
-            left: 0;
-        }*/
     /* END CSS for IC-Datasheets */
 
 @media only screen and (max-width: 599px){
+
     /* CSS for Videos & IC-Datasheets */
         .datasheets-header,
         .ben-eater-videos-header{
@@ -310,39 +270,44 @@
             .description-container p{
                 font-size: 1.3rem;
             }
+            .sigma-img{
+                height: 1.1rem;
+                margin-bottom: -0.15rem;
+            }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 20rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 13rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
+                .data-table thead tr:nth-child(1){
+                    font-size: 1.3rem;
+                    /*height: 10rem;*/
+                }
+                .data-table thead tr:nth-child(2){
                     font-size: 1.2rem;
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
+                .data-table thead tr:nth-child(3){
                     font-size: 1.1rem;
                 }
-                .truth-table-container table thead tr:nth-child(3) th{
-                    font-size: 1rem;
-                }
 
-                .truth-table-container table tbody td{
-                    font-size: 1rem;
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
+                    font-size: 1.1rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.2rem;
                 }
         
     /* END CSS for IC-Datasheets */
@@ -350,80 +315,77 @@
 
     
 @media only screen and (min-width: 600px) and (max-width: 749px){
+    
     /* CSS for Videos & IC-Datasheets */
-        .ben-eater-videos-container{
-            padding-left: 1rem;
-        }
         .datasheets-header,
         .ben-eater-videos-header{
-            font-size: 2rem;
-        } 
-        .ds-mod-header,
+            font-size: 1.5rem;
+        }
+        .ds-mod-header, 
         .be-mod-header{
-            font-size: 1.8rem;
+            font-size: 1.3rem;
         }  
         .be-sub-labels{
-            font-size: 1.6rem;
+            font-size: 1.2rem;
         }
         .ds-ol-type-1,
         .be-ol-type-1{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
         .be-sub-labels-ol{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
     /*End CSS for Videos & IC-Datasheets */
 
-/*CSS for IC-Datasheets  */
+    /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
                 font-size: 1.5rem;
             }
             .description-container p{
-                font-size: 1.4rem;
+                font-size: 1.3rem;
+            }
+            .sigma-img{
+                height: 1.1rem;
+                margin-bottom: -0.15rem;
             }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 20rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 15rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
+                .data-table thead tr:nth-child(1){
                     font-size: 1.3rem;
+                    /*height: 10rem;*/
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
+                .data-table thead tr:nth-child(2){
                     font-size: 1.2rem;
                 }
-                .truth-table-container table thead tr:nth-child(3) th{
+                .data-table thead tr:nth-child(3){
                     font-size: 1.1rem;
                 }
 
-                .truth-table-container table tbody td{
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
                     font-size: 1.1rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.2rem;
                 }
         
     /* END CSS for IC-Datasheets */
-
     }
 
     
@@ -454,49 +416,50 @@
 
 /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
                 font-size: 1.7rem;
             }
             .description-container p{
                 font-size: 1.5rem;
             }
+            .sigma-img{
+                height: 1.2rem;
+                margin-bottom: -0.15rem;
+            }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 22rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 18rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
+                .data-table thead tr:nth-child(1){
+                    font-size: 1.7rem;
+                    /*height: 10rem;*/
+                }
+                .data-table thead tr:nth-child(2){
                     font-size: 1.5rem;
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
+                .data-table thead tr:nth-child(3){
                     font-size: 1.4rem;
                 }
-                .truth-table-container table thead tr:nth-child(3) th{
-                    font-size: 1.3rem;
+
+                .data-table thead th{
+                    padding: 0.3rem;
                 }
-                .truth-table-container table tbody td{
-                    font-size: 1.3rem;
+                .data-table tbody td{
+                    font-size: 1.4rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.3rem;
                 }
         
     /* END CSS for IC-Datasheets */
@@ -531,52 +494,54 @@
 
 /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
                 font-size: 1.9rem;
             }
             .description-container p{
                 font-size: 1.7rem;
             }
+            .sigma-img{
+                height: 1.3rem;
+                margin-bottom: -0.15rem;
+            }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 22rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 20rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
+                .data-table thead tr:nth-child(1){
                     font-size: 1.7rem;
+                    /*height: 10rem;*/
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
-                    font-size: 1.6rem;
-                }
-                .truth-table-container table thead tr:nth-child(3) th{
+                .data-table thead tr:nth-child(2){
                     font-size: 1.5rem;
                 }
-                .truth-table-container table tbody td{
-                    font-size: 1.5rem;
+                .data-table thead tr:nth-child(3){
+                    font-size: 1.4rem;
+                }
+
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
+                    font-size: 1.4rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.3rem;
                 }
         
     /* END CSS for IC-Datasheets */
+
 }
 
     
@@ -607,52 +572,54 @@
 
 /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
-                font-size: 2.3rem;
+                font-size: 1.9rem;
             }
             .description-container p{
-                font-size: 2rem;
+                font-size: 1.7rem;
+            }
+            .sigma-img{
+                height: 1.3rem;
+                margin-bottom: -0.15rem;
             }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 22rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 23rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
-                    font-size: 1.9rem;
-                }
-                .truth-table-container table thead tr:nth-child(2) th{
-                    font-size: 1.8rem;
-                }
-                .truth-table-container table thead tr:nth-child(3) th{
+                .data-table thead tr:nth-child(1){
                     font-size: 1.7rem;
+                    /*height: 10rem;*/
                 }
-                .truth-table-container table tbody td{
-                    font-size: 1.7rem;
+                .data-table thead tr:nth-child(2){
+                    font-size: 1.5rem;
+                }
+                .data-table thead tr:nth-child(3){
+                    font-size: 1.4rem;
+                }
+
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
+                    font-size: 1.4rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.3rem;
                 }
         
     /* END CSS for IC-Datasheets */
+
 }
 
     
@@ -684,52 +651,54 @@
 
 /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
-                font-size: 2.6rem;
+                font-size: 2.1rem;
             }
             .description-container p{
-                font-size: 2.4rem;
+                font-size: 2.1rem;
+            }
+            .sigma-img{
+                height: 1.6rem;
+                margin-bottom: -0.15rem;
             }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
-            }
-        .truth-table-container{
-            margin: 5px; 
-        }
-            .truth-table-container table{
                 width: 25rem;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
+        .truth-table-container{
+            width: 95vw;
+            margin: 5px; 
+        }
+            .data-table{
+                max-width: 80vw;
+            }
             
-                .truth-table-container table thead tr:nth-child(1){
-                    font-size: 2.3rem;
+                .data-table thead tr:nth-child(1){
+                    font-size: 2rem;
+                    /*height: 10rem;*/
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
-                    font-size: 2.1rem;
+                .data-table thead tr:nth-child(2){
+                    font-size: 1.8rem;
                 }
-                .truth-table-container table thead tr:nth-child(3) th{
-                    font-size: 1.9rem;
+                .data-table thead tr:nth-child(3){
+                    font-size: 1.6rem;
                 }
-                .truth-table-container table tbody td{
-                    font-size: 1.9rem;
+
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
+                    font-size: 1.6rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.4rem;
                 }
         
     /* END CSS for IC-Datasheets */
+
 }
 
     
@@ -761,50 +730,52 @@
 
 /*CSS for IC-Datasheets  */
        
-       /* .description-container{
-            width: 100%;
-            margin: 1rem;
-            margin-bottom: 1rem;
-        }*/
             .description-container label{
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             .description-container p{
-                font-size: 2.8rem;
+                font-size: 2.3rem;
+            }
+            .sigma-img{
+                height: 1.9rem;
+                margin-bottom: -0.2rem;
             }
         .pin-layout-container{
-            margin: 5px;
-           /* border: 2px solid green;*/
+            width: 95vw;
         }
             .pin-layout-container img{
-                width: 95%;
+                width: 30rem;
             }
         .truth-table-container{
+            width: 95vw;
             margin: 5px; 
         }
-            .truth-table-container table{
-                width: 32rem;
+            .data-table{
+                max-width: 80vw;
             }
-                .truth-table-container table th{
-                    padding: 0.3rem 0;
-                }
-                .truth-table-container table tbody tr{
-                    height: 1rem;
-                    /*background-color:  red;*/
-                }
             
-                .truth-table-container table thead tr:nth-child(1){
-                    font-size: 2.7rem;
+                .data-table thead tr:nth-child(1){
+                    font-size: 2.3rem;
+                    /*height: 10rem;*/
                 }
-                .truth-table-container table thead tr:nth-child(2) th{
-                    font-size: 2.6rem;
+                .data-table thead tr:nth-child(2){
+                    font-size: 2.1rem;
                 }
-                .truth-table-container table thead tr:nth-child(3) th{
-                    font-size: 2.4rem;
+                .data-table thead tr:nth-child(3){
+                    font-size: 1.9rem;
                 }
-                .truth-table-container table tbody td{
-                    font-size: 2.4rem;
+
+                .data-table thead th{
+                    padding: 0.3rem;
+                }
+                .data-table tbody td{
+                    font-size: 1.8rem;
+                    padding: 0.3rem;
+                }
+                .rising-edge-img{
+                    height: 1.6rem;
                 }
         
     /* END CSS for IC-Datasheets */
+
 }

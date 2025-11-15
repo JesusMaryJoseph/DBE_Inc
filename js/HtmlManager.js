@@ -798,7 +798,7 @@ let PracticeTruthTableManager = {
                     this.computerContentsEle.classList.replace("selected-contents","unselected-contents");
                 //  alert("after remove selected-tab from #3");
                     break;
-                default: alert("No Such Tab Number");
+                default: console.log("No Such Tab Number");
             }
             //alert("after 1st switch to remove");
             switch (newTab){
@@ -815,7 +815,7 @@ let PracticeTruthTableManager = {
                     this.computerTabEle.classList.replace("unselected-tab","selected-tab");
                     this.computerContentsEle.classList.replace("unselected-contents","selected-contents");
                     break;
-                default: alert("No Such Tab Number");
+                default: console.log("No Such Tab Number");
             }
             this.selectedTab = newTab;
             //alert("this.selectedTab now =  " + newTab);

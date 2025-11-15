@@ -5,94 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        .description-container{
-            color: white;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-    
-        /* CSS for table */
-            table{
-                table-layout: fixed;
-                width: 30%;
-                font-weight: bold;
-                text-align: center;
-                border-collapse: collapse;
-                border: 3px solid black;
-            }
-            thead{
-                background-color: lightgray;
-            }
-                .main-table-head{
-                    font-size: 1.5em;
-                    font-weight: bold;
-                }
-                .column-labels{
-                    font-size: 1.2em;
-                    font-weight: bold;
-                }
-    
-            thead, tbody{
-                border-collapse: collapse;
-                border: 3px solid black;
-            }
-            th, td{
-                border-collapse: collapse;
-                border: 3px solid black;
-            }
-    
-            th,
-            td {
-            padding: 0.1em;
-            }
-        /* End CSS for table */
-    
-        /* CSS for data-container */
-            .data-container{
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                font-size: 1.2em;
-                font-weight: bold;
-                color: black;
-            }
-    
-        /* End CSS for data-container */
-    
-            .description-container{
-                font-size: 1.2em;
-                font-weight: bold;
-                color: black;
-            }
-        /* CSS for pin-Layout-container, logic-diagram-container */
-            .pin-layout-container, .logic-diagram-container{
-                font-size: 1.2em;
-                font-weight: bold;
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-            }
-                .pin-layout-container img{
-                    width: 15em;
-                }
-                .logic-diagram-container img{
-                    width: 15em;
-                }
-        /* End CSS for pin-layout-container logic-diagram-container */
-    
-        /* CSS for truth-table-container */
-            .truth-table-container{
-                width: 55vw;
-                background-color: white;
-                margin: 0.5em 0;
-            }
-                .truth-table-container table{
-                    width: 100%;
-                }
-        /*End CSS for truth-table-container */
-    
-        </style>
+   
 </head>
 <body>
     <div class="data-container">
@@ -101,13 +14,10 @@
             <p>The 74LS107 contains two independent J-K flip-flops with individual J-K, clock, and direct clear inputs. The 107 is a positive pulse-triggered flip-flop. The J-K input data is loaded into the master while the clock is high and transferred to the slave and the outputs on the high-to-low clock transition. For these devices the J and K inputs must be stable while the clock is high.</p>
         </div>
         <div class="pin-layout-container">
-            <label>Pin Layout</label>
             <img src="media/imgs/LS_imgs/Pin_layouts/74LS107.png" alt="Pin Layout for 74LS107">
         </div>
-        <div class="truth-table-container">
-            <table id="id-table-74107">
-                <thead id="id-thead-74107"></thead>
-                <tbody id="id-tbody-74107"></tbody>
+        <div class="truth-table-container" class="truth-table-container">
+            <table id="id-table-74107" class="data-table">
             </table>
         </div>
     </div>

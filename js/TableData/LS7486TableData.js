@@ -1,7 +1,7 @@
   
 const TableData74LS86String = `{    "head": { "row":    [
                                                             { "col":    [
-                                                                            {   "label": "74LS86 Quad 2-Input XOR Gate",
+                                                                            {   "text": "74LS86 Quad 2-Input XOR Gate",
                                                                                 "colSpan": 3,
                                                                                 "rowSpan": 1
                                                                             }                                                                                        
@@ -9,29 +9,29 @@ const TableData74LS86String = `{    "head": { "row":    [
                                                             },
                                                             { "col":
                                                                         [
-                                                                            {   "label":  "Inputs",
+                                                                            {   "text":  "Inputs",
                                                                                 "colSpan": 2,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Output",
+                                                                                "text": "Output",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [                             
-                                                                            {   "label":  "A",
+                                                                            {   "text":  "A",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "B",
+                                                                                "text": "B",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Y",
+                                                                                "text": "Y",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -41,60 +41,60 @@ const TableData74LS86String = `{    "head": { "row":    [
                                             },
                                     "body": { "row":    [    
                                                             { "col":   [
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }

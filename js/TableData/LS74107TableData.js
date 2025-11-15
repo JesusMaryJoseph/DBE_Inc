@@ -1,6 +1,6 @@
  let TableData74LS107string =  `{  "head":  { "row":    [
                                                             { "col":    [
-                                                                            {   "label": "74LS107 Dual J-K Flip-Flops w/Clear",
+                                                                            {   "text": "74LS107 Dual J-K Flip-Flops w/Clear",
                                                                                 "colSpan": 6,
                                                                                 "rowSpan": 1
                                                                             }                                                                                        
@@ -8,44 +8,44 @@
                                                             },
                                                             { "col":
                                                                         [
-                                                                            {   "label":  "Inputs",
+                                                                            {   "text":  "Inputs",
                                                                                 "colSpan": 4,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Outputs",
+                                                                                "text": "Outputs",
                                                                                 "colSpan": 2,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [                             
-                                                                            {   "label":  "!CLR",
+                                                                            {   "text":  "!CLR",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "CLK",
+                                                                                "text": "CLK",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "J",
+                                                                                "text": "J",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "K",
+                                                                                "text": "K",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Q",
+                                                                                "text": "Q",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "!Q",
+                                                                                "text": "!Q",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -55,131 +55,131 @@
                                             },
                                     "body": { "row":    [    
                                                             { "col":   [
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "media/imgs/Rising-Falling-Edge.svg",
+                                                                            {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "Q0",
+                                                                            {   "text": "Q0",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "!Q0",
+                                                                            {   "text": "!Q0",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "RE",
+                                                                            {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "RE",
+                                                                            {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "RE",
+                                                                            {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "Toggle",
+                                                                            {   "text": "Toggle",
                                                                                 "colSpan": 2,
                                                                                 "rowSpan": 1
                                                                             }

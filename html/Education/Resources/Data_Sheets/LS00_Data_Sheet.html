@@ -10,120 +10,13 @@
     <script src="js/Table_Managers.js"></script>
     
     <script>
- /*        
-const TableData74LS00String = `{    "head": { "row":    [
-                                                            { "col":    [
-                                                                            {   "label": "74LS00 Quad 2-Input NAND Gate",
-                                                                                "colSpan": 3,
-                                                                                "rowSpan": 1
-                                                                            }                                                                                        
-                                                                        ]
-                                                            },
-                                                            { "col":
-                                                                        [
-                                                                            {   "label":  "Inputs",
-                                                                                "colSpan": 2,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {
-                                                                                "label": "Output",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            },
-                                                            { "col":    [                             
-                                                                            {   "label":  "A",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {
-                                                                                "label": "B",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {
-                                                                                "label": "Y",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            }
-                                                        ]                  
-                                            },
-                                    "body": { "row":    [    
-                                                            { "col":   [
-                                                                            {   "label": "L",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "L",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            },
-                                                            { "col":    [
-                                                                            {   "label": "L",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            },
-                                                            { "col":    [
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "L",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            },
-                                                            { "col":    [
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "H",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            },
-                                                                            {   "label": "L",
-                                                                                "colSpan": 1,
-                                                                                "rowSpan": 1
-                                                                            }
-                                                                        ]
-                                                            }
-                                                        ]
-                                        
-                                            }
-                                }`;
-        const JsonTableData74LS00 = JSON.parse(TableData74LS00String);*/
     </script>
 
     <style>
     </style>
 
 </head>
-<body onload= "alert('in onload');"> <!--DataSheetTableManager.createTable(JsonTableData74LS00, 'id-thead', 'idtbody');-->
+<body> <!--DataSheetTableManager.createTable(JsonTableData74LS00, 'id-thead', 'idtbody');-->
     <div class="data-container">
         <div class="general-container description-container">
             <label class="ic-label">74LS00: Quad 2-Input NAND Gate</label>
@@ -135,61 +28,15 @@ const TableData74LS00String = `{    "head": { "row":    [
         </div>
 
         <div id="id-table-container-7400" class="truth-table-container">
-            <table id="id-table-7400">
-                <thead id="id-thead-7400"></thead>
-                <tbody id="id-tbody-7400"></tbody>
+            <table id="id-table-7400" class="data-table">
             </table>
         </div>
 
-        <!--<div id="ls00-tt-id" class="general-container truth-table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">NAND Gate</th>
-                    </tr>
-                    <tr>
-                        <th colspan="3"><div class="div-container"><div class="equa-div">Y = AB</div><div class="dash-div">_</div></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">Inputs</th>
-                        <th>Output</th>
-                    </tr>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>Y</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label>L</label></td>
-                        <td>L</td>
-                        <td>H</td>
-                    </tr>
-                    <tr>
-                        <td>L</td>
-                        <td>H</td>
-                        <td>H</td>
-                    </tr>
-                    <tr>
-                        <td>H</td>
-                        <td>L</td>
-                        <td>H</td>
-                    </tr>
-                    <tr>
-                        <td>H</td>
-                        <td>H</td>
-                        <td>L</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>-->
-    </div>
-
     <script>
-        function init(){
+        /*function init(){
             console.log("in LS00Data Sheet html init()");
             DataSheetTableManager.createTable(JsonTableData74LS00, 'id-thead', 'idtbody');
-        }
+        }*/
     </script>
 
 </body>

@@ -55,65 +55,88 @@
                         //console.log("in DataSheetTableManager.createTable");
                        // console.log("this.requestedFile.slice(37, this.requestedFile.length -5) = " + this.requestedFile.slice(37, this.requestedFile.length -5));
                         let JsonTableData = {};
-                        let idThead = "";
-                        let idTbody = "";
+                        let tableId = "";
+                        console.log("this.requestedFile.slice(37, this.requestedFile.length -5): " + this.requestedFile.slice(37, this.requestedFile.length -5));
                         switch(this.requestedFile.slice(37, this.requestedFile.length -5)){
                             case "LS00_Data_Sheet":
                                // console.log("in LS00_Data_Sheet");
                                 JsonTableData = JsonTableData74LS00;
-                                idThead = "id-thead-7400";
-                                idTbody = "id-tbody-7400";
+                                tableId = "id-table-7400";
                             break;
                             case "LS02_Data_Sheet":
                               //  console.log("in LS02_Data_Sheet");
                                 JsonTableData = JsonTableData74LS02;
-                                idThead = "id-thead-7402";
-                                idTbody = "id-tbody-7402";
+                                tableId = "id-table-7402";
                             break;
                             case "LS04_Data_Sheet":
                               //  console.log("in LS04_Data_Sheet");
                                 JsonTableData = JsonTableData74LS04;
-                                idThead = "id-thead-7404";
-                                idTbody = "id-tbody-7404";
+                                tableId = "id-table-7404";
                             break;
                             case "LS08_Data_Sheet":
                                // console.log("in LS08_Data_Sheet");
                                 JsonTableData = JsonTableData74LS08;
-                                idThead = "id-thead-7408";
-                                idTbody = "id-tbody-7408";
+                                tableId = "id-table-7408";
                             break;
                             case "LS32_Data_Sheet":
                                // console.log("in LS32_Data_Sheet");
                                 JsonTableData = JsonTableData74LS32;
-                                idThead = "id-thead-7432";
-                                idTbody = "id-tbody-7432";
+                                tableId = "id-table-7432";
                             break;
                             case "LS86_Data_Sheet":
                                // console.log("in LS86_Data_Sheet");
                                 JsonTableData = JsonTableData74LS86;
-                                idThead = "id-thead-7486";
-                                idTbody = "id-tbody-7486";
+                                tableId = "id-table-7486";
                             break;
                             case "LS107_Data_Sheet":
                                 JsonTableData = JsonTableData74LS107;
-                                idThead = "id-thead-74107";
-                                idTbody = "id-tbody-74107";
+                                tableId = "id-table-74107";
+                            break;
+                            case "LS138_Data_Sheet":
+                                JsonTableData = JsonTableData74LS138;
+                                tableId = "id-table-74138";
+                            break;
+                            case "LS139_Data_Sheet":
+                                //console.log("in LS139_Data_Sheet");
+                                JsonTableData = JsonTableData74LS139;
+                                tableId = "id-table-74139";
+                            break;
+                            case "LS157_Data_Sheet":
+                                console.log("in LS157_Data_Sheet");
+                                JsonTableData = JsonTableData74LS157;
+                                tableId = "id-table-74157";
                             break;
                             case "LS161_Data_Sheet":
                                 JsonTableData = JsonTableData74LS161;
-                                idThead = "id-thead-74161";
-                                idTbody = "id-tbody-74161";
+                                tableId = "id-table-74161";
                             break;
                             case "LS173_Data_Sheet":
                                // console.log("in LS173_Data_Sheet");
                                 JsonTableData = JsonTableData74LS173;
                                // console.log("after JsonTableData = JsonTableData74LS173;");
-                                idThead = "id-thead-74173";
-                                idTbody = "id-tbody-74173";
+                                tableId = "id-table-74173";
                             break;
-                            default: alert("No Such JsonTableData");
+                            case "LS189_Data_Sheet":
+                                JsonTableData = JsonTableData74LS189;
+                                tableId = "id-table-74189";
+                            break;
+                            case "LS245_Data_Sheet":
+                                JsonTableData = JsonTableData74LS245;
+                                tableId = "id-table-74245";
+                            break;
+                            case "LS273_Data_Sheet":
+                                JsonTableData = JsonTableData74LS273;
+                                tableId = "id-table-74273";
+                            break;
+                            case "LS283_Data_Sheet":
+                                console.log("in LS283_Data_Sheet");
+                                JsonTableData = JsonTableData74LS283;
+                                console.log("after JsonTableData = JsonTableData74LS283;");
+                                tableId = "id-table-74283";
+                            break;
+                            default: console.log("No Such JsonTableData");
                         }
-                        DataSheetTableManager.createTable(JsonTableData, idThead, idTbody);
+                        TableGenerator.createTable(tableId, JsonTableData);
                     }
                     //console.log("Closing Packets DropDown");
                     //EduNavManager.openCloseDropdown('packets-menu-dd-lev-1', 'close');

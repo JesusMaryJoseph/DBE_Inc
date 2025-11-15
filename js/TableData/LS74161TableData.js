@@ -1,33 +1,33 @@
  let TableData74LS161string = `{  "head":  { "row":    [
                                                             { "col":    [
-                                                                            {   "label": "74LS161 4-BIT Binary Counter",
+                                                                            {   "text": "74LS161 4-BIT Binary Counter",
                                                                                 "colSpan": 5,
                                                                                 "rowSpan": 1
                                                                             }                                                                                        
                                                                         ]
                                                             },
                                                             { "col":    [                             
-                                                                            {   "label":  "MR",
+                                                                            {   "text":  "MR",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "PE",
+                                                                                "text": "PE",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "CET",
+                                                                                "text": "CET",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "CEP",
+                                                                                "text": "CEP",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
                                                                             {
-                                                                                "label": "Action on Rising Clock Edge",
+                                                                                "text": "Rising CLK Edge",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
@@ -37,115 +37,115 @@
                                             },
                                     "body": { "row":    [    
                                                             { "col":   [
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "RESET (Clear)",
+                                                                            {   "text": "RESET (Clear)",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "LOAD (Pn  Qn)",
+                                                                            {   "text": "LOAD (Pn  Qn)",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "COUNT (Increment",
+                                                                            {   "text": "COUNT (Increment",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "NO CHANGE (Hold)",
+                                                                            {   "text": "NO CHANGE (Hold)",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }
                                                                         ]
                                                             },
                                                             { "col":    [
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "H",
+                                                                            {   "text": "H",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "X",
+                                                                            {   "text": "X",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "L",
+                                                                            {   "text": "L",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             },
-                                                                            {   "label": "NO CHANGE (Hold)",
+                                                                            {   "text": "NO CHANGE (Hold)",
                                                                                 "colSpan": 1,
                                                                                 "rowSpan": 1
                                                                             }

@@ -245,7 +245,7 @@ let PracticeTruthTableManager = {
             case "AndAndOrW3Inputs":
                 this.circuitDataEle = JsonTableDataSet.AndAndOrW3Inputs;
                 break;
-            default: alert("no Data Source for this entry");
+            default: console.log("no Data Source for this entry");
          }
             this.updateTableHeads();
             this.updateTableBodys();

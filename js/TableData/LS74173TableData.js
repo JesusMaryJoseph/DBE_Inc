@@ -2,7 +2,7 @@
  
     const TableData74LS173string = `{  "head": { "row":    [
                                                                 { "col":    [
-                                                                                {   "label": "74LS173 4-BIT D-TYPE REGISTER",
+                                                                                {   "text": "74LS173 4-BIT D-TYPE REGISTER",
                                                                                     "colSpan": 6,
                                                                                     "rowSpan": 1
                                                                                 }                                                                                        
@@ -10,12 +10,12 @@
                                                                 },
                                                                 { "col":
                                                                             [
-                                                                                {   "label":  "Inputs",
+                                                                                {   "text":  "Inputs",
                                                                                     "colSpan": 5,
                                                                                     "rowSpan": 1
                                                                                 },
                                                                                 {
-                                                                                    "label": "Output",
+                                                                                    "text": "Output",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 3
                                                                                 }
@@ -25,22 +25,22 @@
                                                                 { "col":
                                                                             [   
                                                                                 {
-                                                                                    "label": "CLR",
+                                                                                    "text": "CLR",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 2
                                                                                 },
                                                                                 {
-                                                                                    "label": "CLK",
+                                                                                    "text": "CLK",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 2
                                                                                 },
                                                                                 {
-                                                                                    "label": "DATA ENABLE",
+                                                                                    "text": "DATA ENABLE",
                                                                                     "colSpan": 2,
                                                                                     "rowSpan": 1
                                                                                 },
                                                                                 {
-                                                                                    "label": "DATA D",
+                                                                                    "text": "DATA D",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 2
                                                                                 }
@@ -49,12 +49,12 @@
 
                                                                 { "col":
                                                                             [ 
-                                                                                {   "label":  "!G1",
+                                                                                {   "text":  "!G1",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
                                                                                 {
-                                                                                    "label": "!G2",
+                                                                                    "text": "!G2",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
@@ -64,162 +64,162 @@
                                                 },
                                         "body": { "row":    [
                                                                 { "col":     [   
-                                                                                {   "label": "H",
+                                                                                {   "text": "H",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
                                                                             ]
                                                                 },
                                                                 { "col":    [
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Q0",
+                                                                                {   "text": "Q0",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
                                                                             ]
                                                                 },
                                                                 { "col":    [
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "media/imgs/Rising-Falling-Edge.svg",
+                                                                                {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "H",
+                                                                                {   "text": "H",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Q0",
+                                                                                {   "text": "Q0",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
                                                                             ]
                                                                 },
                                                                 { "col":    [
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Rising Edge",
+                                                                                {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "H",
+                                                                                {   "text": "H",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "X",
+                                                                                {   "text": "X",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Q0",
+                                                                                {   "text": "Q0",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
                                                                             ]
                                                                 },
                                                                 { "col":    [
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Rising Edge",
+                                                                                {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
                                                                             ]
                                                                 },
                                                                 { "col":    [
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "Rising Edge",
+                                                                                {   "image": "media/imgs/Rising-Falling-Edge.svg",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "L",
+                                                                                {   "text": "L",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "H",
+                                                                                {   "text": "H",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 },
-                                                                                {   "label": "H",
+                                                                                {   "text": "H",
                                                                                     "colSpan": 1,
                                                                                     "rowSpan": 1
                                                                                 }
@@ -231,239 +231,3 @@
                                     }`;
                 const JsonTableData74LS173 = JSON.parse(TableData74LS173string);
 
-                
-                /*   "head": { "row":    [
-                                                                { "col":    [
-                                                                                {   "label": "74LS173 4-BIT D-TYPE REGISTER",
-                                                                                    "colSpan": 6,
-                                                                                    "rowSpan": 1
-                                                                                }                                                                                        
-                                                                            ]
-                                                                },
-                                                                { "col":
-                                                                            [
-                                                                                {   "label":  "Inputs",
-                                                                                    "colSpan": 5,
-                                                                                    "rowSpan": 1
-                                                                                },
-                                                                                {
-                                                                                    "label": "Output",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 2
-                                                                                }
-                                                                            ]
-                                                                },
-
-                                                                { "col":
-                                                                            [   
-                                                                                {
-                                                                                    "label": "CLR",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 2
-                                                                                },
-                                                                                {
-                                                                                    "label": "CLK",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 2
-                                                                                },
-                                                                                {
-                                                                                    "label": "DATA ENABLE",
-                                                                                    "colSpan": 2,
-                                                                                    "rowSpan": 1
-                                                                                },
-                                                                                {
-                                                                                    "label": "DATA D",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 2
-                                                                                }
-                                                                            ]
-                                                                },
-
-                                                                { "col":
-                                                                            [ 
-                                                                                {   "label":  "!G1",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 1
-                                                                                },
-                                                                                {
-                                                                                    "label": "!G2",
-                                                                                    "colSpan": 1,
-                                                                                    "rowSpan": 1
-                                                                                }
-                                                                            ]
-                                                                }
-                                                    ]
-                                        }
-        
-
-        */
-
-
-        /* 
-        
-                                "body": {   "row":  [
-                                                        {   "col":   [   
-                                                                        {   "label": "H",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        },
-                                                        {   "col":   [
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Q0",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        },
-                                                        {   "col":   [
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Rising Edge",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "H",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Q0",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        },
-                                                        {   "col":   [
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Rising Edge",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "H",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "X",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Q0",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        },
-                                                        {   "col":   [
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Rising Edge",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        },
-                                                        {   "col":   [
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "Rising Edge",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "L",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "H",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        },
-                                                                        {   "label": "H",
-                                                                            "colSpan": 1,
-                                                                            "rowSpan": 1
-                                                                        }
-                                                                    ]
-                                                        }
-                                                    ]
-                                        } 
-        */

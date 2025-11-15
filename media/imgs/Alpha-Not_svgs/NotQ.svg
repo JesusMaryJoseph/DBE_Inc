@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.250917mm"
+   height="27.668968mm"
+   viewBox="0 0 16.250918 27.668969"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="NotQ.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.894754"
+     inkscape:cx="11.874965"
+     inkscape:cy="54.964125"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="6.607163,26.531509"
+       orientation="0,-1"
+       id="guide1696"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="6.0236637,27.833161"
+       orientation="0,-1"
+       id="guide1698"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.18867365,26.127548"
+       orientation="1,0"
+       id="guide1700"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="10.691656,23.703783"
+       orientation="1,0"
+       id="guide1702"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="176.47861"
+       y="300.88156"
+       width="111.38404"
+       height="91.132401"
+       id="rect236" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30.61563,-59.24549)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26457535,0,0,0.26543061,-16.381191,-20.460931)"
+       id="text234"
+       style="font-weight:bold;font-size:56px;font-family:Arial;-inkscape-font-specification:'Arial Bold';white-space:pre;shape-inside:url(#rect236);display:inline;fill:none;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"><tspan
+         x="176.47852"
+         y="351.32311"
+         id="tspan10909"><tspan
+           style="fill:#000000"
+           id="tspan10905">Q</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan10907">
+</tspan></tspan><tspan
+         x="176.47852"
+         y="442.45592"
+         id="tspan10913"><tspan
+           dx="0 20.243944 22.234571"
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan10911">aq
+</tspan></tspan><tspan
+         x="176.47852"
+         y="512.45592"
+         id="tspan10917"><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan10915">a</tspan></tspan></text>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 30.894073,59.39549 0.0054,1.235452 10.362884,0.0662 0.01587,-1.296207 z"
+       id="path1805"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:14.8167px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       x="30.51965"
+       y="86.764458"
+       id="text6988"><tspan
+         sodipodi:role="line"
+         id="tspan6986"
+         style="stroke-width:0.3"
+         x="30.51965"
+         y="86.764458" /></text>
+  </g>
+</svg>
